@@ -1,0 +1,12 @@
+[03-Oct-2020 01:30:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function base_path() in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-generator/config/laravel_generator.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-generator/config/laravel_generator.php on line 14
+[26-Oct-2020 20:11:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function base_path() in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-generator/config/laravel_generator.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-generator/config/laravel_generator.php on line 14
+[26-Oct-2020 20:16:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function base_path() in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-generator/config/laravel_generator.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-generator/config/laravel_generator.php on line 14

@@ -1,0 +1,1 @@
+[28-Oct-2020 19:20:41 UTC] PHP Fatal error:  Interface 'SebastianBergmann\GlobalState\Exception' not found in /home/chefrome/public_html/grocery/vendor/sebastian/global-state/src/exceptions/RuntimeException.php on line 15

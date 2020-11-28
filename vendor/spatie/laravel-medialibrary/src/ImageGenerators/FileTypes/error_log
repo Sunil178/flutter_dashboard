@@ -1,0 +1,5 @@
+[08-Oct-2020 17:56:13 UTC] PHP Fatal error:  Class 'Spatie\MediaLibrary\ImageGenerators\BaseGenerator' not found in /home/chefrome/public_html/grocery/vendor/spatie/laravel-medialibrary/src/ImageGenerators/FileTypes/Image.php on line 9
+[08-Oct-2020 17:56:15 UTC] PHP Fatal error:  Class 'Spatie\MediaLibrary\ImageGenerators\BaseGenerator' not found in /home/chefrome/public_html/grocery/vendor/spatie/laravel-medialibrary/src/ImageGenerators/FileTypes/Pdf.php on line 9
+[08-Oct-2020 17:56:17 UTC] PHP Fatal error:  Class 'Spatie\MediaLibrary\ImageGenerators\BaseGenerator' not found in /home/chefrome/public_html/grocery/vendor/spatie/laravel-medialibrary/src/ImageGenerators/FileTypes/Svg.php on line 11
+[08-Oct-2020 17:56:19 UTC] PHP Fatal error:  Class 'Spatie\MediaLibrary\ImageGenerators\BaseGenerator' not found in /home/chefrome/public_html/grocery/vendor/spatie/laravel-medialibrary/src/ImageGenerators/FileTypes/Video.php on line 11
+[08-Oct-2020 17:56:21 UTC] PHP Fatal error:  Class 'Spatie\MediaLibrary\ImageGenerators\BaseGenerator' not found in /home/chefrome/public_html/grocery/vendor/spatie/laravel-medialibrary/src/ImageGenerators/FileTypes/Webp.php on line 9

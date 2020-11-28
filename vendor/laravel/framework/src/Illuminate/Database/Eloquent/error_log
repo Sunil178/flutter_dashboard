@@ -1,0 +1,6 @@
+[09-Oct-2020 01:03:37 UTC] PHP Fatal error:  Trait 'Illuminate\Database\Concerns\BuildsQueries' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php on line 24
+[09-Oct-2020 01:03:40 UTC] PHP Fatal error:  Class 'Illuminate\Support\Collection' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Collection.php on line 13
+[09-Oct-2020 01:03:46 UTC] PHP Fatal error:  Trait 'Illuminate\Support\Traits\Macroable' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php on line 11
+[09-Oct-2020 01:03:54 UTC] PHP Fatal error:  Trait 'Illuminate\Database\Eloquent\Concerns\HasAttributes' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 22
+[09-Oct-2020 01:03:57 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Queue\EntityResolver' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Database/Eloquent/QueueEntityResolver.php on line 8
+[09-Oct-2020 01:04:06 UTC] PHP Fatal error:  Interface 'Illuminate\Database\Eloquent\Scope' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Database/Eloquent/SoftDeletingScope.php on line 5

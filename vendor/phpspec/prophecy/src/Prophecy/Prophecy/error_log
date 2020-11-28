@@ -1,0 +1,2 @@
+[30-Oct-2020 09:56:31 UTC] PHP Fatal error:  Interface 'Prophecy\Prophecy\ProphecyInterface' not found in /home/chefrome/public_html/grocery/vendor/phpspec/prophecy/src/Prophecy/Prophecy/ObjectProphecy.php on line 30
+[30-Oct-2020 09:56:37 UTC] PHP Fatal error:  Interface 'Prophecy\Prophecy\RevealerInterface' not found in /home/chefrome/public_html/grocery/vendor/phpspec/prophecy/src/Prophecy/Prophecy/Revealer.php on line 19

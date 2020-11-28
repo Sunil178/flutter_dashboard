@@ -1,0 +1,6 @@
+[03-Oct-2020 14:50:54 UTC] PHP Fatal error:  Class 'Ramsey\Uuid\Uuid' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/DegradedUuid.php on line 27
+[03-Oct-2020 14:51:44 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\UuidInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/Uuid.php on line 42
+[03-Oct-2020 14:51:56 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\UuidFactoryInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/UuidFactory.php on line 25
+[26-Oct-2020 22:26:40 UTC] PHP Fatal error:  Class 'Ramsey\Uuid\Uuid' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/DegradedUuid.php on line 27
+[26-Oct-2020 22:26:45 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\UuidInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/Uuid.php on line 42
+[26-Oct-2020 22:26:47 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\UuidFactoryInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/UuidFactory.php on line 25

@@ -1,0 +1,6 @@
+[10-Oct-2020 21:54:52 UTC] PHP Fatal error:  Class 'Intervention\Image\AbstractColor' not found in /home/chefrome/public_html/grocery/vendor/intervention/image/src/Intervention/Image/Gd/Color.php on line 8
+[10-Oct-2020 21:55:13 UTC] PHP Fatal error:  Class 'Intervention\Image\AbstractDecoder' not found in /home/chefrome/public_html/grocery/vendor/intervention/image/src/Intervention/Image/Gd/Decoder.php on line 9
+[10-Oct-2020 21:55:19 UTC] PHP Fatal error:  Class 'Intervention\Image\AbstractDriver' not found in /home/chefrome/public_html/grocery/vendor/intervention/image/src/Intervention/Image/Gd/Driver.php on line 8
+[10-Oct-2020 21:55:28 UTC] PHP Fatal error:  Class 'Intervention\Image\AbstractEncoder' not found in /home/chefrome/public_html/grocery/vendor/intervention/image/src/Intervention/Image/Gd/Encoder.php on line 7
+[10-Oct-2020 21:55:42 UTC] PHP Fatal error:  Class 'Intervention\Image\AbstractFont' not found in /home/chefrome/public_html/grocery/vendor/intervention/image/src/Intervention/Image/Gd/Font.php on line 8
+[14-Oct-2020 00:55:26 UTC] PHP Fatal error:  Class 'Intervention\Image\AbstractFont' not found in /home/chefrome/public_html/grocery/vendor/intervention/image/src/Intervention/Image/Gd/Font.php on line 8

@@ -1,0 +1,4 @@
+[05-Oct-2020 21:53:31 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/chefrome/public_html/grocery/vendor/spatie/laravel-permission/src/Models/Permission.php on line 17
+[05-Oct-2020 21:53:41 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/chefrome/public_html/grocery/vendor/spatie/laravel-permission/src/Models/Role.php on line 16
+[28-Oct-2020 10:41:18 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/chefrome/public_html/grocery/vendor/spatie/laravel-permission/src/Models/Permission.php on line 17
+[28-Oct-2020 10:41:20 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/chefrome/public_html/grocery/vendor/spatie/laravel-permission/src/Models/Role.php on line 16

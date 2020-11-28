@@ -1,0 +1,1 @@
+[30-Oct-2020 09:25:58 UTC] PHP Fatal error:  Class 'InfyOm\Generator\Commands\BaseCommand' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-generator/src/Commands/VueJs/VueJsGeneratorCommand.php on line 17

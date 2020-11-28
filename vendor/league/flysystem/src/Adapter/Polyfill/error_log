@@ -1,0 +1,1 @@
+[06-Oct-2020 16:35:48 UTC] PHP Fatal error:  Trait 'League\Flysystem\Adapter\Polyfill\StreamedReadingTrait' not found in /home/chefrome/public_html/grocery/vendor/league/flysystem/src/Adapter/Polyfill/StreamedTrait.php on line 7

@@ -1,0 +1,4 @@
+[11-Oct-2020 06:18:44 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\Driver\AbstractOracleDriver' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/OCI8/Driver.php on line 12
+[11-Oct-2020 06:18:54 UTC] PHP Fatal error:  Interface 'Doctrine\DBAL\Driver\Connection' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/OCI8/OCI8Connection.php on line 29
+[11-Oct-2020 06:19:04 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\Driver\AbstractDriverException' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/OCI8/OCI8Exception.php on line 10
+[11-Oct-2020 06:19:15 UTC] PHP Fatal error:  Interface 'Doctrine\DBAL\Driver\Statement' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/OCI8/OCI8Statement.php on line 50

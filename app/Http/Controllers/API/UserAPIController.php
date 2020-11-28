@@ -11,6 +11,7 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Models\CustomFieldValue;
 use App\Repositories\CustomFieldRepository;
 use App\Repositories\RoleRepository;
 use App\Repositories\UploadRepository;
@@ -19,6 +20,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
 use Prettus\Validator\Exceptions\ValidatorException;
+use DB;
+use Carbon\Carbon;
 
 class UserAPIController extends Controller
 {
@@ -52,6 +55,11 @@ class UserAPIController extends Controller
                 $user = auth()->user();
                 $user->device_token = $request->input('device_token', '');
                 $user->save();
+                if($user->user_refer_code === null){
+                    $ref_code = '#' . substr(md5(microtime()), rand(0, 26), 15);
+                    $save_refer_code = DB::table('users')->where('id',$user->id)->update(['user_refer_code' => $ref_code, 'updated_at' => Carbon::now()]);
+                }
+                
                 return $this->sendResponse($user, 'User retrieved successfully');
             }
         } catch (\Exception $e) {
@@ -86,7 +94,15 @@ class UserAPIController extends Controller
             $defaultRoles = $defaultRoles->pluck('name')->toArray();
             $user->assignRole($defaultRoles);
 
-
+            $id = $user->id;
+            $custom_field_value = new CustomFieldValue;
+            $custom_field_value->value = $request->input('phone');
+            $custom_field_value->view = $request->input('phone');
+            $custom_field_value->custom_field_id = 4;
+            $custom_field_value->customizable_type = "App\Models\User";
+            $custom_field_value->customizable_id = $id;
+            $custom_field_value->save();
+            
             if (copy(public_path('images/avatar_default.png'), public_path('images/avatar_default_temp.png'))) {
                 $user->addMedia(public_path('images/avatar_default_temp.png'))
                     ->withCustomProperties(['uuid' => bcrypt(str_random())])
@@ -226,4 +242,73 @@ class UserAPIController extends Controller
         }
 
     }
+     function referCode($code,$id)
+     {
+         
+        
+         if($code){
+            
+         
+         $checkCode = DB::table('users')->where('user_refer_code', '#' . $code )->first();
+         
+         
+          if(!is_null($checkCode)){
+              
+              $allowrefer = DB::table('orders')->where('user_id', $id )->where('order_status_id',5)->first();
+              
+             
+              //checking users first order
+                       if(!is_null($allowrefer))
+                       
+                       {
+                     
+              return [
+               'status' => false,
+               'msg' => 'This is not your first order',
+               'data' => []
+               ];
+           
+          
+       }
+       
+       else
+       {
+          
+           DB::update('update users set applied_used_id = ? where id = ?',[$checkCode->id,$id]);
+            return [
+               'status' => true,
+               'msg' => 'Code Applied',
+               'data' => $allowrefer
+               ];
+       }
+        //end checking users first order
+          }
+          
+         
+       else{
+             return [
+               'status' => false,
+               'msg' => 'Code not found',
+               'data' => []
+               ];
+               
+       }
+     
+         
+         }
+         else
+         
+         {
+              return [
+               'status' => flase,
+               'msg' => 'EMPTY Data',
+               'data' => []
+               ];
+         }
+         
+         
+       
+         
+         
+     }
 }

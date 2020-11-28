@@ -1,0 +1,16 @@
+[08-Oct-2020 17:54:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function csrf_token() in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-installer/src/Views/layouts/master-update.blade.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-installer/src/Views/layouts/master-update.blade.php on line 15
+[08-Oct-2020 17:54:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function csrf_token() in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-installer/src/Views/layouts/master.blade.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-installer/src/Views/layouts/master.blade.php on line 16
+[29-Oct-2020 16:24:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function csrf_token() in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-installer/src/Views/layouts/master-update.blade.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-installer/src/Views/layouts/master-update.blade.php on line 15
+[29-Oct-2020 16:24:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function csrf_token() in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-installer/src/Views/layouts/master.blade.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-installer/src/Views/layouts/master.blade.php on line 16

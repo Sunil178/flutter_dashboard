@@ -1,0 +1,2 @@
+[27-Oct-2020 18:41:56 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\TestCase' not found in /home/chefrome/public_html/grocery/vendor/org_heigl/ghostscript/tests/Device/JpegTest.php on line 40
+[27-Oct-2020 18:41:58 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\TestCase' not found in /home/chefrome/public_html/grocery/vendor/org_heigl/ghostscript/tests/Device/PngTest.php on line 40

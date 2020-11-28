@@ -1,0 +1,2 @@
+[06-Oct-2020 07:37:53 UTC] PHP Fatal error:  Class 'Carbon\Carbon' not found in /home/chefrome/public_html/grocery/vendor/kylekatarnls/laravel-carbon-2/src/Carbon.php on line 7
+[29-Oct-2020 00:43:52 UTC] PHP Fatal error:  Class 'Carbon\Carbon' not found in /home/chefrome/public_html/grocery/vendor/kylekatarnls/laravel-carbon-2/src/Carbon.php on line 7

@@ -1,0 +1,1 @@
+[27-Oct-2020 23:10:14 UTC] PHP Fatal error:  Class 'Rap2hpoutre\LaravelLogViewer\BaseController' not found in /home/chefrome/public_html/grocery/vendor/rap2hpoutre/laravel-log-viewer/src/controllers/LogViewerController.php on line 11

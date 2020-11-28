@@ -1,6 +1,11 @@
 @if($customFields)
     <h5 class="col-12 pb-4">{!! trans('lang.main_fields') !!}</h5>
 @endif
+<style>
+
+</style>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css">
 <div style="flex: 50%;max-width: 50%;padding: 0 4px;" class="column">
     <!-- Name Field -->
     <div class="form-group row ">
@@ -120,16 +125,62 @@
             </div>
         </div>
     </div>
-    <!-- 'Boolean closed Field' -->
+    <!-- opening Field -->
     <div class="form-group row ">
-        {!! Form::label('closed', trans("lang.market_closed"),['class' => 'col-3 control-label text-right']) !!}
-        <div class="checkbox icheck">
-            <label class="col-9 ml-2 form-check-inline">
-                {!! Form::hidden('closed', 0) !!}
-                {!! Form::checkbox('closed', 1, null) !!}
-            </label>
+        {!! Form::label('Market timing', 'Market timing', ['class' => 'col-3 control-label text-right']) !!}
+        <div class="col-9">
+            <button class="btn btn-block btn-primary" type="button" id="addtiming">Set timing</button>
+            @if(isset($market))
+            <input type="hidden" name="open_days" id="dayss" value="{{ $market->open_days }}" >
+            <input type="hidden" name="open_time" id="open_times" value="{{ $market->open_time }}">
+            <input type="hidden" name="close_time" id="close_times" value="{{ $market->close_time }}">
+            @else
+                <input type="hidden" name="open_days" id="dayss" >
+                <input type="hidden" name="open_time" id="open_times">
+                <input type="hidden" name="close_time" id="close_times" >
+            @endif
         </div>
     </div>
+   <!--- shedule Timings ---->
+   
+    <div class="form-group row ">
+    <b class="col-3 control-label text-right">Delivery Time</b>
+        <div class="col-9">
+            
+        @if(isset($market))
+        <input type="text" class="form-control" id="delivery_time" name="delivery_time" value="{{$market->delivery_time}}" required>
+       
+        @else
+        <input type="text"  class="form-control" id="delivery_time" name="delivery_time" placeholder="Enter Delivery time" required>
+       
+        @endif
+        
+        
+        </div>
+    </div>
+    
+    
+    
+    <!--End Shedule Timings --->
+    
+    
+    
+    
+    
+    
+    
+    
+
+{{--    <!-- 'Boolean closed Field' -->--}}
+{{--    <div class="form-group row ">--}}
+{{--        {!! Form::label('closed', trans("lang.market_closed"),['class' => 'col-3 control-label text-right']) !!}--}}
+{{--        <div class="checkbox icheck">--}}
+{{--            <label class="col-9 ml-2 form-check-inline">--}}
+{{--                {!! Form::hidden('closed', 0) !!}--}}
+{{--                {!! Form::checkbox('closed', 1, null) !!}--}}
+{{--            </label>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
     <!-- 'Boolean available_for_delivery Field' -->
     <div class="form-group row ">
@@ -158,7 +209,109 @@
             </div>
         </div>
     </div>
+
+{{--    add timing modal  --}}
+    <div class="modal" tabindex="-1" role="dialog" id="addtimingModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Select Opening Days & Timing</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+<div class="row">
+                    <div class="col-sm-6">
+                        <div style="min-width: 100%;">
+                        <label class="header">Select open days</label>
+                        </div>
+                    <div id="checkin">
+                        @if(isset($market))
+                            @php $checkThis = explode(",",$market->open_days); @endphp
+
+                            <div class="form-check" >
+                                <label class="checkbox-inline days"><input type="checkbox" name="days" @if(in_array('mon',$checkThis)) checked @endif value="mon">Monday</label>
+                            </div><div class="form-check">
+                                <label class="checkbox-inline days"><input type="checkbox" name="days" @if(in_array('tue',$checkThis)) checked @endif value="tue">Tuesday</label>
+                            </div><div class="form-check">
+                                <label class="checkbox-inline days"><input type="checkbox" name="days"  @if(in_array('wed',$checkThis)) checked @endif value="wed">Wednesday</label>
+                            </div><div class="form-check">
+                                <label class="checkbox-inline days"><input type="checkbox" name="days" @if(in_array('thu',$checkThis)) checked @endif value="thu">Thursday</label>
+                            </div><div class="form-check">
+                                <label class="checkbox-inline days"><input type="checkbox" name="days" @if(in_array('fri',$checkThis)) checked @endif value="fri">Friday</label>
+                            </div><div class="form-check">
+                                <label class="checkbox-inline days"><input type="checkbox" name="days" @if(in_array('sat',$checkThis)) checked @endif value="sat">Saturday</label>
+                            </div><div class="form-check">
+                                <label class="checkbox-inline days"><input type="checkbox" name="days" @if(in_array('sun',$checkThis)) checked @endif value="sun">Sunday</label>
+                            </div>
+                        @else
+                        <div class="form-check" >
+                            <label class="checkbox-inline days"><input type="checkbox" name="days" value="mon" >Monday</label>
+                        </div><div class="form-check">
+                            <label class="checkbox-inline days"><input type="checkbox" name="days" value="tue">Tuesday</label>
+                        </div><div class="form-check">
+                            <label class="checkbox-inline days"><input type="checkbox" name="days" value="wed">Wednesday</label>
+                        </div><div class="form-check">
+                            <label class="checkbox-inline days"><input type="checkbox" name="days" value="thu">Thursday</label>
+                        </div><div class="form-check">
+                            <label class="checkbox-inline days"><input type="checkbox" name="days" value="fri">Friday</label>
+                        </div><div class="form-check">
+                            <label class="checkbox-inline days"><input type="checkbox" name="days" value="sat">Saturday</label>
+                        </div><div class="form-check">
+                            <label class="checkbox-inline days"><input type="checkbox" name="days" value="sun">Sunday</label>
+                        </div>
+                        @endif
+
+                    </div>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <div style="min-width: 100%;">
+                            <label class="header">Enter Market Open Timing</label>
+                        </div>
+                        <div class="row ">
+                            <div class="col-8 ml-3">
+                                @if(isset($market))
+                                    <input type="text" class="form-control startTime" id="open_time" value="{{ $market->open_time }}">
+                                @else
+                                    {!! Form::text('opening time', null,  ['class' => 'form-control startTime','autocomplete'=>'off','placeholder'=>  'Enter time', 'id'=>'open_time' ]) !!}
+                                @endif
+
+                            </div>
+
+                        </div>
+                        <div style="min-width: 100%; margin-top:10px; ">
+                            <label class="header">Enter Market Close Timing</label>
+                        </div>
+                        <div class="row ">
+                            <div class="col-8 ml-3">
+                                @if(isset($market))
+                                    <input type="text" class="form-control startTime" id="close_time" value="{{ $market->close_time }}">
+                                @else
+                                    {!! Form::text('closing time', null,  ['class' => 'form-control startTime','autocomplete'=>'off','placeholder'=>  'Enter time', 'id'=>'close_time'  ]) !!}
+                                @endif
+
+                            </div>
+
+                        </div>
+                    </div>
+</div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="saveTimemanagement()">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     @prepend('scripts')
+marketRepository
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
         <script type="text/javascript">
             var var15671147011688676454ble = '';
             @if(isset($market) && $market->hasMedia('image'))
@@ -201,6 +354,41 @@
                 });
             dz_var15671147011688676454ble[0].mockFile = var15671147011688676454ble;
             dropzoneFields['image'] = dz_var15671147011688676454ble;
+
+           $(document).ready(function(e){
+               $('#addtiming').click(function(){
+                   $('#addtimingModal').modal('show');
+               })
+           })
+
+        </script>
+        <script>
+            $(function () {
+                $('.startTime').datetimepicker({
+                    format: 'HH:mm',
+                }
+                );
+            });
+
+            function saveTimemanagement(){
+                let days = $("#checkin input:checked").map(function(){
+                    return $(this).val();
+                }).get();
+                let open_time= $('#open_time').val();
+                let close_time= $('#close_time').val();
+                if(open_time != '' && close_time != ''){
+                    if(days.length > 0){
+                        $('#dayss').val(days)
+                        $('#open_times').val(open_time)
+                        $('#close_times').val(close_time)
+                        $('#addtimingModal').modal('hide')
+                    }else{
+                        alert('select open days for market')
+                    }
+                }else{
+                    alert('please add opening time and closing time')
+                }
+            }
         </script>
 @endprepend
 

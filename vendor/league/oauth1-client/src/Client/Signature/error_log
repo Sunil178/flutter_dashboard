@@ -1,0 +1,3 @@
+[08-Oct-2020 19:54:36 UTC] PHP Fatal error:  Class 'League\OAuth1\Client\Signature\Signature' not found in /home/chefrome/public_html/grocery/vendor/league/oauth1-client/src/Client/Signature/HmacSha1Signature.php on line 8
+[08-Oct-2020 19:54:40 UTC] PHP Fatal error:  Class 'League\OAuth1\Client\Signature\Signature' not found in /home/chefrome/public_html/grocery/vendor/league/oauth1-client/src/Client/Signature/PlainTextSignature.php on line 5
+[08-Oct-2020 19:54:43 UTC] PHP Fatal error:  Interface 'League\OAuth1\Client\Signature\SignatureInterface' not found in /home/chefrome/public_html/grocery/vendor/league/oauth1-client/src/Client/Signature/Signature.php on line 8

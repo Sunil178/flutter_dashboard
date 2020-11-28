@@ -1,0 +1,6 @@
+[06-Oct-2020 16:17:22 UTC] PHP Fatal error:  Trait 'Illuminate\Queue\InteractsWithQueue' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Events/CallQueuedListener.php on line 12
+[06-Oct-2020 16:17:26 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Events\Dispatcher' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php on line 16
+[06-Oct-2020 16:17:28 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Events/EventServiceProvider.php on line 8
+[26-Nov-2020 00:41:16 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Events/EventServiceProvider.php on line 8
+[26-Nov-2020 19:15:47 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Events\Dispatcher' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php on line 16
+[27-Nov-2020 01:28:38 UTC] PHP Fatal error:  Trait 'Illuminate\Queue\InteractsWithQueue' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Events/CallQueuedListener.php on line 12

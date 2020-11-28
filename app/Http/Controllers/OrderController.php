@@ -27,6 +27,7 @@ use App\Repositories\OrderStatusRepository;
 use App\Repositories\PaymentRepository;
 use App\Repositories\UserRepository;
 use Flash;
+use DB;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Notification;
@@ -122,6 +123,44 @@ class OrderController extends Controller
 
         return redirect(route('orders.index'));
     }
+    
+    //driver _id
+
+ public function driverData($id)
+    {
+        // echo $id;
+       
+        
+      $driverId = DB::table('orders')->select('driver_id')->where('id', $id)->first();
+      
+     
+        //   print_r( $driverId);exit;
+
+     $driverData = DB::table('users')
+  ->join('drivers','drivers.user_id','=','users.id')
+  ->join('custom_field_values','custom_field_values.customizable_id','=','users.id')
+      ->where('users.id',$driverId->driver_id)
+       ->first();
+       
+    
+       if(!is_null($driverData)){
+           return [
+               'status' => true,
+               'msg' => 'driver details',
+               'data' => $driverData
+               ];
+       }else{
+            return [
+               'status' => false,
+               'msg' => 'driver details not found',
+               'data' => []
+               ];
+       }
+
+        
+    }
+
+
 
     /**
      * Display the specified Order.
@@ -169,6 +208,7 @@ class OrderController extends Controller
      */
     public function edit($id)
     {
+       // exit;
         $this->orderRepository->pushCriteria(new OrdersOfUserCriteria(auth()->id()));
         $order = $this->orderRepository->findWithoutFail($id);
         if (empty($order)) {
@@ -206,6 +246,8 @@ class OrderController extends Controller
      */
     public function update($id, UpdateOrderRequest $request)
     {
+        
+       
         $this->orderRepository->pushCriteria(new OrdersOfUserCriteria(auth()->id()));
         $oldOrder = $this->orderRepository->findWithoutFail($id);
         if (empty($oldOrder)) {
@@ -214,10 +256,147 @@ class OrderController extends Controller
         }
         $oldStatus = $oldOrder->payment->status;
         $input = $request->all();
+      //  print_r($input);
+        
+       
+       // exit;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    $user_ID=$input['user_id'];
+           
+        $usersD = DB::table('users')
+                     ->select('applied_used_id')
+                     ->where('id', $user_ID)
+                     ->get();
+       
+
+   $allowrefer = DB::table('orders')->where('user_id', $user_ID )->where('order_status_id',5)->first();
+                 
+             //  print_r($allowrefer);
+            //   exit;
+
+    $sendersUSerID=$usersD[0]->applied_used_id;
+
+                   if(empty($allowrefer))
+                       {
+                         $allowreferD = DB::table('app_settings')->where('id', 184 )->get();
+                         
+$ammounttoadd=$allowreferD[0]->value;
+                         $ch = curl_init();
+
+curl_setopt($ch, CURLOPT_URL,"https://chefrome.com/grocery/public/api/wallet/add");
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS,
+            "user_id=$user_ID&amount=$ammounttoadd&added_via='Referral code'");
+
+// In real life you should use something like:
+// curl_setopt($ch, CURLOPT_POSTFIELDS, 
+//          http_build_query(array('postvar1' => 'value1')));
+
+// Receive server response ...
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+$server_output = curl_exec($ch);
+
+
+curl_close ($ch);
+
+    $ch = curl_init();
+
+curl_setopt($ch, CURLOPT_URL,"https://chefrome.com/grocery/public/api/wallet/add");
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS,
+            "user_id=$sendersUSerID&amount=$ammounttoadd&added_via='Referral code'");
+
+// In real life you should use something like:
+// curl_setopt($ch, CURLOPT_POSTFIELDS, 
+//          http_build_query(array('postvar1' => 'value1')));
+
+// Receive server response ...
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+$server_output = curl_exec($ch);
+
+curl_close ($ch);
+                         
+                         // Route::post('wallet/add','WalletController@wallet_add');
+                         
+                        
+                       }
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         $customFields = $this->customFieldRepository->findByField('custom_field_model', $this->orderRepository->model());
         try {
 
             $order = $this->orderRepository->update($input, $id);
+
+// print_r($order);
+// exit;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             if (setting('enable_notifications', false)) {
                 if (isset($input['order_status_id']) && $input['order_status_id'] != $oldOrder->order_status_id) {

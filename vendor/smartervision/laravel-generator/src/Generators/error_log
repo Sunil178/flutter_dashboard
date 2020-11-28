@@ -1,0 +1,5 @@
+[28-Oct-2020 10:37:10 UTC] PHP Fatal error:  Class 'InfyOm\Generator\Generators\BaseGenerator' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-generator/src/Generators/MigrationGenerator.php on line 11
+[28-Oct-2020 10:37:11 UTC] PHP Fatal error:  Class 'InfyOm\Generator\Generators\BaseGenerator' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-generator/src/Generators/ModelGenerator.php on line 11
+[28-Oct-2020 10:37:13 UTC] PHP Fatal error:  Class 'InfyOm\Generator\Generators\BaseGenerator' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-generator/src/Generators/RepositoryGenerator.php on line 8
+[28-Oct-2020 10:37:15 UTC] PHP Fatal error:  Class 'InfyOm\Generator\Generators\BaseGenerator' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-generator/src/Generators/RepositoryTestGenerator.php on line 8
+[28-Oct-2020 10:37:19 UTC] PHP Fatal error:  Class 'InfyOm\Generator\Generators\BaseGenerator' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-generator/src/Generators/TestTraitGenerator.php on line 9

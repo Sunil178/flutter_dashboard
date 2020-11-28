@@ -1,0 +1,2 @@
+[27-Oct-2020 21:28:46 UTC] PHP Fatal error:  Interface 'SebastianBergmann\CodeCoverage\Driver\Driver' not found in /home/chefrome/public_html/grocery/vendor/phpunit/php-code-coverage/src/Driver/PHPDBG.php on line 19
+[27-Oct-2020 21:28:50 UTC] PHP Fatal error:  Interface 'SebastianBergmann\CodeCoverage\Driver\Driver' not found in /home/chefrome/public_html/grocery/vendor/phpunit/php-code-coverage/src/Driver/Xdebug.php on line 20

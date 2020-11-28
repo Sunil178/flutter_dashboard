@@ -1,0 +1,1 @@
+[08-Oct-2020 22:16:59 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Notifications/Console/NotificationTableCommand.php on line 9

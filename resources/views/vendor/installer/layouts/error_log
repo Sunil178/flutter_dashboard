@@ -1,0 +1,32 @@
+[04-Oct-2020 19:54:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function csrf_token() in /home/chefrome/public_html/grocery/resources/views/vendor/installer/layouts/master-update.blade.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/resources/views/vendor/installer/layouts/master-update.blade.php on line 15
+[04-Oct-2020 19:54:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function csrf_token() in /home/chefrome/public_html/grocery/resources/views/vendor/installer/layouts/master.blade.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/resources/views/vendor/installer/layouts/master.blade.php on line 16
+[27-Oct-2020 11:14:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function csrf_token() in /home/chefrome/public_html/grocery/resources/views/vendor/installer/layouts/master-update.blade.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/resources/views/vendor/installer/layouts/master-update.blade.php on line 15
+[28-Oct-2020 13:25:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function csrf_token() in /home/chefrome/public_html/grocery/resources/views/vendor/installer/layouts/master.blade.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/resources/views/vendor/installer/layouts/master.blade.php on line 16
+[30-Oct-2020 08:49:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function csrf_token() in /home/chefrome/public_html/grocery/resources/views/vendor/installer/layouts/master-update.blade.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/resources/views/vendor/installer/layouts/master-update.blade.php on line 15
+[14-Nov-2020 06:31:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function csrf_token() in /home/chefrome/public_html/grocery/resources/views/vendor/installer/layouts/master-update.blade.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/resources/views/vendor/installer/layouts/master-update.blade.php on line 15
+[15-Nov-2020 09:43:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function csrf_token() in /home/chefrome/public_html/grocery/resources/views/vendor/installer/layouts/master.blade.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/resources/views/vendor/installer/layouts/master.blade.php on line 16
+[17-Nov-2020 06:52:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function csrf_token() in /home/chefrome/public_html/grocery/resources/views/vendor/installer/layouts/master-update.blade.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/resources/views/vendor/installer/layouts/master-update.blade.php on line 15

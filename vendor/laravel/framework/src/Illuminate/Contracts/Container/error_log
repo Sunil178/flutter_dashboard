@@ -1,0 +1,2 @@
+[07-Oct-2020 22:16:09 UTC] PHP Fatal error:  Interface 'Psr\Container\ContainerExceptionInterface' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Contracts/Container/BindingResolutionException.php on line 8
+[07-Oct-2020 22:16:15 UTC] PHP Fatal error:  Interface 'Psr\Container\ContainerInterface' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Contracts/Container/Container.php on line 8

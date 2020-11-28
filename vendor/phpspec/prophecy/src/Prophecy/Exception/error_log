@@ -1,0 +1,1 @@
+[30-Oct-2020 09:55:34 UTC] PHP Fatal error:  Interface 'Prophecy\Exception\Exception' not found in /home/chefrome/public_html/grocery/vendor/phpspec/prophecy/src/Prophecy/Exception/InvalidArgumentException.php on line 14

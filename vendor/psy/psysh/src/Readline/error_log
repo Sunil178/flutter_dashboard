@@ -1,0 +1,4 @@
+[29-Oct-2020 01:01:27 UTC] PHP Fatal error:  Interface 'Psy\Readline\Readline' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Readline/GNUReadline.php on line 21
+[29-Oct-2020 01:01:35 UTC] PHP Fatal error:  Interface 'Psy\Readline\Readline' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Readline/HoaConsole.php on line 20
+[29-Oct-2020 01:01:41 UTC] PHP Fatal error:  Class 'Psy\Readline\GNUReadline' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Readline/Libedit.php on line 23
+[29-Oct-2020 01:01:55 UTC] PHP Fatal error:  Interface 'Psy\Readline\Readline' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Readline/Transient.php on line 19

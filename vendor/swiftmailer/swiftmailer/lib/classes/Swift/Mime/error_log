@@ -1,0 +1,10 @@
+[09-Oct-2020 22:11:47 UTC] PHP Fatal error:  Class 'Swift_Mime_SimpleMimeEntity' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Attachment.php on line 16
+[09-Oct-2020 22:11:52 UTC] PHP Fatal error:  Interface 'Swift_Encoder' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/ContentEncoder.php on line 16
+[09-Oct-2020 22:11:55 UTC] PHP Fatal error:  Class 'Swift_Mime_Attachment' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/EmbeddedFile.php on line 16
+[09-Oct-2020 22:12:04 UTC] PHP Fatal error:  Interface 'Swift_Encoder' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/HeaderEncoder.php on line 16
+[09-Oct-2020 22:12:07 UTC] PHP Fatal error:  Interface 'Swift_IdGenerator' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/IdGenerator.php on line 14
+[09-Oct-2020 22:12:10 UTC] PHP Fatal error:  Class 'Swift_Mime_SimpleMimeEntity' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/MimePart.php on line 16
+[09-Oct-2020 22:12:13 UTC] PHP Fatal error:  Interface 'Swift_Mime_CharsetObserver' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php on line 18
+[09-Oct-2020 22:12:15 UTC] PHP Fatal error:  Interface 'Swift_Mime_CharsetObserver' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php on line 16
+[09-Oct-2020 22:12:18 UTC] PHP Fatal error:  Class 'Swift_Mime_MimePart' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php on line 16
+[09-Oct-2020 22:12:21 UTC] PHP Fatal error:  Interface 'Swift_Mime_CharsetObserver' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php on line 16

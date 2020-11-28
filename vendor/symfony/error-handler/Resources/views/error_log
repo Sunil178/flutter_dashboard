@@ -1,0 +1,42 @@
+[05-Oct-2020 17:06:53 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/traces.html.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/traces.html.php on line 6
+[05-Oct-2020 17:06:58 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/traces_text.html.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/traces_text.html.php on line 10
+[05-Oct-2020 19:16:36 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/error.html.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/error.html.php on line 4
+[05-Oct-2020 19:16:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getAllPrevious() on null in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/exception.html.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/exception.html.php on line 5
+[05-Oct-2020 19:16:45 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/exception_full.html.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/exception_full.html.php on line 5
+[05-Oct-2020 19:16:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/logs.html.php on line 13
+[27-Oct-2020 22:49:24 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/error.html.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/error.html.php on line 4
+[27-Oct-2020 22:49:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getAllPrevious() on null in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/exception.html.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/exception.html.php on line 5
+[27-Oct-2020 22:49:33 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/exception_full.html.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/exception_full.html.php on line 5
+[27-Oct-2020 22:49:39 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/logs.html.php on line 13
+[27-Oct-2020 22:49:50 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/traces.html.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/traces.html.php on line 6
+[27-Oct-2020 22:50:03 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/traces_text.html.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/traces_text.html.php on line 10

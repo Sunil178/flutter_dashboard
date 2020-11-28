@@ -1,0 +1,6 @@
+[08-Oct-2020 13:48:18 UTC] PHP Fatal error:  Interface 'PharIo\Version\Exception' not found in /home/chefrome/public_html/grocery/vendor/phar-io/version/src/exceptions/InvalidPreReleaseSuffixException.php on line 5
+[08-Oct-2020 13:48:20 UTC] PHP Fatal error:  Interface 'PharIo\Version\Exception' not found in /home/chefrome/public_html/grocery/vendor/phar-io/version/src/exceptions/InvalidVersionException.php on line 5
+[08-Oct-2020 13:48:22 UTC] PHP Fatal error:  Interface 'PharIo\Version\Exception' not found in /home/chefrome/public_html/grocery/vendor/phar-io/version/src/exceptions/UnsupportedVersionConstraintException.php on line 13
+[27-Oct-2020 18:47:03 UTC] PHP Fatal error:  Interface 'PharIo\Version\Exception' not found in /home/chefrome/public_html/grocery/vendor/phar-io/version/src/exceptions/InvalidPreReleaseSuffixException.php on line 5
+[27-Oct-2020 18:47:05 UTC] PHP Fatal error:  Interface 'PharIo\Version\Exception' not found in /home/chefrome/public_html/grocery/vendor/phar-io/version/src/exceptions/InvalidVersionException.php on line 5
+[27-Oct-2020 18:47:10 UTC] PHP Fatal error:  Interface 'PharIo\Version\Exception' not found in /home/chefrome/public_html/grocery/vendor/phar-io/version/src/exceptions/UnsupportedVersionConstraintException.php on line 13

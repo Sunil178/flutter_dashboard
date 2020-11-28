@@ -1,0 +1,1 @@
+[30-Oct-2020 00:15:46 UTC] PHP Fatal error:  Interface 'Yajra\DataTables\Contracts\DataTableHtmlBuilder' not found in /home/chefrome/public_html/grocery/vendor/yajra/laravel-datatables-buttons/src/Html/DataTableHtml.php on line 11

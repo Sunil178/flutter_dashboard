@@ -1,0 +1,9 @@
+[03-Oct-2020 20:20:31 UTC] PHP Fatal error:  Class 'Illuminate\Translation\TranslationServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/overtrue/laravel-lang/src/TranslationServiceProvider.php on line 17
+[06-Oct-2020 17:12:40 UTC] PHP Fatal error:  Class 'Illuminate\Translation\FileLoader' not found in /home/chefrome/public_html/grocery/vendor/overtrue/laravel-lang/src/FileLoader.php on line 17
+[06-Oct-2020 18:43:53 UTC] PHP Fatal error:  Class 'Illuminate\Translation\TranslationServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/overtrue/laravel-lang/src/TranslationServiceProvider.php on line 17
+[21-Oct-2020 06:38:01 UTC] PHP Fatal error:  Class 'Illuminate\Translation\TranslationServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/overtrue/laravel-lang/src/TranslationServiceProvider.php on line 17
+[24-Oct-2020 01:19:15 UTC] PHP Fatal error:  Class 'Illuminate\Translation\FileLoader' not found in /home/chefrome/public_html/grocery/vendor/overtrue/laravel-lang/src/FileLoader.php on line 17
+[24-Oct-2020 03:08:34 UTC] PHP Fatal error:  Class 'Illuminate\Translation\TranslationServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/overtrue/laravel-lang/src/TranslationServiceProvider.php on line 17
+[26-Oct-2020 22:10:23 UTC] PHP Fatal error:  Class 'Illuminate\Translation\FileLoader' not found in /home/chefrome/public_html/grocery/vendor/overtrue/laravel-lang/src/FileLoader.php on line 17
+[26-Oct-2020 22:10:26 UTC] PHP Fatal error:  Class 'Illuminate\Translation\TranslationServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/overtrue/laravel-lang/src/TranslationServiceProvider.php on line 17
+[26-Oct-2020 23:23:48 UTC] PHP Fatal error:  Class 'Illuminate\Translation\FileLoader' not found in /home/chefrome/public_html/grocery/vendor/overtrue/laravel-lang/src/FileLoader.php on line 17

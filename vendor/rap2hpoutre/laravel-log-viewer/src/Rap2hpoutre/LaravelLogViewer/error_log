@@ -1,0 +1,1 @@
+[29-Oct-2020 15:51:53 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/rap2hpoutre/laravel-log-viewer/src/Rap2hpoutre/LaravelLogViewer/LaravelLogViewerServiceProvider.php on line 5

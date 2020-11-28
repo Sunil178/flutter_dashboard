@@ -1,0 +1,1 @@
+[30-Oct-2020 09:23:15 UTC] PHP Fatal error:  Interface 'Requests_Auth' not found in /home/chefrome/public_html/grocery/vendor/rmccue/requests/library/Requests/Auth/Basic.php on line 18

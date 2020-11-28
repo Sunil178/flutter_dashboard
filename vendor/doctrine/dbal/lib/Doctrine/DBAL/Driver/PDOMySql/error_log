@@ -1,0 +1,1 @@
+[11-Oct-2020 06:21:20 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\Driver\AbstractMySQLDriver' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php on line 13

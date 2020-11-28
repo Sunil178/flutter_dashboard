@@ -1,0 +1,8 @@
+[29-Oct-2020 00:55:53 UTC] PHP Fatal error:  Interface 'Psy\Exception\Exception' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Exception/BreakException.php on line 17
+[29-Oct-2020 00:56:02 UTC] PHP Fatal error:  Class 'Psy\Exception\RuntimeException' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Exception/DeprecatedException.php on line 17
+[29-Oct-2020 00:56:10 UTC] PHP Fatal error:  Interface 'Psy\Exception\Exception' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Exception/ErrorException.php on line 17
+[29-Oct-2020 00:56:25 UTC] PHP Fatal error:  Interface 'Psy\Exception\Exception' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Exception/FatalErrorException.php on line 17
+[29-Oct-2020 00:56:35 UTC] PHP Fatal error:  Class 'PhpParser\Error' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Exception/ParseErrorException.php on line 17
+[29-Oct-2020 00:56:43 UTC] PHP Fatal error:  Interface 'Psy\Exception\Exception' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Exception/RuntimeException.php on line 17
+[29-Oct-2020 00:56:51 UTC] PHP Fatal error:  Interface 'Psy\Exception\Exception' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Exception/ThrowUpException.php on line 17
+[29-Oct-2020 00:56:53 UTC] PHP Fatal error:  Interface 'Psy\Exception\Exception' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Exception/TypeErrorException.php on line 17

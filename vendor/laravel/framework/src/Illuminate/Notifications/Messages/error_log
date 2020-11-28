@@ -1,0 +1,2 @@
+[07-Oct-2020 14:39:00 UTC] PHP Fatal error:  Trait 'Illuminate\Bus\Queueable' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Notifications/Messages/BroadcastMessage.php on line 9
+[08-Oct-2020 22:17:25 UTC] PHP Fatal error:  Class 'Illuminate\Notifications\Messages\SimpleMessage' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Notifications/Messages/MailMessage.php on line 11

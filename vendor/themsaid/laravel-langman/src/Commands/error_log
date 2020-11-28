@@ -1,0 +1,14 @@
+[05-Oct-2020 20:27:52 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/themsaid/laravel-langman/src/Commands/FindCommand.php on line 10
+[05-Oct-2020 20:28:03 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/themsaid/laravel-langman/src/Commands/MissingCommand.php on line 9
+[05-Oct-2020 20:28:09 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/themsaid/laravel-langman/src/Commands/RemoveCommand.php on line 9
+[05-Oct-2020 20:28:19 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/themsaid/laravel-langman/src/Commands/RenameCommand.php on line 10
+[05-Oct-2020 20:28:28 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/themsaid/laravel-langman/src/Commands/ShowCommand.php on line 11
+[05-Oct-2020 20:28:38 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/themsaid/laravel-langman/src/Commands/SyncCommand.php on line 9
+[05-Oct-2020 20:28:46 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/themsaid/laravel-langman/src/Commands/TransCommand.php on line 9
+[30-Oct-2020 15:53:06 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/themsaid/laravel-langman/src/Commands/FindCommand.php on line 10
+[30-Oct-2020 15:53:08 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/themsaid/laravel-langman/src/Commands/MissingCommand.php on line 9
+[30-Oct-2020 15:53:10 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/themsaid/laravel-langman/src/Commands/RemoveCommand.php on line 9
+[30-Oct-2020 15:53:12 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/themsaid/laravel-langman/src/Commands/RenameCommand.php on line 10
+[30-Oct-2020 15:53:14 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/themsaid/laravel-langman/src/Commands/ShowCommand.php on line 11
+[30-Oct-2020 15:53:15 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/themsaid/laravel-langman/src/Commands/SyncCommand.php on line 9
+[30-Oct-2020 15:53:17 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/themsaid/laravel-langman/src/Commands/TransCommand.php on line 9

@@ -1,0 +1,1 @@
+[30-Oct-2020 00:16:45 UTC] PHP Fatal error:  Class 'Illuminate\Console\GeneratorCommand' not found in /home/chefrome/public_html/grocery/vendor/yajra/laravel-datatables-fractal/src/Commands/TransformerMakeCommand.php on line 8

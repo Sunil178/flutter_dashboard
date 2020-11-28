@@ -1,0 +1,12 @@
+[05-Oct-2020 17:08:07 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\Constraint\Constraint' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Test/Constraint/EmailAddressContains.php on line 19
+[05-Oct-2020 17:08:12 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\Constraint\Constraint' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Test/Constraint/EmailAttachmentCount.php on line 18
+[05-Oct-2020 17:08:18 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\Constraint\Constraint' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Test/Constraint/EmailHasHeader.php on line 17
+[05-Oct-2020 17:08:22 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\Constraint\Constraint' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Test/Constraint/EmailHeaderSame.php on line 17
+[05-Oct-2020 17:08:26 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\Constraint\Constraint' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Test/Constraint/EmailHtmlBodyContains.php on line 18
+[05-Oct-2020 17:08:32 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\Constraint\Constraint' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Test/Constraint/EmailTextBodyContains.php on line 18
+[27-Oct-2020 22:55:17 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\Constraint\Constraint' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Test/Constraint/EmailAddressContains.php on line 19
+[27-Oct-2020 22:55:21 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\Constraint\Constraint' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Test/Constraint/EmailAttachmentCount.php on line 18
+[27-Oct-2020 22:55:26 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\Constraint\Constraint' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Test/Constraint/EmailHasHeader.php on line 17
+[27-Oct-2020 22:55:31 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\Constraint\Constraint' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Test/Constraint/EmailHeaderSame.php on line 17
+[27-Oct-2020 22:55:34 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\Constraint\Constraint' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Test/Constraint/EmailHtmlBodyContains.php on line 18
+[27-Oct-2020 22:55:38 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\Constraint\Constraint' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Test/Constraint/EmailTextBodyContains.php on line 18

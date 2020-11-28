@@ -1,0 +1,1 @@
+[07-Oct-2020 14:47:32 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Session/Console/SessionTableCommand.php on line 9

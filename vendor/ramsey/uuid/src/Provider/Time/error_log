@@ -1,0 +1,2 @@
+[29-Oct-2020 15:51:24 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\Provider\TimeProviderInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/Provider/Time/FixedTimeProvider.php on line 26
+[29-Oct-2020 15:51:29 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\Provider\TimeProviderInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/Provider/Time/SystemTimeProvider.php on line 22

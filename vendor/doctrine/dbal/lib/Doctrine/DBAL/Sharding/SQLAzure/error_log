@@ -1,0 +1,2 @@
+[11-Oct-2020 06:43:24 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\Schema\Synchronizer\AbstractSchemaSynchronizer' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Sharding/SQLAzure/SQLAzureFederationsSynchronizer.php on line 24
+[11-Oct-2020 06:43:28 UTC] PHP Fatal error:  Interface 'Doctrine\DBAL\Sharding\ShardManager' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Sharding/SQLAzure/SQLAzureShardManager.php on line 15

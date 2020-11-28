@@ -1,0 +1,5 @@
+[09-Oct-2020 01:03:07 UTC] PHP Fatal error:  Trait 'Illuminate\Database\DetectsLostConnections' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php on line 13
+[09-Oct-2020 01:03:11 UTC] PHP Fatal error:  Class 'Illuminate\Database\Connectors\Connector' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php on line 7
+[09-Oct-2020 01:03:13 UTC] PHP Fatal error:  Class 'Illuminate\Database\Connectors\Connector' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Database/Connectors/PostgresConnector.php on line 7
+[09-Oct-2020 01:03:15 UTC] PHP Fatal error:  Class 'Illuminate\Database\Connectors\Connector' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Database/Connectors/SQLiteConnector.php on line 7
+[09-Oct-2020 01:03:17 UTC] PHP Fatal error:  Class 'Illuminate\Database\Connectors\Connector' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Database/Connectors/SqlServerConnector.php on line 8

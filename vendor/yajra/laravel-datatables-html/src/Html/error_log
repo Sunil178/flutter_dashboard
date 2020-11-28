@@ -1,0 +1,5 @@
+[30-Oct-2020 00:17:02 UTC] PHP Fatal error:  Trait 'Illuminate\Support\Traits\Macroable' not found in /home/chefrome/public_html/grocery/vendor/yajra/laravel-datatables-html/src/Html/Builder.php on line 16
+[30-Oct-2020 00:17:04 UTC] PHP Fatal error:  Class 'Illuminate\Support\Fluent' not found in /home/chefrome/public_html/grocery/vendor/yajra/laravel-datatables-html/src/Html/Button.php on line 8
+[30-Oct-2020 00:17:06 UTC] PHP Fatal error:  Class 'Illuminate\Support\Fluent' not found in /home/chefrome/public_html/grocery/vendor/yajra/laravel-datatables-html/src/Html/Column.php on line 20
+[30-Oct-2020 00:17:19 UTC] PHP Fatal error:  Trait 'Yajra\DataTables\Html\Options\HasFeatures' not found in /home/chefrome/public_html/grocery/vendor/yajra/laravel-datatables-html/src/Html/HasOptions.php on line 14
+[30-Oct-2020 00:17:24 UTC] PHP Fatal error:  Class 'Illuminate\Support\Fluent' not found in /home/chefrome/public_html/grocery/vendor/yajra/laravel-datatables-html/src/Html/Parameters.php on line 13

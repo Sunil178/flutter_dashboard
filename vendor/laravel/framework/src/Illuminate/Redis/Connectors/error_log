@@ -1,0 +1,4 @@
+[07-Oct-2020 14:44:33 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Redis\Connector' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PhpRedisConnector.php on line 14
+[07-Oct-2020 14:44:37 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Redis\Connector' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php on line 11
+[26-Nov-2020 11:30:27 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Redis\Connector' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PhpRedisConnector.php on line 14
+[27-Nov-2020 05:21:27 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Redis\Connector' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php on line 11

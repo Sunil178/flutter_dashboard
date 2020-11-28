@@ -25,6 +25,7 @@ use App\Repositories\PaymentRepository;
 use App\Repositories\ProductOrderRepository;
 use App\Repositories\UserRepository;
 use Flash;
+use DB;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Notification;
@@ -94,6 +95,12 @@ class OrderAPIController extends Controller
         return $this->sendResponse($orders->toArray(), 'Orders retrieved successfully');
     }
 
+
+
+
+
+
+
     /**
      * Display the specified Order.
      * GET|HEAD /orders/{id}
@@ -150,6 +157,10 @@ class OrderAPIController extends Controller
      */
     private function stripPayment(Request $request)
     {
+        
+        
+        
+  
         $input = $request->all();
         $amount = 0;
         try {
@@ -200,7 +211,7 @@ class OrderAPIController extends Controller
         } catch (ValidatorException $e) {
             return $this->sendError($e->getMessage());
         }
-
+        
         return $this->sendResponse($order->toArray(), __('lang.saved_successfully', ['operator' => __('lang.order')]));
     }
 
@@ -210,7 +221,9 @@ class OrderAPIController extends Controller
      */
     private function cashPayment(Request $request)
     {
+         
         $input = $request->all();
+           
         $amount = 0;
         try {
             $order = $this->orderRepository->create(
@@ -255,6 +268,8 @@ class OrderAPIController extends Controller
      */
     public function update($id, Request $request)
     {
+        
+ 
         $oldOrder = $this->orderRepository->findWithoutFail($id);
         if (empty($oldOrder)) {
             return $this->sendError('Order not found');
@@ -262,10 +277,85 @@ class OrderAPIController extends Controller
         $oldStatus = $oldOrder->payment->status;
         $input = $request->all();
 
+    $user_ID=$input['user_id'];
+           
+        $usersD = DB::table('users')
+                     ->select('applied_used_id')
+                     ->where('id', $user_ID)
+                     ->get();
+       
+
+   $allowrefer = DB::table('orders')->where('user_id', $user_ID )->where('order_status_id',5)->first();
+                 
+             //  print_r($allowrefer);
+            //   exit;
+
+    $sendersUSerID=$usersD[0]->applied_used_id;
+
+
+
+                   if(empty($allowrefer))
+                       {
+                         $allowreferD = DB::table('app_settings')->where('id', 184 )->get();
+                         
+$ammounttoadd=$allowreferD[0]->value;
+                         $ch = curl_init();
+
+curl_setopt($ch, CURLOPT_URL,"https://chefrome.com/grocery/public/api/wallet/add");
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS,
+            "user_id=$user_ID&amount=$ammounttoadd&added_via='ReferelCode'");
+
+// In real life you should use something like:
+// curl_setopt($ch, CURLOPT_POSTFIELDS, 
+//          http_build_query(array('postvar1' => 'value1')));
+
+// Receive server response ...
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+$server_output = curl_exec($ch);
+
+curl_close ($ch);
+
+    $ch = curl_init();
+
+curl_setopt($ch, CURLOPT_URL,"https://chefrome.com/grocery/public/api/wallet/add");
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS,
+            "user_id=$sendersUSerID&amount=$ammounttoadd&added_via='ReferelCode'");
+
+// In real life you should use something like:
+// curl_setopt($ch, CURLOPT_POSTFIELDS, 
+//          http_build_query(array('postvar1' => 'value1')));
+
+// Receive server response ...
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+$server_output = curl_exec($ch);
+
+curl_close ($ch);
+                         
+                         // Route::post('wallet/add','WalletController@wallet_add');
+                         
+                        
+                       }
+
+
+
         try {
             $order = $this->orderRepository->update($input, $id);
             if (isset($input['order_status_id']) && $input['order_status_id'] == 5 && !empty($order)) {
                 $this->paymentRepository->update(['status' => 'Paid'], $order['payment_id']);
+                
+                
+            
+         
+            
+                
+                
+              
+               
+         
             }
             event(new OrderChangedEvent($oldStatus, $order));
 

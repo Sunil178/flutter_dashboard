@@ -1,0 +1,2 @@
+[05-Oct-2020 21:56:20 UTC] PHP Fatal error:  Class 'Illuminate\Support\Facades\Facade' not found in /home/chefrome/public_html/grocery/vendor/srmklive/paypal/src/Facades/PayPal.php on line 13
+[28-Oct-2020 10:42:00 UTC] PHP Fatal error:  Class 'Illuminate\Support\Facades\Facade' not found in /home/chefrome/public_html/grocery/vendor/srmklive/paypal/src/Facades/PayPal.php on line 13

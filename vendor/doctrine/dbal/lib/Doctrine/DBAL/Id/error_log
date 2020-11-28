@@ -1,0 +1,1 @@
+[10-Oct-2020 23:35:16 UTC] PHP Fatal error:  Interface 'Doctrine\DBAL\Schema\Visitor\Visitor' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Id/TableGeneratorSchemaVisitor.php on line 13

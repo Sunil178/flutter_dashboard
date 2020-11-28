@@ -1,0 +1,2 @@
+[29-Oct-2020 07:33:22 UTC] PHP Fatal error:  Class 'Illuminate\Database\Migrations\Migration' not found in /home/chefrome/public_html/grocery/vendor/anlutro/l4-settings/src/migrations/2015_08_25_172600_create_settings_table.php on line 8
+[21-Nov-2020 20:25:36 UTC] PHP Fatal error:  Class 'Illuminate\Database\Migrations\Migration' not found in /home/chefrome/public_html/grocery/vendor/anlutro/l4-settings/src/migrations/2015_08_25_172600_create_settings_table.php on line 8

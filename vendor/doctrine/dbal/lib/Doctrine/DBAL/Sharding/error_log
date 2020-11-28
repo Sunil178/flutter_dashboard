@@ -1,0 +1,3 @@
+[10-Oct-2020 21:37:46 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\DBALException' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Sharding/ShardingException.php on line 12
+[10-Oct-2020 23:37:50 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\Connection' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Sharding/PoolingShardConnection.php on line 51
+[10-Oct-2020 23:37:52 UTC] PHP Fatal error:  Interface 'Doctrine\DBAL\Sharding\ShardManager' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Sharding/PoolingShardManager.php on line 11

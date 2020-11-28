@@ -1,0 +1,1 @@
+[05-Oct-2020 22:41:44 UTC] PHP Fatal error:  Trait 'Illuminate\Support\Traits\Macroable' not found in /home/chefrome/public_html/grocery/vendor/spatie/laravel-medialibrary/src/MediaCollection/MediaCollection.php on line 10

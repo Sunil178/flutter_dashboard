@@ -1,0 +1,2 @@
+[05-Oct-2020 18:50:13 UTC] PHP Fatal error:  Trait 'Srmklive\PayPal\Traits\PayPalHttpClient' not found in /home/chefrome/public_html/grocery/vendor/srmklive/paypal/src/Traits/PayPalRequest.php on line 15
+[28-Oct-2020 10:42:29 UTC] PHP Fatal error:  Trait 'Srmklive\PayPal\Traits\PayPalHttpClient' not found in /home/chefrome/public_html/grocery/vendor/srmklive/paypal/src/Traits/PayPalRequest.php on line 15

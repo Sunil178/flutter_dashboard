@@ -1,0 +1,4 @@
+[05-Oct-2020 20:32:47 UTC] PHP Fatal error:  Class 'Dotenv\Regex\Result' not found in /home/chefrome/public_html/grocery/vendor/vlucas/phpdotenv/src/Regex/Error.php on line 8
+[05-Oct-2020 20:33:11 UTC] PHP Fatal error:  Class 'Dotenv\Regex\Result' not found in /home/chefrome/public_html/grocery/vendor/vlucas/phpdotenv/src/Regex/Success.php on line 8
+[30-Oct-2020 00:14:52 UTC] PHP Fatal error:  Class 'Dotenv\Regex\Result' not found in /home/chefrome/public_html/grocery/vendor/vlucas/phpdotenv/src/Regex/Error.php on line 8
+[30-Oct-2020 00:15:00 UTC] PHP Fatal error:  Class 'Dotenv\Regex\Result' not found in /home/chefrome/public_html/grocery/vendor/vlucas/phpdotenv/src/Regex/Success.php on line 8

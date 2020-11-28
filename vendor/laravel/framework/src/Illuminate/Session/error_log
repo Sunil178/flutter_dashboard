@@ -1,0 +1,6 @@
+[06-Oct-2020 16:29:37 UTC] PHP Fatal error:  Trait 'Illuminate\Support\InteractsWithTime' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Session/DatabaseSessionHandler.php on line 16
+[06-Oct-2020 16:29:40 UTC] PHP Fatal error:  Class 'Illuminate\Session\Store' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Session/EncryptedStore.php on line 9
+[06-Oct-2020 16:29:55 UTC] PHP Fatal error:  Class 'Illuminate\Support\Manager' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Session/SessionManager.php on line 7
+[06-Oct-2020 16:29:59 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Session/SessionServiceProvider.php on line 8
+[06-Oct-2020 16:30:02 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Session\Session' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Session/Store.php on line 12
+[06-Oct-2020 18:20:00 UTC] PHP Fatal error:  Trait 'Illuminate\Support\InteractsWithTime' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Session/CookieSessionHandler.php on line 12

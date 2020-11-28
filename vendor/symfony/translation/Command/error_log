@@ -1,0 +1,2 @@
+[02-Oct-2020 20:55:22 UTC] PHP Fatal error:  Class 'Symfony\Component\Console\Command\Command' not found in /home/chefrome/public_html/grocery/vendor/symfony/translation/Command/XliffLintCommand.php on line 31
+[27-Oct-2020 00:00:50 UTC] PHP Fatal error:  Class 'Symfony\Component\Console\Command\Command' not found in /home/chefrome/public_html/grocery/vendor/symfony/translation/Command/XliffLintCommand.php on line 31

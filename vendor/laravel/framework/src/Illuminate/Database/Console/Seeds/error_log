@@ -1,0 +1,2 @@
+[10-Oct-2020 10:27:21 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php on line 11
+[10-Oct-2020 10:27:23 UTC] PHP Fatal error:  Class 'Illuminate\Console\GeneratorCommand' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeederMakeCommand.php on line 9

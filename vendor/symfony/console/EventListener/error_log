@@ -1,0 +1,2 @@
+[03-Oct-2020 03:59:02 UTC] PHP Fatal error:  Interface 'Symfony\Component\EventDispatcher\EventSubscriberInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/console/EventListener/ErrorListener.php on line 25
+[26-Oct-2020 20:37:49 UTC] PHP Fatal error:  Interface 'Symfony\Component\EventDispatcher\EventSubscriberInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/console/EventListener/ErrorListener.php on line 25

@@ -1,0 +1,3 @@
+[29-Oct-2020 15:50:53 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\Provider\NodeProviderInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/Provider/Node/FallbackNodeProvider.php on line 25
+[29-Oct-2020 15:50:57 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\Provider\NodeProviderInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/Provider/Node/RandomNodeProvider.php on line 26
+[29-Oct-2020 15:51:03 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\Provider\NodeProviderInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/Provider/Node/SystemNodeProvider.php on line 23

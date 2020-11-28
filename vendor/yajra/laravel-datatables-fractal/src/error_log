@@ -1,0 +1,2 @@
+[02-Oct-2020 20:21:31 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/yajra/laravel-datatables-fractal/src/FractalServiceProvider.php on line 11
+[28-Oct-2020 17:08:43 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/yajra/laravel-datatables-fractal/src/FractalServiceProvider.php on line 11

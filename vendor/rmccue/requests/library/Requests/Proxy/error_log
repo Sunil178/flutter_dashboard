@@ -1,0 +1,1 @@
+[29-Oct-2020 15:53:04 UTC] PHP Fatal error:  Interface 'Requests_Proxy' not found in /home/chefrome/public_html/grocery/vendor/rmccue/requests/library/Requests/Proxy/HTTP.php on line 19

@@ -1,0 +1,2 @@
+[03-Oct-2020 04:07:03 UTC] PHP Fatal error:  Class 'Psr\Log\AbstractLogger' not found in /home/chefrome/public_html/grocery/vendor/symfony/console/Logger/ConsoleLogger.php on line 27
+[26-Oct-2020 20:50:51 UTC] PHP Fatal error:  Class 'Psr\Log\AbstractLogger' not found in /home/chefrome/public_html/grocery/vendor/symfony/console/Logger/ConsoleLogger.php on line 27

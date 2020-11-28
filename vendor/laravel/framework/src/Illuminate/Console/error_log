@@ -1,0 +1,4 @@
+[06-Oct-2020 18:12:27 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Console/GeneratorCommand.php on line 9
+[06-Oct-2020 18:12:48 UTC] PHP Fatal error:  Class 'Symfony\Component\Console\Style\SymfonyStyle' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Console/OutputStyle.php on line 9
+[07-Oct-2020 01:33:32 UTC] PHP Fatal error:  Class 'Symfony\Component\Console\Application' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Console/Application.php on line 23
+[07-Oct-2020 02:28:06 UTC] PHP Fatal error:  Class 'Symfony\Component\Console\Command\Command' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Console/Command.php on line 18

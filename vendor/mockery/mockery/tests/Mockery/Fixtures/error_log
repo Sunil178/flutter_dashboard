@@ -1,0 +1,10 @@
+[10-Oct-2020 08:26:09 UTC] PHP Fatal error:  Class 'PHPUnit_Framework_TestCase' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/tests/Mockery/Fixtures/EmptyTestCaseV5.php on line 24
+[10-Oct-2020 08:26:23 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\TestCase' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/tests/Mockery/Fixtures/EmptyTestCaseV6.php on line 27
+[10-Oct-2020 08:26:35 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\TestCase' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/tests/Mockery/Fixtures/EmptyTestCaseV7.php on line 27
+[10-Oct-2020 08:26:52 UTC] PHP Parse error:  syntax error, unexpected 'namespace' (T_NAMESPACE) in /home/chefrome/public_html/grocery/vendor/mockery/mockery/tests/Mockery/Fixtures/MethodWithHHVMReturnType.php on line 22
+[10-Oct-2020 08:27:04 UTC] PHP Fatal error:  Class 'Mockery\Adapter\Phpunit\MockeryTestCase' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/tests/Mockery/Fixtures/MethodWithNullableReturnType.php on line 26
+[30-Oct-2020 05:55:33 UTC] PHP Fatal error:  Class 'PHPUnit_Framework_TestCase' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/tests/Mockery/Fixtures/EmptyTestCaseV5.php on line 24
+[30-Oct-2020 05:55:35 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\TestCase' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/tests/Mockery/Fixtures/EmptyTestCaseV6.php on line 27
+[30-Oct-2020 05:55:38 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\TestCase' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/tests/Mockery/Fixtures/EmptyTestCaseV7.php on line 27
+[30-Oct-2020 05:55:40 UTC] PHP Parse error:  syntax error, unexpected 'namespace' (T_NAMESPACE) in /home/chefrome/public_html/grocery/vendor/mockery/mockery/tests/Mockery/Fixtures/MethodWithHHVMReturnType.php on line 22
+[30-Oct-2020 05:55:43 UTC] PHP Fatal error:  Class 'Mockery\Adapter\Phpunit\MockeryTestCase' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/tests/Mockery/Fixtures/MethodWithNullableReturnType.php on line 26

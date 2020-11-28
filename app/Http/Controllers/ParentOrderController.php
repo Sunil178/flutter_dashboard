@@ -111,7 +111,7 @@ abstract class ParentOrderController extends Controller
     /**
      * @return float
      */
-    protected function calculateTotal(): float
+    protected function calculateTotal($payment_method): float
     {
         $carts = $this->order->user->cart;
         foreach ($carts as $_cart) {
@@ -123,7 +123,7 @@ abstract class ParentOrderController extends Controller
         }
         $this->subtotal = $this->total;
 
-        $this->calculateDeliveryFee();
+        $this->calculateDeliveryFee($payment_method);
         $this->calculateTaxFee();
 
         $this->total = round($this->total, 2);
@@ -134,12 +134,20 @@ abstract class ParentOrderController extends Controller
     /**
      * calculate the total of order with delivery fee
      */
-    protected function calculateDeliveryFee(): void
+    protected function calculateDeliveryFee($payment_method): void
     {
         try {
             $carts = $this->order->user->cart;
             $this->order->delivery_fee = $carts[0]->product->market->delivery_fee;
-            $this->total += $this->order->delivery_fee;
+            if($payment_method==0)
+            {
+                 $this->total ;
+            }
+            else
+            {
+                $this->total += $this->order->delivery_fee;
+            }
+            
         } catch (Exception $exception) {
             Log::error($exception->getMessage());
         }
@@ -153,8 +161,11 @@ abstract class ParentOrderController extends Controller
         try {
             $carts = $this->order->user->cart;
             if (empty($carts[0]->product->market->default_tax)) {
-                $this->order->tax = setting('default_tax', 0);
+                
+             
+                $this->order->tax = $carts[0]->product->market->default_tax;
             } else {
+               
                 $this->order->tax = $carts[0]->product->market->default_tax;
             }
             $this->total += $this->total * ($this->order->tax / 100);

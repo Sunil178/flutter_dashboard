@@ -1,0 +1,2 @@
+[03-Oct-2020 02:51:13 UTC] PHP Fatal error:  Class 'Symfony\Component\Config\FileLocator' not found in /home/chefrome/public_html/grocery/vendor/symfony/http-kernel/Config/FileLocator.php on line 22
+[26-Oct-2020 19:26:35 UTC] PHP Fatal error:  Class 'Symfony\Component\Config\FileLocator' not found in /home/chefrome/public_html/grocery/vendor/symfony/http-kernel/Config/FileLocator.php on line 22

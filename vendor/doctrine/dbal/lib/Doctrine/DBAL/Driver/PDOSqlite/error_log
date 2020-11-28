@@ -1,0 +1,1 @@
+[11-Oct-2020 06:24:02 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\Driver\AbstractSQLiteDriver' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOSqlite/Driver.php on line 15

@@ -1,0 +1,2 @@
+[05-Oct-2020 19:08:36 UTC] PHP Fatal error:  Class 'Swift_Mime_SimpleMimeEntity' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/tests/fixtures/MimeEntityFixture.php on line 3
+[27-Oct-2020 23:15:35 UTC] PHP Fatal error:  Class 'Swift_Mime_SimpleMimeEntity' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/tests/fixtures/MimeEntityFixture.php on line 3

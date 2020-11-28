@@ -1,0 +1,4 @@
+[07-Oct-2020 14:37:58 UTC] PHP Fatal error:  Trait 'Illuminate\Bus\Queueable' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Notifications/Events/BroadcastNotificationCreated.php on line 12
+[07-Oct-2020 14:38:01 UTC] PHP Fatal error:  Trait 'Illuminate\Bus\Queueable' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Notifications/Events/NotificationFailed.php on line 10
+[07-Oct-2020 14:38:11 UTC] PHP Fatal error:  Trait 'Illuminate\Bus\Queueable' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Notifications/Events/NotificationSending.php on line 10
+[07-Oct-2020 14:38:18 UTC] PHP Fatal error:  Trait 'Illuminate\Bus\Queueable' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Notifications/Events/NotificationSent.php on line 10

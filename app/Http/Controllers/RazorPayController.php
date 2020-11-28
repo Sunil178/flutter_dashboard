@@ -51,17 +51,21 @@ class RazorPayController extends ParentOrderController
 
     public function checkout(Request $request)
     {
+        
+        
+       
         try{
             $user = $this->userRepository->findByField('api_token', $request->get('api_token'))->first();
             $coupon = $this->couponRepository->findByField('code', $request->get('coupon_code'))->first();
             $deliveryId = $request->get('delivery_address_id');
             $deliveryAddress = $this->deliveryAddressRepo->findWithoutFail($deliveryId);
+            $payment_method=$request->get('_delivery_or_pickup');
             if (!empty($user)) {
                 $this->order->user = $user;
                 $this->order->user_id = $user->id;
                 $this->order->delivery_address_id = $deliveryId;
                 $this->coupon = $coupon;
-                $razorPayCart = $this->getOrderData();
+                $razorPayCart = $this->getOrderData($payment_method);
 
                 $razorPayOrder = $this->api->order->create($razorPayCart);
                 $fields = $this->getRazorPayFields($razorPayOrder, $user, $deliveryAddress);
@@ -96,7 +100,7 @@ class RazorPayController extends ParentOrderController
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function paySuccess(int $userId, int $deliveryAddressId,string $couponCode, Request $request)
+    public function paySuccess(int $userId, int $deliveryAddressId,string $couponCode = null, Request $request)
     {
         $data = $request->all();
 
@@ -131,10 +135,10 @@ class RazorPayController extends ParentOrderController
      *
      * @return array
      */
-    private function getOrderData()
+    private function getOrderData($payment_method)
     {
         $data = [];
-        $this->calculateTotal();
+        $this->calculateTotal($payment_method);
         $amountINR = $this->total;
         if ($this->currency !== 'INR') {
             $url = "https://api.exchangeratesapi.io/latest?symbols=$this->currency&base=INR";

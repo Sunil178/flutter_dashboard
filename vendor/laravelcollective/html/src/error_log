@@ -1,0 +1,10 @@
+[03-Oct-2020 13:29:45 UTC] PHP Fatal error:  Class 'Illuminate\Support\Facades\Facade' not found in /home/chefrome/public_html/grocery/vendor/laravelcollective/html/src/FormFacade.php on line 10
+[03-Oct-2020 13:30:06 UTC] PHP Fatal error:  Trait 'Illuminate\Support\Traits\Macroable' not found in /home/chefrome/public_html/grocery/vendor/laravelcollective/html/src/HtmlBuilder.php on line 13
+[03-Oct-2020 13:30:31 UTC] PHP Fatal error:  Class 'Illuminate\Support\Facades\Facade' not found in /home/chefrome/public_html/grocery/vendor/laravelcollective/html/src/HtmlFacade.php on line 10
+[03-Oct-2020 13:30:54 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravelcollective/html/src/HtmlServiceProvider.php on line 10
+[03-Oct-2020 20:19:20 UTC] PHP Fatal error:  Trait 'Illuminate\Support\Traits\Macroable' not found in /home/chefrome/public_html/grocery/vendor/laravelcollective/html/src/FormBuilder.php on line 20
+[29-Oct-2020 00:45:18 UTC] PHP Fatal error:  Trait 'Illuminate\Support\Traits\Macroable' not found in /home/chefrome/public_html/grocery/vendor/laravelcollective/html/src/FormBuilder.php on line 20
+[29-Oct-2020 00:45:19 UTC] PHP Fatal error:  Class 'Illuminate\Support\Facades\Facade' not found in /home/chefrome/public_html/grocery/vendor/laravelcollective/html/src/FormFacade.php on line 10
+[29-Oct-2020 00:45:21 UTC] PHP Fatal error:  Trait 'Illuminate\Support\Traits\Macroable' not found in /home/chefrome/public_html/grocery/vendor/laravelcollective/html/src/HtmlBuilder.php on line 13
+[29-Oct-2020 00:45:23 UTC] PHP Fatal error:  Class 'Illuminate\Support\Facades\Facade' not found in /home/chefrome/public_html/grocery/vendor/laravelcollective/html/src/HtmlFacade.php on line 10
+[29-Oct-2020 00:45:25 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravelcollective/html/src/HtmlServiceProvider.php on line 10

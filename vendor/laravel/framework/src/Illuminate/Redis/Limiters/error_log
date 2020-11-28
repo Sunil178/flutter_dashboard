@@ -1,0 +1,2 @@
+[07-Oct-2020 14:45:16 UTC] PHP Fatal error:  Trait 'Illuminate\Support\InteractsWithTime' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Redis/Limiters/ConcurrencyLimiterBuilder.php on line 10
+[07-Oct-2020 14:45:20 UTC] PHP Fatal error:  Trait 'Illuminate\Support\InteractsWithTime' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Redis/Limiters/DurationLimiterBuilder.php on line 10

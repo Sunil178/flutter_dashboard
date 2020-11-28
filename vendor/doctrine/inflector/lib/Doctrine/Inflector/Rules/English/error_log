@@ -1,0 +1,1 @@
+[11-Oct-2020 06:47:28 UTC] PHP Fatal error:  Class 'Doctrine\Inflector\GenericLanguageInflectorFactory' not found in /home/chefrome/public_html/grocery/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/English/InflectorFactory.php on line 10

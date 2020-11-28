@@ -1,0 +1,3 @@
+[27-Oct-2020 23:05:26 UTC] PHP Fatal error:  Interface 'Psy\VersionUpdater\Checker' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/VersionUpdater/GitHubChecker.php on line 16
+[27-Oct-2020 23:05:29 UTC] PHP Fatal error:  Class 'Psy\VersionUpdater\GitHubChecker' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/VersionUpdater/IntervalChecker.php on line 14
+[27-Oct-2020 23:05:32 UTC] PHP Fatal error:  Interface 'Psy\VersionUpdater\Checker' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/VersionUpdater/NoopChecker.php on line 19

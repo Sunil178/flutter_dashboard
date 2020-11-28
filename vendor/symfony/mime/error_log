@@ -1,0 +1,11 @@
+[02-Oct-2020 00:41:41 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Message' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Email.php on line 25
+[02-Oct-2020 00:41:49 UTC] PHP Fatal error:  Interface 'Symfony\Component\Mime\MimeTypeGuesserInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/FileBinaryMimeTypeGuesser.php on line 22
+[02-Oct-2020 00:42:01 UTC] PHP Fatal error:  Interface 'Symfony\Component\Mime\MimeTypeGuesserInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/FileinfoMimeTypeGuesser.php on line 22
+[02-Oct-2020 00:42:13 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\RawMessage' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Message.php on line 22
+[02-Oct-2020 00:42:47 UTC] PHP Fatal error:  Interface 'Symfony\Component\Mime\MimeTypeGuesserInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/MimeTypesInterface.php on line 17
+[25-Oct-2020 05:13:42 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Message' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Email.php on line 25
+[25-Oct-2020 05:13:44 UTC] PHP Fatal error:  Interface 'Symfony\Component\Mime\MimeTypeGuesserInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/FileBinaryMimeTypeGuesser.php on line 22
+[25-Oct-2020 05:13:46 UTC] PHP Fatal error:  Interface 'Symfony\Component\Mime\MimeTypeGuesserInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/FileinfoMimeTypeGuesser.php on line 22
+[25-Oct-2020 05:13:49 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\RawMessage' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Message.php on line 22
+[25-Oct-2020 05:13:54 UTC] PHP Fatal error:  Interface 'Symfony\Component\Mime\MimeTypesInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/MimeTypes.php on line 37
+[25-Oct-2020 05:13:56 UTC] PHP Fatal error:  Interface 'Symfony\Component\Mime\MimeTypeGuesserInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/MimeTypesInterface.php on line 17

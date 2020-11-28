@@ -75,6 +75,10 @@ class Market extends Model implements HasMedia
         'closed',
         'information',
         'active',
+        'close_time',
+        'open_time',
+        'open_days',
+        'delivery_time'
     ];
 
     /**

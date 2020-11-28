@@ -1,0 +1,1 @@
+[10-Oct-2020 21:53:47 UTC] PHP Fatal error:  Interface 'Intervention\Image\Filters\FilterInterface' not found in /home/chefrome/public_html/grocery/vendor/intervention/image/src/Intervention/Image/Filters/DemoFilter.php on line 7

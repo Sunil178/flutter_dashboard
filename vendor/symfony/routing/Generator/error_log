@@ -1,0 +1,6 @@
+[02-Oct-2020 20:48:34 UTC] PHP Fatal error:  Class 'Symfony\Component\Routing\Generator\UrlGenerator' not found in /home/chefrome/public_html/grocery/vendor/symfony/routing/Generator/CompiledUrlGenerator.php on line 21
+[02-Oct-2020 20:48:49 UTC] PHP Fatal error:  Interface 'Symfony\Component\Routing\Generator\UrlGeneratorInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/routing/Generator/UrlGenerator.php on line 28
+[02-Oct-2020 20:48:56 UTC] PHP Fatal error:  Interface 'Symfony\Component\Routing\RequestContextAwareInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/routing/Generator/UrlGeneratorInterface.php on line 32
+[26-Oct-2020 14:16:43 UTC] PHP Fatal error:  Class 'Symfony\Component\Routing\Generator\UrlGenerator' not found in /home/chefrome/public_html/grocery/vendor/symfony/routing/Generator/CompiledUrlGenerator.php on line 21
+[26-Oct-2020 14:16:56 UTC] PHP Fatal error:  Interface 'Symfony\Component\Routing\Generator\UrlGeneratorInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/routing/Generator/UrlGenerator.php on line 28
+[26-Oct-2020 14:17:01 UTC] PHP Fatal error:  Interface 'Symfony\Component\Routing\RequestContextAwareInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/routing/Generator/UrlGeneratorInterface.php on line 32

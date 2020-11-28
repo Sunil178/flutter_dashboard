@@ -1,0 +1,10 @@
+[26-Oct-2020 18:47:48 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Encoder\Base64Encoder' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Encoder/Base64ContentEncoder.php on line 19
+[26-Oct-2020 18:47:55 UTC] PHP Fatal error:  Interface 'Symfony\Component\Mime\Encoder\EncoderInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Encoder/Base64Encoder.php on line 17
+[26-Oct-2020 18:47:59 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Encoder\Base64Encoder' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Encoder/Base64MimeHeaderEncoder.php on line 17
+[26-Oct-2020 18:48:05 UTC] PHP Fatal error:  Interface 'Symfony\Component\Mime\Encoder\EncoderInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Encoder/ContentEncoderInterface.php on line 17
+[26-Oct-2020 18:48:09 UTC] PHP Fatal error:  Interface 'Symfony\Component\Mime\Encoder\ContentEncoderInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Encoder/EightBitContentEncoder.php on line 17
+[26-Oct-2020 18:48:17 UTC] PHP Fatal error:  Interface 'Symfony\Component\Mime\Encoder\AddressEncoderInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Encoder/IdnAddressEncoder.php on line 27
+[26-Oct-2020 18:48:28 UTC] PHP Fatal error:  Interface 'Symfony\Component\Mime\Encoder\ContentEncoderInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Encoder/QpContentEncoder.php on line 17
+[26-Oct-2020 18:48:34 UTC] PHP Fatal error:  Interface 'Symfony\Component\Mime\Encoder\EncoderInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Encoder/QpEncoder.php on line 19
+[26-Oct-2020 18:48:39 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Encoder\QpEncoder' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Encoder/QpMimeHeaderEncoder.php on line 17
+[26-Oct-2020 18:48:43 UTC] PHP Fatal error:  Interface 'Symfony\Component\Mime\Encoder\EncoderInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Encoder/Rfc2231Encoder.php on line 19

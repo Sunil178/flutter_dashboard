@@ -1,0 +1,4 @@
+[03-Oct-2020 04:21:06 UTC] PHP Fatal error:  Class 'Symfony\Component\HttpFoundation\File\File' not found in /home/chefrome/public_html/grocery/vendor/symfony/http-foundation/File/Stream.php on line 19
+[03-Oct-2020 04:21:16 UTC] PHP Fatal error:  Class 'Symfony\Component\HttpFoundation\File\File' not found in /home/chefrome/public_html/grocery/vendor/symfony/http-foundation/File/UploadedFile.php on line 32
+[26-Oct-2020 19:23:29 UTC] PHP Fatal error:  Class 'Symfony\Component\HttpFoundation\File\File' not found in /home/chefrome/public_html/grocery/vendor/symfony/http-foundation/File/Stream.php on line 19
+[26-Oct-2020 19:23:35 UTC] PHP Fatal error:  Class 'Symfony\Component\HttpFoundation\File\File' not found in /home/chefrome/public_html/grocery/vendor/symfony/http-foundation/File/UploadedFile.php on line 32

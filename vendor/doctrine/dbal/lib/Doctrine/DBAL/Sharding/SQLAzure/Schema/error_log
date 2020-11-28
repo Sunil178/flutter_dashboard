@@ -1,0 +1,1 @@
+[11-Oct-2020 14:27:45 UTC] PHP Fatal error:  Interface 'Doctrine\DBAL\Schema\Visitor\Visitor' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Sharding/SQLAzure/Schema/MultiTenantVisitor.php on line 34

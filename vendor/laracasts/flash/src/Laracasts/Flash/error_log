@@ -1,0 +1,5 @@
+[09-Oct-2020 02:07:15 UTC] PHP Fatal error:  Class 'Laracasts\Flash\Message' not found in /home/chefrome/public_html/grocery/vendor/laracasts/flash/src/Laracasts/Flash/OverlayMessage.php on line 5
+[09-Oct-2020 08:28:29 UTC] PHP Fatal error:  Class 'Illuminate\Support\Facades\Facade' not found in /home/chefrome/public_html/grocery/vendor/laracasts/flash/src/Laracasts/Flash/Flash.php on line 7
+[09-Oct-2020 08:28:34 UTC] PHP Fatal error:  Trait 'Illuminate\Support\Traits\Macroable' not found in /home/chefrome/public_html/grocery/vendor/laracasts/flash/src/Laracasts/Flash/FlashNotifier.php on line 9
+[09-Oct-2020 08:28:43 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laracasts/flash/src/Laracasts/Flash/FlashServiceProvider.php on line 7
+[09-Oct-2020 08:28:50 UTC] PHP Fatal error:  Interface 'Laracasts\Flash\SessionStore' not found in /home/chefrome/public_html/grocery/vendor/laracasts/flash/src/Laracasts/Flash/LaravelSessionStore.php on line 7

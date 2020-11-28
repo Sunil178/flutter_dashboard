@@ -1,0 +1,12 @@
+[26-Nov-2020 14:55:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/chefrome/public_html/grocery/config/logging.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/config/logging.php on line 18
+[27-Nov-2020 01:07:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/chefrome/public_html/grocery/config/hashing.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/config/hashing.php on line 32
+[28-Nov-2020 00:49:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/chefrome/public_html/grocery/config/services.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/config/services.php on line 26

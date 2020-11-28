@@ -1,0 +1,10 @@
+[01-Oct-2020 17:49:38 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Categories/CategoriesOfFieldsCriteria.php on line 14
+[01-Oct-2020 17:49:41 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Categories/CategoriesOfMarketCriteria.php on line 14
+[01-Oct-2020 17:49:43 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Categories/HiddenCriteria.php on line 13
+[25-Oct-2020 23:40:16 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Categories/CategoriesOfFieldsCriteria.php on line 14
+[25-Oct-2020 23:40:23 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Categories/CategoriesOfMarketCriteria.php on line 14
+[25-Oct-2020 23:40:29 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Categories/HiddenCriteria.php on line 13
+[21-Nov-2020 08:48:00 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Categories/CategoriesOfMarketCriteria.php on line 14
+[22-Nov-2020 14:38:58 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Categories/HiddenCriteria.php on line 13
+[22-Nov-2020 23:50:34 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Categories/CategoriesOfFieldsCriteria.php on line 14
+[24-Nov-2020 10:06:44 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Categories/CategoriesOfMarketCriteria.php on line 14

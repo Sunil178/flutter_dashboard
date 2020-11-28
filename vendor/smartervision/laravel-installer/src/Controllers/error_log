@@ -1,0 +1,7 @@
+[28-Oct-2020 12:19:38 UTC] PHP Fatal error:  Class 'Illuminate\Routing\Controller' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-installer/src/Controllers/DatabaseController.php on line 8
+[28-Oct-2020 12:19:40 UTC] PHP Fatal error:  Class 'Illuminate\Routing\Controller' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-installer/src/Controllers/EnvironmentController.php on line 15
+[28-Oct-2020 12:19:42 UTC] PHP Fatal error:  Class 'Illuminate\Routing\Controller' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-installer/src/Controllers/FinalController.php on line 12
+[28-Oct-2020 12:19:45 UTC] PHP Fatal error:  Class 'Illuminate\Routing\Controller' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-installer/src/Controllers/PermissionsController.php on line 8
+[28-Oct-2020 12:19:47 UTC] PHP Fatal error:  Class 'Illuminate\Routing\Controller' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-installer/src/Controllers/RequirementsController.php on line 8
+[28-Oct-2020 12:19:49 UTC] PHP Fatal error:  Class 'Illuminate\Routing\Controller' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-installer/src/Controllers/UpdateController.php on line 10
+[28-Oct-2020 12:19:51 UTC] PHP Fatal error:  Class 'Illuminate\Routing\Controller' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-installer/src/Controllers/WelcomeController.php on line 7

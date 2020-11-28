@@ -1,0 +1,1 @@
+[02-Oct-2020 20:04:59 UTC] PHP Fatal error:  Class 'Psr\Log\AbstractLogger' not found in /home/chefrome/public_html/grocery/vendor/symfony/http-kernel/Log/Logger.php on line 23

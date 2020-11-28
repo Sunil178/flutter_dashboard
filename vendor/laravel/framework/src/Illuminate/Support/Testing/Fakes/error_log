@@ -1,0 +1,6 @@
+[10-Oct-2020 10:28:35 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Bus\Dispatcher' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/BusFake.php on line 8
+[10-Oct-2020 10:28:37 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Events\Dispatcher' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/EventFake.php on line 10
+[10-Oct-2020 10:28:39 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Mail\Mailer' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/MailFake.php on line 11
+[10-Oct-2020 10:28:41 UTC] PHP Fatal error:  Trait 'Illuminate\Support\Traits\Macroable' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/NotificationFake.php on line 15
+[10-Oct-2020 10:28:43 UTC] PHP Fatal error:  Class 'Illuminate\Mail\PendingMail' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/PendingMailFake.php on line 8
+[10-Oct-2020 10:28:46 UTC] PHP Fatal error:  Class 'Illuminate\Queue\QueueManager' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/QueueFake.php on line 10

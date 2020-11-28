@@ -1,0 +1,2 @@
+[10-Oct-2020 21:48:19 UTC] PHP Fatal error:  Class 'PhpParser\Node\Name' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/Node/Name/FullyQualified.php on line 5
+[10-Oct-2020 21:48:23 UTC] PHP Fatal error:  Class 'PhpParser\Node\Name' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/Node/Name/Relative.php on line 5

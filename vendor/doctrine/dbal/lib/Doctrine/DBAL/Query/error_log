@@ -1,0 +1,1 @@
+[10-Oct-2020 23:36:47 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\DBALException' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Query/QueryException.php on line 11

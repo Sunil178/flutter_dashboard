@@ -1,0 +1,1 @@
+[10-Oct-2020 21:35:53 UTC] PHP Fatal error:  Class 'Illuminate\Support\Facades\Facade' not found in /home/chefrome/public_html/grocery/vendor/maddhatter/laravel-fullcalendar/src/MaddHatter/LaravelFullcalendar/Facades/Calendar.php on line 5

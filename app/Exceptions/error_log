@@ -1,0 +1,9 @@
+[01-Oct-2020 10:07:12 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/chefrome/public_html/grocery/app/Exceptions/Handler.php on line 11
+[07-Oct-2020 16:19:38 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/chefrome/public_html/grocery/app/Exceptions/Handler.php on line 11
+[24-Oct-2020 09:29:40 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/chefrome/public_html/grocery/app/Exceptions/Handler.php on line 11
+[24-Oct-2020 21:46:24 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/chefrome/public_html/grocery/app/Exceptions/Handler.php on line 11
+[27-Oct-2020 20:10:54 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/chefrome/public_html/grocery/app/Exceptions/Handler.php on line 11
+[03-Nov-2020 23:05:59 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/chefrome/public_html/grocery/app/Exceptions/Handler.php on line 11
+[08-Nov-2020 18:39:52 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/chefrome/public_html/grocery/app/Exceptions/Handler.php on line 11
+[21-Nov-2020 07:13:02 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/chefrome/public_html/grocery/app/Exceptions/Handler.php on line 11
+[24-Nov-2020 07:17:09 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/chefrome/public_html/grocery/app/Exceptions/Handler.php on line 11

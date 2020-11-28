@@ -1,0 +1,2 @@
+[29-Oct-2020 00:46:13 UTC] PHP Fatal error:  Interface 'Psr\Log\LoggerInterface' not found in /home/chefrome/public_html/grocery/vendor/psr/log/Psr/Log/AbstractLogger.php on line 12
+[29-Oct-2020 00:47:27 UTC] PHP Fatal error:  Class 'Psr\Log\AbstractLogger' not found in /home/chefrome/public_html/grocery/vendor/psr/log/Psr/Log/NullLogger.php on line 13

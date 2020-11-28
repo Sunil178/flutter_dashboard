@@ -1,0 +1,4 @@
+[02-Oct-2020 20:05:08 UTC] PHP Fatal error:  Interface 'Symfony\Component\HttpKernel\Profiler\ProfilerStorageInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/http-kernel/Profiler/FileProfilerStorage.php on line 19
+[02-Oct-2020 20:05:12 UTC] PHP Fatal error:  Interface 'Symfony\Contracts\Service\ResetInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/http-kernel/Profiler/Profiler.php on line 28
+[26-Oct-2020 18:45:54 UTC] PHP Fatal error:  Interface 'Symfony\Component\HttpKernel\Profiler\ProfilerStorageInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/http-kernel/Profiler/FileProfilerStorage.php on line 19
+[26-Oct-2020 18:46:02 UTC] PHP Fatal error:  Interface 'Symfony\Contracts\Service\ResetInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/http-kernel/Profiler/Profiler.php on line 28

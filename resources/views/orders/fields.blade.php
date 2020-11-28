@@ -31,6 +31,7 @@
 
     <!-- Status Field -->
     <div class="form-group row ">
+       
         {!! Form::label('status', trans("lang.payment_status"),['class' => 'col-3 control-label text-right']) !!}
         <div class="col-9">
             {!! Form::select('status',

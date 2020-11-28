@@ -1,0 +1,7 @@
+[06-Oct-2020 08:29:28 UTC] PHP Fatal error:  Interface 'League\Flysystem\AdapterInterface' not found in /home/chefrome/public_html/grocery/vendor/league/flysystem/src/Adapter/AbstractAdapter.php on line 7
+[06-Oct-2020 08:29:40 UTC] PHP Fatal error:  Class 'League\Flysystem\Adapter\AbstractAdapter' not found in /home/chefrome/public_html/grocery/vendor/league/flysystem/src/Adapter/AbstractFtpAdapter.php on line 12
+[06-Oct-2020 08:30:00 UTC] PHP Fatal error:  Class 'League\Flysystem\Adapter\AbstractFtpAdapter' not found in /home/chefrome/public_html/grocery/vendor/league/flysystem/src/Adapter/Ftp.php on line 15
+[06-Oct-2020 08:30:14 UTC] PHP Fatal error:  Class 'League\Flysystem\Adapter\Ftp' not found in /home/chefrome/public_html/grocery/vendor/league/flysystem/src/Adapter/Ftpd.php on line 5
+[06-Oct-2020 08:30:26 UTC] PHP Fatal error:  Class 'League\Flysystem\Adapter\AbstractAdapter' not found in /home/chefrome/public_html/grocery/vendor/league/flysystem/src/Adapter/Local.php on line 18
+[06-Oct-2020 08:30:46 UTC] PHP Fatal error:  Class 'League\Flysystem\Adapter\AbstractAdapter' not found in /home/chefrome/public_html/grocery/vendor/league/flysystem/src/Adapter/NullAdapter.php on line 9
+[06-Oct-2020 08:31:26 UTC] PHP Fatal error:  Class 'League\Flysystem\Adapter\Ftpd' not found in /home/chefrome/public_html/grocery/vendor/league/flysystem/src/Adapter/SynologyFtp.php on line 5

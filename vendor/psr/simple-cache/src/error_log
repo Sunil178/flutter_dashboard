@@ -1,0 +1,2 @@
+[03-Oct-2020 02:34:16 UTC] PHP Fatal error:  Interface 'Psr\SimpleCache\CacheException' not found in /home/chefrome/public_html/grocery/vendor/psr/simple-cache/src/InvalidArgumentException.php on line 11
+[26-Oct-2020 22:22:13 UTC] PHP Fatal error:  Interface 'Psr\SimpleCache\CacheException' not found in /home/chefrome/public_html/grocery/vendor/psr/simple-cache/src/InvalidArgumentException.php on line 11

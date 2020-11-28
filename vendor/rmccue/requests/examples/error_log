@@ -1,0 +1,16 @@
+[26-Oct-2020 22:31:57 UTC] PHP Fatal error:  Uncaught Requests_Exception: cURL error 7: Failed to connect to 127.0.0.1 port 8080: Connection refused in /home/chefrome/public_html/grocery/vendor/rmccue/requests/library/Requests/Transport/cURL.php:422
+Stack trace:
+#0 /home/chefrome/public_html/grocery/vendor/rmccue/requests/library/Requests/Transport/cURL.php(177): Requests_Transport_cURL->process_response('', Array)
+#1 /home/chefrome/public_html/grocery/vendor/rmccue/requests/library/Requests.php(379): Requests_Transport_cURL->request('http://httpbin....', Array, NULL, Array)
+#2 /home/chefrome/public_html/grocery/vendor/rmccue/requests/library/Requests.php(231): Requests::request('http://httpbin....', Array, NULL, 'GET', Array)
+#3 /home/chefrome/public_html/grocery/vendor/rmccue/requests/examples/proxy.php(15): Requests::get('http://httpbin....', Array, Array)
+#4 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/rmccue/requests/library/Requests/Transport/cURL.php on line 422
+[26-Oct-2020 22:32:06 UTC] PHP Fatal error:  Uncaught Requests_Exception: cURL error 28: Operation timed out after 2500 milliseconds with 0 bytes received in /home/chefrome/public_html/grocery/vendor/rmccue/requests/library/Requests/Transport/cURL.php:422
+Stack trace:
+#0 /home/chefrome/public_html/grocery/vendor/rmccue/requests/library/Requests/Transport/cURL.php(177): Requests_Transport_cURL->process_response('', Array)
+#1 /home/chefrome/public_html/grocery/vendor/rmccue/requests/library/Requests.php(379): Requests_Transport_cURL->request('http://httpbin....', Array, NULL, Array)
+#2 /home/chefrome/public_html/grocery/vendor/rmccue/requests/library/Requests.php(231): Requests::request('http://httpbin....', Array, NULL, 'GET', Array)
+#3 /home/chefrome/public_html/grocery/vendor/rmccue/requests/examples/timeout.php(15): Requests::get('http://httpbin....', Array, Array)
+#4 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/rmccue/requests/library/Requests/Transport/cURL.php on line 422

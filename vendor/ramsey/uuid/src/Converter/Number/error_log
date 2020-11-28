@@ -1,0 +1,2 @@
+[30-Oct-2020 09:22:31 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\Converter\NumberConverterInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/Converter/Number/BigNumberConverter.php on line 24
+[30-Oct-2020 09:22:33 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\Converter\NumberConverterInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/Converter/Number/DegradedNumberConverter.php on line 25

@@ -1,0 +1,4 @@
+[06-Oct-2020 16:32:03 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Translation\Loader' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Translation/ArrayLoader.php on line 7
+[06-Oct-2020 16:32:07 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Translation\Loader' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Translation/FileLoader.php on line 9
+[06-Oct-2020 16:32:18 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Translation/TranslationServiceProvider.php on line 8
+[06-Oct-2020 16:32:22 UTC] PHP Fatal error:  Class 'Illuminate\Support\NamespacedItemResolver' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Translation/Translator.php on line 14

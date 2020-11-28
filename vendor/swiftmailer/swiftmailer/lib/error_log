@@ -1,0 +1,12 @@
+[03-Oct-2020 03:57:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Swift_Preferences' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/preferences.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/preferences.php on line 9
+[26-Oct-2020 21:05:33 UTC] PHP Fatal error:  Uncaught Error: Class 'Swift_Preferences' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/preferences.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/preferences.php on line 9
+[26-Oct-2020 21:20:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Swift_Preferences' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/preferences.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/preferences.php on line 9

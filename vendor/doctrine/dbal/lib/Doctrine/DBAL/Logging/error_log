@@ -1,0 +1,3 @@
+[10-Oct-2020 23:35:24 UTC] PHP Fatal error:  Interface 'Doctrine\DBAL\Logging\SQLLogger' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Logging/DebugStack.php on line 10
+[10-Oct-2020 23:35:26 UTC] PHP Fatal error:  Interface 'Doctrine\DBAL\Logging\SQLLogger' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Logging/EchoSQLLogger.php on line 11
+[10-Oct-2020 23:35:28 UTC] PHP Fatal error:  Interface 'Doctrine\DBAL\Logging\SQLLogger' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Logging/LoggerChain.php on line 8

@@ -1,0 +1,2 @@
+[31-Oct-2020 00:46:10 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/chefrome/public_html/grocery/app/Http/Controllers/API/Manager/MarketAPIController.php on line 35
+[31-Oct-2020 00:46:17 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/chefrome/public_html/grocery/app/Http/Controllers/API/Manager/UserAPIController.php on line 29

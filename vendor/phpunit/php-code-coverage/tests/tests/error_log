@@ -1,0 +1,9 @@
+[27-Oct-2020 21:35:55 UTC] PHP Fatal error:  Class 'SebastianBergmann\CodeCoverage\TestCase' not found in /home/chefrome/public_html/grocery/vendor/phpunit/php-code-coverage/tests/tests/BuilderTest.php on line 19
+[27-Oct-2020 21:36:01 UTC] PHP Fatal error:  Class 'SebastianBergmann\CodeCoverage\TestCase' not found in /home/chefrome/public_html/grocery/vendor/phpunit/php-code-coverage/tests/tests/CloverTest.php on line 18
+[27-Oct-2020 21:36:07 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\TestCase' not found in /home/chefrome/public_html/grocery/vendor/phpunit/php-code-coverage/tests/_files/BankAccountTest.php on line 6
+[27-Oct-2020 21:36:12 UTC] PHP Fatal error:  Class 'SebastianBergmann\CodeCoverage\TestCase' not found in /home/chefrome/public_html/grocery/vendor/phpunit/php-code-coverage/tests/tests/Crap4jTest.php on line 18
+[27-Oct-2020 21:36:17 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\TestCase' not found in /home/chefrome/public_html/grocery/vendor/phpunit/php-code-coverage/tests/tests/FilterTest.php on line 16
+[27-Oct-2020 21:36:23 UTC] PHP Fatal error:  Class 'SebastianBergmann\CodeCoverage\TestCase' not found in /home/chefrome/public_html/grocery/vendor/phpunit/php-code-coverage/tests/tests/HTMLTest.php on line 15
+[27-Oct-2020 21:36:27 UTC] PHP Fatal error:  Class 'SebastianBergmann\CodeCoverage\TestCase' not found in /home/chefrome/public_html/grocery/vendor/phpunit/php-code-coverage/tests/tests/TextTest.php on line 18
+[27-Oct-2020 21:36:32 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\TestCase' not found in /home/chefrome/public_html/grocery/vendor/phpunit/php-code-coverage/tests/tests/UtilTest.php on line 18
+[27-Oct-2020 21:36:36 UTC] PHP Fatal error:  Class 'SebastianBergmann\CodeCoverage\TestCase' not found in /home/chefrome/public_html/grocery/vendor/phpunit/php-code-coverage/tests/tests/XmlTest.php on line 15

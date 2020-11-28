@@ -1,0 +1,4 @@
+[03-Oct-2020 02:50:35 UTC] PHP Fatal error:  Trait 'Symfony\Component\DependencyInjection\ContainerAwareTrait' not found in /home/chefrome/public_html/grocery/vendor/symfony/http-kernel/Bundle/Bundle.php on line 27
+[03-Oct-2020 02:50:37 UTC] PHP Fatal error:  Interface 'Symfony\Component\DependencyInjection\ContainerAwareInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/http-kernel/Bundle/BundleInterface.php on line 23
+[26-Oct-2020 19:25:20 UTC] PHP Fatal error:  Trait 'Symfony\Component\DependencyInjection\ContainerAwareTrait' not found in /home/chefrome/public_html/grocery/vendor/symfony/http-kernel/Bundle/Bundle.php on line 27
+[26-Oct-2020 19:25:27 UTC] PHP Fatal error:  Interface 'Symfony\Component\DependencyInjection\ContainerAwareInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/http-kernel/Bundle/BundleInterface.php on line 23

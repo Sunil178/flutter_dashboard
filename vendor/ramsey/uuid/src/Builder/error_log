@@ -1,0 +1,2 @@
+[27-Oct-2020 23:09:04 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\Builder\UuidBuilderInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/Builder/DefaultUuidBuilder.php on line 25
+[27-Oct-2020 23:09:08 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\Builder\UuidBuilderInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/Builder/DegradedUuidBuilder.php on line 24

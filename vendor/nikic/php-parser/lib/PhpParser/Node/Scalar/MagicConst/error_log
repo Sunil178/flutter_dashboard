@@ -1,0 +1,8 @@
+[11-Oct-2020 05:35:04 UTC] PHP Fatal error:  Class 'PhpParser\Node\Scalar\MagicConst' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Class_.php on line 7
+[11-Oct-2020 05:35:06 UTC] PHP Fatal error:  Class 'PhpParser\Node\Scalar\MagicConst' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Dir.php on line 7
+[11-Oct-2020 05:35:09 UTC] PHP Fatal error:  Class 'PhpParser\Node\Scalar\MagicConst' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/File.php on line 7
+[11-Oct-2020 05:35:11 UTC] PHP Fatal error:  Class 'PhpParser\Node\Scalar\MagicConst' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Function_.php on line 7
+[11-Oct-2020 05:35:13 UTC] PHP Fatal error:  Class 'PhpParser\Node\Scalar\MagicConst' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Line.php on line 7
+[11-Oct-2020 05:35:15 UTC] PHP Fatal error:  Class 'PhpParser\Node\Scalar\MagicConst' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Method.php on line 7
+[11-Oct-2020 05:35:17 UTC] PHP Fatal error:  Class 'PhpParser\Node\Scalar\MagicConst' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Namespace_.php on line 7
+[11-Oct-2020 05:35:18 UTC] PHP Fatal error:  Class 'PhpParser\Node\Scalar\MagicConst' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Trait_.php on line 7

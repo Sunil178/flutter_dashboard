@@ -1,0 +1,1 @@
+[26-Oct-2020 19:12:55 UTC] PHP Fatal error:  Interface 'Symfony\Component\CssSelector\Parser\ParserInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/css-selector/Parser/Parser.php on line 28

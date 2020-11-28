@@ -1,0 +1,4 @@
+[10-Oct-2020 08:14:13 UTC] PHP Fatal error:  Interface 'DebugBar\DataFormatter\DataFormatterInterface' not found in /home/chefrome/public_html/grocery/vendor/maximebf/debugbar/src/DebugBar/DataFormatter/DataFormatter.php on line 16
+[10-Oct-2020 08:14:31 UTC] PHP Fatal error:  Interface 'DebugBar\DataCollector\AssetProvider' not found in /home/chefrome/public_html/grocery/vendor/maximebf/debugbar/src/DebugBar/DataFormatter/DebugBarVarDumper.php on line 17
+[30-Oct-2020 09:22:17 UTC] PHP Fatal error:  Interface 'DebugBar\DataFormatter\DataFormatterInterface' not found in /home/chefrome/public_html/grocery/vendor/maximebf/debugbar/src/DebugBar/DataFormatter/DataFormatter.php on line 16
+[30-Oct-2020 09:22:21 UTC] PHP Fatal error:  Interface 'DebugBar\DataCollector\AssetProvider' not found in /home/chefrome/public_html/grocery/vendor/maximebf/debugbar/src/DebugBar/DataFormatter/DebugBarVarDumper.php on line 17

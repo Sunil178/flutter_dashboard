@@ -1,0 +1,1 @@
+[28-Oct-2020 19:23:14 UTC] PHP Fatal error:  Class 'Prettus\Repository\Eloquent\BaseRepository' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-generator/src/Common/BaseRepository.php on line 8

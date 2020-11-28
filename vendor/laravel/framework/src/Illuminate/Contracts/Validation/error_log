@@ -1,0 +1,2 @@
+[09-Oct-2020 00:57:49 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Validation\Rule' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Contracts/Validation/ImplicitRule.php on line 5
+[09-Oct-2020 00:58:08 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Support\MessageProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Contracts/Validation/Validator.php on line 7

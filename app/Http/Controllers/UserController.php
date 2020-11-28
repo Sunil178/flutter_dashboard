@@ -336,4 +336,64 @@ class UserController extends Controller
             }
         }
     }
+    
+    
+    function referCodee(Request $req)
+     {
+         if($req->code){
+            
+         
+         $checkCode = DB::table('users')->where('user_refer_code', $req->code)->first();
+         
+          if(empty($checkCode)){
+            return [
+               'status' => false,
+               'msg' => 'Code not found',
+               'data' => []
+               ];
+          
+       }else{
+            
+                return [
+               'status' => true,
+               'msg' => 'Found Data',
+               'data' => $checkCode
+               ];
+       }
+         
+         }
+         else
+         
+         {
+              return [
+               'status' => false,
+               'msg' => 'EMPTY VALUE',
+               'data' => []
+               ];
+         }
+         
+         
+       
+         
+         
+     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

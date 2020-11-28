@@ -1,0 +1,2 @@
+[27-Oct-2020 21:26:06 UTC] PHP Fatal error:  Interface 'PhpOffice\PhpSpreadsheet\IComparable' not found in /home/chefrome/public_html/grocery/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Comment.php on line 7
+[22-Nov-2020 21:20:26 UTC] PHP Fatal error:  Interface 'PhpOffice\PhpSpreadsheet\IComparable' not found in /home/chefrome/public_html/grocery/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Comment.php on line 7

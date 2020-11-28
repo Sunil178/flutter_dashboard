@@ -1,0 +1,5 @@
+[30-Oct-2020 09:19:56 UTC] PHP Fatal error:  Class 'Matrix\Operators\Operator' not found in /home/chefrome/public_html/grocery/vendor/markbaker/matrix/classes/src/Operators/Addition.php on line 8
+[30-Oct-2020 09:19:58 UTC] PHP Fatal error:  Class 'Matrix\Operators\Operator' not found in /home/chefrome/public_html/grocery/vendor/markbaker/matrix/classes/src/Operators/DirectSum.php on line 8
+[30-Oct-2020 09:20:00 UTC] PHP Fatal error:  Class 'Matrix\Operators\Multiplication' not found in /home/chefrome/public_html/grocery/vendor/markbaker/matrix/classes/src/Operators/Division.php on line 9
+[30-Oct-2020 09:20:01 UTC] PHP Fatal error:  Class 'Matrix\Operators\Operator' not found in /home/chefrome/public_html/grocery/vendor/markbaker/matrix/classes/src/Operators/Multiplication.php on line 9
+[30-Oct-2020 09:20:06 UTC] PHP Fatal error:  Class 'Matrix\Operators\Operator' not found in /home/chefrome/public_html/grocery/vendor/markbaker/matrix/classes/src/Operators/Subtraction.php on line 8

@@ -1,0 +1,32 @@
+[05-Oct-2020 19:03:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Swift_DependencyContainer' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/dependency_maps/cache_deps.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/dependency_maps/cache_deps.php on line 3
+[05-Oct-2020 19:03:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Swift_DependencyContainer' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/dependency_maps/message_deps.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/dependency_maps/message_deps.php on line 3
+[05-Oct-2020 19:04:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Swift_DependencyContainer' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/dependency_maps/mime_deps.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/dependency_maps/mime_deps.php on line 5
+[05-Oct-2020 19:04:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Swift_DependencyContainer' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/dependency_maps/transport_deps.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/dependency_maps/transport_deps.php on line 3
+[27-Oct-2020 23:14:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Swift_DependencyContainer' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/dependency_maps/cache_deps.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/dependency_maps/cache_deps.php on line 3
+[27-Oct-2020 23:14:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Swift_DependencyContainer' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/dependency_maps/message_deps.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/dependency_maps/message_deps.php on line 3
+[27-Oct-2020 23:14:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Swift_DependencyContainer' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/dependency_maps/mime_deps.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/dependency_maps/mime_deps.php on line 5
+[27-Oct-2020 23:14:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Swift_DependencyContainer' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/dependency_maps/transport_deps.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/dependency_maps/transport_deps.php on line 3

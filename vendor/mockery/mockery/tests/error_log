@@ -1,0 +1,12 @@
+[03-Oct-2020 14:43:44 UTC] PHP Fatal error:  Uncaught Exception: Please run "php composer.phar install" in root directory to setup unit test dependencies before running the tests in /home/chefrome/public_html/grocery/vendor/mockery/mockery/tests/Bootstrap.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/mockery/mockery/tests/Bootstrap.php on line 45
+[27-Oct-2020 02:24:30 UTC] PHP Fatal error:  Uncaught Exception: Please run "php composer.phar install" in root directory to setup unit test dependencies before running the tests in /home/chefrome/public_html/grocery/vendor/mockery/mockery/tests/Bootstrap.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/mockery/mockery/tests/Bootstrap.php on line 45
+[26-Nov-2020 04:14:35 UTC] PHP Fatal error:  Uncaught Exception: Please run "php composer.phar install" in root directory to setup unit test dependencies before running the tests in /home/chefrome/public_html/grocery/vendor/mockery/mockery/tests/Bootstrap.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/mockery/mockery/tests/Bootstrap.php on line 45

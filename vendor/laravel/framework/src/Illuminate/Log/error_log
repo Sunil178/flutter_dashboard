@@ -1,0 +1,8 @@
+[06-Oct-2020 16:21:07 UTC] PHP Fatal error:  Trait 'Illuminate\Log\ParsesLogConfiguration' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Log/LogManager.php on line 22
+[06-Oct-2020 16:21:15 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Log/LogServiceProvider.php on line 7
+[06-Oct-2020 16:21:21 UTC] PHP Fatal error:  Interface 'Psr\Log\LoggerInterface' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Log/Logger.php on line 13
+[22-Nov-2020 05:56:41 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Log/LogServiceProvider.php on line 7
+[23-Nov-2020 03:07:30 UTC] PHP Fatal error:  Trait 'Illuminate\Log\ParsesLogConfiguration' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Log/LogManager.php on line 22
+[24-Nov-2020 10:39:51 UTC] PHP Fatal error:  Interface 'Psr\Log\LoggerInterface' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Log/Logger.php on line 13
+[25-Nov-2020 06:21:39 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Log/LogServiceProvider.php on line 7
+[26-Nov-2020 03:52:11 UTC] PHP Fatal error:  Trait 'Illuminate\Log\ParsesLogConfiguration' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Log/LogManager.php on line 22

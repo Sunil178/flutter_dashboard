@@ -1,0 +1,6 @@
+[09-Oct-2020 15:52:28 UTC] PHP Fatal error:  Interface 'PhpParser\Parser' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/Parser/Multiple.php on line 9
+[09-Oct-2020 15:52:42 UTC] PHP Fatal error:  Class 'PhpParser\ParserAbstract' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/Parser/Php5.php on line 18
+[09-Oct-2020 15:53:01 UTC] PHP Fatal error:  Class 'PhpParser\ParserAbstract' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/Parser/Php7.php on line 18
+[29-Oct-2020 19:09:30 UTC] PHP Fatal error:  Interface 'PhpParser\Parser' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/Parser/Multiple.php on line 9
+[29-Oct-2020 19:09:41 UTC] PHP Fatal error:  Class 'PhpParser\ParserAbstract' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/Parser/Php5.php on line 18
+[29-Oct-2020 19:09:56 UTC] PHP Fatal error:  Class 'PhpParser\ParserAbstract' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/Parser/Php7.php on line 18

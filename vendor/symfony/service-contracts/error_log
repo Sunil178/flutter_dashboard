@@ -1,0 +1,2 @@
+[01-Oct-2020 23:41:34 UTC] PHP Fatal error:  Interface 'Psr\Container\ContainerInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/service-contracts/ServiceProviderInterface.php on line 22
+[25-Oct-2020 04:00:28 UTC] PHP Fatal error:  Interface 'Psr\Container\ContainerInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/service-contracts/ServiceProviderInterface.php on line 22

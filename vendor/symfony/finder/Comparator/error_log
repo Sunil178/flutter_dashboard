@@ -1,0 +1,4 @@
+[03-Oct-2020 11:51:55 UTC] PHP Fatal error:  Class 'Symfony\Component\Finder\Comparator\Comparator' not found in /home/chefrome/public_html/grocery/vendor/symfony/finder/Comparator/DateComparator.php on line 19
+[03-Oct-2020 11:52:13 UTC] PHP Fatal error:  Class 'Symfony\Component\Finder\Comparator\Comparator' not found in /home/chefrome/public_html/grocery/vendor/symfony/finder/Comparator/NumberComparator.php on line 35
+[26-Oct-2020 19:20:11 UTC] PHP Fatal error:  Class 'Symfony\Component\Finder\Comparator\Comparator' not found in /home/chefrome/public_html/grocery/vendor/symfony/finder/Comparator/DateComparator.php on line 19
+[26-Oct-2020 19:20:16 UTC] PHP Fatal error:  Class 'Symfony\Component\Finder\Comparator\Comparator' not found in /home/chefrome/public_html/grocery/vendor/symfony/finder/Comparator/NumberComparator.php on line 35

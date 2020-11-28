@@ -1,0 +1,2 @@
+[29-Oct-2020 19:43:18 UTC] PHP Fatal error:  Interface 'Psr\SimpleCache\CacheInterface' not found in /home/chefrome/public_html/grocery/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Collection/Memory.php on line 13
+[25-Nov-2020 18:07:16 UTC] PHP Fatal error:  Interface 'Psr\SimpleCache\CacheInterface' not found in /home/chefrome/public_html/grocery/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Collection/Memory.php on line 13

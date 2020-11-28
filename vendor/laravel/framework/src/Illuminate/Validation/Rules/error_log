@@ -1,0 +1,2 @@
+[07-Oct-2020 14:54:37 UTC] PHP Fatal error:  Trait 'Illuminate\Validation\Rules\DatabaseRule' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Validation/Rules/Exists.php on line 7
+[07-Oct-2020 14:54:58 UTC] PHP Fatal error:  Trait 'Illuminate\Validation\Rules\DatabaseRule' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Validation/Rules/Unique.php on line 9

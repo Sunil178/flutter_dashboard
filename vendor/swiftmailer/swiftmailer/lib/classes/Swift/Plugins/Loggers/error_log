@@ -1,0 +1,2 @@
+[10-Oct-2020 21:37:13 UTC] PHP Fatal error:  Interface 'Swift_Plugins_Logger' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Loggers/ArrayLogger.php on line 16
+[10-Oct-2020 21:37:16 UTC] PHP Fatal error:  Interface 'Swift_Plugins_Logger' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Loggers/EchoLogger.php on line 16

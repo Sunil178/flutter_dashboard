@@ -1,0 +1,1 @@
+[10-Oct-2020 21:52:59 UTC] PHP Fatal error:  Class 'Illuminate\Support\Facades\Facade' not found in /home/chefrome/public_html/grocery/vendor/intervention/image/src/Intervention/Image/Facades/Image.php on line 13

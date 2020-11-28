@@ -1,0 +1,14 @@
+[07-Oct-2020 14:59:11 UTC] PHP Fatal error:  Class 'Stripe\Error\OAuth\OAuthBase' not found in /home/chefrome/public_html/grocery/vendor/stripe/stripe-php/lib/Error/OAuth/InvalidClient.php on line 8
+[07-Oct-2020 14:59:21 UTC] PHP Fatal error:  Class 'Stripe\Error\OAuth\OAuthBase' not found in /home/chefrome/public_html/grocery/vendor/stripe/stripe-php/lib/Error/OAuth/InvalidGrant.php on line 11
+[07-Oct-2020 14:59:25 UTC] PHP Fatal error:  Class 'Stripe\Error\OAuth\OAuthBase' not found in /home/chefrome/public_html/grocery/vendor/stripe/stripe-php/lib/Error/OAuth/InvalidRequest.php on line 9
+[07-Oct-2020 14:59:31 UTC] PHP Fatal error:  Class 'Stripe\Error\OAuth\OAuthBase' not found in /home/chefrome/public_html/grocery/vendor/stripe/stripe-php/lib/Error/OAuth/InvalidScope.php on line 8
+[07-Oct-2020 14:59:38 UTC] PHP Fatal error:  Class 'Stripe\Error\Base' not found in /home/chefrome/public_html/grocery/vendor/stripe/stripe-php/lib/Error/OAuth/OAuthBase.php on line 5
+[07-Oct-2020 14:59:47 UTC] PHP Fatal error:  Class 'Stripe\Error\OAuth\OAuthBase' not found in /home/chefrome/public_html/grocery/vendor/stripe/stripe-php/lib/Error/OAuth/UnsupportedGrantType.php on line 9
+[07-Oct-2020 14:59:55 UTC] PHP Fatal error:  Class 'Stripe\Error\OAuth\OAuthBase' not found in /home/chefrome/public_html/grocery/vendor/stripe/stripe-php/lib/Error/OAuth/UnsupportedResponseType.php on line 9
+[29-Oct-2020 16:25:58 UTC] PHP Fatal error:  Class 'Stripe\Error\OAuth\OAuthBase' not found in /home/chefrome/public_html/grocery/vendor/stripe/stripe-php/lib/Error/OAuth/InvalidClient.php on line 8
+[29-Oct-2020 16:26:01 UTC] PHP Fatal error:  Class 'Stripe\Error\OAuth\OAuthBase' not found in /home/chefrome/public_html/grocery/vendor/stripe/stripe-php/lib/Error/OAuth/InvalidGrant.php on line 11
+[29-Oct-2020 16:26:03 UTC] PHP Fatal error:  Class 'Stripe\Error\OAuth\OAuthBase' not found in /home/chefrome/public_html/grocery/vendor/stripe/stripe-php/lib/Error/OAuth/InvalidRequest.php on line 9
+[29-Oct-2020 16:26:06 UTC] PHP Fatal error:  Class 'Stripe\Error\OAuth\OAuthBase' not found in /home/chefrome/public_html/grocery/vendor/stripe/stripe-php/lib/Error/OAuth/InvalidScope.php on line 8
+[29-Oct-2020 16:26:09 UTC] PHP Fatal error:  Class 'Stripe\Error\Base' not found in /home/chefrome/public_html/grocery/vendor/stripe/stripe-php/lib/Error/OAuth/OAuthBase.php on line 5
+[29-Oct-2020 16:26:11 UTC] PHP Fatal error:  Class 'Stripe\Error\OAuth\OAuthBase' not found in /home/chefrome/public_html/grocery/vendor/stripe/stripe-php/lib/Error/OAuth/UnsupportedGrantType.php on line 9
+[29-Oct-2020 16:26:13 UTC] PHP Fatal error:  Class 'Stripe\Error\OAuth\OAuthBase' not found in /home/chefrome/public_html/grocery/vendor/stripe/stripe-php/lib/Error/OAuth/UnsupportedResponseType.php on line 9

@@ -1,0 +1,2 @@
+[02-Oct-2020 00:25:51 UTC] PHP Fatal error:  Class 'Psr\Log\AbstractLogger' not found in /home/chefrome/public_html/grocery/vendor/symfony/debug/BufferingLogger.php on line 25
+[25-Oct-2020 05:10:37 UTC] PHP Fatal error:  Class 'Psr\Log\AbstractLogger' not found in /home/chefrome/public_html/grocery/vendor/symfony/debug/BufferingLogger.php on line 25

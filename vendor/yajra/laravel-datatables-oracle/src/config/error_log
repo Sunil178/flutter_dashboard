@@ -1,0 +1,4 @@
+[30-Oct-2020 13:24:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/chefrome/public_html/grocery/vendor/yajra/laravel-datatables-oracle/src/config/datatables.php:79
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/yajra/laravel-datatables-oracle/src/config/datatables.php on line 79

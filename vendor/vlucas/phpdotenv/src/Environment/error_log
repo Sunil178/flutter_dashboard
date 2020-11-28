@@ -1,0 +1,6 @@
+[05-Oct-2020 20:30:36 UTC] PHP Fatal error:  Interface 'Dotenv\Environment\VariablesInterface' not found in /home/chefrome/public_html/grocery/vendor/vlucas/phpdotenv/src/Environment/AbstractVariables.php on line 13
+[05-Oct-2020 20:30:45 UTC] PHP Fatal error:  Interface 'Dotenv\Environment\FactoryInterface' not found in /home/chefrome/public_html/grocery/vendor/vlucas/phpdotenv/src/Environment/DotenvFactory.php on line 14
+[05-Oct-2020 20:30:53 UTC] PHP Fatal error:  Class 'Dotenv\Environment\AbstractVariables' not found in /home/chefrome/public_html/grocery/vendor/vlucas/phpdotenv/src/Environment/DotenvVariables.php on line 8
+[30-Oct-2020 13:17:14 UTC] PHP Fatal error:  Interface 'Dotenv\Environment\VariablesInterface' not found in /home/chefrome/public_html/grocery/vendor/vlucas/phpdotenv/src/Environment/AbstractVariables.php on line 13
+[30-Oct-2020 13:17:27 UTC] PHP Fatal error:  Interface 'Dotenv\Environment\FactoryInterface' not found in /home/chefrome/public_html/grocery/vendor/vlucas/phpdotenv/src/Environment/DotenvFactory.php on line 14
+[30-Oct-2020 13:17:39 UTC] PHP Fatal error:  Class 'Dotenv\Environment\AbstractVariables' not found in /home/chefrome/public_html/grocery/vendor/vlucas/phpdotenv/src/Environment/DotenvVariables.php on line 8

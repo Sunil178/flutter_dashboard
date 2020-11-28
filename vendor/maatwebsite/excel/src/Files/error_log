@@ -1,0 +1,4 @@
+[08-Oct-2020 18:15:15 UTC] PHP Fatal error:  Class 'Maatwebsite\Excel\Files\TemporaryFile' not found in /home/chefrome/public_html/grocery/vendor/maatwebsite/excel/src/Files/LocalTemporaryFile.php on line 5
+[08-Oct-2020 18:15:18 UTC] PHP Fatal error:  Class 'Maatwebsite\Excel\Files\TemporaryFile' not found in /home/chefrome/public_html/grocery/vendor/maatwebsite/excel/src/Files/RemoteTemporaryFile.php on line 5
+[29-Oct-2020 01:45:13 UTC] PHP Fatal error:  Class 'Maatwebsite\Excel\Files\TemporaryFile' not found in /home/chefrome/public_html/grocery/vendor/maatwebsite/excel/src/Files/LocalTemporaryFile.php on line 5
+[29-Oct-2020 01:45:17 UTC] PHP Fatal error:  Class 'Maatwebsite\Excel\Files\TemporaryFile' not found in /home/chefrome/public_html/grocery/vendor/maatwebsite/excel/src/Files/RemoteTemporaryFile.php on line 5

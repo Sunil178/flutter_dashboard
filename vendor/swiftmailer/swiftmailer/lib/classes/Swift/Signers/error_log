@@ -1,0 +1,6 @@
+[09-Oct-2020 16:12:01 UTC] PHP Fatal error:  Class 'Swift_Signers_DKIMSigner' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/OpenDKIMSigner.php on line 19
+[09-Oct-2020 16:12:26 UTC] PHP Fatal error:  Interface 'Swift_Signers_BodySigner' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/SMimeSigner.php on line 18
+[09-Oct-2020 22:13:19 UTC] PHP Fatal error:  Interface 'Swift_Signer' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/BodySigner.php on line 16
+[09-Oct-2020 22:13:21 UTC] PHP Fatal error:  Interface 'Swift_Signers_HeaderSigner' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/DKIMSigner.php on line 16
+[09-Oct-2020 22:13:24 UTC] PHP Fatal error:  Interface 'Swift_Signers_HeaderSigner' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/DomainKeySigner.php on line 16
+[09-Oct-2020 22:13:26 UTC] PHP Fatal error:  Interface 'Swift_Signer' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/HeaderSigner.php on line 16

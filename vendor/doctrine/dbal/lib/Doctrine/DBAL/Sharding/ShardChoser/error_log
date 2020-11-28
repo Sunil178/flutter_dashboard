@@ -1,0 +1,1 @@
+[11-Oct-2020 06:44:15 UTC] PHP Fatal error:  Interface 'Doctrine\DBAL\Sharding\ShardChoser\ShardChoser' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Sharding/ShardChoser/MultiTenantShardChoser.php on line 11

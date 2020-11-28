@@ -1,0 +1,1 @@
+[30-Oct-2020 13:21:33 UTC] PHP Fatal error:  Class 'Illuminate\Support\Facades\Facade' not found in /home/chefrome/public_html/grocery/vendor/yajra/laravel-datatables-oracle/src/Facades/DataTables.php on line 15

@@ -1,0 +1,4 @@
+[25-Nov-2020 03:25:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/chefrome/public_html/grocery/vendor/barryvdh/laravel-debugbar/config/debugbar.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/barryvdh/laravel-debugbar/config/debugbar.php on line 17

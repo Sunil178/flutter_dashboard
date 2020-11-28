@@ -1,0 +1,2 @@
+[05-Oct-2020 22:41:05 UTC] PHP Fatal error:  Trait 'Illuminate\Queue\InteractsWithQueue' not found in /home/chefrome/public_html/grocery/vendor/spatie/laravel-medialibrary/src/Jobs/GenerateResponsiveImages.php on line 14
+[05-Oct-2020 22:41:09 UTC] PHP Fatal error:  Trait 'Illuminate\Queue\InteractsWithQueue' not found in /home/chefrome/public_html/grocery/vendor/spatie/laravel-medialibrary/src/Jobs/PerformConversions.php on line 15

@@ -1,0 +1,12 @@
+[08-Oct-2020 17:51:36 UTC] PHP Fatal error:  Trait 'Carbon\Traits\Date' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/Carbon.php on line 511
+[08-Oct-2020 17:51:38 UTC] PHP Fatal error:  Trait 'Carbon\Traits\Date' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/CarbonImmutable.php on line 511
+[08-Oct-2020 17:51:42 UTC] PHP Fatal error:  Trait 'Carbon\Traits\Options' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/CarbonInterval.php on line 169
+[08-Oct-2020 17:51:44 UTC] PHP Fatal error:  Trait 'Carbon\Traits\Options' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/CarbonPeriod.php on line 181
+[08-Oct-2020 17:51:49 UTC] PHP Fatal error:  Class 'Carbon\Factory' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/FactoryImmutable.php on line 212
+[08-Oct-2020 17:51:53 UTC] PHP Fatal error:  Class 'Symfony\Component\Translation\Translator' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/Translator.php on line 18
+[27-Oct-2020 18:40:48 UTC] PHP Fatal error:  Trait 'Carbon\Traits\Date' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/Carbon.php on line 511
+[27-Oct-2020 18:40:57 UTC] PHP Fatal error:  Class 'Carbon\Factory' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/FactoryImmutable.php on line 212
+[27-Oct-2020 18:41:01 UTC] PHP Fatal error:  Class 'Symfony\Component\Translation\Translator' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/Translator.php on line 18
+[28-Oct-2020 09:14:20 UTC] PHP Fatal error:  Trait 'Carbon\Traits\Date' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/CarbonImmutable.php on line 511
+[28-Oct-2020 09:14:29 UTC] PHP Fatal error:  Trait 'Carbon\Traits\Options' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/CarbonInterval.php on line 169
+[28-Oct-2020 09:37:46 UTC] PHP Fatal error:  Trait 'Carbon\Traits\Options' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/CarbonPeriod.php on line 181

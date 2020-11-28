@@ -1,0 +1,9 @@
+[28-Oct-2020 09:50:56 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\Generator\RandomGeneratorInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/Generator/CombGenerator.php on line 28
+[28-Oct-2020 09:50:59 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\Generator\TimeGeneratorInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/Generator/DefaultTimeGenerator.php on line 30
+[28-Oct-2020 09:51:01 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\Generator\RandomGeneratorInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/Generator/MtRandGenerator.php on line 27
+[28-Oct-2020 09:51:04 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\Generator\RandomGeneratorInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/Generator/OpenSslGenerator.php on line 31
+[28-Oct-2020 09:51:08 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\Generator\RandomGeneratorInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/Generator/PeclUuidRandomGenerator.php on line 23
+[28-Oct-2020 09:51:11 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\Generator\TimeGeneratorInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/Generator/PeclUuidTimeGenerator.php on line 23
+[28-Oct-2020 09:51:14 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\Generator\RandomGeneratorInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/Generator/RandomBytesGenerator.php on line 26
+[28-Oct-2020 09:51:22 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\Generator\RandomGeneratorInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/Generator/RandomLibAdapter.php on line 26
+[28-Oct-2020 09:51:26 UTC] PHP Fatal error:  Interface 'Ramsey\Uuid\Generator\RandomGeneratorInterface' not found in /home/chefrome/public_html/grocery/vendor/ramsey/uuid/src/Generator/SodiumRandomGenerator.php on line 29

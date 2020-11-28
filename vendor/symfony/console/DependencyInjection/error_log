@@ -1,0 +1,2 @@
+[03-Oct-2020 03:58:17 UTC] PHP Fatal error:  Interface 'Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/console/DependencyInjection/AddConsoleCommandPass.php on line 27
+[26-Oct-2020 20:34:14 UTC] PHP Fatal error:  Interface 'Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/console/DependencyInjection/AddConsoleCommandPass.php on line 27

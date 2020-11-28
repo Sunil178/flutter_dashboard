@@ -1,0 +1,2 @@
+[03-Oct-2020 13:48:19 UTC] PHP Fatal error:  Interface 'League\Fractal\ScopeFactoryInterface' not found in /home/chefrome/public_html/grocery/vendor/league/fractal/src/ScopeFactory.php on line 16
+[29-Oct-2020 00:47:27 UTC] PHP Fatal error:  Interface 'League\Fractal\ScopeFactoryInterface' not found in /home/chefrome/public_html/grocery/vendor/league/fractal/src/ScopeFactory.php on line 16

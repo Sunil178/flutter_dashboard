@@ -1,0 +1,16 @@
+[02-Oct-2020 20:06:11 UTC] PHP Fatal error:  Interface 'Symfony\Component\Mime\Header\HeaderInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Header/AbstractHeader.php on line 21
+[02-Oct-2020 20:06:13 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Header\AbstractHeader' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Header/DateHeader.php on line 19
+[02-Oct-2020 20:06:19 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Header\AbstractHeader' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Header/IdentificationHeader.php on line 22
+[02-Oct-2020 20:06:21 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Header\AbstractHeader' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Header/MailboxHeader.php on line 22
+[02-Oct-2020 20:06:23 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Header\AbstractHeader' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Header/MailboxListHeader.php on line 22
+[02-Oct-2020 20:06:25 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Header\UnstructuredHeader' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Header/ParameterizedHeader.php on line 19
+[02-Oct-2020 20:06:27 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Header\AbstractHeader' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Header/PathHeader.php on line 22
+[02-Oct-2020 20:06:29 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Header\AbstractHeader' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Header/UnstructuredHeader.php on line 19
+[26-Oct-2020 18:49:49 UTC] PHP Fatal error:  Interface 'Symfony\Component\Mime\Header\HeaderInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Header/AbstractHeader.php on line 21
+[26-Oct-2020 18:49:58 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Header\AbstractHeader' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Header/DateHeader.php on line 19
+[26-Oct-2020 18:50:13 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Header\AbstractHeader' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Header/IdentificationHeader.php on line 22
+[26-Oct-2020 18:50:18 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Header\AbstractHeader' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Header/MailboxHeader.php on line 22
+[26-Oct-2020 18:50:23 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Header\AbstractHeader' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Header/MailboxListHeader.php on line 22
+[26-Oct-2020 18:50:30 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Header\UnstructuredHeader' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Header/ParameterizedHeader.php on line 19
+[26-Oct-2020 18:50:34 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Header\AbstractHeader' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Header/PathHeader.php on line 22
+[26-Oct-2020 18:50:44 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Header\AbstractHeader' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Header/UnstructuredHeader.php on line 19

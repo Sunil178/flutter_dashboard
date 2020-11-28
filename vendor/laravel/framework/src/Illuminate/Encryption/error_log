@@ -1,0 +1,2 @@
+[06-Oct-2020 16:16:20 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Encryption\Encrypter' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Encryption/Encrypter.php on line 10
+[06-Oct-2020 16:16:28 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php on line 9

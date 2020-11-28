@@ -1,0 +1,4 @@
+[29-Oct-2020 02:45:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function base_path() in /home/chefrome/public_html/grocery/vendor/themsaid/laravel-langman/config/langman.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/themsaid/laravel-langman/config/langman.php on line 14

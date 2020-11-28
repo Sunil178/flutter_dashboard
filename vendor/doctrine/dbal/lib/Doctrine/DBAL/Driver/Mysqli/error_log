@@ -1,0 +1,4 @@
+[11-Oct-2020 06:17:07 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\Driver\AbstractMySQLDriver' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/Mysqli/Driver.php on line 8
+[11-Oct-2020 06:17:26 UTC] PHP Fatal error:  Interface 'Doctrine\DBAL\Driver\Connection' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/Mysqli/MysqliConnection.php on line 30
+[11-Oct-2020 06:17:36 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\Driver\AbstractDriverException' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/Mysqli/MysqliException.php on line 12
+[11-Oct-2020 06:17:46 UTC] PHP Fatal error:  Interface 'Doctrine\DBAL\Driver\Statement' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/Mysqli/MysqliStatement.php on line 27

@@ -1,0 +1,2 @@
+[03-Oct-2020 12:55:13 UTC] PHP Fatal error:  Class 'Symfony\Component\ErrorHandler\Error\FatalError' not found in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Error/OutOfMemoryError.php on line 14
+[26-Oct-2020 19:16:09 UTC] PHP Fatal error:  Class 'Symfony\Component\ErrorHandler\Error\FatalError' not found in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Error/OutOfMemoryError.php on line 14

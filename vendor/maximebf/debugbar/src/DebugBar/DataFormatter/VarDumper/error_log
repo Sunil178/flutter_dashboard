@@ -1,0 +1,2 @@
+[10-Oct-2020 21:38:10 UTC] PHP Fatal error:  Class 'Symfony\Component\VarDumper\Dumper\HtmlDumper' not found in /home/chefrome/public_html/grocery/vendor/maximebf/debugbar/src/DebugBar/DataFormatter/VarDumper/DebugBarHtmlDumper.php on line 11
+[10-Oct-2020 21:38:13 UTC] PHP Fatal error:  Class 'Symfony\Component\VarDumper\Cloner\Data' not found in /home/chefrome/public_html/grocery/vendor/maximebf/debugbar/src/DebugBar/DataFormatter/VarDumper/SeekingData.php on line 15

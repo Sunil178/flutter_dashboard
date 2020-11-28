@@ -1,0 +1,17 @@
+[03-Oct-2020 20:17:49 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/cashier/src/CashierServiceProvider.php on line 7
+[03-Oct-2020 20:17:56 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/chefrome/public_html/grocery/vendor/laravel/cashier/src/Subscription.php on line 10
+[11-Oct-2020 05:24:37 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/chefrome/public_html/grocery/vendor/laravel/cashier/src/Subscription.php on line 10
+[11-Oct-2020 14:44:23 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/cashier/src/CashierServiceProvider.php on line 7
+[14-Oct-2020 11:07:17 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/cashier/src/CashierServiceProvider.php on line 7
+[28-Oct-2020 11:50:57 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/chefrome/public_html/grocery/vendor/laravel/cashier/src/Subscription.php on line 10
+[28-Oct-2020 19:06:12 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/cashier/src/CashierServiceProvider.php on line 7
+[29-Oct-2020 00:44:19 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/cashier/src/CashierServiceProvider.php on line 7
+[29-Oct-2020 00:44:25 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/chefrome/public_html/grocery/vendor/laravel/cashier/src/Subscription.php on line 10
+[31-Oct-2020 08:49:57 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/chefrome/public_html/grocery/vendor/laravel/cashier/src/Subscription.php on line 10
+[03-Nov-2020 14:49:34 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/cashier/src/CashierServiceProvider.php on line 7
+[12-Nov-2020 05:25:23 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/chefrome/public_html/grocery/vendor/laravel/cashier/src/Subscription.php on line 10
+[15-Nov-2020 06:47:49 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/chefrome/public_html/grocery/vendor/laravel/cashier/src/Subscription.php on line 10
+[18-Nov-2020 16:13:39 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/cashier/src/CashierServiceProvider.php on line 7
+[20-Nov-2020 15:09:37 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/chefrome/public_html/grocery/vendor/laravel/cashier/src/Subscription.php on line 10
+[20-Nov-2020 23:30:10 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/cashier/src/CashierServiceProvider.php on line 7
+[23-Nov-2020 15:06:32 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/chefrome/public_html/grocery/vendor/laravel/cashier/src/Subscription.php on line 10

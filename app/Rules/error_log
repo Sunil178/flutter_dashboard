@@ -1,0 +1,7 @@
+[22-Sep-2020 11:47:11 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Validation\Rule' not found in /home/chefrome/public_html/grocery/app/Rules/EarningAmount.php on line 7
+[01-Oct-2020 10:27:08 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Validation\Rule' not found in /home/chefrome/public_html/grocery/app/Rules/EarningAmount.php on line 7
+[04-Oct-2020 01:05:21 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Validation\Rule' not found in /home/chefrome/public_html/grocery/app/Rules/EarningAmount.php on line 7
+[07-Oct-2020 02:09:17 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Validation\Rule' not found in /home/chefrome/public_html/grocery/app/Rules/EarningAmount.php on line 7
+[18-Oct-2020 16:18:02 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Validation\Rule' not found in /home/chefrome/public_html/grocery/app/Rules/EarningAmount.php on line 7
+[24-Oct-2020 09:33:53 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Validation\Rule' not found in /home/chefrome/public_html/grocery/app/Rules/EarningAmount.php on line 7
+[02-Nov-2020 03:45:42 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Validation\Rule' not found in /home/chefrome/public_html/grocery/app/Rules/EarningAmount.php on line 7

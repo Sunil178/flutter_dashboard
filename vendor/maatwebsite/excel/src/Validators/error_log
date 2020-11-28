@@ -1,0 +1,4 @@
+[08-Oct-2020 18:19:11 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Support\Arrayable' not found in /home/chefrome/public_html/grocery/vendor/maatwebsite/excel/src/Validators/Failure.php on line 7
+[08-Oct-2020 18:19:17 UTC] PHP Fatal error:  Class 'Illuminate\Validation\ValidationException' not found in /home/chefrome/public_html/grocery/vendor/maatwebsite/excel/src/Validators/ValidationException.php on line 7
+[29-Oct-2020 01:51:54 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Support\Arrayable' not found in /home/chefrome/public_html/grocery/vendor/maatwebsite/excel/src/Validators/Failure.php on line 7
+[29-Oct-2020 01:52:10 UTC] PHP Fatal error:  Class 'Illuminate\Validation\ValidationException' not found in /home/chefrome/public_html/grocery/vendor/maatwebsite/excel/src/Validators/ValidationException.php on line 7

@@ -1,0 +1,4 @@
+[03-Oct-2020 02:50:47 UTC] PHP Fatal error:  Interface 'Symfony\Component\HttpKernel\CacheClearer\CacheClearerInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/http-kernel/CacheClearer/ChainCacheClearer.php on line 21
+[03-Oct-2020 02:50:49 UTC] PHP Fatal error:  Interface 'Symfony\Component\HttpKernel\CacheClearer\CacheClearerInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/http-kernel/CacheClearer/Psr6CacheClearer.php on line 17
+[26-Oct-2020 19:26:03 UTC] PHP Fatal error:  Interface 'Symfony\Component\HttpKernel\CacheClearer\CacheClearerInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/http-kernel/CacheClearer/ChainCacheClearer.php on line 21
+[26-Oct-2020 19:26:09 UTC] PHP Fatal error:  Interface 'Symfony\Component\HttpKernel\CacheClearer\CacheClearerInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/http-kernel/CacheClearer/Psr6CacheClearer.php on line 17

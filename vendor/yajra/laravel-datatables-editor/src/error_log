@@ -1,0 +1,4 @@
+[02-Oct-2020 20:21:09 UTC] PHP Fatal error:  Trait 'Illuminate\Foundation\Validation\ValidatesRequests' not found in /home/chefrome/public_html/grocery/vendor/yajra/laravel-datatables-editor/src/DataTablesEditor.php on line 19
+[02-Oct-2020 20:21:12 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/yajra/laravel-datatables-editor/src/EditorServiceProvider.php on line 8
+[28-Oct-2020 17:03:20 UTC] PHP Fatal error:  Trait 'Illuminate\Foundation\Validation\ValidatesRequests' not found in /home/chefrome/public_html/grocery/vendor/yajra/laravel-datatables-editor/src/DataTablesEditor.php on line 19
+[28-Oct-2020 17:04:11 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/yajra/laravel-datatables-editor/src/EditorServiceProvider.php on line 8

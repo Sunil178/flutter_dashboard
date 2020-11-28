@@ -1,0 +1,4 @@
+[10-Oct-2020 07:00:53 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Console\Presets\Preset' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Foundation/Console/Presets/Bootstrap.php on line 5
+[10-Oct-2020 14:11:00 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Console\Presets\Preset' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Foundation/Console/Presets/None.php on line 7
+[10-Oct-2020 14:12:12 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Console\Presets\Preset' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Foundation/Console/Presets/React.php on line 8
+[10-Oct-2020 14:12:41 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Console\Presets\Preset' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Foundation/Console/Presets/Vue.php on line 8

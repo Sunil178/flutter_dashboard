@@ -1,0 +1,5 @@
+[09-Oct-2020 22:11:03 UTC] PHP Fatal error:  Interface 'Swift_KeyCache' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/ArrayKeyCache.php on line 16
+[09-Oct-2020 22:11:06 UTC] PHP Fatal error:  Interface 'Swift_KeyCache' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/DiskKeyCache.php on line 16
+[09-Oct-2020 22:11:10 UTC] PHP Fatal error:  Interface 'Swift_InputByteStream' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/KeyCacheInputStream.php on line 16
+[09-Oct-2020 22:11:13 UTC] PHP Fatal error:  Interface 'Swift_KeyCache' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/NullKeyCache.php on line 16
+[09-Oct-2020 22:11:16 UTC] PHP Fatal error:  Interface 'Swift_KeyCache_KeyCacheInputStream' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/SimpleKeyCacheInputStream.php on line 16

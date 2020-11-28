@@ -1,0 +1,1 @@
+[07-Oct-2020 22:19:03 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Container\Container' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Contracts/Foundation/Application.php on line 8

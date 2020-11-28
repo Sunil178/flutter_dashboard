@@ -1,0 +1,6 @@
+[07-Oct-2020 22:10:41 UTC] PHP Fatal error:  Interface 'Illuminate\Console\Scheduling\EventMutex' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CacheEventMutex.php on line 7
+[07-Oct-2020 22:10:50 UTC] PHP Fatal error:  Interface 'Illuminate\Console\Scheduling\SchedulingMutex' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CacheSchedulingMutex.php on line 8
+[07-Oct-2020 22:11:03 UTC] PHP Fatal error:  Class 'Illuminate\Console\Scheduling\Event' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CallbackEvent.php on line 9
+[07-Oct-2020 22:11:14 UTC] PHP Fatal error:  Trait 'Illuminate\Support\Traits\Macroable' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Console/Scheduling/Event.php on line 18
+[07-Oct-2020 22:11:54 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleFinishCommand.php on line 7
+[07-Oct-2020 22:12:09 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleRunCommand.php on line 8

@@ -1,0 +1,5 @@
+[09-Oct-2020 01:07:41 UTC] PHP Fatal error:  Trait 'Illuminate\Foundation\Auth\RedirectsUsers' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php on line 11
+[09-Oct-2020 01:07:49 UTC] PHP Fatal error:  Trait 'Illuminate\Foundation\Auth\RedirectsUsers' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php on line 11
+[09-Oct-2020 01:07:53 UTC] PHP Fatal error:  Trait 'Illuminate\Foundation\Auth\RedirectsUsers' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Foundation/Auth/ResetsPasswords.php on line 14
+[09-Oct-2020 01:08:07 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Foundation/Auth/User.php on line 14
+[09-Oct-2020 01:08:14 UTC] PHP Fatal error:  Trait 'Illuminate\Foundation\Auth\RedirectsUsers' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Foundation/Auth/VerifiesEmails.php on line 11

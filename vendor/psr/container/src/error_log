@@ -1,0 +1,2 @@
+[03-Oct-2020 02:33:28 UTC] PHP Fatal error:  Interface 'Psr\Container\ContainerExceptionInterface' not found in /home/chefrome/public_html/grocery/vendor/psr/container/src/NotFoundExceptionInterface.php on line 11
+[26-Oct-2020 22:21:06 UTC] PHP Fatal error:  Interface 'Psr\Container\ContainerExceptionInterface' not found in /home/chefrome/public_html/grocery/vendor/psr/container/src/NotFoundExceptionInterface.php on line 11

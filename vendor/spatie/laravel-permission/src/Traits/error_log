@@ -1,0 +1,2 @@
+[05-Oct-2020 21:54:14 UTC] PHP Fatal error:  Trait 'Spatie\Permission\Traits\HasPermissions' not found in /home/chefrome/public_html/grocery/vendor/spatie/laravel-permission/src/Traits/HasRoles.php on line 13
+[27-Oct-2020 23:13:36 UTC] PHP Fatal error:  Trait 'Spatie\Permission\Traits\HasPermissions' not found in /home/chefrome/public_html/grocery/vendor/spatie/laravel-permission/src/Traits/HasRoles.php on line 13

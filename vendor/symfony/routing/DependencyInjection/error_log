@@ -1,0 +1,2 @@
+[02-Oct-2020 20:46:35 UTC] PHP Fatal error:  Trait 'Symfony\Component\DependencyInjection\Compiler\PriorityTaggedServiceTrait' not found in /home/chefrome/public_html/grocery/vendor/symfony/routing/DependencyInjection/RoutingResolverPass.php on line 26
+[26-Oct-2020 14:14:51 UTC] PHP Fatal error:  Trait 'Symfony\Component\DependencyInjection\Compiler\PriorityTaggedServiceTrait' not found in /home/chefrome/public_html/grocery/vendor/symfony/routing/DependencyInjection/RoutingResolverPass.php on line 26

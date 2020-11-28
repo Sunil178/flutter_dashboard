@@ -1,0 +1,8 @@
+[29-Oct-2020 01:27:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Request' not found in /home/chefrome/public_html/grocery/vendor/fideloper/proxy/config/trustedproxy.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/fideloper/proxy/config/trustedproxy.php on line 48
+[25-Nov-2020 12:04:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Request' not found in /home/chefrome/public_html/grocery/vendor/fideloper/proxy/config/trustedproxy.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/fideloper/proxy/config/trustedproxy.php on line 48

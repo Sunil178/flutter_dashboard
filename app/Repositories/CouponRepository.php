@@ -28,7 +28,8 @@ class CouponRepository extends BaseRepository
         'market_id',
         'category_id',
         'expires_at',
-        'enabled'
+        'enabled',
+        'max_discount'
     ];
 
     /**

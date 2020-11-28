@@ -1,0 +1,3 @@
+[30-Oct-2020 09:25:09 UTC] PHP Fatal error:  Class 'InfyOm\Generator\Commands\BaseCommand' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-generator/src/Commands/Common/MigrationGeneratorCommand.php on line 9
+[30-Oct-2020 09:25:11 UTC] PHP Fatal error:  Class 'InfyOm\Generator\Commands\BaseCommand' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-generator/src/Commands/Common/ModelGeneratorCommand.php on line 9
+[30-Oct-2020 09:25:13 UTC] PHP Fatal error:  Class 'InfyOm\Generator\Commands\BaseCommand' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-generator/src/Commands/Common/RepositoryGeneratorCommand.php on line 9

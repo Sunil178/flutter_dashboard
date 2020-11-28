@@ -1,0 +1,2 @@
+[29-Oct-2020 15:50:14 UTC] PHP Fatal error:  Interface 'Prettus\Validator\Contracts\ValidatorInterface' not found in /home/chefrome/public_html/grocery/vendor/prettus/laravel-validation/src/Prettus/Validator/AbstractValidator.php on line 12
+[29-Oct-2020 15:50:20 UTC] PHP Fatal error:  Class 'Prettus\Validator\AbstractValidator' not found in /home/chefrome/public_html/grocery/vendor/prettus/laravel-validation/src/Prettus/Validator/LaravelValidator.php on line 10

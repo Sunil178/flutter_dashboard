@@ -1,0 +1,14 @@
+[09-Oct-2020 15:14:51 UTC] PHP Fatal error:  Trait 'Carbon\Traits\ObjectInitialisation' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/Traits/Creator.php on line 35
+[09-Oct-2020 15:15:29 UTC] PHP Fatal error:  Trait 'Carbon\Traits\Boundaries' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/Traits/Date.php on line 520
+[09-Oct-2020 15:16:20 UTC] PHP Warning:  Class 'Symfony\Contracts\Translation\TranslatorInterface' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/Traits/Localization.php on line 27
+[09-Oct-2020 15:16:46 UTC] PHP Fatal error:  Trait 'Carbon\Traits\Mixin' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/Traits/Macro.php on line 33
+[09-Oct-2020 15:18:09 UTC] PHP Fatal error:  Trait 'Carbon\Traits\Cast' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/Traits/Mutability.php on line 23
+[09-Oct-2020 15:19:00 UTC] PHP Fatal error:  Trait 'Carbon\Traits\Localization' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/Traits/Options.php on line 27
+[09-Oct-2020 15:19:40 UTC] PHP Fatal error:  Trait 'Carbon\Traits\ObjectInitialisation' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/Traits/Serialization.php on line 34
+[29-Oct-2020 18:42:02 UTC] PHP Fatal error:  Trait 'Carbon\Traits\Mixin' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/Traits/Macro.php on line 33
+[29-Oct-2020 18:43:09 UTC] PHP Fatal error:  Trait 'Carbon\Traits\Cast' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/Traits/Mutability.php on line 23
+[29-Oct-2020 18:43:52 UTC] PHP Fatal error:  Trait 'Carbon\Traits\Localization' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/Traits/Options.php on line 27
+[29-Oct-2020 18:45:16 UTC] PHP Fatal error:  Trait 'Carbon\Traits\ObjectInitialisation' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/Traits/Serialization.php on line 34
+[29-Oct-2020 20:45:36 UTC] PHP Fatal error:  Trait 'Carbon\Traits\ObjectInitialisation' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/Traits/Creator.php on line 35
+[29-Oct-2020 20:45:51 UTC] PHP Fatal error:  Trait 'Carbon\Traits\Boundaries' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/Traits/Date.php on line 520
+[29-Oct-2020 20:46:24 UTC] PHP Warning:  Class 'Symfony\Contracts\Translation\TranslatorInterface' not found in /home/chefrome/public_html/grocery/vendor/nesbot/carbon/src/Carbon/Traits/Localization.php on line 27

@@ -1,0 +1,11 @@
+[08-Oct-2020 18:20:32 UTC] PHP Fatal error:  Class 'ZipStream\Exception' not found in /home/chefrome/public_html/grocery/vendor/maennchen/zipstream-php/src/Exception/FileNotFoundException.php on line 11
+[08-Oct-2020 18:20:36 UTC] PHP Fatal error:  Class 'ZipStream\Exception' not found in /home/chefrome/public_html/grocery/vendor/maennchen/zipstream-php/src/Exception/FileNotReadableException.php on line 11
+[08-Oct-2020 18:20:42 UTC] PHP Fatal error:  Class 'ZipStream\Exception' not found in /home/chefrome/public_html/grocery/vendor/maennchen/zipstream-php/src/Exception/IncompatibleOptionsException.php on line 11
+[08-Oct-2020 18:20:49 UTC] PHP Fatal error:  Class 'ZipStream\Exception' not found in /home/chefrome/public_html/grocery/vendor/maennchen/zipstream-php/src/Exception/OverflowException.php on line 11
+[08-Oct-2020 18:20:53 UTC] PHP Fatal error:  Class 'ZipStream\Exception' not found in /home/chefrome/public_html/grocery/vendor/maennchen/zipstream-php/src/Exception/StreamNotReadableException.php on line 11
+[29-Oct-2020 01:54:03 UTC] PHP Fatal error:  Class 'ZipStream\Exception' not found in /home/chefrome/public_html/grocery/vendor/maennchen/zipstream-php/src/Exception/EncodingException.php on line 11
+[29-Oct-2020 01:54:14 UTC] PHP Fatal error:  Class 'ZipStream\Exception' not found in /home/chefrome/public_html/grocery/vendor/maennchen/zipstream-php/src/Exception/FileNotFoundException.php on line 11
+[29-Oct-2020 01:54:21 UTC] PHP Fatal error:  Class 'ZipStream\Exception' not found in /home/chefrome/public_html/grocery/vendor/maennchen/zipstream-php/src/Exception/FileNotReadableException.php on line 11
+[29-Oct-2020 01:54:29 UTC] PHP Fatal error:  Class 'ZipStream\Exception' not found in /home/chefrome/public_html/grocery/vendor/maennchen/zipstream-php/src/Exception/IncompatibleOptionsException.php on line 11
+[29-Oct-2020 01:54:35 UTC] PHP Fatal error:  Class 'ZipStream\Exception' not found in /home/chefrome/public_html/grocery/vendor/maennchen/zipstream-php/src/Exception/OverflowException.php on line 11
+[29-Oct-2020 01:54:43 UTC] PHP Fatal error:  Class 'ZipStream\Exception' not found in /home/chefrome/public_html/grocery/vendor/maennchen/zipstream-php/src/Exception/StreamNotReadableException.php on line 11

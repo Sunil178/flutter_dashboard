@@ -1,0 +1,2 @@
+[02-Oct-2020 20:05:44 UTC] PHP Fatal error:  Interface 'Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/DependencyInjection/AddMimeTypeGuesserPass.php on line 23
+[26-Oct-2020 18:47:21 UTC] PHP Fatal error:  Interface 'Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/DependencyInjection/AddMimeTypeGuesserPass.php on line 23

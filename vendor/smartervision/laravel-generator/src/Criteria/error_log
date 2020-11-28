@@ -1,0 +1,1 @@
+[28-Oct-2020 10:36:56 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-generator/src/Criteria/LimitOffsetCriteria.php on line 8

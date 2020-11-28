@@ -1,0 +1,2 @@
+[26-Oct-2020 19:22:46 UTC] PHP Fatal error:  Interface 'Symfony\Component\HttpFoundation\Exception\RequestExceptionInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/http-foundation/Exception/ConflictingHeadersException.php on line 19
+[26-Oct-2020 19:22:56 UTC] PHP Fatal error:  Interface 'Symfony\Component\HttpFoundation\Exception\RequestExceptionInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/http-foundation/Exception/SuspiciousOperationException.php on line 18

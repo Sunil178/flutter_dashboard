@@ -1,0 +1,4 @@
+[30-Oct-2020 09:55:57 UTC] PHP Fatal error:  Interface 'Prophecy\Prediction\PredictionInterface' not found in /home/chefrome/public_html/grocery/vendor/phpspec/prophecy/src/Prophecy/Prediction/CallPrediction.php on line 27
+[30-Oct-2020 09:55:59 UTC] PHP Fatal error:  Interface 'Prophecy\Prediction\PredictionInterface' not found in /home/chefrome/public_html/grocery/vendor/phpspec/prophecy/src/Prophecy/Prediction/CallTimesPrediction.php on line 28
+[30-Oct-2020 09:56:01 UTC] PHP Fatal error:  Interface 'Prophecy\Prediction\PredictionInterface' not found in /home/chefrome/public_html/grocery/vendor/phpspec/prophecy/src/Prophecy/Prediction/CallbackPrediction.php on line 25
+[30-Oct-2020 09:56:03 UTC] PHP Fatal error:  Interface 'Prophecy\Prediction\PredictionInterface' not found in /home/chefrome/public_html/grocery/vendor/phpspec/prophecy/src/Prophecy/Prediction/NoCallsPrediction.php on line 25

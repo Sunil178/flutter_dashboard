@@ -1,0 +1,4 @@
+[11-Oct-2020 06:27:42 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\Driver\AbstractSQLServerDriver' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/SQLSrv/Driver.php on line 10
+[11-Oct-2020 06:28:09 UTC] PHP Fatal error:  Interface 'Doctrine\DBAL\Driver\Connection' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/SQLSrv/SQLSrvConnection.php on line 27
+[11-Oct-2020 06:28:25 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\Driver\AbstractDriverException' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/SQLSrv/SQLSrvException.php on line 13
+[11-Oct-2020 06:28:37 UTC] PHP Fatal error:  Interface 'Doctrine\DBAL\Driver\Statement' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/SQLSrv/SQLSrvStatement.php on line 41

@@ -38,6 +38,14 @@ Route::prefix('manager')->group(function () {
 
 
 Route::post('login', 'API\UserAPIController@login');
+
+    Route::get('foo', function () {
+    return 'Hello World';
+});
+ Route::get('refer_code/{code}/{id}', 'API\UserAPIController@referCode');
+  Route::post('refer_code1/', 'UserController@referCodee');
+   Route::get('ordersdriver/{id}', 'OrderController@driverData')->name('ordersdriver.driverData');
+
 Route::post('register', 'API\UserAPIController@register');
 Route::post('send_reset_link_email', 'API\UserAPIController@sendResetLinkEmail');
 Route::get('user', 'API\UserAPIController@user');
@@ -97,6 +105,14 @@ Route::middleware('auth:api')->group(function () {
     Route::resource('favorites', 'API\FavoriteAPIController');
 
     Route::resource('orders', 'API\OrderAPIController');
+    
+    
+    
+    
+   
+
+
+
 
     Route::resource('product_orders', 'API\ProductOrderAPIController');
 
@@ -118,4 +134,19 @@ Route::middleware('auth:api')->group(function () {
     Route::resource('coupons', 'API\CouponAPIController')->except([
         'show'
     ]);
+});
+
+/**
+ * Routes for the user Wallet
+ * @structlooper
+ * */
+Route::group(['namespace' => 'API\Userwallet'],function(){
+    Route::get('/test','WalletController@test');
+    Route::post('wallet/passbook','WalletController@wallet_passbook');
+    Route::post('wallet/statement','WalletController@wallet_statement');
+    Route::post('wallet/add','WalletController@wallet_add');
+    Route::post('wallet/sub','WalletController@wallet_sub');
+    
+    
+    Route::post('app/refer','WalletController@refer_function');
 });

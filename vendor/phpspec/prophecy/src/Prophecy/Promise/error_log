@@ -1,0 +1,4 @@
+[30-Oct-2020 09:56:13 UTC] PHP Fatal error:  Interface 'Prophecy\Promise\PromiseInterface' not found in /home/chefrome/public_html/grocery/vendor/phpspec/prophecy/src/Prophecy/Promise/CallbackPromise.php on line 24
+[30-Oct-2020 09:56:17 UTC] PHP Fatal error:  Interface 'Prophecy\Promise\PromiseInterface' not found in /home/chefrome/public_html/grocery/vendor/phpspec/prophecy/src/Prophecy/Promise/ReturnArgumentPromise.php on line 23
+[30-Oct-2020 09:56:19 UTC] PHP Fatal error:  Interface 'Prophecy\Promise\PromiseInterface' not found in /home/chefrome/public_html/grocery/vendor/phpspec/prophecy/src/Prophecy/Promise/ReturnPromise.php on line 22
+[30-Oct-2020 09:56:21 UTC] PHP Fatal error:  Interface 'Prophecy\Promise\PromiseInterface' not found in /home/chefrome/public_html/grocery/vendor/phpspec/prophecy/src/Prophecy/Promise/ThrowPromise.php on line 25

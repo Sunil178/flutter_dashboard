@@ -1,0 +1,8 @@
+[01-Oct-2020 17:51:38 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Options/OptionsOfUserCriteria.php on line 20
+[06-Oct-2020 12:58:32 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Options/OptionsOfUserCriteria.php on line 20
+[23-Oct-2020 21:10:22 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Options/OptionsOfUserCriteria.php on line 20
+[25-Oct-2020 23:42:47 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Options/OptionsOfUserCriteria.php on line 20
+[26-Oct-2020 18:07:17 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Options/OptionsOfUserCriteria.php on line 20
+[04-Nov-2020 13:46:21 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Options/OptionsOfUserCriteria.php on line 20
+[07-Nov-2020 11:09:20 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Options/OptionsOfUserCriteria.php on line 20
+[21-Nov-2020 21:55:50 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Options/OptionsOfUserCriteria.php on line 20

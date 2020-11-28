@@ -1,0 +1,10 @@
+[02-Oct-2020 20:38:41 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Part\AbstractPart' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Part/AbstractMultipartPart.php on line 19
+[02-Oct-2020 20:39:09 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Part\TextPart' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Part/DataPart.php on line 21
+[02-Oct-2020 20:39:19 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Part\DataPart' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Part/MessagePart.php on line 22
+[02-Oct-2020 20:39:30 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Part\AbstractPart' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Part/SMimePart.php on line 19
+[02-Oct-2020 20:39:41 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Part\AbstractPart' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Part/TextPart.php on line 24
+[26-Oct-2020 18:51:12 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Part\AbstractPart' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Part/AbstractMultipartPart.php on line 19
+[26-Oct-2020 18:51:22 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Part\TextPart' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Part/DataPart.php on line 21
+[26-Oct-2020 18:51:26 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Part\DataPart' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Part/MessagePart.php on line 22
+[26-Oct-2020 18:51:30 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Part\AbstractPart' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Part/SMimePart.php on line 19
+[26-Oct-2020 18:51:37 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Part\AbstractPart' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Part/TextPart.php on line 24

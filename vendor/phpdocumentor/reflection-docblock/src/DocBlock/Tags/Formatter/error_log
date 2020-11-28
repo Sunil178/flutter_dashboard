@@ -1,0 +1,2 @@
+[10-Oct-2020 21:34:18 UTC] PHP Fatal error:  Interface 'phpDocumentor\Reflection\DocBlock\Tags\Formatter' not found in /home/chefrome/public_html/grocery/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Formatter/AlignFormatter.php on line 22
+[10-Oct-2020 21:34:21 UTC] PHP Fatal error:  Interface 'phpDocumentor\Reflection\DocBlock\Tags\Formatter' not found in /home/chefrome/public_html/grocery/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Formatter/PassthroughFormatter.php on line 20

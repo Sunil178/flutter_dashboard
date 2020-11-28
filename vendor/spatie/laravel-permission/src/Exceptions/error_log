@@ -1,0 +1,2 @@
+[05-Oct-2020 21:52:20 UTC] PHP Fatal error:  Class 'Symfony\Component\HttpKernel\Exception\HttpException' not found in /home/chefrome/public_html/grocery/vendor/spatie/laravel-permission/src/Exceptions/UnauthorizedException.php on line 7
+[28-Oct-2020 10:40:57 UTC] PHP Fatal error:  Class 'Symfony\Component\HttpKernel\Exception\HttpException' not found in /home/chefrome/public_html/grocery/vendor/spatie/laravel-permission/src/Exceptions/UnauthorizedException.php on line 7

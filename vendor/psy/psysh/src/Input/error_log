@@ -1,0 +1,2 @@
+[29-Oct-2020 00:59:13 UTC] PHP Fatal error:  Class 'Symfony\Component\Console\Input\InputArgument' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Input/CodeArgument.php on line 30
+[29-Oct-2020 00:59:26 UTC] PHP Fatal error:  Class 'Symfony\Component\Console\Input\StringInput' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Input/ShellInput.php on line 20

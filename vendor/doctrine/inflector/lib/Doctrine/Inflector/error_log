@@ -1,0 +1,4 @@
+[10-Oct-2020 08:34:31 UTC] PHP Fatal error:  Interface 'Doctrine\Inflector\WordInflector' not found in /home/chefrome/public_html/grocery/vendor/doctrine/inflector/lib/Doctrine/Inflector/CachedWordInflector.php on line 7
+[10-Oct-2020 08:34:34 UTC] PHP Fatal error:  Interface 'Doctrine\Inflector\LanguageInflectorFactory' not found in /home/chefrome/public_html/grocery/vendor/doctrine/inflector/lib/Doctrine/Inflector/GenericLanguageInflectorFactory.php on line 10
+[10-Oct-2020 08:34:53 UTC] PHP Fatal error:  Interface 'Doctrine\Inflector\WordInflector' not found in /home/chefrome/public_html/grocery/vendor/doctrine/inflector/lib/Doctrine/Inflector/NoopWordInflector.php on line 7
+[10-Oct-2020 08:34:57 UTC] PHP Fatal error:  Interface 'Doctrine\Inflector\WordInflector' not found in /home/chefrome/public_html/grocery/vendor/doctrine/inflector/lib/Doctrine/Inflector/RulesetInflector.php on line 19

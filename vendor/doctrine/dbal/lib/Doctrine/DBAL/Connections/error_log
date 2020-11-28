@@ -1,0 +1,1 @@
+[10-Oct-2020 23:32:51 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\Connection' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connections/MasterSlaveConnection.php on line 69

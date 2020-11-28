@@ -1,0 +1,2 @@
+[08-Oct-2020 22:07:58 UTC] PHP Fatal error:  Class 'Illuminate\Http\Request' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Foundation/Http/FormRequest.php on line 15
+[08-Oct-2020 22:08:03 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Http\Kernel' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php on line 15

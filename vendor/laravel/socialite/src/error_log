@@ -1,0 +1,11 @@
+[03-Oct-2020 20:18:23 UTC] PHP Fatal error:  Interface 'Laravel\Socialite\Contracts\User' not found in /home/chefrome/public_html/grocery/vendor/laravel/socialite/src/AbstractUser.php on line 7
+[03-Oct-2020 20:18:26 UTC] PHP Fatal error:  Class 'Illuminate\Support\Manager' not found in /home/chefrome/public_html/grocery/vendor/laravel/socialite/src/SocialiteManager.php on line 18
+[03-Oct-2020 20:18:29 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/socialite/src/SocialiteServiceProvider.php on line 8
+[29-Oct-2020 00:44:42 UTC] PHP Fatal error:  Interface 'Laravel\Socialite\Contracts\User' not found in /home/chefrome/public_html/grocery/vendor/laravel/socialite/src/AbstractUser.php on line 7
+[29-Oct-2020 00:44:44 UTC] PHP Fatal error:  Class 'Illuminate\Support\Manager' not found in /home/chefrome/public_html/grocery/vendor/laravel/socialite/src/SocialiteManager.php on line 18
+[29-Oct-2020 00:44:46 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/socialite/src/SocialiteServiceProvider.php on line 8
+[23-Nov-2020 12:30:21 UTC] PHP Fatal error:  Class 'Illuminate\Support\Manager' not found in /home/chefrome/public_html/grocery/vendor/laravel/socialite/src/SocialiteManager.php on line 18
+[23-Nov-2020 13:51:35 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/socialite/src/SocialiteServiceProvider.php on line 8
+[23-Nov-2020 17:05:17 UTC] PHP Fatal error:  Interface 'Laravel\Socialite\Contracts\User' not found in /home/chefrome/public_html/grocery/vendor/laravel/socialite/src/AbstractUser.php on line 7
+[26-Nov-2020 16:01:12 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/socialite/src/SocialiteServiceProvider.php on line 8
+[26-Nov-2020 18:47:06 UTC] PHP Fatal error:  Interface 'Laravel\Socialite\Contracts\User' not found in /home/chefrome/public_html/grocery/vendor/laravel/socialite/src/AbstractUser.php on line 7

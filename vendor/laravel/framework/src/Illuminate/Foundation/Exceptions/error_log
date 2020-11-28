@@ -1,0 +1,1 @@
+[08-Oct-2020 22:07:32 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Debug\ExceptionHandler' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php on line 39

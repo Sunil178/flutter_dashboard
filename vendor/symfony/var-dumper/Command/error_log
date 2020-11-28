@@ -1,0 +1,2 @@
+[02-Oct-2020 21:10:14 UTC] PHP Fatal error:  Class 'Symfony\Component\Console\Command\Command' not found in /home/chefrome/public_html/grocery/vendor/symfony/var-dumper/Command/ServerDumpCommand.php on line 35
+[28-Oct-2020 12:24:19 UTC] PHP Fatal error:  Class 'Symfony\Component\Console\Command\Command' not found in /home/chefrome/public_html/grocery/vendor/symfony/var-dumper/Command/ServerDumpCommand.php on line 35

@@ -1,0 +1,4 @@
+[09-Oct-2020 15:32:47 UTC] PHP Fatal error:  Interface 'PhpParser\ErrorHandler' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler/Collecting.php on line 13
+[09-Oct-2020 15:34:25 UTC] PHP Fatal error:  Interface 'PhpParser\ErrorHandler' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler/Throwing.php on line 13
+[29-Oct-2020 18:56:00 UTC] PHP Fatal error:  Interface 'PhpParser\ErrorHandler' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler/Collecting.php on line 13
+[29-Oct-2020 18:56:20 UTC] PHP Fatal error:  Interface 'PhpParser\ErrorHandler' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler/Throwing.php on line 13

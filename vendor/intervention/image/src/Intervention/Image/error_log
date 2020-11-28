@@ -1,0 +1,6 @@
+[10-Oct-2020 10:25:28 UTC] PHP Fatal error:  Class 'Intervention\Image\File' not found in /home/chefrome/public_html/grocery/vendor/intervention/image/src/Intervention/Image/Image.php on line 56
+[10-Oct-2020 10:25:32 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/intervention/image/src/Intervention/Image/ImageServiceProvider.php on line 9
+[10-Oct-2020 10:25:34 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLaravel4.php on line 8
+[10-Oct-2020 10:25:36 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLaravelRecent.php on line 7
+[10-Oct-2020 10:25:38 UTC] PHP Fatal error:  Class 'League\Container\ServiceProvider\AbstractServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLeague.php on line 7
+[10-Oct-2020 10:25:40 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLumen.php on line 7

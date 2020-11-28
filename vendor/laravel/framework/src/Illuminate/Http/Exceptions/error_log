@@ -1,0 +1,2 @@
+[08-Oct-2020 22:11:22 UTC] PHP Fatal error:  Class 'Symfony\Component\HttpKernel\Exception\HttpException' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Http/Exceptions/PostTooLargeException.php on line 8
+[08-Oct-2020 22:11:26 UTC] PHP Fatal error:  Class 'Symfony\Component\HttpKernel\Exception\HttpException' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Http/Exceptions/ThrottleRequestsException.php on line 8

@@ -1,0 +1,2 @@
+[06-Oct-2020 18:15:34 UTC] PHP Fatal error:  Trait 'Illuminate\Support\InteractsWithTime' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Cookie/CookieJar.php on line 13
+[06-Oct-2020 18:15:43 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Cookie/CookieServiceProvider.php on line 7

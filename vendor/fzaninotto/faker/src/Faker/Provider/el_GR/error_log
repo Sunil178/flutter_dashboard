@@ -1,0 +1,1 @@
+[27-Nov-2020 04:17:03 UTC] PHP Fatal error:  Class 'Faker\Provider\Text' not found in /home/chefrome/public_html/grocery/vendor/fzaninotto/faker/src/Faker/Provider/el_GR/Text.php on line 5

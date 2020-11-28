@@ -1,0 +1,2 @@
+[01-Oct-2020 23:36:36 UTC] PHP Fatal error:  Class 'Symfony\Component\Process\Process' not found in /home/chefrome/public_html/grocery/vendor/symfony/process/PhpProcess.php on line 26
+[25-Oct-2020 03:55:54 UTC] PHP Fatal error:  Class 'Symfony\Component\Process\Process' not found in /home/chefrome/public_html/grocery/vendor/symfony/process/PhpProcess.php on line 26

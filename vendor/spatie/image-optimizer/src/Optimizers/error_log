@@ -1,0 +1,7 @@
+[28-Oct-2020 10:38:55 UTC] PHP Fatal error:  Class 'Spatie\ImageOptimizer\Optimizers\BaseOptimizer' not found in /home/chefrome/public_html/grocery/vendor/spatie/image-optimizer/src/Optimizers/Jpegoptim.php on line 7
+[28-Oct-2020 10:38:57 UTC] PHP Fatal error:  Class 'Spatie\ImageOptimizer\Optimizers\BaseOptimizer' not found in /home/chefrome/public_html/grocery/vendor/spatie/image-optimizer/src/Optimizers/Optipng.php on line 7
+[28-Oct-2020 10:38:59 UTC] PHP Fatal error:  Class 'Spatie\ImageOptimizer\Optimizers\BaseOptimizer' not found in /home/chefrome/public_html/grocery/vendor/spatie/image-optimizer/src/Optimizers/Pngquant.php on line 7
+[28-Oct-2020 10:39:00 UTC] PHP Fatal error:  Class 'Spatie\ImageOptimizer\Optimizers\BaseOptimizer' not found in /home/chefrome/public_html/grocery/vendor/spatie/image-optimizer/src/Optimizers/Svgo.php on line 7
+[28-Oct-2020 12:21:53 UTC] PHP Fatal error:  Interface 'Spatie\ImageOptimizer\Optimizer' not found in /home/chefrome/public_html/grocery/vendor/spatie/image-optimizer/src/Optimizers/BaseOptimizer.php on line 7
+[28-Oct-2020 12:21:55 UTC] PHP Fatal error:  Class 'Spatie\ImageOptimizer\Optimizers\BaseOptimizer' not found in /home/chefrome/public_html/grocery/vendor/spatie/image-optimizer/src/Optimizers/Cwebp.php on line 7
+[28-Oct-2020 12:21:57 UTC] PHP Fatal error:  Class 'Spatie\ImageOptimizer\Optimizers\BaseOptimizer' not found in /home/chefrome/public_html/grocery/vendor/spatie/image-optimizer/src/Optimizers/Gifsicle.php on line 7

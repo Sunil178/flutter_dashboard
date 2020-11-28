@@ -1,0 +1,10 @@
+[30-Oct-2020 09:20:31 UTC] PHP Fatal error:  Class 'Psy\Command\ListCommand\Enumerator' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Command/ListCommand/ClassConstantEnumerator.php on line 20
+[30-Oct-2020 09:20:33 UTC] PHP Fatal error:  Class 'Psy\Command\ListCommand\Enumerator' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Command/ListCommand/ClassEnumerator.php on line 19
+[30-Oct-2020 09:20:36 UTC] PHP Fatal error:  Class 'Psy\Command\ListCommand\Enumerator' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Command/ListCommand/ConstantEnumerator.php on line 19
+[30-Oct-2020 09:20:40 UTC] PHP Fatal error:  Class 'Psy\Command\ListCommand\Enumerator' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Command/ListCommand/FunctionEnumerator.php on line 19
+[30-Oct-2020 09:20:42 UTC] PHP Fatal error:  Class 'Psy\Command\ListCommand\Enumerator' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Command/ListCommand/GlobalVariableEnumerator.php on line 19
+[30-Oct-2020 09:20:44 UTC] PHP Fatal error:  Class 'Psy\Command\ListCommand\Enumerator' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Command/ListCommand/InterfaceEnumerator.php on line 22
+[30-Oct-2020 09:20:46 UTC] PHP Fatal error:  Class 'Psy\Command\ListCommand\Enumerator' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Command/ListCommand/MethodEnumerator.php on line 19
+[30-Oct-2020 09:20:48 UTC] PHP Fatal error:  Class 'Psy\Command\ListCommand\Enumerator' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Command/ListCommand/PropertyEnumerator.php on line 19
+[30-Oct-2020 09:20:50 UTC] PHP Fatal error:  Class 'Psy\Command\ListCommand\Enumerator' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Command/ListCommand/TraitEnumerator.php on line 22
+[30-Oct-2020 09:20:52 UTC] PHP Fatal error:  Class 'Psy\Command\ListCommand\Enumerator' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Command/ListCommand/VariableEnumerator.php on line 21

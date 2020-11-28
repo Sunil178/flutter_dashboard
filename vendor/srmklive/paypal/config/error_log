@@ -1,0 +1,12 @@
+[03-Oct-2020 01:44:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/chefrome/public_html/grocery/vendor/srmklive/paypal/config/config.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/srmklive/paypal/config/config.php on line 8
+[26-Oct-2020 20:38:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/chefrome/public_html/grocery/vendor/srmklive/paypal/config/config.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/srmklive/paypal/config/config.php on line 8
+[26-Oct-2020 20:51:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/chefrome/public_html/grocery/vendor/srmklive/paypal/config/config.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/srmklive/paypal/config/config.php on line 8

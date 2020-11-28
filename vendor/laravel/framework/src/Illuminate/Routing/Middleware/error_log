@@ -1,0 +1,2 @@
+[07-Oct-2020 14:47:08 UTC] PHP Fatal error:  Trait 'Illuminate\Support\InteractsWithTime' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php on line 15
+[07-Oct-2020 14:47:10 UTC] PHP Fatal error:  Class 'Illuminate\Routing\Middleware\ThrottleRequests' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequestsWithRedis.php on line 9

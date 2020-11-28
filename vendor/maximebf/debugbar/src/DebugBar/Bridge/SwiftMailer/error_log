@@ -1,0 +1,2 @@
+[10-Oct-2020 21:36:20 UTC] PHP Fatal error:  Class 'DebugBar\DataCollector\MessagesCollector' not found in /home/chefrome/public_html/grocery/vendor/maximebf/debugbar/src/DebugBar/Bridge/SwiftMailer/SwiftLogCollector.php on line 23
+[10-Oct-2020 21:36:23 UTC] PHP Fatal error:  Class 'DebugBar\DataCollector\DataCollector' not found in /home/chefrome/public_html/grocery/vendor/maximebf/debugbar/src/DebugBar/Bridge/SwiftMailer/SwiftMailCollector.php on line 24

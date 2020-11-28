@@ -1,0 +1,10 @@
+[05-Oct-2020 17:07:11 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Part\AbstractMultipartPart' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Part/Multipart/AlternativePart.php on line 19
+[05-Oct-2020 17:07:14 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Part\AbstractMultipartPart' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Part/Multipart/FormDataPart.php on line 24
+[05-Oct-2020 17:07:18 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Part\AbstractMultipartPart' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Part/Multipart/MixedPart.php on line 19
+[05-Oct-2020 17:07:22 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Part\AbstractMultipartPart' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Part/Multipart/RelatedPart.php on line 20
+[05-Oct-2020 19:32:10 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Part\AbstractMultipartPart' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Part/Multipart/DigestPart.php on line 20
+[27-Oct-2020 22:54:27 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Part\AbstractMultipartPart' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Part/Multipart/AlternativePart.php on line 19
+[27-Oct-2020 22:54:30 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Part\AbstractMultipartPart' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Part/Multipart/DigestPart.php on line 20
+[27-Oct-2020 22:54:34 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Part\AbstractMultipartPart' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Part/Multipart/FormDataPart.php on line 24
+[27-Oct-2020 22:54:39 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Part\AbstractMultipartPart' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Part/Multipart/MixedPart.php on line 19
+[27-Oct-2020 22:54:42 UTC] PHP Fatal error:  Class 'Symfony\Component\Mime\Part\AbstractMultipartPart' not found in /home/chefrome/public_html/grocery/vendor/symfony/mime/Part/Multipart/RelatedPart.php on line 20

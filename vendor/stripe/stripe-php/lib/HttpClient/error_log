@@ -1,0 +1,2 @@
+[05-Oct-2020 18:53:21 UTC] PHP Fatal error:  Interface 'Stripe\HttpClient\ClientInterface' not found in /home/chefrome/public_html/grocery/vendor/stripe/stripe-php/lib/HttpClient/CurlClient.php on line 25
+[28-Oct-2020 12:22:00 UTC] PHP Fatal error:  Interface 'Stripe\HttpClient\ClientInterface' not found in /home/chefrome/public_html/grocery/vendor/stripe/stripe-php/lib/HttpClient/CurlClient.php on line 25

@@ -1,0 +1,2 @@
+[10-Oct-2020 23:36:33 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\Connection' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Portability/Connection.php on line 16
+[10-Oct-2020 23:36:35 UTC] PHP Fatal error:  Interface 'Doctrine\DBAL\Driver\Statement' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Portability/Statement.php on line 20

@@ -1,0 +1,5 @@
+[10-Oct-2020 13:57:05 UTC] PHP Fatal error:  Class 'Illuminate\Database\Grammar' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/Grammar.php on line 12
+[10-Oct-2020 13:57:41 UTC] PHP Fatal error:  Class 'Illuminate\Database\Query\Grammars\Grammar' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/MySqlGrammar.php on line 9
+[10-Oct-2020 13:58:34 UTC] PHP Fatal error:  Class 'Illuminate\Database\Query\Grammars\Grammar' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/PostgresGrammar.php on line 9
+[10-Oct-2020 13:59:27 UTC] PHP Fatal error:  Class 'Illuminate\Database\Query\Grammars\Grammar' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SQLiteGrammar.php on line 9
+[10-Oct-2020 13:59:57 UTC] PHP Fatal error:  Class 'Illuminate\Database\Query\Grammars\Grammar' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SqlServerGrammar.php on line 8

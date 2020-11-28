@@ -1,0 +1,2 @@
+[28-Oct-2020 17:15:58 UTC] PHP Fatal error:  Class 'Symfony\Component\VarDumper\Cloner\VarCloner' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/VarDumper/Cloner.php on line 21
+[28-Oct-2020 17:16:03 UTC] PHP Fatal error:  Class 'Symfony\Component\VarDumper\Dumper\CliDumper' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/VarDumper/Dumper.php on line 21

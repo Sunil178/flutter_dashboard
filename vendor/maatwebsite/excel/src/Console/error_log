@@ -1,0 +1,4 @@
+[08-Oct-2020 19:57:04 UTC] PHP Fatal error:  Class 'Illuminate\Console\GeneratorCommand' not found in /home/chefrome/public_html/grocery/vendor/maatwebsite/excel/src/Console/ExportMakeCommand.php on line 8
+[08-Oct-2020 19:57:06 UTC] PHP Fatal error:  Class 'Illuminate\Console\GeneratorCommand' not found in /home/chefrome/public_html/grocery/vendor/maatwebsite/excel/src/Console/ImportMakeCommand.php on line 8
+[29-Oct-2020 01:38:48 UTC] PHP Fatal error:  Class 'Illuminate\Console\GeneratorCommand' not found in /home/chefrome/public_html/grocery/vendor/maatwebsite/excel/src/Console/ExportMakeCommand.php on line 8
+[29-Oct-2020 01:38:57 UTC] PHP Fatal error:  Class 'Illuminate\Console\GeneratorCommand' not found in /home/chefrome/public_html/grocery/vendor/maatwebsite/excel/src/Console/ImportMakeCommand.php on line 8

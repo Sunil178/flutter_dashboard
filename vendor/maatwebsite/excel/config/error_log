@@ -1,0 +1,8 @@
+[03-Oct-2020 14:07:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Maatwebsite\Excel\Excel' not found in /home/chefrome/public_html/grocery/vendor/maatwebsite/excel/config/excel.php:91
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/maatwebsite/excel/config/excel.php on line 91
+[27-Oct-2020 02:21:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Maatwebsite\Excel\Excel' not found in /home/chefrome/public_html/grocery/vendor/maatwebsite/excel/config/excel.php:91
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/maatwebsite/excel/config/excel.php on line 91

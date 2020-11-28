@@ -1,0 +1,1 @@
+[10-Oct-2020 10:26:42 UTC] PHP Fatal error:  Class 'Illuminate\Console\GeneratorCommand' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Database/Console/Factories/FactoryMakeCommand.php on line 8

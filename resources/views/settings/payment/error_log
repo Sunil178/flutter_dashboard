@@ -1,0 +1,4 @@
+[24-Nov-2020 15:23:33 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Helper\newhelper2' not found in /home/chefrome/public_html/grocery/resources/views/settings/payment/payment.blade.php:104
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/resources/views/settings/payment/payment.blade.php on line 104

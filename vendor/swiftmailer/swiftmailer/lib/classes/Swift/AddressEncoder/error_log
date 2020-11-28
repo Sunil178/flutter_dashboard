@@ -1,0 +1,2 @@
+[09-Oct-2020 22:16:12 UTC] PHP Fatal error:  Interface 'Swift_AddressEncoder' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/AddressEncoder/IdnAddressEncoder.php on line 25
+[09-Oct-2020 22:16:15 UTC] PHP Fatal error:  Interface 'Swift_AddressEncoder' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/AddressEncoder/Utf8AddressEncoder.php on line 27

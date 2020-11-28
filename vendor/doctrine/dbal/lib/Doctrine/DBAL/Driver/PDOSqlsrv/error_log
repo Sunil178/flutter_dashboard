@@ -1,0 +1,3 @@
+[11-Oct-2020 06:24:46 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\Driver\PDOConnection' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOSqlsrv/Connection.php on line 14
+[11-Oct-2020 06:25:00 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\Driver\AbstractSQLServerDriver' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOSqlsrv/Driver.php on line 12
+[11-Oct-2020 06:25:15 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\Driver\PDOStatement' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOSqlsrv/Statement.php on line 12

@@ -1,0 +1,2 @@
+[05-Oct-2020 18:54:12 UTC] PHP Fatal error:  Interface 'Stripe\Util\LoggerInterface' not found in /home/chefrome/public_html/grocery/vendor/stripe/stripe-php/lib/Util/DefaultLogger.php on line 9
+[28-Oct-2020 19:24:52 UTC] PHP Fatal error:  Interface 'Stripe\Util\LoggerInterface' not found in /home/chefrome/public_html/grocery/vendor/stripe/stripe-php/lib/Util/DefaultLogger.php on line 9

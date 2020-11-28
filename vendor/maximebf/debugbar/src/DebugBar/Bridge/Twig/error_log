@@ -1,0 +1,4 @@
+[10-Oct-2020 21:36:51 UTC] PHP Fatal error:  Class 'Twig_Extension_Profiler' not found in /home/chefrome/public_html/grocery/vendor/maximebf/debugbar/src/DebugBar/Bridge/Twig/TimeableTwigExtensionProfiler.php on line 23
+[10-Oct-2020 21:36:58 UTC] PHP Fatal error:  Class 'Twig_Environment' not found in /home/chefrome/public_html/grocery/vendor/maximebf/debugbar/src/DebugBar/Bridge/Twig/TraceableTwigEnvironment.php on line 30
+[10-Oct-2020 21:37:01 UTC] PHP Fatal error:  Class 'Twig_Template' not found in /home/chefrome/public_html/grocery/vendor/maximebf/debugbar/src/DebugBar/Bridge/Twig/TraceableTwigTemplate.php on line 21
+[10-Oct-2020 21:37:03 UTC] PHP Fatal error:  Class 'DebugBar\DataCollector\DataCollector' not found in /home/chefrome/public_html/grocery/vendor/maximebf/debugbar/src/DebugBar/Bridge/Twig/TwigCollector.php on line 32

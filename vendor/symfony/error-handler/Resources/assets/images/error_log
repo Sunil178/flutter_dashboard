@@ -1,0 +1,8 @@
+[07-Oct-2020 16:23:54 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/assets/images/symfony-ghost.svg.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/assets/images/symfony-ghost.svg.php on line 1
+[30-Oct-2020 09:01:09 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/assets/images/symfony-ghost.svg.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/assets/images/symfony-ghost.svg.php on line 1

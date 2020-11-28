@@ -1,0 +1,1 @@
+[11-Oct-2020 06:49:21 UTC] PHP Fatal error:  Class 'Doctrine\Inflector\GenericLanguageInflectorFactory' not found in /home/chefrome/public_html/grocery/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/NorwegianBokmal/InflectorFactory.php on line 10

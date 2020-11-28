@@ -1,0 +1,3 @@
+[06-Oct-2020 01:50:51 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/spatie/laravel-medialibrary/src/Commands/CleanCommand.php on line 19
+[06-Oct-2020 01:50:53 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/spatie/laravel-medialibrary/src/Commands/ClearCommand.php on line 10
+[06-Oct-2020 01:50:55 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/spatie/laravel-medialibrary/src/Commands/RegenerateCommand.php on line 15

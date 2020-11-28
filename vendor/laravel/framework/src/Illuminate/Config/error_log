@@ -1,0 +1,2 @@
+[07-Oct-2020 01:33:08 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Config\Repository' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Config/Repository.php on line 9
+[24-Nov-2020 13:48:58 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Config\Repository' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Config/Repository.php on line 9

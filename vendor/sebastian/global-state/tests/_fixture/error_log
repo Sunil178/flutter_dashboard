@@ -1,0 +1,2 @@
+[28-Oct-2020 19:21:03 UTC] PHP Fatal error:  Class 'SebastianBergmann\GlobalState\TestFixture\BlacklistedClass' not found in /home/chefrome/public_html/grocery/vendor/sebastian/global-state/tests/_fixture/BlacklistedChildClass.php on line 15
+[28-Oct-2020 19:21:11 UTC] PHP Fatal error:  Interface 'SebastianBergmann\GlobalState\TestFixture\BlacklistedInterface' not found in /home/chefrome/public_html/grocery/vendor/sebastian/global-state/tests/_fixture/BlacklistedImplementor.php on line 15

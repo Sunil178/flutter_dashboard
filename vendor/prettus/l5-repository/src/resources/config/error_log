@@ -1,0 +1,4 @@
+[29-Oct-2020 15:49:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function app() in /home/chefrome/public_html/grocery/vendor/prettus/l5-repository/src/resources/config/repository.php:230
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/prettus/l5-repository/src/resources/config/repository.php on line 230

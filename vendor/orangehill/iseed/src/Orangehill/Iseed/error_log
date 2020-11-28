@@ -1,0 +1,4 @@
+[09-Oct-2020 16:02:37 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/orangehill/iseed/src/Orangehill/Iseed/IseedCommand.php on line 9
+[09-Oct-2020 16:03:00 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/orangehill/iseed/src/Orangehill/Iseed/IseedServiceProvider.php on line 7
+[29-Oct-2020 19:17:48 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/orangehill/iseed/src/Orangehill/Iseed/IseedCommand.php on line 9
+[29-Oct-2020 19:18:09 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/orangehill/iseed/src/Orangehill/Iseed/IseedServiceProvider.php on line 7

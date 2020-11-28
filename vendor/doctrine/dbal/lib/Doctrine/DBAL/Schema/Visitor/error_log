@@ -1,0 +1,5 @@
+[11-Oct-2020 06:41:25 UTC] PHP Fatal error:  Interface 'Doctrine\DBAL\Schema\Visitor\Visitor' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/Visitor/AbstractVisitor.php on line 15
+[11-Oct-2020 06:41:34 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\Schema\Visitor\AbstractVisitor' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/Visitor/CreateSchemaSqlCollector.php on line 11
+[11-Oct-2020 06:41:44 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\Schema\Visitor\AbstractVisitor' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/Visitor/DropSchemaSqlCollector.php on line 16
+[11-Oct-2020 06:41:51 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\Schema\Visitor\AbstractVisitor' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/Visitor/Graphviz.php on line 16
+[11-Oct-2020 06:42:06 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\Schema\Visitor\AbstractVisitor' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/Visitor/RemoveNamespacedAssets.php on line 21

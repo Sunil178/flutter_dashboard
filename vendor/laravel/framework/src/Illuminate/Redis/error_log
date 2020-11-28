@@ -1,0 +1,8 @@
+[06-Oct-2020 16:28:18 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Redis\Factory' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Redis/RedisManager.php on line 13
+[06-Oct-2020 16:28:22 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Redis/RedisServiceProvider.php on line 9
+[02-Nov-2020 20:12:11 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Redis\Factory' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Redis/RedisManager.php on line 13
+[02-Nov-2020 23:30:32 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Redis/RedisServiceProvider.php on line 9
+[05-Nov-2020 19:27:36 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Redis\Factory' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Redis/RedisManager.php on line 13
+[05-Nov-2020 22:32:29 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Redis/RedisServiceProvider.php on line 9
+[20-Nov-2020 05:31:32 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Redis\Factory' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Redis/RedisManager.php on line 13
+[20-Nov-2020 08:27:21 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Redis/RedisServiceProvider.php on line 9

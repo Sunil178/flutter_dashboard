@@ -1,0 +1,4 @@
+[27-Oct-2020 23:10:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/chefrome/public_html/grocery/vendor/rap2hpoutre/laravel-log-viewer/src/config/logviewer.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/rap2hpoutre/laravel-log-viewer/src/config/logviewer.php on line 4

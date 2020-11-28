@@ -1,0 +1,1 @@
+[06-Oct-2020 08:17:14 UTC] PHP Fatal error:  Class 'Illuminate\Support\Facades\Facade' not found in /home/chefrome/public_html/grocery/vendor/laravel/socialite/src/Facades/Socialite.php on line 11

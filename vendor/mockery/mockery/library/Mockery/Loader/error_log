@@ -1,0 +1,7 @@
+[10-Oct-2020 08:19:50 UTC] PHP Fatal error:  Interface 'Mockery\Loader\Loader' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/library/Mockery/Loader/EvalLoader.php on line 26
+[10-Oct-2020 08:19:55 UTC] PHP Fatal error:  Interface 'Mockery\Loader\Loader' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/library/Mockery/Loader/RequireLoader.php on line 26
+[30-Oct-2020 05:54:03 UTC] PHP Fatal error:  Interface 'Mockery\Loader\Loader' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/library/Mockery/Loader/EvalLoader.php on line 26
+[30-Oct-2020 05:54:07 UTC] PHP Fatal error:  Interface 'Mockery\Loader\Loader' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/library/Mockery/Loader/RequireLoader.php on line 26
+[23-Nov-2020 21:01:21 UTC] PHP Fatal error:  Interface 'Mockery\Loader\Loader' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/library/Mockery/Loader/EvalLoader.php on line 26
+[24-Nov-2020 10:56:30 UTC] PHP Fatal error:  Interface 'Mockery\Loader\Loader' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/library/Mockery/Loader/RequireLoader.php on line 26
+[26-Nov-2020 22:27:31 UTC] PHP Fatal error:  Interface 'Mockery\Loader\Loader' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/library/Mockery/Loader/EvalLoader.php on line 26

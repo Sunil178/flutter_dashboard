@@ -1,0 +1,2 @@
+[08-Oct-2020 18:34:26 UTC] PHP Fatal error:  Interface 'Psr\Log\LoggerInterface' not found in /home/chefrome/public_html/grocery/vendor/monolog/monolog/src/Monolog/Logger.php on line 28
+[28-Oct-2020 09:13:02 UTC] PHP Fatal error:  Interface 'Psr\Log\LoggerInterface' not found in /home/chefrome/public_html/grocery/vendor/monolog/monolog/src/Monolog/Logger.php on line 28

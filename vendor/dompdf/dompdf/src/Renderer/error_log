@@ -1,0 +1,7 @@
+[09-Oct-2020 02:02:20 UTC] PHP Fatal error:  Class 'Dompdf\Renderer\AbstractRenderer' not found in /home/chefrome/public_html/grocery/vendor/dompdf/dompdf/src/Renderer/Block.php on line 19
+[09-Oct-2020 02:02:22 UTC] PHP Fatal error:  Class 'Dompdf\Renderer\Block' not found in /home/chefrome/public_html/grocery/vendor/dompdf/dompdf/src/Renderer/Image.php on line 20
+[09-Oct-2020 02:02:24 UTC] PHP Fatal error:  Class 'Dompdf\Renderer\AbstractRenderer' not found in /home/chefrome/public_html/grocery/vendor/dompdf/dompdf/src/Renderer/Inline.php on line 19
+[09-Oct-2020 02:02:26 UTC] PHP Fatal error:  Class 'Dompdf\Renderer\AbstractRenderer' not found in /home/chefrome/public_html/grocery/vendor/dompdf/dompdf/src/Renderer/ListBullet.php on line 22
+[09-Oct-2020 02:02:28 UTC] PHP Fatal error:  Class 'Dompdf\Renderer\Block' not found in /home/chefrome/public_html/grocery/vendor/dompdf/dompdf/src/Renderer/TableCell.php on line 18
+[09-Oct-2020 02:02:30 UTC] PHP Fatal error:  Class 'Dompdf\Renderer\Block' not found in /home/chefrome/public_html/grocery/vendor/dompdf/dompdf/src/Renderer/TableRowGroup.php on line 17
+[09-Oct-2020 02:02:32 UTC] PHP Fatal error:  Class 'Dompdf\Renderer\AbstractRenderer' not found in /home/chefrome/public_html/grocery/vendor/dompdf/dompdf/src/Renderer/Text.php on line 20

@@ -1,0 +1,1 @@
+[30-Oct-2020 00:16:33 UTC] PHP Fatal error:  Class 'Illuminate\Console\GeneratorCommand' not found in /home/chefrome/public_html/grocery/vendor/yajra/laravel-datatables-editor/src/Generators/DataTablesEditorCommand.php on line 8

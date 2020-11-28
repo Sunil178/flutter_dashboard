@@ -1,0 +1,6 @@
+[07-Oct-2020 01:29:29 UTC] PHP Fatal error:  Class 'Illuminate\Routing\Controller' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Broadcasting/BroadcastController.php on line 9
+[07-Oct-2020 01:29:34 UTC] PHP Fatal error:  Trait 'Illuminate\Bus\Queueable' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Broadcasting/BroadcastEvent.php on line 15
+[07-Oct-2020 01:29:40 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Broadcasting\Factory' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Broadcasting/BroadcastManager.php on line 19
+[07-Oct-2020 01:29:43 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Broadcasting/BroadcastServiceProvider.php on line 10
+[07-Oct-2020 01:30:04 UTC] PHP Fatal error:  Class 'Illuminate\Broadcasting\Channel' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Broadcasting/PresenceChannel.php on line 5
+[07-Oct-2020 01:30:10 UTC] PHP Fatal error:  Class 'Illuminate\Broadcasting\Channel' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Broadcasting/PrivateChannel.php on line 5

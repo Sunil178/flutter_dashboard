@@ -1,0 +1,3 @@
+[29-Oct-2020 00:58:15 UTC] PHP Fatal error:  Interface 'Psy\Formatter\Formatter' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Formatter/CodeFormatter.php on line 22
+[29-Oct-2020 00:58:23 UTC] PHP Fatal error:  Interface 'Psy\Formatter\Formatter' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Formatter/DocblockFormatter.php on line 20
+[29-Oct-2020 00:58:38 UTC] PHP Fatal error:  Interface 'Psy\Formatter\Formatter' not found in /home/chefrome/public_html/grocery/vendor/psy/psysh/src/Formatter/SignatureFormatter.php on line 23

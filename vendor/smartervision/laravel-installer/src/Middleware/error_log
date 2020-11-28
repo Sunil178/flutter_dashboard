@@ -1,0 +1,2 @@
+[08-Oct-2020 05:34:01 UTC] PHP Fatal error:  Trait 'RachidLaasri\LaravelInstaller\Helpers\MigrationsHelper' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-installer/src/Middleware/canUpdate.php on line 9
+[27-Oct-2020 23:13:10 UTC] PHP Fatal error:  Trait 'RachidLaasri\LaravelInstaller\Helpers\MigrationsHelper' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-installer/src/Middleware/canUpdate.php on line 9

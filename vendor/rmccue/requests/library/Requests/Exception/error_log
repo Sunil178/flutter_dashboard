@@ -1,0 +1,2 @@
+[29-Oct-2020 15:52:37 UTC] PHP Fatal error:  Class 'Requests_Exception' not found in /home/chefrome/public_html/grocery/vendor/rmccue/requests/library/Requests/Exception/HTTP.php on line 13
+[29-Oct-2020 15:52:41 UTC] PHP Fatal error:  Class 'Requests_Exception' not found in /home/chefrome/public_html/grocery/vendor/rmccue/requests/library/Requests/Exception/Transport.php on line 3

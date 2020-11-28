@@ -1,0 +1,2 @@
+[11-Oct-2020 05:35:34 UTC] PHP Fatal error:  Class 'PhpParser\Node\Stmt\TraitUseAdaptation' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/TraitUseAdaptation/Alias.php on line 7
+[11-Oct-2020 05:35:36 UTC] PHP Fatal error:  Class 'PhpParser\Node\Stmt\TraitUseAdaptation' not found in /home/chefrome/public_html/grocery/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/TraitUseAdaptation/Precedence.php on line 7

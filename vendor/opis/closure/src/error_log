@@ -1,0 +1,2 @@
+[26-Oct-2020 22:07:43 UTC] PHP Fatal error:  Class 'SuperClosure\Analyzer\ClosureAnalyzer' not found in /home/chefrome/public_html/grocery/vendor/opis/closure/src/Analyzer.php on line 16
+[26-Oct-2020 22:08:05 UTC] PHP Fatal error:  Interface 'Opis\Closure\ISecurityProvider' not found in /home/chefrome/public_html/grocery/vendor/opis/closure/src/SecurityProvider.php on line 10

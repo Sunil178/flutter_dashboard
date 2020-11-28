@@ -1,0 +1,4 @@
+[02-Oct-2020 21:01:44 UTC] PHP Fatal error:  Interface 'Symfony\Component\Translation\Extractor\ExtractorInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/translation/Extractor/ChainExtractor.php on line 21
+[02-Oct-2020 21:02:00 UTC] PHP Fatal error:  Class 'Symfony\Component\Translation\Extractor\AbstractFileExtractor' not found in /home/chefrome/public_html/grocery/vendor/symfony/translation/Extractor/PhpExtractor.php on line 22
+[28-Oct-2020 19:28:17 UTC] PHP Fatal error:  Interface 'Symfony\Component\Translation\Extractor\ExtractorInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/translation/Extractor/ChainExtractor.php on line 21
+[28-Oct-2020 19:28:26 UTC] PHP Fatal error:  Class 'Symfony\Component\Translation\Extractor\AbstractFileExtractor' not found in /home/chefrome/public_html/grocery/vendor/symfony/translation/Extractor/PhpExtractor.php on line 22

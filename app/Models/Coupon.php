@@ -35,7 +35,8 @@ class Coupon extends Model
         'discount_type',
         'description',
         'expires_at',
-        'enabled'
+        'enabled',
+        'max_discount'
     ];
 
     /**

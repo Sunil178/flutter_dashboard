@@ -1,0 +1,4 @@
+[08-Oct-2020 10:05:06 UTC] PHP Fatal error:  Interface 'Illuminate\Auth\Passwords\TokenRepositoryInterface' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Auth/Passwords/DatabaseTokenRepository.php on line 11
+[08-Oct-2020 10:05:13 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Auth\PasswordBroker' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Auth/Passwords/PasswordBroker.php on line 12
+[08-Oct-2020 10:05:17 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Auth\PasswordBrokerFactory' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Auth/Passwords/PasswordBrokerManager.php on line 12
+[08-Oct-2020 10:05:24 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Auth/Passwords/PasswordResetServiceProvider.php on line 8

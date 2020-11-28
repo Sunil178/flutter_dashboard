@@ -1,0 +1,4 @@
+[02-Oct-2020 21:08:28 UTC] PHP Fatal error:  Interface 'Symfony\Component\VarDumper\Cloner\ClonerInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/var-dumper/Cloner/AbstractCloner.php on line 22
+[02-Oct-2020 21:09:26 UTC] PHP Fatal error:  Class 'Symfony\Component\VarDumper\Cloner\AbstractCloner' not found in /home/chefrome/public_html/grocery/vendor/symfony/var-dumper/Cloner/VarCloner.php on line 17
+[28-Oct-2020 12:23:54 UTC] PHP Fatal error:  Interface 'Symfony\Component\VarDumper\Cloner\ClonerInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/var-dumper/Cloner/AbstractCloner.php on line 22
+[28-Oct-2020 12:24:07 UTC] PHP Fatal error:  Class 'Symfony\Component\VarDumper\Cloner\AbstractCloner' not found in /home/chefrome/public_html/grocery/vendor/symfony/var-dumper/Cloner/VarCloner.php on line 17

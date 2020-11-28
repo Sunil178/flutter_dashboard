@@ -1,0 +1,4 @@
+[03-Oct-2020 04:09:52 UTC] PHP Fatal error:  Trait 'Symfony\Component\Console\Tester\TesterTrait' not found in /home/chefrome/public_html/grocery/vendor/symfony/console/Tester/ApplicationTester.php on line 29
+[03-Oct-2020 04:09:57 UTC] PHP Fatal error:  Trait 'Symfony\Component\Console\Tester\TesterTrait' not found in /home/chefrome/public_html/grocery/vendor/symfony/console/Tester/CommandTester.php on line 25
+[26-Oct-2020 20:56:19 UTC] PHP Fatal error:  Trait 'Symfony\Component\Console\Tester\TesterTrait' not found in /home/chefrome/public_html/grocery/vendor/symfony/console/Tester/ApplicationTester.php on line 29
+[26-Oct-2020 20:56:28 UTC] PHP Fatal error:  Trait 'Symfony\Component\Console\Tester\TesterTrait' not found in /home/chefrome/public_html/grocery/vendor/symfony/console/Tester/CommandTester.php on line 25

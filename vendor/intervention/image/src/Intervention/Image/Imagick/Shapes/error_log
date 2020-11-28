@@ -1,0 +1,5 @@
+[11-Oct-2020 07:51:51 UTC] PHP Fatal error:  Class 'Intervention\Image\Imagick\Shapes\EllipseShape' not found in /home/chefrome/public_html/grocery/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/CircleShape.php on line 7
+[11-Oct-2020 07:52:22 UTC] PHP Fatal error:  Class 'Intervention\Image\AbstractShape' not found in /home/chefrome/public_html/grocery/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/EllipseShape.php on line 9
+[11-Oct-2020 07:52:55 UTC] PHP Fatal error:  Class 'Intervention\Image\AbstractShape' not found in /home/chefrome/public_html/grocery/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/LineShape.php on line 9
+[11-Oct-2020 07:53:34 UTC] PHP Fatal error:  Class 'Intervention\Image\AbstractShape' not found in /home/chefrome/public_html/grocery/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/PolygonShape.php on line 9
+[11-Oct-2020 07:54:03 UTC] PHP Fatal error:  Class 'Intervention\Image\AbstractShape' not found in /home/chefrome/public_html/grocery/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/RectangleShape.php on line 9

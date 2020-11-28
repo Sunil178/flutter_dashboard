@@ -1,0 +1,2 @@
+[11-Oct-2020 06:40:27 UTC] PHP Fatal error:  Interface 'Doctrine\DBAL\Schema\Synchronizer\SchemaSynchronizer' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/Synchronizer/AbstractSchemaSynchronizer.php on line 11
+[11-Oct-2020 06:40:44 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\Schema\Synchronizer\AbstractSchemaSynchronizer' not found in /home/chefrome/public_html/grocery/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/Synchronizer/SingleDatabaseSynchronizer.php on line 15

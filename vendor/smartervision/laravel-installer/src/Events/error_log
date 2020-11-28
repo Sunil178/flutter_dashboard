@@ -1,0 +1,2 @@
+[28-Oct-2020 12:20:04 UTC] PHP Fatal error:  Trait 'Illuminate\Foundation\Events\Dispatchable' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-installer/src/Events/EnvironmentSaved.php on line 12
+[28-Oct-2020 12:20:09 UTC] PHP Fatal error:  Trait 'Illuminate\Foundation\Events\Dispatchable' not found in /home/chefrome/public_html/grocery/vendor/smartervision/laravel-installer/src/Events/LaravelInstallerFinished.php on line 11

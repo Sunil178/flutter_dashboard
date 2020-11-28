@@ -1,0 +1,2 @@
+[03-Oct-2020 04:14:23 UTC] PHP Fatal error:  Interface 'Symfony\Component\CssSelector\XPath\TranslatorInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/css-selector/XPath/Translator.php on line 31
+[26-Oct-2020 19:13:41 UTC] PHP Fatal error:  Interface 'Symfony\Component\CssSelector\XPath\TranslatorInterface' not found in /home/chefrome/public_html/grocery/vendor/symfony/css-selector/XPath/Translator.php on line 31

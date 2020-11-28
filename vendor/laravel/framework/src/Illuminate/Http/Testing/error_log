@@ -1,0 +1,1 @@
+[08-Oct-2020 22:14:57 UTC] PHP Fatal error:  Class 'Illuminate\Http\UploadedFile' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Http/Testing/File.php on line 7

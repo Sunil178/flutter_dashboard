@@ -1,0 +1,1 @@
+[11-Oct-2020 05:31:26 UTC] PHP Fatal error:  Class 'Mockery\Adapter\Phpunit\MockeryTestCase' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/tests/PHP70/Generator/StringManipulation/Pass/MagicMethodTypeHintsPassTest.php on line 31

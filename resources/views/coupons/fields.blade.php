@@ -102,6 +102,17 @@
   </div>
 </div>
 
+<!-- 'Max Discount Field' -->
+<div class="form-group row ">
+  {!! Form::label('max_discount', trans("Max Discount"), ['class' => 'col-3 control-label text-right']) !!}
+  <div class="col-9">
+      {!! Form::text('max_discount', null,  ['class' => 'form-control','autocomplete'=>'off','placeholder'=>  trans("Max Discount")  ]) !!}
+    <div class="form-text text-muted">
+      {{ trans("max_discount") }}
+    </div>
+  </div>
+</div>
+
 </div>
 @if($customFields)
 <div class="clearfix"></div>

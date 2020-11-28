@@ -1,0 +1,1 @@
+[10-Oct-2020 21:37:32 UTC] PHP Fatal error:  Class 'Swift_IoException' not found in /home/chefrome/public_html/grocery/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Pop/Pop3Exception.php on line 16

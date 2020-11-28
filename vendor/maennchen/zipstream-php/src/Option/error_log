@@ -1,0 +1,4 @@
+[08-Oct-2020 18:21:28 UTC] PHP Fatal error:  Class 'MyCLabs\Enum\Enum' not found in /home/chefrome/public_html/grocery/vendor/maennchen/zipstream-php/src/Option/Method.php on line 14
+[08-Oct-2020 18:21:33 UTC] PHP Fatal error:  Class 'MyCLabs\Enum\Enum' not found in /home/chefrome/public_html/grocery/vendor/maennchen/zipstream-php/src/Option/Version.php on line 16
+[29-Oct-2020 01:55:15 UTC] PHP Fatal error:  Class 'MyCLabs\Enum\Enum' not found in /home/chefrome/public_html/grocery/vendor/maennchen/zipstream-php/src/Option/Method.php on line 14
+[29-Oct-2020 01:55:20 UTC] PHP Fatal error:  Class 'MyCLabs\Enum\Enum' not found in /home/chefrome/public_html/grocery/vendor/maennchen/zipstream-php/src/Option/Version.php on line 16

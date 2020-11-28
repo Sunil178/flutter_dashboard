@@ -1,0 +1,5 @@
+[01-Oct-2020 17:50:39 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Galleries/GalleriesOfUserCriteria.php on line 21
+[26-Oct-2020 15:28:50 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Galleries/GalleriesOfUserCriteria.php on line 21
+[10-Nov-2020 11:00:12 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Galleries/GalleriesOfUserCriteria.php on line 21
+[24-Nov-2020 19:38:48 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Galleries/GalleriesOfUserCriteria.php on line 21
+[27-Nov-2020 23:03:09 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Galleries/GalleriesOfUserCriteria.php on line 21

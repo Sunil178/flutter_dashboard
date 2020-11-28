@@ -1,0 +1,4 @@
+[03-Oct-2020 03:58:47 UTC] PHP Fatal error:  Class 'Symfony\Component\Console\Event\ConsoleEvent' not found in /home/chefrome/public_html/grocery/vendor/symfony/console/Event/ConsoleCommandEvent.php on line 21
+[03-Oct-2020 03:58:49 UTC] PHP Fatal error:  Class 'Symfony\Component\Console\Event\ConsoleEvent' not found in /home/chefrome/public_html/grocery/vendor/symfony/console/Event/ConsoleErrorEvent.php on line 23
+[03-Oct-2020 03:58:51 UTC] PHP Fatal error:  Class 'Symfony\Component\EventDispatcher\Event' not found in /home/chefrome/public_html/grocery/vendor/symfony/console/Event/ConsoleEvent.php on line 24
+[03-Oct-2020 03:58:53 UTC] PHP Fatal error:  Class 'Symfony\Component\Console\Event\ConsoleEvent' not found in /home/chefrome/public_html/grocery/vendor/symfony/console/Event/ConsoleTerminateEvent.php on line 25

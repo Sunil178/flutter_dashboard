@@ -1,0 +1,1 @@
+[07-Oct-2020 14:40:43 UTC] PHP Fatal error:  Trait 'Illuminate\Support\Traits\CapsuleManagerTrait' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Queue/Capsule/Manager.php on line 16

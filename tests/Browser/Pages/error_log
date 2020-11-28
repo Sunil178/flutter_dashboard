@@ -1,0 +1,14 @@
+[02-Oct-2020 03:58:22 UTC] PHP Fatal error:  Class 'Tests\Browser\Pages\Page' not found in /home/chefrome/public_html/grocery/tests/Browser/Pages/HomePage.php on line 7
+[02-Oct-2020 03:58:24 UTC] PHP Fatal error:  Class 'Laravel\Dusk\Page' not found in /home/chefrome/public_html/grocery/tests/Browser/Pages/Page.php on line 7
+[14-Oct-2020 02:43:02 UTC] PHP Fatal error:  Class 'Tests\Browser\Pages\Page' not found in /home/chefrome/public_html/grocery/tests/Browser/Pages/HomePage.php on line 7
+[15-Oct-2020 08:50:07 UTC] PHP Fatal error:  Class 'Laravel\Dusk\Page' not found in /home/chefrome/public_html/grocery/tests/Browser/Pages/Page.php on line 7
+[15-Oct-2020 20:09:03 UTC] PHP Fatal error:  Class 'Laravel\Dusk\Page' not found in /home/chefrome/public_html/grocery/tests/Browser/Pages/Page.php on line 7
+[18-Oct-2020 04:07:59 UTC] PHP Fatal error:  Class 'Laravel\Dusk\Page' not found in /home/chefrome/public_html/grocery/tests/Browser/Pages/Page.php on line 7
+[25-Oct-2020 22:46:59 UTC] PHP Fatal error:  Class 'Tests\Browser\Pages\Page' not found in /home/chefrome/public_html/grocery/tests/Browser/Pages/HomePage.php on line 7
+[25-Oct-2020 22:47:01 UTC] PHP Fatal error:  Class 'Laravel\Dusk\Page' not found in /home/chefrome/public_html/grocery/tests/Browser/Pages/Page.php on line 7
+[28-Oct-2020 11:14:09 UTC] PHP Fatal error:  Class 'Tests\Browser\Pages\Page' not found in /home/chefrome/public_html/grocery/tests/Browser/Pages/HomePage.php on line 7
+[30-Oct-2020 04:40:07 UTC] PHP Fatal error:  Class 'Laravel\Dusk\Page' not found in /home/chefrome/public_html/grocery/tests/Browser/Pages/Page.php on line 7
+[30-Oct-2020 23:18:53 UTC] PHP Fatal error:  Class 'Tests\Browser\Pages\Page' not found in /home/chefrome/public_html/grocery/tests/Browser/Pages/HomePage.php on line 7
+[01-Nov-2020 14:40:26 UTC] PHP Fatal error:  Class 'Laravel\Dusk\Page' not found in /home/chefrome/public_html/grocery/tests/Browser/Pages/Page.php on line 7
+[12-Nov-2020 05:37:00 UTC] PHP Fatal error:  Class 'Tests\Browser\Pages\Page' not found in /home/chefrome/public_html/grocery/tests/Browser/Pages/HomePage.php on line 7
+[14-Nov-2020 21:38:11 UTC] PHP Fatal error:  Class 'Tests\Browser\Pages\Page' not found in /home/chefrome/public_html/grocery/tests/Browser/Pages/HomePage.php on line 7

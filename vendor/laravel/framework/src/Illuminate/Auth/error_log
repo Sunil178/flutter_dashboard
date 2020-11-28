@@ -1,0 +1,8 @@
+[06-Oct-2020 18:07:45 UTC] PHP Fatal error:  Trait 'Illuminate\Auth\CreatesUserProviders' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Auth/AuthManager.php on line 11
+[06-Oct-2020 18:07:57 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php on line 10
+[06-Oct-2020 18:08:30 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Auth\UserProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Auth/DatabaseUserProvider.php on line 12
+[06-Oct-2020 18:08:40 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Auth\UserProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Auth/EloquentUserProvider.php on line 11
+[06-Oct-2020 18:08:48 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Auth\Authenticatable' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Auth/GenericUser.php on line 7
+[06-Oct-2020 18:09:37 UTC] PHP Fatal error:  Trait 'Illuminate\Auth\GuardHelpers' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Auth/RequestGuard.php on line 12
+[06-Oct-2020 18:09:47 UTC] PHP Fatal error:  Trait 'Illuminate\Auth\GuardHelpers' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Auth/SessionGuard.php on line 21
+[06-Oct-2020 18:09:55 UTC] PHP Fatal error:  Trait 'Illuminate\Auth\GuardHelpers' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Auth/TokenGuard.php on line 11
