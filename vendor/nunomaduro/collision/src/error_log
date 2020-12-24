@@ -25,3 +25,6 @@
 [24-Nov-2020 06:02:32 UTC] PHP Fatal error:  Interface 'NunoMaduro\Collision\Contracts\Provider' not found in /home/chefrome/public_html/grocery/vendor/nunomaduro/collision/src/Provider.php on line 24
 [25-Nov-2020 03:59:08 UTC] PHP Fatal error:  Class 'JakubOnderka\PhpConsoleHighlighter\Highlighter' not found in /home/chefrome/public_html/grocery/vendor/nunomaduro/collision/src/Highlighter.php on line 23
 [25-Nov-2020 22:39:49 UTC] PHP Fatal error:  Class 'Whoops\Handler\Handler' not found in /home/chefrome/public_html/grocery/vendor/nunomaduro/collision/src/Handler.php on line 24
+[06-Dec-2020 15:51:00 UTC] PHP Fatal error:  Interface 'NunoMaduro\Collision\Contracts\ArgumentFormatter' not found in /home/chefrome/public_html/grocery/vendor/nunomaduro/collision/src/ArgumentFormatter.php on line 21
+[06-Dec-2020 23:21:40 UTC] PHP Fatal error:  Class 'JakubOnderka\PhpConsoleHighlighter\Highlighter' not found in /home/chefrome/public_html/grocery/vendor/nunomaduro/collision/src/Highlighter.php on line 23
+[09-Dec-2020 12:35:49 UTC] PHP Fatal error:  Interface 'NunoMaduro\Collision\Contracts\ArgumentFormatter' not found in /home/chefrome/public_html/grocery/vendor/nunomaduro/collision/src/ArgumentFormatter.php on line 21

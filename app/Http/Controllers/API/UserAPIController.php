@@ -53,6 +53,11 @@ class UserAPIController extends Controller
             if (auth()->attempt(['email' => $request->input('email'), 'password' => $request->input('password')])) {
                 // Authentication passed...
                 $user = auth()->user();
+                if (!$user->hasRole('client')) {
+                    $this->sendError('User not found', 401);
+                }
+                else
+                {
                 $user->device_token = $request->input('device_token', '');
                 $user->save();
                 if($user->user_refer_code === null){
@@ -61,11 +66,49 @@ class UserAPIController extends Controller
                 }
                 
                 return $this->sendResponse($user, 'User retrieved successfully');
+                }
             }
         } catch (\Exception $e) {
             return $this->sendError($e->getMessage(), 401);
         }
 
+    }
+    
+    
+    function getreferralmoney()
+    {
+        
+        
+        $data= DB::table('app_settings')
+                     ->select('value')
+                     ->where('id', '=', 184)
+                     ->get();
+                    // return $data[0]->value;
+                      return $this->sendResponse($data[0]->value, 'Data Found');
+                     
+     
+    }
+    function  razorcred()
+    {
+          $razorpay_key=DB::table('app_settings')
+                     ->select('value')
+                     ->where('id', '=', 166)
+                     ->get();
+                     // print_r($razorpay_key[0]->value);
+               $razorpay_secrate=DB::table('app_settings')
+                     ->select('value')
+                     ->where('id', '=', 167)
+                     ->get(); 
+              $maxCoupon=DB::table('app_settings')
+                 ->select('value')
+                    ->where('id', '=', 185)
+                 ->get();
+                      //print_r($razorpay_secrate[0]->value);
+                      $newArray=array();
+                      $newArray["key"]=$razorpay_key[0]->value;
+                      $newArray["secrate"]=$razorpay_secrate[0]->value;
+                        $newArray["max_coupon"]=$maxCoupon[0]->value;
+                   return $this->sendResponse($newArray, 'Data Found');
     }
 
     /**
@@ -82,6 +125,12 @@ class UserAPIController extends Controller
                 'email' => 'required|unique:users|email',
                 'password' => 'required',
             ]);
+              $useremail = $request->input('email');
+            $userId = DB::table('users')->where('email', $useremail)->first();
+            if(!empty($userId))
+            {
+                 return $this->sendResponse($useremail, 'email already exist');
+            }
             $user = new User;
             $user->name = $request->input('name');
             $user->email = $request->input('email');
@@ -310,5 +359,26 @@ class UserAPIController extends Controller
        
          
          
+     }
+     function existEmail(Request $req)
+     {
+         $email=$req->input('email');
+         $result = DB::table('users')->where('email', $email)->first();
+         if(!empty($result))
+         {
+              return [
+               'status' => true,
+               'msg' => 'Email Found',
+               'data' => $result
+               ];
+         }
+         else
+         {
+              return [
+               'status' => false,
+               'msg' => 'Email not found',
+               'data' => $result
+               ];
+         }
      }
 }

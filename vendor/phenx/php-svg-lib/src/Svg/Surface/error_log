@@ -11,3 +11,5 @@
 [13-Nov-2020 06:48:03 UTC] PHP Fatal error:  Interface 'Svg\Surface\SurfaceInterface' not found in /home/chefrome/public_html/grocery/vendor/phenx/php-svg-lib/src/Svg/Surface/SurfaceCpdf.php on line 14
 [25-Nov-2020 00:30:40 UTC] PHP Fatal error:  Interface 'Svg\Surface\SurfaceInterface' not found in /home/chefrome/public_html/grocery/vendor/phenx/php-svg-lib/src/Svg/Surface/SurfaceGmagick.php on line 13
 [25-Nov-2020 17:27:18 UTC] PHP Fatal error:  Interface 'Svg\Surface\SurfaceInterface' not found in /home/chefrome/public_html/grocery/vendor/phenx/php-svg-lib/src/Svg/Surface/SurfacePDFLib.php on line 14
+[04-Dec-2020 00:15:52 UTC] PHP Fatal error:  Interface 'Svg\Surface\SurfaceInterface' not found in /home/chefrome/public_html/grocery/vendor/phenx/php-svg-lib/src/Svg/Surface/SurfaceCpdf.php on line 14
+[07-Dec-2020 03:41:59 UTC] PHP Fatal error:  Interface 'Svg\Surface\SurfaceInterface' not found in /home/chefrome/public_html/grocery/vendor/phenx/php-svg-lib/src/Svg/Surface/SurfaceCpdf.php on line 14

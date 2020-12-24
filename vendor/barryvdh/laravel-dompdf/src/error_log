@@ -2,3 +2,5 @@
 [29-Oct-2020 15:43:22 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/barryvdh/laravel-dompdf/src/ServiceProvider.php on line 9
 [13-Nov-2020 01:42:38 UTC] PHP Fatal error:  Class 'Illuminate\Support\Facades\Facade' not found in /home/chefrome/public_html/grocery/vendor/barryvdh/laravel-dompdf/src/Facade.php on line 6
 [21-Nov-2020 20:56:00 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/barryvdh/laravel-dompdf/src/ServiceProvider.php on line 9
+[30-Nov-2020 14:30:18 UTC] PHP Fatal error:  Class 'Illuminate\Support\Facades\Facade' not found in /home/chefrome/public_html/grocery/vendor/barryvdh/laravel-dompdf/src/Facade.php on line 6
+[03-Dec-2020 17:47:39 UTC] PHP Fatal error:  Class 'Illuminate\Support\Facades\Facade' not found in /home/chefrome/public_html/grocery/vendor/barryvdh/laravel-dompdf/src/Facade.php on line 6

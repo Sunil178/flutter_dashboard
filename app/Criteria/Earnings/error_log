@@ -10,3 +10,4 @@
 [25-Oct-2020 23:41:54 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Earnings/EarningOfUserCriteria.php on line 13
 [01-Nov-2020 01:10:44 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Earnings/EarningOfMarketCriteria.php on line 13
 [16-Nov-2020 00:12:51 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Earnings/EarningOfMarketCriteria.php on line 13
+[03-Dec-2020 15:35:40 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Earnings/EarningOfMarketCriteria.php on line 13

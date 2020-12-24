@@ -39,3 +39,10 @@
 [22-Nov-2020 04:57:46 UTC] PHP Fatal error:  Class 'Illuminate\Notifications\Notification' not found in /home/chefrome/public_html/grocery/app/Notifications/AssignedOrder.php on line 11
 [22-Nov-2020 06:14:07 UTC] PHP Fatal error:  Class 'Illuminate\Notifications\Notification' not found in /home/chefrome/public_html/grocery/app/Notifications/StatusChangedOrder.php on line 18
 [25-Nov-2020 05:15:37 UTC] PHP Fatal error:  Class 'Illuminate\Notifications\Notification' not found in /home/chefrome/public_html/grocery/app/Notifications/AssignedOrder.php on line 11
+[30-Nov-2020 23:46:09 UTC] PHP Fatal error:  Class 'Illuminate\Notifications\Notification' not found in /home/chefrome/public_html/grocery/app/Notifications/Newvisit.php on line 10
+[02-Dec-2020 11:20:06 UTC] PHP Fatal error:  Class 'Illuminate\Notifications\Notification' not found in /home/chefrome/public_html/grocery/app/Notifications/NewOrder.php on line 12
+[05-Dec-2020 15:57:24 UTC] PHP Fatal error:  Class 'Illuminate\Notifications\Notification' not found in /home/chefrome/public_html/grocery/app/Notifications/NewOrder.php on line 12
+[05-Dec-2020 16:24:14 UTC] PHP Fatal error:  Class 'Illuminate\Notifications\Notification' not found in /home/chefrome/public_html/grocery/app/Notifications/AssignedOrder.php on line 11
+[05-Dec-2020 19:47:00 UTC] PHP Fatal error:  Class 'Illuminate\Notifications\Notification' not found in /home/chefrome/public_html/grocery/app/Notifications/Newvisit.php on line 10
+[07-Dec-2020 18:50:32 UTC] PHP Fatal error:  Class 'Illuminate\Notifications\Notification' not found in /home/chefrome/public_html/grocery/app/Notifications/StatusChangedOrder.php on line 18
+[08-Dec-2020 16:35:00 UTC] PHP Fatal error:  Class 'Illuminate\Notifications\Notification' not found in /home/chefrome/public_html/grocery/app/Notifications/AssignedOrder.php on line 11

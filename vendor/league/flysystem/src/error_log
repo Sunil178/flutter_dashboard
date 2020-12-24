@@ -65,3 +65,4 @@
 [26-Nov-2020 11:15:24 UTC] PHP Fatal error:  Interface 'League\Flysystem\FilesystemException' not found in /home/chefrome/public_html/grocery/vendor/league/flysystem/src/NotSupportedException.php on line 8
 [26-Nov-2020 15:46:39 UTC] PHP Fatal error:  Class 'League\Flysystem\Exception' not found in /home/chefrome/public_html/grocery/vendor/league/flysystem/src/UnreadableFileException.php on line 7
 [27-Nov-2020 20:58:34 UTC] PHP Fatal error:  Trait 'League\Flysystem\Plugin\PluggableTrait' not found in /home/chefrome/public_html/grocery/vendor/league/flysystem/src/Filesystem.php on line 20
+[09-Dec-2020 12:06:23 UTC] PHP Fatal error:  Class 'League\Flysystem\Handler' not found in /home/chefrome/public_html/grocery/vendor/league/flysystem/src/Directory.php on line 8

@@ -19,3 +19,10 @@
 [22-Nov-2020 07:20:56 UTC] PHP Fatal error:  Trait 'Illuminate\Foundation\Events\Dispatchable' not found in /home/chefrome/public_html/grocery/app/Events/MarketChangedEvent.php on line 12
 [23-Nov-2020 12:39:15 UTC] PHP Fatal error:  Trait 'Illuminate\Foundation\Events\Dispatchable' not found in /home/chefrome/public_html/grocery/app/Events/UserRoleChangedEvent.php on line 12
 [26-Nov-2020 15:22:31 UTC] PHP Fatal error:  Trait 'Illuminate\Foundation\Events\Dispatchable' not found in /home/chefrome/public_html/grocery/app/Events/UserRoleChangedEvent.php on line 12
+[29-Nov-2020 06:43:48 UTC] PHP Fatal error:  Trait 'Illuminate\Foundation\Events\Dispatchable' not found in /home/chefrome/public_html/grocery/app/Events/MarketChangedEvent.php on line 12
+[30-Nov-2020 23:14:26 UTC] PHP Fatal error:  Trait 'Illuminate\Foundation\Events\Dispatchable' not found in /home/chefrome/public_html/grocery/app/Events/OrderChangedEvent.php on line 18
+[02-Dec-2020 11:56:46 UTC] PHP Fatal error:  Trait 'Illuminate\Foundation\Events\Dispatchable' not found in /home/chefrome/public_html/grocery/app/Events/MarketChangedEvent.php on line 12
+[04-Dec-2020 02:22:09 UTC] PHP Fatal error:  Trait 'Illuminate\Foundation\Events\Dispatchable' not found in /home/chefrome/public_html/grocery/app/Events/OrderChangedEvent.php on line 18
+[05-Dec-2020 00:16:46 UTC] PHP Fatal error:  Trait 'Illuminate\Foundation\Events\Dispatchable' not found in /home/chefrome/public_html/grocery/app/Events/UserRoleChangedEvent.php on line 12
+[08-Dec-2020 01:49:31 UTC] PHP Fatal error:  Trait 'Illuminate\Foundation\Events\Dispatchable' not found in /home/chefrome/public_html/grocery/app/Events/UserRoleChangedEvent.php on line 12
+[08-Dec-2020 22:30:24 UTC] PHP Fatal error:  Trait 'Illuminate\Foundation\Events\Dispatchable' not found in /home/chefrome/public_html/grocery/app/Events/OrderChangedEvent.php on line 18

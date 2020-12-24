@@ -1,0 +1,6 @@
+[28-Nov-2020 19:14:39 UTC] PHP Fatal error:  Class 'Faker\Provider\Text' not found in /home/chefrome/public_html/grocery/vendor/fzaninotto/faker/src/Faker/Provider/ar_JO/Text.php on line 5
+[29-Nov-2020 15:55:47 UTC] PHP Fatal error:  Class 'Faker\Provider\Company' not found in /home/chefrome/public_html/grocery/vendor/fzaninotto/faker/src/Faker/Provider/ar_JO/Company.php on line 5
+[30-Nov-2020 05:56:42 UTC] PHP Fatal error:  Class 'Faker\Provider\Address' not found in /home/chefrome/public_html/grocery/vendor/fzaninotto/faker/src/Faker/Provider/ar_JO/Address.php on line 5
+[30-Nov-2020 21:01:13 UTC] PHP Fatal error:  Class 'Faker\Provider\Person' not found in /home/chefrome/public_html/grocery/vendor/fzaninotto/faker/src/Faker/Provider/ar_JO/Person.php on line 5
+[01-Dec-2020 22:18:13 UTC] PHP Fatal error:  Class 'Faker\Provider\Text' not found in /home/chefrome/public_html/grocery/vendor/fzaninotto/faker/src/Faker/Provider/ar_JO/Text.php on line 5
+[02-Dec-2020 00:01:07 UTC] PHP Fatal error:  Class 'Faker\Provider\Internet' not found in /home/chefrome/public_html/grocery/vendor/fzaninotto/faker/src/Faker/Provider/ar_JO/Internet.php on line 5

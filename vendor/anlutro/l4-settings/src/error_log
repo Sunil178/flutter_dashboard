@@ -19,3 +19,7 @@
 [25-Nov-2020 05:31:48 UTC] PHP Fatal error:  Class 'Illuminate\Support\Manager' not found in /home/chefrome/public_html/grocery/vendor/anlutro/l4-settings/src/SettingsManager.php on line 15
 [26-Nov-2020 12:21:09 UTC] PHP Fatal error:  Class 'anlutro\LaravelSettings\SettingStore' not found in /home/chefrome/public_html/grocery/vendor/anlutro/l4-settings/src/DatabaseSettingStore.php on line 14
 [27-Nov-2020 05:55:07 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/anlutro/l4-settings/src/ServiceProvider.php on line 14
+[28-Nov-2020 07:54:30 UTC] PHP Fatal error:  Class 'Illuminate\Support\Manager' not found in /home/chefrome/public_html/grocery/vendor/anlutro/l4-settings/src/SettingsManager.php on line 15
+[01-Dec-2020 00:03:38 UTC] PHP Fatal error:  Class 'anlutro\LaravelSettings\SettingStore' not found in /home/chefrome/public_html/grocery/vendor/anlutro/l4-settings/src/MemorySettingStore.php on line 12
+[01-Dec-2020 02:16:33 UTC] PHP Fatal error:  Class 'anlutro\LaravelSettings\SettingStore' not found in /home/chefrome/public_html/grocery/vendor/anlutro/l4-settings/src/JsonSettingStore.php on line 14
+[01-Dec-2020 19:14:12 UTC] PHP Fatal error:  Class 'Illuminate\Support\Facades\Facade' not found in /home/chefrome/public_html/grocery/vendor/anlutro/l4-settings/src/Facade.php on line 12

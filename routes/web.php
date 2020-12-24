@@ -24,7 +24,8 @@ Auth::routes();
 
 Route::get('payments/failed', 'PayPalController@index')->name('payments.failed');
 Route::get('payments/razorpay/checkout', 'RazorPayController@checkout');
-Route::post('payments/razorpay/pay-success/{userId}/{deliveryAddressId?}/{couponCode?}', 'RazorPayController@paySuccess');
+Route::post('payments/razorpay/pay-success/{userId}/{deliveryAddressId?}', 'RazorPayController@paySuccess');
+Route::post('payments/razorpay/pay-successs/{userId}', 'RazorPayController@paySuccesss');
 Route::get('payments/razorpay', 'RazorPayController@index');
 
 Route::get('payments/paypal/express-checkout', 'PayPalController@getExpressCheckout')->name('paypal.express-checkout');

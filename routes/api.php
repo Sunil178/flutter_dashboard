@@ -42,7 +42,14 @@ Route::post('login', 'API\UserAPIController@login');
     Route::get('foo', function () {
     return 'Hello World';
 });
+//email validation
+Route::post('emailExist', 'API\UserAPIController@existEmail');
+//end
+
+
  Route::get('refer_code/{code}/{id}', 'API\UserAPIController@referCode');
+ Route::get("referralmoney",'API\UserAPIController@getreferralmoney');
+  Route::get("razorcred",'API\UserAPIController@razorcred');
   Route::post('refer_code1/', 'UserController@referCodee');
    Route::get('ordersdriver/{id}', 'OrderController@driverData')->name('ordersdriver.driverData');
 
@@ -84,6 +91,7 @@ Route::middleware('auth:api')->group(function () {
             Route::post('users/{id}', 'API\UserAPIController@update');
             Route::resource('faq_categories', 'API\FaqCategoryAPIController');
             Route::resource('faqs', 'API\FaqAPIController');
+            Route::post('location/update', 'API\LocationController@update');
         });
     });
     Route::group(['middleware' => ['role:manager']], function () {

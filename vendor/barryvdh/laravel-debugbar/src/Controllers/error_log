@@ -1,1 +1,5 @@
 [27-Nov-2020 16:59:17 UTC] PHP Fatal error:  Class 'Barryvdh\Debugbar\Controllers\BaseController' not found in /home/chefrome/public_html/grocery/vendor/barryvdh/laravel-debugbar/src/Controllers/TelescopeController.php on line 11
+[29-Nov-2020 03:43:37 UTC] PHP Fatal error:  Class 'Barryvdh\Debugbar\Controllers\BaseController' not found in /home/chefrome/public_html/grocery/vendor/barryvdh/laravel-debugbar/src/Controllers/CacheController.php on line 5
+[29-Nov-2020 21:19:51 UTC] PHP Fatal error:  Class 'Barryvdh\Debugbar\Controllers\BaseController' not found in /home/chefrome/public_html/grocery/vendor/barryvdh/laravel-debugbar/src/Controllers/OpenHandlerController.php on line 7
+[30-Nov-2020 14:43:16 UTC] PHP Fatal error:  Class 'Barryvdh\Debugbar\Controllers\BaseController' not found in /home/chefrome/public_html/grocery/vendor/barryvdh/laravel-debugbar/src/Controllers/AssetController.php on line 5
+[30-Nov-2020 20:55:58 UTC] PHP Fatal error:  Class 'Barryvdh\Debugbar\Controllers\BaseController' not found in /home/chefrome/public_html/grocery/vendor/barryvdh/laravel-debugbar/src/Controllers/TelescopeController.php on line 11

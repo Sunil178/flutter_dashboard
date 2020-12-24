@@ -39,3 +39,6 @@
 [24-Nov-2020 03:20:45 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/app/Providers/AppServiceProvider.php on line 18
 [25-Nov-2020 07:51:19 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Support\Providers\RouteServiceProvider' not found in /home/chefrome/public_html/grocery/app/Providers/RouteServiceProvider.php on line 8
 [25-Nov-2020 14:19:17 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/app/Providers/BroadcastServiceProvider.php on line 8
+[29-Nov-2020 17:48:34 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Support\Providers\AuthServiceProvider' not found in /home/chefrome/public_html/grocery/app/Providers/AuthServiceProvider.php on line 8
+[05-Dec-2020 19:53:47 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/app/Providers/BroadcastServiceProvider.php on line 8
+[07-Dec-2020 22:35:33 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/app/Providers/AppServiceProvider.php on line 18

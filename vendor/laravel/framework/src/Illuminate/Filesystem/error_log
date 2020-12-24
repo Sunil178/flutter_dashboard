@@ -6,3 +6,5 @@
 [25-Nov-2020 16:39:41 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Filesystem\Factory' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemManager.php on line 25
 [25-Nov-2020 19:06:35 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php on line 7
 [27-Nov-2020 17:36:30 UTC] PHP Fatal error:  Class 'League\Flysystem\Cached\Storage\AbstractCache' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Filesystem/Cache.php on line 8
+[28-Nov-2020 13:19:46 UTC] PHP Fatal error:  Trait 'Illuminate\Support\Traits\Macroable' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php on line 13
+[29-Nov-2020 14:58:46 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Filesystem\Filesystem' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemAdapter.php on line 31

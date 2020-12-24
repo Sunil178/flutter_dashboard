@@ -2,3 +2,5 @@
 [17-Nov-2020 07:34:14 UTC] PHP Fatal error:  Class 'Egulias\EmailValidator\Parser\Parser' not found in /home/chefrome/public_html/grocery/vendor/egulias/email-validator/EmailValidator/Parser/DomainPart.php on line 35
 [17-Nov-2020 10:20:51 UTC] PHP Fatal error:  Class 'Egulias\EmailValidator\Parser\Parser' not found in /home/chefrome/public_html/grocery/vendor/egulias/email-validator/EmailValidator/Parser/LocalPart.php on line 15
 [19-Nov-2020 18:19:29 UTC] PHP Fatal error:  Class 'Egulias\EmailValidator\Parser\Parser' not found in /home/chefrome/public_html/grocery/vendor/egulias/email-validator/EmailValidator/Parser/LocalPart.php on line 15
+[05-Dec-2020 00:57:01 UTC] PHP Fatal error:  Class 'Egulias\EmailValidator\Parser\Parser' not found in /home/chefrome/public_html/grocery/vendor/egulias/email-validator/EmailValidator/Parser/DomainPart.php on line 35
+[05-Dec-2020 03:39:24 UTC] PHP Fatal error:  Class 'Egulias\EmailValidator\Parser\Parser' not found in /home/chefrome/public_html/grocery/vendor/egulias/email-validator/EmailValidator/Parser/LocalPart.php on line 15

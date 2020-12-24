@@ -17,6 +17,7 @@ use App\Models\User;
 use App\Repositories\DeliveryAddressRepository;
 use Illuminate\Http\Request;
 use Flash;
+use DB;
 use Razorpay\Api\Api;
 
 class RazorPayController extends ParentOrderController
@@ -56,19 +57,52 @@ class RazorPayController extends ParentOrderController
        
         try{
             $user = $this->userRepository->findByField('api_token', $request->get('api_token'))->first();
-            $coupon = $this->couponRepository->findByField('code', $request->get('coupon_code'))->first();
-            $deliveryId = $request->get('delivery_address_id');
+           // $coupon = $this->couponRepository->findByField('code', $request->get('coupon_code'))->first();
+            // $deliveryId = $request->get('delivery_address_id');
+            if($request->get('delivery_address_id')=='0')
+            {
+            $deliveryId="0";
+            $deliveryAddress='0';
+            }
+            else
+            {
+                $deliveryId = $request->get('delivery_address_id');
             $deliveryAddress = $this->deliveryAddressRepo->findWithoutFail($deliveryId);
+            }
             $payment_method=$request->get('_delivery_or_pickup');
+            $total=$request->get('total');
+            $finalTax=$request->get('finalTax');
+            $deliveryFee=$request->get('deliveryFee');
+            // $total='1';
+            // $finalTax='1';
+            // $deliveryFee='1';
+            $data=$request->all();
+            
+            
+           $insertAddData=DB::insert('insert into afterpaysuccess (user_id,method,total,tax,delivery_fee,deliveryId) values (?,?,?,?,?,?)', [$user->id,$payment_method,$total,$finalTax,$deliveryFee,$deliveryId]);
+            
             if (!empty($user)) {
                 $this->order->user = $user;
                 $this->order->user_id = $user->id;
+               if($request->get('delivery_address_id')!='0')
+            {
                 $this->order->delivery_address_id = $deliveryId;
-                $this->coupon = $coupon;
-                $razorPayCart = $this->getOrderData($payment_method);
+            }
+              //  $this->coupon = $coupon;
+                $razorPayCart = $this->getOrderData($payment_method,$total);
 
                 $razorPayOrder = $this->api->order->create($razorPayCart);
+                // print_r($deliveryAddress);
+                // exit;
+              if($request->get('delivery_address_id')=='0')
+            {
+             $fields = $this->getRazorPayFieldss($razorPayOrder, $user);
+          }
+          else
+          {
+              
                 $fields = $this->getRazorPayFields($razorPayOrder, $user, $deliveryAddress);
+          }
                 //url-ify the data for the POST
                 $fields_string = http_build_query($fields);
 
@@ -100,17 +134,22 @@ class RazorPayController extends ParentOrderController
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function paySuccess(int $userId, int $deliveryAddressId,string $couponCode = null, Request $request)
+     public function paySuccess(int $userId,string $deliveryAddressId, Request $request)
     {
+         
+       
         $data = $request->all();
 
         $description = $this->getPaymentDescription($data);
 
         $this->order->user_id = $userId;
         $this->order->user = $this->userRepository->findWithoutFail($userId);
-        $this->coupon = $this->couponRepository->findByField('code', $couponCode)->first();
+        //$this->coupon = $this->couponRepository->findByField('code', $couponCode)->first();
+        if(gettype($deliveryAddressId)!='string')
+        {
         $this->order->delivery_address_id = $deliveryAddressId;
-
+                }
+              
 
         if ($request->hasAny(['razorpay_payment_id','razorpay_signature'])) {
 
@@ -119,7 +158,45 @@ class RazorPayController extends ParentOrderController
             $this->order->payment->method = 'RazorPay';
             $this->order->payment->description = $description;
 
-            $this->createOrder();
+            $this->createOrder($userId);
+
+            return redirect(url('payments/razorpay'));
+        }else{
+            Flash::error("Error processing RazorPay payment for your order");
+            return redirect(route('payments.failed'));
+        }
+
+    }
+    
+    
+    // /if not address the this
+
+
+ public function paySuccesss(int $userId, Request $request)
+    {
+         
+       
+        $data = $request->all();
+
+        $description = $this->getPaymentDescription($data);
+
+        $this->order->user_id = $userId;
+        $this->order->user = $this->userRepository->findWithoutFail($userId);
+        //$this->coupon = $this->couponRepository->findByField('code', $couponCode)->first();
+        // if(gettype($deliveryAddressId)!='string')
+        // {
+        // $this->order->delivery_address_id = $deliveryAddressId;
+        //         }
+              
+
+        if ($request->hasAny(['razorpay_payment_id','razorpay_signature'])) {
+
+            $this->order->payment = new Payment();
+            $this->order->payment->status = trans('lang.order_paid');
+            $this->order->payment->method = 'RazorPay';
+            $this->order->payment->description = $description;
+
+            $this->createOrder($userId);
 
             return redirect(url('payments/razorpay'));
         }else{
@@ -135,11 +212,11 @@ class RazorPayController extends ParentOrderController
      *
      * @return array
      */
-    private function getOrderData($payment_method)
+    private function getOrderData($payment_method,$total)
     {
         $data = [];
-        $this->calculateTotal($payment_method);
-        $amountINR = $this->total;
+        // $this->calculateTotal($payment_method);
+        $amountINR = $total;
         if ($this->currency !== 'INR') {
             $url = "https://api.exchangeratesapi.io/latest?symbols=$this->currency&base=INR";
             $exchange = json_decode(file_get_contents($url), true);
@@ -160,6 +237,46 @@ class RazorPayController extends ParentOrderController
      * @param DeliveryAddress $deliveryAddress
      * @return array
      */
+    private function getRazorPayFieldss($razorPayOrder, User $user): array
+    {
+        
+        $market = $this->order->user->cart[0]->product->market;
+
+        $fields = array(
+            'key_id' => config('services.razorpay.key', ''),
+            'order_id' => $razorPayOrder['id'],
+            'name' => $market->name,
+            'description' => count($this->order->user->cart) ." items",
+            'image' => $this->order->user->cart[0]->product->market->getFirstMedia('image')->getUrl('thumb'),
+            'prefill' => [
+                'name' => $user->name,
+                'email' => $user->email,
+                'contact' => $user->custom_fields['phone']['value'],
+            ],
+            
+            'callback_url' => url('payments/razorpay/pay-successs',['user_id'=>$user->id]),
+
+        );
+        
+
+        if (isset($this->coupon)){
+            $fields['callback_url'] = url('payments/razorpay/pay-successs',['user_id'=>$user->id]);
+        }
+        if (!empty($deliveryAddress)) {
+            $fields ['notes'] = [
+                'delivery_address' => $deliveryAddress->address,
+            ];
+        }
+
+
+        if ($this->currency !== 'INR') {
+            $fields['display_amount'] = $this->total;
+            $fields['display_currency'] = $this->currency;
+        }
+        return $fields;
+    } 
+     
+     
     private function getRazorPayFields($razorPayOrder, User $user, DeliveryAddress $deliveryAddress): array
     {
         $market = $this->order->user->cart[0]->product->market;

@@ -1,3 +1,4 @@
 [03-Oct-2020 20:19:05 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/tinker/src/TinkerServiceProvider.php on line 10
 [29-Oct-2020 00:45:07 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/tinker/src/TinkerServiceProvider.php on line 10
 [20-Nov-2020 17:07:42 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/tinker/src/TinkerServiceProvider.php on line 10
+[09-Dec-2020 03:31:42 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/tinker/src/TinkerServiceProvider.php on line 10

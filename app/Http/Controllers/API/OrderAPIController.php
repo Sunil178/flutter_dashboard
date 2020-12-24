@@ -24,6 +24,7 @@ use App\Repositories\OrderRepository;
 use App\Repositories\PaymentRepository;
 use App\Repositories\ProductOrderRepository;
 use App\Repositories\UserRepository;
+use Carbon\Carbon;
 use Flash;
 use DB;
 use Illuminate\Http\Request;
@@ -157,10 +158,6 @@ class OrderAPIController extends Controller
      */
     private function stripPayment(Request $request)
     {
-        
-        
-        
-  
         $input = $request->all();
         $amount = 0;
         try {
@@ -223,12 +220,36 @@ class OrderAPIController extends Controller
     {
          
         $input = $request->all();
-           
+        // print_r($input);
+        // exit;
+            $wallet=$input['isWallet'];
+          if($wallet=='1')
+          {
+              $status_payment='Paid';
+              $description='Order paid successfully';
+          }
+          else
+          {
+             $status_payment='Waiting for Client';  
+             $description=trans("lang.payment_order_waiting");
+          }
         $amount = 0;
+      if($request->delivery_address_id=null || $request->delivery_address_id="null")
+      {
+        //   echo "sdafdsf";
+        //   exit;
+          $request->delivery_address_id='24';
+      }
+    //   print_r($request->delivery_address_id);
+    //   exit;
+      
+    //   exit;
         try {
             $order = $this->orderRepository->create(
-                $request->only('user_id', 'order_status_id', 'tax', 'delivery_address_id', 'delivery_fee', 'hint')
+                $request->only('user_id', 'order_status_id', 'tax', 'delivery_address_id', 'delivery_fee', 'hint','total','finalTax')
             );
+            
+            
             Log::info($input['products']);
             foreach ($input['products'] as $productOrder) {
                 $productOrder['order_id'] = $order->id;
@@ -239,9 +260,9 @@ class OrderAPIController extends Controller
             $amountWithTax = $amount + ($amount * $order->tax / 100);
             $payment = $this->paymentRepository->create([
                 "user_id" => $input['user_id'],
-                "description" => trans("lang.payment_order_waiting"),
+                "description" => $description ,
                 "price" => $amountWithTax,
-                "status" => 'Waiting for Client',
+                "status" => $status_payment,
                 "method" => $input['payment']['method'],
             ]);
 
@@ -276,7 +297,8 @@ class OrderAPIController extends Controller
         }
         $oldStatus = $oldOrder->payment->status;
         $input = $request->all();
-
+  if (!array_key_exists("active",$input))
+  {
     $user_ID=$input['user_id'];
            
         $usersD = DB::table('users')
@@ -288,62 +310,112 @@ class OrderAPIController extends Controller
    $allowrefer = DB::table('orders')->where('user_id', $user_ID )->where('order_status_id',5)->first();
                  
              //  print_r($allowrefer);
-            //   exit;
+             //   exit;
 
-    $sendersUSerID=$usersD[0]->applied_used_id;
-
-
-
+            $sendersUSerID=$usersD[0]->applied_used_id;
                    if(empty($allowrefer))
-                       {
-                         $allowreferD = DB::table('app_settings')->where('id', 184 )->get();
-                         
-$ammounttoadd=$allowreferD[0]->value;
-                         $ch = curl_init();
+                    {
+                        if($input['order_status_id']==5){
+                            $allowreferD = DB::table('app_settings')->where('id', 184 )->get();
+                            $ammounttoadd=$allowreferD[0]->value;
+                            
+                            //Credit to user
+                            $trans_id = '#' . substr(md5(microtime()), rand(0, 26), 7);
+                            $getUserOldAmt = DB::table('users')
+                                ->where('id',$user_ID)
+                                ->first();
+                            $net_amount = floatval($getUserOldAmt->ewallet_amount) + floatval($ammounttoadd);
+                            $save_net_price = DB::table('users')
+                                ->where('id',$user_ID)
+                                ->update(['ewallet_amount' => $net_amount,'updated_at' => Carbon::now()]);
+                            
+                            $update_statement = DB::table('ewallet_passbook')
+                                ->insertGetId([
+                                    'user_id' => $user_ID,
+                                    'transaction_amount' => $ammounttoadd,
+                                    'transaction_id' => $trans_id,
+                                    'transaction_type' => 'CREDITED',
+                                    'message' => $ammounttoadd. ' rupees has been credited to wallet via Referal Code',
+                                    'created_at' => Carbon::now(),
+                                ]);
+                                
+                                //Credit to referrer    
+                                $trans_id = '#' . substr(md5(microtime()), rand(0, 26), 7);
+                                $getUserOldAmt = DB::table('users')
+                                    ->where('id',$sendersUSerID)
+                                    ->first();
+                                $net_amount = floatval($getUserOldAmt->ewallet_amount) + floatval($ammounttoadd);
+                                $save_net_price = DB::table('users')
+                                    ->where('id',$sendersUSerID)
+                                    ->update(['ewallet_amount' => $net_amount,'updated_at' => Carbon::now()]);
+                                
+                                $update_statement = DB::table('ewallet_passbook')
+                                    ->insertGetId([
+                                        'user_id' => $sendersUSerID,
+                                        'transaction_amount' => $ammounttoadd,
+                                        'transaction_id' => $trans_id,
+                                        'transaction_type' => 'CREDITED',
+                                        'message' => $ammounttoadd. ' rupees has been credited to wallet via Referal Code',
+                                        'created_at' => Carbon::now(),
+                                    ]);    
+                        }
+                //         $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL,"https://chefrome.com/grocery/public/api/wallet/add");
-curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_POSTFIELDS,
-            "user_id=$user_ID&amount=$ammounttoadd&added_via='ReferelCode'");
+                //         curl_setopt($ch, CURLOPT_URL,"https://chefrome.com/grocery/public/api/wallet/add");
+                //         curl_setopt($ch, CURLOPT_POST, 1);
+                //         curl_setopt($ch, CURLOPT_POSTFIELDS,
+                //                     "user_id=$user_ID&amount=$ammounttoadd&added_via='ReferelCode'");
+                        
+                //         // In real life you should use something like:
+                //         // curl_setopt($ch, CURLOPT_POSTFIELDS, 
+                //         //          http_build_query(array('postvar1' => 'value1')));
+                        
+                //         // Receive server response ...
+                //         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                        
+                //         $server_output = curl_exec($ch);
+                        
+                //         curl_close ($ch);
 
-// In real life you should use something like:
-// curl_setopt($ch, CURLOPT_POSTFIELDS, 
-//          http_build_query(array('postvar1' => 'value1')));
+                //         $ch = curl_init();
 
-// Receive server response ...
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-$server_output = curl_exec($ch);
-
-curl_close ($ch);
-
-    $ch = curl_init();
-
-curl_setopt($ch, CURLOPT_URL,"https://chefrome.com/grocery/public/api/wallet/add");
-curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_POSTFIELDS,
-            "user_id=$sendersUSerID&amount=$ammounttoadd&added_via='ReferelCode'");
-
-// In real life you should use something like:
-// curl_setopt($ch, CURLOPT_POSTFIELDS, 
-//          http_build_query(array('postvar1' => 'value1')));
-
-// Receive server response ...
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-$server_output = curl_exec($ch);
-
-curl_close ($ch);
-                         
+                // curl_setopt($ch, CURLOPT_URL,"https://chefrome.com/grocery/public/api/wallet/add");
+                // curl_setopt($ch, CURLOPT_POST, 1);
+                // curl_setopt($ch, CURLOPT_POSTFIELDS,
+                //             "user_id=$sendersUSerID&amount=$ammounttoadd&added_via='ReferelCode'");
+                
+                // // In real life you should use something like:
+                // // curl_setopt($ch, CURLOPT_POSTFIELDS, 
+                // //          http_build_query(array('postvar1' => 'value1')));
+                
+                // // Receive server response ...
+                // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                
+                // $server_output = curl_exec($ch);
+                
+                // curl_close ($ch);
+                                         
                          // Route::post('wallet/add','WalletController@wallet_add');
                          
                         
                        }
+  }
 
 
 
         try {
+    
             $order = $this->orderRepository->update($input, $id);
+            
+          if (array_key_exists("active",$input))
+  {
+      if($input['active']==0)
+      {
+          $affected = DB::table('orders')
+              ->where('id', $id)
+              ->update(['active' => 0]);
+      }
+  }
             if (isset($input['order_status_id']) && $input['order_status_id'] == 5 && !empty($order)) {
                 $this->paymentRepository->update(['status' => 'Paid'], $order['payment_id']);
                 

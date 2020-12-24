@@ -1,1 +1,4 @@
 [27-Nov-2020 14:31:36 UTC] PHP Fatal error:  Class 'Faker\Provider\PhoneNumber' not found in /home/chefrome/public_html/grocery/vendor/fzaninotto/faker/src/Faker/Provider/en_PH/PhoneNumber.php on line 5
+[29-Nov-2020 18:10:17 UTC] PHP Fatal error:  Class 'Faker\Provider\en_US\Address' not found in /home/chefrome/public_html/grocery/vendor/fzaninotto/faker/src/Faker/Provider/en_PH/Address.php on line 5
+[30-Nov-2020 17:17:18 UTC] PHP Fatal error:  Class 'Faker\Provider\PhoneNumber' not found in /home/chefrome/public_html/grocery/vendor/fzaninotto/faker/src/Faker/Provider/en_PH/PhoneNumber.php on line 5
+[03-Dec-2020 22:34:22 UTC] PHP Fatal error:  Class 'Faker\Provider\PhoneNumber' not found in /home/chefrome/public_html/grocery/vendor/fzaninotto/faker/src/Faker/Provider/en_PH/PhoneNumber.php on line 5

@@ -446,3 +446,7 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/chefrome/public_html/grocery/database/factories/MarketReviewFactory.php on line 7
+[29-Nov-2020 02:41:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function define() on null in /home/chefrome/public_html/grocery/database/factories/SlideFactory.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/database/factories/SlideFactory.php on line 15

@@ -80,7 +80,7 @@ class OptionController extends Controller
     public function create()
     {
         $this->productRepository->pushCriteria(new ProductsOfUserCriteria(auth()->id()));
-        $product = $this->productRepository->groupedByMarkets();
+        $product = $this->productRepository->pluck('name', 'id');
         $optionGroup = $this->optionGroupRepository->pluck('name', 'id');
 
         $hasCustomField = in_array($this->optionRepository->model(), setting('custom_field_models', []));

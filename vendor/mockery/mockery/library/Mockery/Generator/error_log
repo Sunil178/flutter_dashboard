@@ -11,3 +11,6 @@
 [15-Nov-2020 22:26:12 UTC] PHP Fatal error:  Interface 'Mockery\Generator\TargetClassInterface' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/library/Mockery/Generator/DefinedTargetClass.php on line 23
 [17-Nov-2020 22:40:08 UTC] PHP Fatal error:  Interface 'Mockery\Generator\TargetClassInterface' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/library/Mockery/Generator/UndefinedTargetClass.php on line 23
 [18-Nov-2020 22:26:16 UTC] PHP Fatal error:  Interface 'Mockery\Generator\TargetClassInterface' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/library/Mockery/Generator/DefinedTargetClass.php on line 23
+[02-Dec-2020 13:52:10 UTC] PHP Fatal error:  Interface 'Mockery\Generator\TargetClassInterface' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/library/Mockery/Generator/UndefinedTargetClass.php on line 23
+[05-Dec-2020 22:51:38 UTC] PHP Fatal error:  Interface 'Mockery\Generator\Generator' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/library/Mockery/Generator/StringManipulationGenerator.php on line 38
+[06-Dec-2020 17:16:11 UTC] PHP Fatal error:  Interface 'Mockery\Generator\TargetClassInterface' not found in /home/chefrome/public_html/grocery/vendor/mockery/mockery/library/Mockery/Generator/DefinedTargetClass.php on line 23

@@ -1,0 +1,12 @@
+[29-Nov-2020 16:29:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Route' not found in /home/chefrome/public_html/grocery/routes/web.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/routes/web.php on line 21
+[02-Dec-2020 20:25:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Route' not found in /home/chefrome/public_html/grocery/routes/web.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/routes/web.php on line 21
+[03-Dec-2020 18:26:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Route' not found in /home/chefrome/public_html/grocery/routes/api.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/routes/api.php on line 21

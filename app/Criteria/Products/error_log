@@ -37,3 +37,4 @@
 [13-Nov-2020 11:07:28 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Products/TrendingWeekCriteria.php on line 23
 [18-Nov-2020 09:25:05 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Products/ProductsOfCategoriesCriteria.php on line 14
 [20-Nov-2020 17:35:24 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Products/ProductsOfCategoriesCriteria.php on line 14
+[01-Dec-2020 00:19:55 UTC] PHP Fatal error:  Interface 'Prettus\Repository\Contracts\CriteriaInterface' not found in /home/chefrome/public_html/grocery/app/Criteria/Products/TrendingWeekCriteria.php on line 23

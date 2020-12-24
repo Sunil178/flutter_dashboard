@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.5
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Nov 28, 2020 at 12:41 PM
--- Server version: 5.7.32
--- PHP Version: 7.3.6
+-- Host: 127.0.0.1
+-- Generation Time: Dec 24, 2020 at 03:57 PM
+-- Server version: 10.4.13-MariaDB
+-- PHP Version: 7.2.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,8 +18,296 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `chefrome_chef`
+-- Database: `chefrome_final`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `afterpaysuccess`
+--
+
+CREATE TABLE `afterpaysuccess` (
+  `id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `method` int(11) NOT NULL,
+  `total` double NOT NULL,
+  `tax` double NOT NULL,
+  `delivery_fee` double NOT NULL,
+  `deliveryId` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `afterpaysuccess`
+--
+
+INSERT INTO `afterpaysuccess` (`id`, `user_id`, `method`, `total`, `tax`, `delivery_fee`, `deliveryId`) VALUES
+(1, 101, 0, 0, 0, 0, 0),
+(2, 37, 0, 0, 0, 0, 0),
+(3, 37, 0, 0, 0, 0, 0),
+(4, 37, 0, 0, 0, 0, 0),
+(5, 37, 0, 0, 0, 0, 0),
+(6, 37, 0, 0, 0, 0, 0),
+(7, 37, 0, 0, 0, 0, 0),
+(8, 37, 0, 0, 0, 0, 0),
+(9, 37, 0, 176, 0, 0, 0),
+(10, 37, 0, 170.5, 15.5, 0, 0),
+(11, 37, 0, 171, 16, 0, 0),
+(12, 37, 0, 171, 16, 0, 0),
+(13, 37, 0, 171, 16, 0, 0),
+(14, 37, 0, 171, 16, 0, 0),
+(15, 37, 0, 171, 16, 0, 0),
+(16, 37, 0, 171, 16, 0, 0),
+(17, 37, 0, 171, 16, 0, 0),
+(18, 37, 0, 171, 16, 0, 0),
+(19, 37, 0, 171, 16, 0, 0),
+(20, 37, 0, 171, 16, 0, 0),
+(21, 37, 0, 171, 16, 0, 0),
+(22, 37, 0, 171, 16, 0, 0),
+(23, 37, 0, 171, 16, 0, 0),
+(24, 37, 0, 171, 16, 0, 0),
+(25, 37, 0, 171, 16, 0, 0),
+(26, 37, 0, 171, 16, 0, 0),
+(27, 37, 0, 171, 16, 0, 0),
+(28, 37, 0, 171, 16, 0, 0),
+(29, 37, 0, 171, 16, 0, 0),
+(30, 37, 0, 171, 16, 0, 0),
+(31, 37, 0, 171, 16, 0, 0),
+(32, 37, 0, 171, 16, 0, 0),
+(33, 37, 0, 171, 16, 0, 0),
+(34, 37, 0, 171, 16, 0, 0),
+(35, 37, 0, 171, 16, 0, 0),
+(36, 37, 0, 171, 16, 0, 0),
+(37, 37, 0, 171, 16, 0, 0),
+(38, 37, 0, 171, 16, 0, 0),
+(39, 37, 0, 171, 16, 0, 0),
+(40, 37, 0, 171, 16, 0, 0),
+(41, 37, 0, 171, 16, 0, 0),
+(42, 37, 0, 171, 16, 0, 0),
+(43, 37, 0, 171, 16, 0, 0),
+(44, 37, 0, 176, 16, 0, 0),
+(45, 37, 0, 171, 16, 0, 0),
+(46, 37, 0, 171, 16, 0, 0),
+(47, 37, 0, 176, 16, 0, 0),
+(48, 37, 0, 171, 16, 0, 0),
+(49, 37, 0, 171, 16, 0, 0),
+(50, 37, 0, 171, 16, 0, 0),
+(51, 37, 0, 171, 16, 0, 0),
+(52, 37, 0, 171, 16, 0, 0),
+(53, 37, 0, 171, 16, 0, 0),
+(54, 37, 0, 171, 16, 0, 0),
+(55, 37, 0, 176, 16, 0, 0),
+(56, 37, 0, 176, 16, 0, 0),
+(57, 37, 0, 176, 16, 0, 0),
+(58, 37, 0, 176, 16, 0, 0),
+(59, 37, 0, 176, 16, 0, 0),
+(60, 37, 0, 176, 16, 0, 0),
+(61, 37, 0, 176, 16, 0, 0),
+(62, 37, 0, 176, 16, 0, 0),
+(63, 37, 0, 176, 16, 0, 0),
+(64, 37, 0, 176, 16, 0, 0),
+(65, 37, 0, 176, 16, 0, 0),
+(66, 37, 0, 176, 16, 0, 0),
+(67, 37, 0, 176, 16, 0, 0),
+(68, 37, 0, 176, 16, 0, 0),
+(69, 37, 0, 352, 32, 0, 0),
+(70, 37, 0, 352, 32, 0, 0),
+(71, 37, 0, 352, 32, 0, 0),
+(72, 37, 0, 352, 32, 0, 0),
+(73, 37, 0, 352, 32, 0, 0),
+(74, 37, 0, 352, 32, 0, 0),
+(75, 37, 0, 352, 32, 0, 0),
+(76, 37, 0, 352, 32, 0, 0),
+(77, 37, 0, 352, 32, 0, 0),
+(78, 37, 0, 352, 32, 0, 0),
+(79, 37, 0, 352, 32, 0, 0),
+(80, 37, 0, 352, 32, 0, 0),
+(81, 37, 0, 352, 32, 0, 0),
+(82, 37, 0, 352, 32, 0, 0),
+(83, 37, 0, 352, 32, 0, 0),
+(84, 37, 0, 352, 32, 0, 0),
+(85, 37, 0, 352, 32, 0, 0),
+(86, 37, 0, 352, 32, 0, 0),
+(87, 37, 0, 352, 32, 0, 0),
+(88, 37, 0, 352, 32, 0, 0),
+(89, 37, 0, 352, 32, 0, 0),
+(90, 37, 0, 352, 32, 0, 0),
+(91, 37, 0, 352, 32, 0, 0),
+(92, 37, 0, 352, 32, 0, 0),
+(93, 0, 0, 0, 0, 0, 0),
+(94, 37, 0, 878, 48, 0, 0),
+(95, 37, 0, 0, 0, 0, 0),
+(96, 37, 0, 1, 1, 1, 1),
+(97, 37, 0, 100, 100, 100, 0),
+(98, 37, 0, 100, 100, 100, 0),
+(99, 37, 0, 100, 100, 100, 0),
+(100, 37, 0, 100, 100, 100, 0),
+(101, 37, 0, 100, 100, 100, 0),
+(102, 37, 0, 100, 100, 100, 0),
+(103, 37, 0, 100, 100, 100, 0),
+(104, 37, 0, 100, 100, 100, 0),
+(105, 37, 0, 100, 100, 100, 0),
+(106, 37, 0, 100, 100, 100, 0),
+(107, 37, 0, 100, 100, 100, 0),
+(108, 37, 0, 100, 100, 100, 0),
+(109, 37, 0, 100, 100, 100, 0),
+(110, 37, 0, 100, 100, 100, 0),
+(111, 37, 0, 100, 100, 100, 0),
+(112, 37, 0, 100, 100, 100, 0),
+(113, 37, 0, 100, 100, 100, 0),
+(114, 37, 0, 100, 100, 100, 0),
+(115, 37, 0, 100, 100, 100, 0),
+(116, 37, 0, 0, 0, 0, 0),
+(117, 37, 0, 1, 1, 1, 0),
+(118, 37, 0, 1, 1, 1, 0),
+(119, 37, 0, 1, 1, 1, 0),
+(120, 37, 0, 1, 1, 1, 0),
+(121, 37, 0, 1, 1, 1, 0),
+(122, 37, 0, 1, 1, 1, 0),
+(123, 37, 0, 1, 1, 1, 0),
+(124, 37, 0, 1, 1, 1, 0),
+(125, 37, 0, 1, 1, 1, 0),
+(126, 37, 0, 1, 1, 1, 0),
+(127, 37, 0, 1, 1, 1, 0),
+(128, 37, 0, 1, 1, 1, 0),
+(129, 37, 0, 1, 1, 1, 0),
+(130, 37, 0, 1, 1, 1, 0),
+(131, 37, 0, 1, 1, 1, 0),
+(132, 37, 0, 1, 1, 1, 0),
+(133, 37, 0, 1, 1, 1, 0),
+(134, 37, 0, 1, 1, 1, 0),
+(135, 37, 0, 1, 1, 1, 0),
+(136, 37, 0, 1, 1, 1, 0),
+(137, 37, 0, 1, 1, 1, 0),
+(138, 37, 0, 1, 1, 1, 0),
+(139, 37, 0, 1, 1, 1, 0),
+(140, 37, 0, 1, 1, 1, 0),
+(141, 37, 0, 1, 1, 1, 0),
+(142, 37, 0, 1, 1, 1, 0),
+(143, 37, 1, 1, 1, 1, 0),
+(144, 37, 1, 1, 1, 1, 0),
+(145, 37, 1, 390.5, 35.5, 35, 0),
+(146, 37, 1, 390.5, 35.5, 35, 0),
+(147, 37, 0, 352, 32, 0, 0),
+(148, 37, 0, 176, 16, 0, 0),
+(149, 37, 0, 176, 16, 0, 0),
+(150, 37, 0, 176, 16, 0, 0),
+(151, 37, 0, 79.79, 0.79, 0, 0),
+(152, 37, 0, 176, 16, 0, 0),
+(153, 37, 0, 176, 16, 0, 0),
+(154, 37, 0, 176, 16, 0, 0),
+(155, 37, 0, 176, 16, 0, 0),
+(156, 37, 0, 176, 16, 0, 0),
+(157, 37, 0, 176, 16, 0, 0),
+(158, 37, 0, 176, 16, 0, 0),
+(159, 37, 0, 176, 16, 0, 0),
+(160, 37, 0, 176, 16, 0, 0),
+(161, 37, 0, 176, 16, 0, 0),
+(162, 37, 0, 176, 16, 0, 0),
+(163, 37, 0, 176, 16, 0, 0),
+(164, 37, 0, 176, 16, 0, 0),
+(165, 37, 0, 176, 16, 0, 0),
+(166, 37, 0, 176, 16, 0, 0),
+(167, 37, 0, 176, 16, 0, 0),
+(168, 37, 0, 176, 16, 0, 0),
+(169, 37, 0, 176, 16, 0, 0),
+(170, 37, 1, 180.79000000000002, 1.79, 100, 18),
+(171, 37, 0, 79.79000000000002, 0.79, 0, 18),
+(172, 37, 0, 79.79000000000002, 0.79, 0, 18),
+(173, 37, 1, 180.79000000000002, 1.79, 100, 18),
+(174, 37, 1, 179.79000000000002, 0.79, 100, 18),
+(175, 37, 1, 179.79000000000002, 0.79, 100, 18),
+(176, 37, 1, 179.79000000000002, 0.79, 100, 18),
+(177, 37, 1, 179.79000000000002, 0.79, 100, 18),
+(178, 37, 1, 179.79000000000002, 0.79, 100, 18),
+(179, 37, 0, 79.79000000000002, 0.79, 0, 18),
+(180, 37, 0, 79.79000000000002, 0.79, 0, 18),
+(181, 37, 1, 179.79000000000002, 0.79, 100, 18),
+(182, 37, 1, 180.79000000000002, 1.79, 100, 18),
+(183, 37, 0, 79.79000000000002, 0.79, 0, 18),
+(184, 37, 0, 79.79000000000002, 0.79, 0, 18),
+(185, 37, 1, 179.79000000000002, 0.79, 100, 18),
+(186, 37, 0, 79.79000000000002, 0.79, 0, 18),
+(187, 37, 1, 180.79000000000002, 1.79, 100, 18),
+(188, 37, 1, 214.5, 19.5, 35, 18),
+(189, 11, 1, 219, 0, 39, 19),
+(190, 11, 1, 219, 0, 39, 19),
+(191, 75, 0, 2, 0, 0, 19),
+(192, 75, 0, 41, 0, 39, 19),
+(193, 75, 0, 41, 0, 39, 19),
+(194, 75, 0, 2, 0, 0, 19),
+(195, 75, 0, 2, 0, 0, 19),
+(196, 75, 0, 4, 0, 0, 19),
+(197, 70, 0, 2, 0, 0, 23),
+(198, 75, 1, 35, 0, 39, 19),
+(199, 37, 0, 1.1000000000000014, 0.1, 0, 18),
+(200, 37, 0, 1.1, 0.1, 0, 0),
+(201, 37, 0, 1.1, 0.1, 0, 0),
+(202, 37, 0, 1.1, 0.1, 0, 0),
+(203, 37, 0, 165, 15, 0, 0),
+(204, 11, 0, 68.25, 3.25, 0, 19),
+(205, 70, 0, 2, 0, 0, 23),
+(206, 70, 0, 41, 0, 39, 23),
+(207, 37, 0, 79.79000000000002, 0.79, 0, 18),
+(208, 37, 0, 79.79000000000002, 0.79, 0, 18),
+(209, 37, 0, 176, 16, 0, 0),
+(210, 37, 0, 176, 16, 0, 0),
+(211, 70, 0, 6, 0, 0, 23),
+(212, 37, 0, 176, 16, 0, 0),
+(213, 37, 0, 176, 16, 0, 0),
+(214, 37, 0, 176, 16, 0, 0),
+(215, 11, 1, 129, 0, 39, 19),
+(216, 11, 0, 2, 0, 0, 19),
+(217, 11, 0, 2, 0, 0, 19),
+(218, 11, 0, 41, 0, 39, 19),
+(219, 11, 0, 41, 0, 39, 19),
+(220, 11, 0, 2, 0, 0, 19),
+(221, 37, 0, 1.1, 0.1, 0, 0),
+(222, 11, 0, 4, 0, 0, 19),
+(223, 11, 1, 129, 0, 39, 19),
+(224, 11, 1, 289, 0, 39, 19),
+(225, 11, 0, 309, 0, 39, 19),
+(226, 11, 0, 309, 0, 39, 19),
+(227, 11, 0, 30, 0, 0, 19),
+(228, 11, 1, 209, 0, 39, 19),
+(229, 11, 1, 199, 0, 39, 19),
+(230, 37, 0, 79.79000000000002, 0.79, 0, 18),
+(231, 37, 1, 180.79000000000002, 1.79, 100, 18),
+(232, 37, 0, 79.79000000000002, 0.79, 0, 18),
+(233, 37, 0, 79.79000000000002, 0.79, 0, 18),
+(234, 70, 0, 126, 16, 0, 0),
+(235, 35, 0, 136, 16, 0, 0),
+(236, 81, 1, 107.4, 0, 39, 19),
+(237, 81, 0, 132, 12, 0, 19),
+(238, 81, 1, 59, 0, 39, 19),
+(239, 81, 1, 54.2, 0, 39, 19),
+(240, 81, 1, 54.2, 0, 39, 19),
+(241, 81, 1, 107.4, 0, 39, 19),
+(242, 81, 0, 132, 12, 0, 19),
+(243, 81, 0, 86, 6, 0, 19),
+(244, 81, 0, 136, 16, 0, 19),
+(245, 81, 0, 176, 16, 0, 19),
+(246, 81, 1, 93, 0, 39, 19),
+(247, 81, 1, 129, 0, 39, 19),
+(248, 81, 0, 97, 7, 0, 19),
+(249, 81, 1, 84, 0, 39, 19),
+(250, 82, 0, 137, 17, 0, 0),
+(251, 82, 0, 187, 17, 0, 0),
+(252, 83, 0, 176, 16, 0, 18),
+(253, 87, 1, 84, 0, 39, 25),
+(254, 87, 0, 126, 16, 0, 25),
+(255, 86, 0, 336.1, 35.1, 0, 0),
+(256, 103, 1, 169, 0, 39, 27),
+(257, 84, 1, 143.85, 6.85, 19, 19),
+(258, 37, 0, 176, 16, 0, 0),
+(259, 37, 0, 704, 64, 0, 24),
+(260, 37, 1, 225.5, 20.5, 35, 17),
+(261, 37, 1, 214.5, 19.5, 35, 17),
+(262, 103, 0, 61.95, 2.95, 0, 24),
+(263, 107, 0, 61.95, 2.95, 0, 24),
+(264, 107, 0, 30.975, 1.475, 0, 24),
+(265, 107, 1, 298.2, 14.2, 39, 28),
+(266, 107, 1, 124.95, 5.95, 29, 29);
 
 -- --------------------------------------------------------
 
@@ -42,7 +329,7 @@ INSERT INTO `app_settings` (`id`, `key`, `value`) VALUES
 (7, 'date_format', 'l jS F Y (H:i:s)'),
 (8, 'language', 'en'),
 (17, 'is_human_date_format', '1'),
-(18, 'app_name', 'Chefrome'),
+(18, 'app_name', 'Multi Vendor Grocery'),
 (19, 'app_short_description', 'Order Food Online'),
 (20, 'mail_driver', 'smtp'),
 (21, 'mail_host', 'mail.chefrome.com'),
@@ -55,35 +342,35 @@ INSERT INTO `app_settings` (`id`, `key`, `value`) VALUES
 (30, 'timezone', 'Asia/Kolkata'),
 (32, 'theme_contrast', 'light'),
 (33, 'theme_color', 'primary'),
-(34, 'app_logo', '9c35261c-efcf-433c-a064-025106140c68'),
+(34, 'app_logo', '840d8603-b777-42b1-8736-645b48637724'),
 (35, 'nav_color', 'navbar-light bg-white'),
 (38, 'logo_bg_color', 'bg-white'),
 (66, 'default_role', 'admin'),
-(68, 'facebook_app_id', '518416208939727'),
-(69, 'facebook_app_secret', '93649810f78fa9ca0d48972fee2a75cd'),
-(71, 'twitter_app_id', 'twitter'),
-(72, 'twitter_app_secret', 'twitter 1'),
-(74, 'google_app_id', '527129559488-roolg8aq110p8r1q952fqa9tm06gbloe.apps.googleusercontent.com'),
-(75, 'google_app_secret', 'FpIi8SLgc69ZWodk-xHaOrxn'),
+(68, 'facebook_app_id', '0'),
+(69, 'facebook_app_secret', '0'),
+(71, 'twitter_app_id', '0'),
+(72, 'twitter_app_secret', '0'),
+(74, 'google_app_id', '0'),
+(75, 'google_app_secret', '0'),
 (77, 'enable_google', '0'),
 (78, 'enable_facebook', '0'),
 (93, 'enable_stripe', '0'),
 (94, 'stripe_key', 'pk_test_pltzOnX3zsUZMoTTTVUL4O41'),
 (95, 'stripe_secret', 'sk_test_o98VZx3RKDUytaokX4My3a20'),
 (101, 'custom_field_models.0', 'App\\Models\\User'),
-(104, 'default_tax', '18'),
+(104, 'default_tax', '12'),
 (107, 'default_currency', '₹'),
 (108, 'fixed_header', '0'),
 (109, 'fixed_footer', '0'),
-(110, 'fcm_key', 'AAAAQ46n_XI:APA91bFtQbUFhQk2OEkg-M-4Y_9w9dmvQM6_F32E2tP9SoQXPFhxSZPIIwmHJcFlsJG2Y1gKFENmFwH-NEPRF2-hkMyZsRzaOn9JAX3sJZ74YWUAvpGjpFJk49ZsDNkI5CS0K_MbP8ZR'),
-(111, 'enable_notifications', '1'),
+(110, 'fcm_key', '0'),
+(111, 'enable_notifications', '0'),
 (112, 'paypal_username', 'sb-z3gdq482047_api1.business.example.com'),
 (113, 'paypal_password', 'JV2A7G4SEMLMZ565'),
 (114, 'paypal_secret', 'AbMmSXVaig1ExpY3utVS3dcAjx7nAHH0utrZsUN6LYwPgo7wfMzrV5WZ'),
 (115, 'enable_paypal', '0'),
-(116, 'main_color', '#da6220'),
-(117, 'main_dark_color', '#da6220'),
-(118, 'second_color', '#da6220'),
+(116, 'main_color', '#25d366'),
+(117, 'main_dark_color', '#25d366'),
+(118, 'second_color', '#043832'),
 (119, 'second_dark_color', '#ccccdd'),
 (120, 'accent_color', '#8c98a8'),
 (121, 'accent_dark_color', '#9999aa'),
@@ -98,34 +385,33 @@ INSERT INTO `app_settings` (`id`, `key`, `value`) VALUES
 (130, 'default_currency_decimal_digits', '2'),
 (131, 'default_currency_rounding', '0'),
 (132, 'currency_right', '0'),
-(157, 'firebase_api_key', 'AIzaSyBnpze3sVDnpgqEED-VENpNt2jjHZm8DeY'),
-(158, 'firebase_auth_domain', 'chefrome-8dd2a.firebaseapp.com'),
-(159, 'firebase_database_url', 'https://chefrome-8dd2a.firebaseio.com'),
-(160, 'firebase_project_id', 'chefrome-8dd2a'),
-(161, 'firebase_storage_bucket', 'chefrome-8dd2a.appspot.com'),
-(162, 'firebase_messaging_sender_id', '290156182898'),
-(163, 'firebase_app_id', '1:290156182898:web:d399536efa2ffde62871eb'),
-(164, 'firebase_measurement_id', 'G-B1HGDNTW0B'),
+(157, 'firebase_api_key', '0'),
+(158, 'firebase_auth_domain', '0'),
+(159, 'firebase_database_url', '0'),
+(160, 'firebase_project_id', '0'),
+(161, 'firebase_storage_bucket', '0'),
+(162, 'firebase_messaging_sender_id', '0'),
+(163, 'firebase_app_id', '0'),
+(164, 'firebase_measurement_id', '0'),
 (165, 'enable_razorpay', '1'),
-(166, 'razorpay_key', 'rzp_live_oN9uQGHTLijwhp'),
-(167, 'razorpay_secret', 'Kh8s4oivCDwoAsjybHI359HA'),
+(166, 'razorpay_key', 'rzp_test_3EPj5EfVgA1OTS'),
+(167, 'razorpay_secret', 'V4OnjOgcWakfnuQwjWJjNTG5'),
 (168, 'enable_twitter', '0'),
 (169, 'distance_unit', 'km'),
-(170, 'home_section_1', 'search'),
-(171, 'home_section_2', 'slider'),
-(172, 'home_section_3', 'top_markets_heading'),
-(173, 'home_section_4', 'top_markets'),
-(174, 'home_section_5', 'categories_heading'),
-(175, 'home_section_6', 'categories'),
-(176, 'home_section_7', 'popular_heading'),
-(177, 'home_section_8', 'popular'),
-(178, 'home_section_9', 'trending_week_heading'),
-(179, 'home_section_10', 'trending_week'),
-(180, 'home_section_11', 'recent_reviews'),
-(181, 'home_section_12', 'search'),
+(170, 'home_section_1', 'slider'),
+(171, 'home_section_2', 'top_markets_heading'),
+(172, 'home_section_3', 'top_markets'),
+(173, 'home_section_4', 'categories_heading'),
+(174, 'home_section_5', 'categories'),
+(175, 'home_section_6', 'popular_heading'),
+(176, 'home_section_7', 'popular'),
+(177, 'home_section_8', 'empty'),
+(178, 'home_section_9', 'empty'),
+(179, 'home_section_10', 'empty'),
+(180, 'home_section_11', 'empty'),
+(181, 'home_section_12', 'empty'),
 (182, 'paypal_mode', '0'),
-(183, 'paypal_app_id', '0'),
-(184, 'referCode_money', '500');
+(183, 'paypal_app_id', '0');
 
 -- --------------------------------------------------------
 
@@ -137,41 +423,10 @@ CREATE TABLE `carts` (
   `id` int(10) UNSIGNED NOT NULL,
   `product_id` int(10) UNSIGNED NOT NULL,
   `user_id` int(10) UNSIGNED NOT NULL,
-  `quantity` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `quantity` int(10) UNSIGNED NOT NULL DEFAULT 0,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `carts`
---
-
-INSERT INTO `carts` (`id`, `product_id`, `user_id`, `quantity`, `created_at`, `updated_at`) VALUES
-(7, 40, 12, 1, '2020-09-23 20:54:21', '2020-09-23 20:54:21'),
-(14, 40, 14, 4, '2020-09-28 04:36:54', '2020-09-28 06:02:27'),
-(15, 41, 14, 5, '2020-09-28 04:36:58', '2020-09-28 06:02:30'),
-(16, 42, 14, 1, '2020-09-28 04:37:56', '2020-09-28 06:02:31'),
-(17, 43, 14, 4, '2020-09-28 04:38:07', '2020-09-28 06:02:37'),
-(18, 44, 14, 3, '2020-09-28 04:47:45', '2020-09-28 06:02:42'),
-(19, 45, 14, 1, '2020-09-28 04:47:53', '2020-09-28 04:47:53'),
-(21, 41, 7, 1, '2020-10-02 23:00:14', '2020-10-02 23:00:14'),
-(22, 40, 28, 1, '2020-10-04 09:46:45', '2020-10-04 09:46:45'),
-(23, 41, 28, 1, '2020-10-04 09:46:51', '2020-10-04 09:46:51'),
-(24, 42, 28, 2, '2020-10-04 09:46:56', '2020-10-04 09:47:12'),
-(25, 44, 28, 1, '2020-10-04 09:47:34', '2020-10-04 09:47:34'),
-(26, 45, 28, 1, '2020-10-04 09:47:37', '2020-10-04 09:47:37'),
-(27, 43, 28, 1, '2020-10-04 09:47:40', '2020-10-04 09:47:40'),
-(41, 40, 34, 1, '2020-10-20 09:28:01', '2020-10-20 09:28:01'),
-(43, 40, 36, 1, '2020-10-21 05:48:22', '2020-10-21 05:48:22'),
-(46, 40, 33, 2, '2020-10-26 19:25:00', '2020-10-26 19:25:00'),
-(51, 40, 7, 1, '2020-10-28 07:49:35', '2020-10-28 07:49:35'),
-(105, 40, 41, 1, '2020-11-11 09:26:00', '2020-11-11 09:26:00'),
-(170, 88, 54, 1, '2020-11-21 16:12:19', '2020-11-21 16:12:19'),
-(182, 40, 56, 1, '2020-11-24 05:01:16', '2020-11-24 05:01:16'),
-(199, 40, 37, 1, '2020-11-25 11:00:54', '2020-11-25 11:03:24'),
-(204, 78, 11, 1, '2020-11-26 03:23:20', '2020-11-26 03:23:20'),
-(205, 40, 58, 1, '2020-11-26 08:17:57', '2020-11-26 08:17:57'),
-(208, 40, 62, 1, '2020-11-26 09:24:38', '2020-11-26 09:24:38');
 
 -- --------------------------------------------------------
 
@@ -193,7 +448,7 @@ CREATE TABLE `cart_options` (
 CREATE TABLE `categories` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(127) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` text COLLATE utf8mb4_unicode_ci,
+  `description` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -213,32 +468,7 @@ INSERT INTO `categories` (`id`, `name`, `description`, `created_at`, `updated_at
 (14, 'Milk', '<p>Milk</p>', '2020-09-21 22:49:19', '2020-09-21 22:49:19'),
 (15, 'Tea and Coffee', '<p>Tea and coffee</p>', '2020-09-21 22:50:00', '2020-09-21 22:50:00'),
 (16, 'Cakes', '<p>Cakes</p>', '2020-09-21 22:50:47', '2020-09-21 22:50:47'),
-(17, 'Cookies', '<p>Cookies</p>', '2020-09-21 22:51:23', '2020-09-21 22:51:23'),
-(18, 'Meat', '<p>Meat</p>', '2020-11-15 07:44:23', '2020-11-15 07:44:23'),
-(19, 'Fish', '<p>Fish</p>', '2020-11-15 07:44:59', '2020-11-15 07:44:59'),
-(20, 'Groceries', '<p>Groceries</p>', '2020-11-15 07:45:18', '2020-11-15 07:45:18'),
-(21, 'Cakes', '<p>Cakes</p>', '2020-11-15 07:45:33', '2020-11-15 07:45:33'),
-(22, 'Cookies', '<p>Cookies</p>', '2020-11-15 07:45:50', '2020-11-15 07:45:50'),
-(23, 'Chocolates', '<p>Chocolates<br></p>', '2020-11-15 07:46:09', '2020-11-15 07:46:09'),
-(24, 'Desserts', '<p>Desserts<br></p>', '2020-11-15 07:46:43', '2020-11-15 07:46:43'),
-(25, 'Snacks & Fries', '<p>Snacks &amp; Fries<br></p>', '2020-11-15 07:47:03', '2020-11-15 07:47:03'),
-(26, 'Pizza & Burger', '<p>Pizza &amp; Burger<br></p>', '2020-11-15 07:47:27', '2020-11-15 07:47:27'),
-(27, 'Roll & sandwiches', '<p>Roll &amp; sandwiches<br></p>', '2020-11-15 07:48:00', '2020-11-15 07:48:00'),
-(28, 'Homemade Pickle', '<p>Homemade Pickle<br></p>', '2020-11-15 07:49:30', '2020-11-15 07:49:30'),
-(29, 'Biryani & Mughlai', '<p>Biryani &amp; Mughlai<br></p>', '2020-11-15 07:50:00', '2020-11-15 07:50:00'),
-(30, 'South Indian', '<p>South Indian<br></p>', '2020-11-15 07:50:22', '2020-11-15 07:50:22'),
-(31, 'North Indian', '<p>North Indian<br></p>', '2020-11-15 07:50:42', '2020-11-15 07:50:42'),
-(32, 'Chinese', '<p>Chinese<br></p>', '2020-11-15 07:51:05', '2020-11-15 07:51:05'),
-(33, 'Authentic Bengali', '<p>Authentic Bengali<br></p>', '2020-11-15 07:51:37', '2020-11-15 07:51:37'),
-(34, 'Quick Serves', '<p>Quick Serves<br></p>', '2020-11-15 07:52:36', '2020-11-15 07:52:36'),
-(35, 'Chaats', '<p>Chaats<br></p>', '2020-11-15 07:53:05', '2020-11-15 07:53:05'),
-(36, 'Beverages', '<p>Beverages<br></p>', '2020-11-15 07:53:22', '2020-11-15 07:53:22'),
-(37, 'Pet Care', '<p>Pet Care<br></p>', '2020-11-15 07:53:45', '2020-11-15 07:53:45'),
-(38, 'Budget Friendly', '<p>Budget Friendly<br></p>', '2020-11-15 07:54:05', '2020-11-15 07:54:05'),
-(39, 'Diabetes & Hypertension', '<p>Diabetes &amp; Hypertension<br></p>', '2020-11-15 07:55:16', '2020-11-15 07:55:16'),
-(40, 'High Protein - Body Building', '<p>High Protein - Body Building<br></p>', '2020-11-15 07:55:52', '2020-11-15 07:55:52'),
-(41, 'Low Fat - Heart Healthy', '<p>Low Fat - Heart Healthy<br></p>', '2020-11-15 07:56:19', '2020-11-15 07:56:19'),
-(42, 'Share a Plate to the needy', '<p>Share a Plate to the needy<br></p>', '2020-11-15 07:56:52', '2020-11-15 07:56:52');
+(17, 'Cookies', '<p>Cookies</p>', '2020-09-21 22:51:23', '2020-09-21 22:51:23');
 
 -- --------------------------------------------------------
 
@@ -249,11 +479,11 @@ INSERT INTO `categories` (`id`, `name`, `description`, `created_at`, `updated_at
 CREATE TABLE `coupons` (
   `id` int(10) UNSIGNED NOT NULL,
   `code` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `discount` double(8,2) NOT NULL DEFAULT '0.00',
+  `discount` double(8,2) NOT NULL DEFAULT 0.00,
   `discount_type` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'percent',
-  `description` text COLLATE utf8mb4_unicode_ci,
+  `description` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `expires_at` datetime DEFAULT NULL,
-  `enabled` tinyint(1) NOT NULL DEFAULT '0',
+  `enabled` tinyint(1) NOT NULL DEFAULT 0,
   `max_discount` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -264,16 +494,7 @@ CREATE TABLE `coupons` (
 --
 
 INSERT INTO `coupons` (`id`, `code`, `discount`, `discount_type`, `description`, `expires_at`, `enabled`, `max_discount`, `created_at`, `updated_at`) VALUES
-(1, 'newuser', 40.00, 'fixed', '<p>Get ₹40 off on your first order.</p>', '2020-12-31 00:00:00', 1, '', '2020-09-21 23:06:31', '2020-09-21 23:06:31'),
-(2, 'Promo', 20.00, 'percent', '<p>Get 20% off on fruits and vegetables</p>', '2020-11-26 00:00:00', 1, '10000000000', '2020-09-25 22:07:00', '2020-11-07 00:25:55'),
-(3, 'kamal', 2.00, 'fixed', '<p>wdef</p>', '2020-09-30 00:00:00', 1, '33', '2020-09-28 06:33:38', '2020-09-28 06:33:38'),
-(4, 'new 50', 50.00, 'percent', '<p>50% 0ff to new users</p>', '2020-10-07 00:00:00', 1, '100', '2020-10-04 10:42:27', '2020-10-04 10:42:27'),
-(5, 'New50', 50.00, 'percent', '<p>50% discount to new users</p>', '2020-10-31 00:00:00', 1, '100', '2020-10-11 09:52:19', '2020-10-11 09:52:19'),
-(6, 'test', 50.00, 'percent', '<p>test discount</p>', '2020-10-31 00:00:00', 1, '100', '2020-10-27 10:35:14', '2020-10-27 10:35:14'),
-(7, 'ABC', 10.00, 'percent', '<p>Des</p>', '2020-11-13 00:00:00', 1, '100', '2020-11-07 00:13:49', '2020-11-07 00:13:49'),
-(8, 'ABCD', 10.00, 'percent', '<p>Description</p>', '2020-11-30 00:00:00', 1, '5', '2020-11-07 00:36:50', '2020-11-12 04:54:23'),
-(9, 'NEWPROMO', 8.00, 'percent', NULL, '2020-11-28 00:00:00', 1, '20', '2020-11-11 01:25:09', '2020-11-11 01:25:09'),
-(10, 'test50', 50.00, 'percent', '<p>test discount</p>', '2020-11-30 00:00:00', 1, '50', '2020-11-12 02:31:15', '2020-11-12 03:43:17');
+(1, 'newuser', 40.00, 'fixed', '<p>Get ₹40 off on your first order.</p>', '2020-12-31 00:00:00', 1, '', '2020-09-21 23:06:31', '2020-09-21 23:06:31');
 
 -- --------------------------------------------------------
 
@@ -308,6 +529,21 @@ INSERT INTO `currencies` (`id`, `name`, `symbol`, `code`, `decimal_digits`, `rou
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `current_driver_loc`
+--
+
+CREATE TABLE `current_driver_loc` (
+  `id` int(11) NOT NULL,
+  `driver_id` int(11) NOT NULL,
+  `latitude` double NOT NULL,
+  `longitude` double NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `custom_fields`
 --
 
@@ -332,7 +568,7 @@ CREATE TABLE `custom_fields` (
 
 INSERT INTO `custom_fields` (`id`, `name`, `type`, `values`, `disabled`, `required`, `in_table`, `bootstrap_column`, `order`, `custom_field_model`, `created_at`, `updated_at`) VALUES
 (4, 'phone', 'text', NULL, 0, 0, 0, 6, 2, 'App\\Models\\User', '2019-09-07 04:30:00', '2019-09-07 04:31:47'),
-(5, 'bio', 'textarea', NULL, 0, 0, 0, 6, 1, 'App\\Models\\User', '2019-09-07 04:43:58', '2020-11-15 08:07:33'),
+(5, 'bio', 'textarea', NULL, 0, 0, 0, 6, 1, 'App\\Models\\User', '2019-09-07 04:43:58', '2019-09-07 04:43:58'),
 (6, 'address', 'text', NULL, 0, 0, 0, 6, 3, 'App\\Models\\User', '2019-09-07 04:49:22', '2019-09-07 04:49:22');
 
 -- --------------------------------------------------------
@@ -343,8 +579,8 @@ INSERT INTO `custom_fields` (`id`, `name`, `type`, `values`, `disabled`, `requir
 
 CREATE TABLE `custom_field_values` (
   `id` int(10) UNSIGNED NOT NULL,
-  `value` longtext COLLATE utf8mb4_unicode_ci,
-  `view` longtext COLLATE utf8mb4_unicode_ci,
+  `value` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `view` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `custom_field_id` int(10) UNSIGNED NOT NULL,
   `customizable_type` varchar(127) COLLATE utf8mb4_unicode_ci NOT NULL,
   `customizable_id` int(11) NOT NULL,
@@ -360,9 +596,9 @@ INSERT INTO `custom_field_values` (`id`, `value`, `view`, `custom_field_id`, `cu
 (29, '+136 226 5669', '+136 226 5669', 4, 'App\\Models\\User', 2, '2019-09-07 04:52:30', '2019-09-07 04:52:30'),
 (30, 'Lobortis mattis aliquam faucibus purus. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Nunc vel risus commodo viverra maecenas accumsan lacus vel.', 'Lobortis mattis aliquam faucibus purus. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Nunc vel risus commodo viverra maecenas accumsan lacus vel.', 5, 'App\\Models\\User', 2, '2019-09-07 04:52:30', '2019-10-17 02:32:35'),
 (31, '2911 Corpening Drive South Lyon, MI 48178', '2911 Corpening Drive South Lyon, MI 48178', 6, 'App\\Models\\User', 2, '2019-09-07 04:52:30', '2019-10-17 02:32:35'),
-(32, '9999999999', '9999999999', 4, 'App\\Models\\User', 1, '2019-09-07 04:53:58', '2020-11-28 01:40:54'),
-(33, 'something', 'something', 5, 'App\\Models\\User', 1, '2019-09-07 04:53:58', '2020-10-17 14:36:39'),
-(34, 'nothing', 'nothing', 6, 'App\\Models\\User', 1, '2019-09-07 04:53:58', '2020-10-17 14:36:39'),
+(32, '9999999999', '9999999999', 4, 'App\\Models\\User', 1, '2019-09-07 04:53:58', '2020-11-29 02:21:08'),
+(33, 'Admin is always a sweet person.', 'Admin is always a sweet person.', 5, 'App\\Models\\User', 1, '2019-09-07 04:53:58', '2020-11-29 02:21:08'),
+(34, NULL, NULL, 6, 'App\\Models\\User', 1, '2019-09-07 04:53:58', '2020-11-29 02:21:08'),
 (35, '+1 098-6543-236', '+1 098-6543-236', 4, 'App\\Models\\User', 3, '2019-10-16 00:21:32', '2019-10-18 06:21:43'),
 (36, 'Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Tortor pretium viverra suspendisse', 'Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Tortor pretium viverra suspendisse', 5, 'App\\Models\\User', 3, '2019-10-16 00:21:32', '2019-10-18 06:21:12'),
 (37, '1850 Big Elm Kansas City, MO 64106', '1850 Big Elm Kansas City, MO 64106', 6, 'App\\Models\\User', 3, '2019-10-16 00:21:32', '2019-10-18 06:21:43'),
@@ -383,7 +619,7 @@ INSERT INTO `custom_field_values` (`id`, `value`, `view`, `custom_field_id`, `cu
 (52, '33 Mominpore Road', '33 Mominpore Road', 6, 'App\\Models\\User', 10, '2020-09-22 14:00:16', '2020-09-22 14:00:16'),
 (53, '6289161047', '6289161047', 4, 'App\\Models\\User', 11, '2020-09-22 14:20:52', '2020-10-27 10:30:11'),
 (54, 'Customer', 'Customer', 5, 'App\\Models\\User', 11, '2020-09-22 14:20:52', '2020-10-27 10:30:11'),
-(55, '33 Mominpore Road Kolkata 700023', '33 Mominpore Road Kolkata 700023', 6, 'App\\Models\\User', 11, '2020-09-22 14:20:52', '2020-11-11 10:37:18'),
+(55, '33 Mom in pore Road Kolkata 700023', '33 Mom in pore Road Kolkata 700023', 6, 'App\\Models\\User', 11, '2020-09-22 14:20:52', '2020-10-27 10:30:11'),
 (56, '6306758629', '6306758629', 4, 'App\\Models\\User', 12, '2020-09-23 20:15:39', '2020-09-23 20:15:39'),
 (57, 'old', 'old', 5, 'App\\Models\\User', 12, '2020-09-23 20:15:39', '2020-09-23 20:15:39'),
 (58, 'Lucknow', 'Lucknow', 6, 'App\\Models\\User', 12, '2020-09-23 20:15:39', '2020-09-23 20:15:39'),
@@ -404,7 +640,7 @@ INSERT INTO `custom_field_values` (`id`, `value`, `view`, `custom_field_id`, `cu
 (73, '<p>I am a Stevia Specialist. Stevia is a plant based sweetener and a substitute to sugar. Its recommended for diabetes patients. Others who are calorie conscious can have too.&nbsp;</p>', 'I am a Stevia Specialist. Stevia is a plant based sweetener and a substitute to sugar. Its recommended for diabetes patients. Others who are calorie conscious can have too.&nbsp;', 5, 'App\\Models\\User', 20, '2020-09-29 01:57:18', '2020-09-29 01:57:18'),
 (74, '64/1bRam Mohan Roy Road, kolkata 700008', '64/1bRam Mohan Roy Road, kolkata 700008', 6, 'App\\Models\\User', 20, '2020-09-29 01:57:18', '2020-09-29 01:57:18'),
 (75, '9433490977', '9433490977', 4, 'App\\Models\\User', 21, '2020-10-01 03:48:10', '2020-10-01 03:48:10'),
-(76, '<p>Ms Sushmita has a passion to tingle the taste bud of food lovers with her culinary skills. She feels healthy and hygienic nutrition is not only a way of life but also a necessity.</p>', 'Ms Sushmita has a passion to tingle the taste bud of food lovers with her culinary skills. She feels healthy and hygienic nutrition is not only a way of life but also a necessity.', 5, 'App\\Models\\User', 21, '2020-10-01 03:48:10', '2020-11-26 07:23:32'),
+(76, '<p>I am a Home Baker</p>', 'I am a Home Baker', 5, 'App\\Models\\User', 21, '2020-10-01 03:48:10', '2020-10-01 03:48:10'),
 (77, 'E-6, Ramchandrapally, Barisha east, kolkata 700008', 'E-6, Ramchandrapally, Barisha east, kolkata 700008', 6, 'App\\Models\\User', 21, '2020-10-01 03:48:10', '2020-10-01 03:48:10'),
 (78, '9163300541', '9163300541', 4, 'App\\Models\\User', 22, '2020-10-01 03:53:00', '2020-10-01 03:53:00'),
 (79, '<p>I am a Home Chef</p>', 'I am a Home Chef', 5, 'App\\Models\\User', 22, '2020-10-01 03:53:00', '2020-10-01 03:53:00'),
@@ -442,7 +678,7 @@ INSERT INTO `custom_field_values` (`id`, `value`, `view`, `custom_field_id`, `cu
 (111, '9051444464', '9051444464', 4, 'App\\Models\\User', 36, '2020-10-21 05:48:04', '2020-10-21 05:51:35'),
 (112, 'service holder', 'service holder', 5, 'App\\Models\\User', 36, '2020-10-21 05:51:35', '2020-10-21 05:51:35'),
 (113, '25/A Ram lal Dey street, Dum Dum Cantonment, Near Sangha Mitra Club, Kolkata 700028.', '25/A Ram lal Dey street, Dum Dum Cantonment, Near Sangha Mitra Club, Kolkata 700028.', 6, 'App\\Models\\User', 36, '2020-10-21 05:51:35', '2020-10-21 05:51:35'),
-(114, '9999146152', '9999146152', 4, 'App\\Models\\User', 37, '2020-10-22 09:41:12', '2020-11-12 23:32:46'),
+(114, 'jsjsjsjss', 'jsjsjsjss', 4, 'App\\Models\\User', 37, '2020-10-22 09:41:12', '2020-11-03 02:54:40'),
 (115, 'hddhhd', 'hddhhd', 5, 'App\\Models\\User', 37, '2020-10-22 09:42:04', '2020-11-03 02:54:40'),
 (116, 'shshhd', 'shshhd', 6, 'App\\Models\\User', 37, '2020-10-22 09:42:04', '2020-11-03 02:54:40'),
 (117, '9999146152', '9999146152', 4, 'App\\Models\\User', 38, '2020-10-23 10:18:01', '2020-10-23 10:18:01'),
@@ -465,44 +701,7 @@ INSERT INTO `custom_field_values` (`id`, `value`, `view`, `custom_field_id`, `cu
 (134, 'aaddress', 'aaddress', 6, 'App\\Models\\User', 51, '2020-11-07 06:36:02', '2020-11-07 06:36:02'),
 (135, '12547757878', '12547757878', 4, 'App\\Models\\User', 52, '2020-11-09 01:13:10', '2020-11-09 01:13:10'),
 (136, '<p>sdfsadsa</p>', 'sdfsadsa', 5, 'App\\Models\\User', 52, '2020-11-09 01:13:10', '2020-11-09 01:13:10'),
-(137, 'Dehradun India', 'Dehradun India', 6, 'App\\Models\\User', 52, '2020-11-09 01:13:10', '2020-11-09 01:13:10'),
-(138, '9999146152', '9999146152', 4, 'App\\Models\\User', 53, '2020-11-17 05:55:53', '2020-11-17 05:55:53'),
-(139, NULL, NULL, 4, 'App\\Models\\User', 54, '2020-11-21 16:12:07', '2020-11-21 16:12:07'),
-(140, '9999146152', '9999146152', 4, 'App\\Models\\User', 55, '2020-11-23 11:17:03', '2020-11-23 11:17:03'),
-(141, 'xbcbchc', 'xbcbchc', 5, 'App\\Models\\User', 55, '2020-11-24 00:28:59', '2020-11-24 06:17:57'),
-(142, 'znnznz', 'znnznz', 6, 'App\\Models\\User', 55, '2020-11-24 00:28:59', '2020-11-24 00:28:59'),
-(143, '9999146152', '9999146152', 4, 'App\\Models\\User', 56, '2020-11-24 04:59:58', '2020-11-24 04:59:58'),
-(144, '9999146152', '9999146152', 4, 'App\\Models\\User', 57, '2020-11-24 06:22:45', '2020-11-24 06:22:45'),
-(145, 'chcuhcc', 'chcuhcc', 5, 'App\\Models\\User', 57, '2020-11-24 06:24:01', '2020-11-24 06:24:01'),
-(146, 'vzvjv', 'vzvjv', 6, 'App\\Models\\User', 57, '2020-11-24 06:24:01', '2020-11-24 06:24:01'),
-(147, '9999146152', '9999146152', 4, 'App\\Models\\User', 58, '2020-11-25 11:21:41', '2020-11-25 11:21:41'),
-(148, 'shhshshssh', 'shhshshssh', 5, 'App\\Models\\User', 58, '2020-11-25 11:22:26', '2020-11-25 11:22:26'),
-(149, 'zbnsnbs', 'zbnsnbs', 6, 'App\\Models\\User', 58, '2020-11-25 11:22:26', '2020-11-25 11:22:26'),
-(150, '9999146152', '9999146152', 4, 'App\\Models\\User', 59, '2020-11-25 11:23:32', '2020-11-25 11:23:32'),
-(151, 'hdjdhdjjd', 'hdjdhdjjd', 5, 'App\\Models\\User', 59, '2020-11-25 11:24:05', '2020-11-25 11:24:05'),
-(152, 'jddjdjdjdj', 'jddjdjdjdj', 6, 'App\\Models\\User', 59, '2020-11-25 11:24:05', '2020-11-25 11:24:05'),
-(153, '9038055797', '9038055797', 4, 'App\\Models\\User', 60, '2020-11-26 07:14:59', '2020-11-26 07:14:59'),
-(154, '<p>A Social Worker by profession</p>', 'A Social Worker by profession', 5, 'App\\Models\\User', 60, '2020-11-26 07:14:59', '2020-11-26 07:14:59'),
-(155, '108/3 Becharam Chatterjee Road, Rifle Ground Flat no 7 , Behala Kolkata 700034', '108/3 Becharam Chatterjee Road, Rifle Ground Flat no 7 , Behala Kolkata 700034', 6, 'App\\Models\\User', 60, '2020-11-26 07:14:59', '2020-11-26 07:14:59'),
-(156, '9999146152', '9999146152', 4, 'App\\Models\\User', 61, '2020-11-26 08:39:01', '2020-11-26 08:39:01'),
-(157, '9999146152', '9999146152', 4, 'App\\Models\\User', 62, '2020-11-26 08:40:00', '2020-11-26 08:40:00'),
-(158, 'xhxhhddj', 'xhxhhddj', 5, 'App\\Models\\User', 62, '2020-11-26 08:40:41', '2020-11-26 08:40:41'),
-(159, 'bxbxbx', 'bxbxbx', 6, 'App\\Models\\User', 62, '2020-11-26 08:40:41', '2020-11-26 08:40:41'),
-(160, '9999146152', '9999146152', 4, 'App\\Models\\User', 63, '2020-11-26 09:53:32', '2020-11-26 09:53:32'),
-(161, '9999146152', '9999146152', 4, 'App\\Models\\User', 64, '2020-11-26 09:54:48', '2020-11-26 09:54:48'),
-(162, 'ccccc', 'ccccc', 5, 'App\\Models\\User', 64, '2020-11-26 09:55:44', '2020-11-26 09:55:44'),
-(163, 'xxx', 'xxx', 6, 'App\\Models\\User', 64, '2020-11-26 09:55:44', '2020-11-26 09:55:44'),
-(164, '+918287073197', '+918287073197', 4, 'App\\Models\\User', 65, '2020-11-27 00:13:03', '2020-11-27 00:13:03'),
-(165, NULL, '', 5, 'App\\Models\\User', 65, '2020-11-27 00:13:03', '2020-11-27 00:13:03'),
-(166, 'Sector 14 , gurgaon, haryana', 'Sector 14 , gurgaon, haryana', 6, 'App\\Models\\User', 65, '2020-11-27 00:13:03', '2020-11-27 00:13:03'),
-(167, '9999146152', '9999146152', 4, 'App\\Models\\User', 66, '2020-11-27 05:31:24', '2020-11-27 05:31:24'),
-(168, '9999146152', '9999146152', 4, 'App\\Models\\User', 67, '2020-11-27 05:33:19', '2020-11-27 05:33:19'),
-(169, 'zhshsshsj', 'zhshsshsj', 5, 'App\\Models\\User', 67, '2020-11-27 05:34:38', '2020-11-27 05:34:38'),
-(170, 'xnxnx', 'xnxnx', 6, 'App\\Models\\User', 67, '2020-11-27 05:34:38', '2020-11-27 05:34:38'),
-(171, '9999146152', '9999146152', 4, 'App\\Models\\User', 68, '2020-11-27 05:37:44', '2020-11-27 05:37:44'),
-(172, '9999146152', '9999146152', 4, 'App\\Models\\User', 69, '2020-11-27 05:38:45', '2020-11-27 05:38:45'),
-(173, 'chcucucy', 'chcucucy', 5, 'App\\Models\\User', 69, '2020-11-27 05:39:41', '2020-11-27 05:39:41'),
-(174, 'bchxhxy', 'bchxhxy', 6, 'App\\Models\\User', 69, '2020-11-27 05:39:41', '2020-11-27 05:39:41');
+(137, 'Dehradun India', 'Dehradun India', 6, 'App\\Models\\User', 52, '2020-11-09 01:13:10', '2020-11-09 01:13:10');
 
 -- --------------------------------------------------------
 
@@ -521,34 +720,6 @@ CREATE TABLE `delivery_addresses` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `delivery_addresses`
---
-
-INSERT INTO `delivery_addresses` (`id`, `description`, `address`, `latitude`, `longitude`, `is_default`, `user_id`, `created_at`, `updated_at`) VALUES
-(1, 'Tenetur eos doloremque suscipit praesentium nisi quidem voluptatem.', '9679 Lucio Mountains\nSouth Tinashire, NE 77450', '75.640052', '-130.281909', 1, 6, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(2, 'Et a hic velit inventore officiis similique.', '62453 Anahi Well Apt. 432\nTremblaystad, ID 96261-0415', '79.070772', '-169.349242', 1, 1, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(3, 'Porro et ullam dolorum sint ut expedita et quo.', '650 Kemmer Junctions\nCasperville, WY 60407', '55.549157', '-83.905784', 0, 6, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(4, 'Sed non architecto nihil doloremque.', '6133 Stanton Grove\nLake Crystal, CA 04128-4337', '20.41267', '-17.769937', 1, 3, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(5, 'Quod numquam necessitatibus nam doloribus.', '576 Parker Burg\nNew Jerry, FL 05539', '84.944371', '-78.758306', 1, 6, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(6, 'At optio et voluptatem adipisci magnam at atque.', '8774 Thiel Hill Suite 946\nCummerataborough, NJ 81427', '51.748824', '-143.466429', 0, 4, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(7, 'Et aut nulla est quia aut voluptates aut.', '539 Douglas Lights\nLake Luisaland, SD 12694-7946', '64.648317', '-5.785541', 0, 5, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(8, 'Reprehenderit voluptas ea rem possimus molestias consequatur sint.', '262 Laila Drives Apt. 828\nWelchville, MO 38453', '-24.904123', '64.932202', 1, 2, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(9, 'Nihil provident sapiente sed eveniet.', '286 Wunsch Ridges Apt. 014\nVandervortberg, FL 98002', '-52.592771', '83.234576', 1, 1, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(10, 'Magni nam eum ducimus dolorum et illum.', '8661 Claudine Coves\nAliciatown, MO 28137', '89.758327', '101.911968', 0, 4, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(11, 'Temporibus reiciendis vel iusto.', '971 Kendall Place Apt. 442\nPort Jalon, MS 73796', '88.006188', '22.956071', 0, 3, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(12, 'Odio et consequuntur laudantium molestiae eveniet aut et maxime.', '71802 Moshe Route\nWest Charleneton, TX 30225-1463', '-7.731456', '62.923136', 0, 2, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(13, 'Quia ipsa voluptatem ad blanditiis est omnis necessitatibus.', '4170 Garland Drive Suite 050\nSadyeton, SC 79385-7774', '35.497057', '-80.163657', 1, 5, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(14, 'Est quia dolores nemo cupiditate laborum facere.', '106 Block Valleys\nDaughertyton, NE 76156', '51.777176', '-73.558572', 1, 6, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(15, 'Deleniti optio voluptas a corrupti ut.', '352 Wisozk Ways\nFritschfurt, WY 89127', '-12.597536', '-96.585719', 1, 2, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(16, NULL, 'Idgah muhaala, dehri on son, near earth heaven school, Rajputana Mohalla, Dehri, Bihar 821307, India', '24.904913049370137', '84.17895533144474', 0, 34, '2020-10-19 23:30:10', '2020-10-19 23:30:10'),
-(17, 'home', '11a, Pine Dr, Malibu Town, Sector 47, Gurugram, Haryana 122018, India', '28.4232545139396', '77.04698268324137', 1, 37, '2020-10-28 04:02:50', '2020-11-03 04:38:07'),
-(18, NULL, 'GH-14, Hero Honda Rd, Sector 10A, Gurugram, Haryana 122001, India', '28.44383789757705', '77.00062036514282', 0, 37, '2020-11-07 12:19:57', '2020-11-20 06:12:21'),
-(19, NULL, '24, Netaji Subhas Rd, Murgighata, B.B.D. Bagh, Kolkata, West Bengal 700001, India', '22.578305862868504', '88.34946110844612', 0, 11, '2020-11-11 10:52:54', '2020-11-11 10:52:54'),
-(20, NULL, '28-L, Ekbalpore Ln, Ekbalpur, Khidirpur, Kolkata, West Bengal 700023, India', '22.5324009', '88.32347529999998', 0, 5, '2020-11-11 10:53:09', '2020-11-26 03:01:10'),
-(21, NULL, '465, 4th Floor, Tower B1, Spaze iTechPark, Sohna Rd, Sector 49, Gurugram, Haryana 122018, India', '28.412413120699977', '77.04328525811434', 0, 67, '2020-11-24 00:28:38', '2020-11-27 05:34:00'),
-(22, NULL, '33/H/4, Mominpore Rd, Choti Bazar, Naptani Bagan, Mominpore, Kolkata, West Bengal 700023, India', '22.531765483749272', '88.32226015627384', 0, 17, '2020-11-24 13:40:24', '2020-11-24 13:40:33');
 
 -- --------------------------------------------------------
 
@@ -578,32 +749,7 @@ INSERT INTO `discountables` (`id`, `coupon_id`, `discountable_type`, `discountab
 (8, 1, 'App\\Models\\Category', 13),
 (9, 1, 'App\\Models\\Category', 14),
 (10, 1, 'App\\Models\\Category', 15),
-(11, 1, 'App\\Models\\Category', 16),
-(16, 3, 'App\\Models\\Product', 41),
-(17, 3, 'App\\Models\\Market', 10),
-(18, 3, 'App\\Models\\Category', 8),
-(19, 4, 'App\\Models\\Market', 8),
-(20, 4, 'App\\Models\\Category', 13),
-(21, 7, 'App\\Models\\Product', 42),
-(22, 7, 'App\\Models\\Market', 9),
-(23, 7, 'App\\Models\\Category', 8),
-(24, 2, 'App\\Models\\Market', 9),
-(25, 2, 'App\\Models\\Category', 7),
-(26, 2, 'App\\Models\\Category', 8),
-(27, 2, 'App\\Models\\Category', 13),
-(34, 9, 'App\\Models\\Product', 42),
-(35, 9, 'App\\Models\\Market', 10),
-(36, 9, 'App\\Models\\Category', 8),
-(51, 10, 'App\\Models\\Product', 72),
-(52, 10, 'App\\Models\\Product', 73),
-(53, 10, 'App\\Models\\Product', 74),
-(54, 10, 'App\\Models\\Product', 75),
-(55, 10, 'App\\Models\\Product', 76),
-(56, 10, 'App\\Models\\Market', 9),
-(57, 10, 'App\\Models\\Category', 8),
-(64, 8, 'App\\Models\\Product', 40),
-(65, 8, 'App\\Models\\Market', 8),
-(66, 8, 'App\\Models\\Category', 9);
+(11, 1, 'App\\Models\\Category', 16);
 
 -- --------------------------------------------------------
 
@@ -614,10 +760,10 @@ INSERT INTO `discountables` (`id`, `coupon_id`, `discountable_type`, `discountab
 CREATE TABLE `drivers` (
   `id` int(10) UNSIGNED NOT NULL,
   `user_id` int(10) UNSIGNED NOT NULL,
-  `delivery_fee` double(5,2) NOT NULL DEFAULT '0.00',
-  `total_orders` int(10) UNSIGNED NOT NULL DEFAULT '0',
-  `earning` double(9,2) NOT NULL DEFAULT '0.00',
-  `available` tinyint(1) NOT NULL DEFAULT '0',
+  `delivery_fee` double(5,2) NOT NULL DEFAULT 0.00,
+  `total_orders` int(10) UNSIGNED NOT NULL DEFAULT 0,
+  `earning` double(9,2) NOT NULL DEFAULT 0.00,
+  `available` tinyint(1) NOT NULL DEFAULT 0,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -627,11 +773,7 @@ CREATE TABLE `drivers` (
 --
 
 INSERT INTO `drivers` (`id`, `user_id`, `delivery_fee`, `total_orders`, `earning`, `available`, `created_at`, `updated_at`) VALUES
-(1, 5, 0.00, 3, 0.00, 1, '2020-09-21 15:27:33', '2020-11-26 03:30:00'),
-(2, 6, 10.00, 9, 31.50, 1, '2020-09-21 15:27:33', '2020-11-24 06:43:08'),
-(3, 51, 0.00, 0, 0.00, 0, '2020-11-07 06:36:03', '2020-11-07 06:36:03'),
-(4, 52, 0.00, 0, 0.00, 0, '2020-11-09 01:13:10', '2020-11-09 01:13:10'),
-(5, 65, 0.00, 0, 0.00, 0, '2020-11-27 00:13:03', '2020-11-27 00:13:03');
+(6, 6, 0.00, 0, 0.00, 0, '2020-12-04 03:34:24', '2020-12-04 03:34:24');
 
 -- --------------------------------------------------------
 
@@ -643,9 +785,9 @@ CREATE TABLE `drivers_payouts` (
   `id` int(10) UNSIGNED NOT NULL,
   `user_id` int(10) UNSIGNED NOT NULL,
   `method` varchar(127) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `amount` double(9,2) NOT NULL DEFAULT '0.00',
+  `amount` double(9,2) NOT NULL DEFAULT 0.00,
   `paid_date` datetime DEFAULT NULL,
-  `note` text COLLATE utf8mb4_unicode_ci,
+  `note` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -666,27 +808,11 @@ CREATE TABLE `driver_markets` (
 --
 
 INSERT INTO `driver_markets` (`user_id`, `market_id`) VALUES
-(5, 8),
 (6, 8),
-(5, 9),
-(5, 10),
-(5, 11),
-(5, 12),
+(6, 9),
+(6, 11),
 (6, 12),
-(5, 13),
-(5, 14),
-(5, 15),
-(5, 16),
-(5, 17),
-(6, 18),
-(5, 19),
-(6, 19),
-(51, 19),
-(6, 20),
-(51, 22),
-(6, 23),
-(6, 24),
-(5, 25);
+(6, 13);
 
 -- --------------------------------------------------------
 
@@ -697,12 +823,12 @@ INSERT INTO `driver_markets` (`user_id`, `market_id`) VALUES
 CREATE TABLE `earnings` (
   `id` int(10) UNSIGNED NOT NULL,
   `market_id` int(10) UNSIGNED NOT NULL,
-  `total_orders` int(10) UNSIGNED NOT NULL DEFAULT '0',
-  `total_earning` double(9,2) NOT NULL DEFAULT '0.00',
-  `admin_earning` double(9,2) NOT NULL DEFAULT '0.00',
-  `market_earning` double(9,2) NOT NULL DEFAULT '0.00',
-  `delivery_fee` double(9,2) NOT NULL DEFAULT '0.00',
-  `tax` double(9,2) NOT NULL DEFAULT '0.00',
+  `total_orders` int(10) UNSIGNED NOT NULL DEFAULT 0,
+  `total_earning` double(9,2) NOT NULL DEFAULT 0.00,
+  `admin_earning` double(9,2) NOT NULL DEFAULT 0.00,
+  `market_earning` double(9,2) NOT NULL DEFAULT 0.00,
+  `delivery_fee` double(9,2) NOT NULL DEFAULT 0.00,
+  `tax` double(9,2) NOT NULL DEFAULT 0.00,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -712,24 +838,11 @@ CREATE TABLE `earnings` (
 --
 
 INSERT INTO `earnings` (`id`, `market_id`, `total_orders`, `total_earning`, `admin_earning`, `market_earning`, `delivery_fee`, `tax`, `created_at`, `updated_at`) VALUES
-(1, 8, 13, 2979.50, 878.95, -4063.30, 399.00, 169.78, '2020-09-21 15:52:25', '2020-11-24 06:43:08'),
-(2, 9, 1, 90.00, 26.55, 63.45, 39.00, 9.00, '2020-09-21 16:09:21', '2020-11-26 03:30:00'),
-(3, 10, 0, 0.00, 0.00, 0.00, 0.00, 0.00, '2020-09-22 13:26:01', '2020-09-22 13:26:01'),
+(1, 8, 3, 1219.50, 359.75, 700.60, 35.00, 60.98, '2020-09-21 15:52:25', '2020-11-07 12:38:07'),
+(2, 9, 0, 0.00, 0.00, 0.00, 0.00, 0.00, '2020-09-21 16:09:21', '2020-09-21 16:09:21'),
 (4, 11, 0, 0.00, 0.00, 0.00, 0.00, 0.00, '2020-09-28 11:35:27', '2020-09-28 11:35:27'),
 (5, 12, 0, 0.00, 0.00, 0.00, 0.00, 0.00, '2020-09-29 00:21:11', '2020-09-29 00:21:11'),
-(6, 13, 0, 0.00, 0.00, 0.00, 0.00, 0.00, '2020-09-29 00:50:16', '2020-09-29 00:50:16'),
-(7, 14, 1, 140.00, 41.30, 98.70, 59.00, 7.00, '2020-09-29 02:05:33', '2020-11-25 00:30:42'),
-(8, 15, 0, 0.00, 0.00, 0.00, 0.00, 0.00, '2020-10-01 09:34:46', '2020-10-01 09:34:46'),
-(9, 16, 0, 0.00, 0.00, 0.00, 0.00, 0.00, '2020-10-01 10:13:03', '2020-10-01 10:13:03'),
-(10, 17, 0, 0.00, 0.00, 0.00, 0.00, 0.00, '2020-10-28 05:13:30', '2020-10-28 05:13:30'),
-(11, 18, 0, 0.00, 0.00, 0.00, 0.00, 0.00, '2020-11-06 07:00:07', '2020-11-06 07:00:07'),
-(12, 19, 0, 0.00, 0.00, 0.00, 0.00, 0.00, '2020-11-13 02:02:14', '2020-11-13 02:02:14'),
-(13, 20, 0, 0.00, 0.00, 0.00, 0.00, 0.00, '2020-11-13 03:16:00', '2020-11-13 03:16:00'),
-(14, 21, 0, 0.00, 0.00, 0.00, 0.00, 0.00, '2020-11-14 07:16:14', '2020-11-14 07:16:14'),
-(15, 22, 0, 0.00, 0.00, 0.00, 0.00, 0.00, '2020-11-16 08:23:39', '2020-11-16 08:23:39'),
-(16, 23, 0, 0.00, 0.00, 0.00, 0.00, 0.00, '2020-11-16 08:36:41', '2020-11-16 08:36:41'),
-(17, 24, 0, 0.00, 0.00, 0.00, 0.00, 0.00, '2020-11-16 08:39:49', '2020-11-16 08:39:49'),
-(18, 25, 0, 0.00, 0.00, 0.00, 0.00, 0.00, '2020-11-24 01:19:15', '2020-11-24 01:19:15');
+(6, 13, 0, 0.00, 0.00, 0.00, 0.00, 0.00, '2020-09-29 00:50:16', '2020-09-29 00:50:16');
 
 -- --------------------------------------------------------
 
@@ -915,69 +1028,7 @@ INSERT INTO `ewallet_passbook` (`ewallet_passbook_id`, `user_id`, `transaction_a
 (159, 37, 100.00, '#4590843', 'CREDITED', '100 rupees has been credited to wallet via RazorPay', '2020-11-07 13:03:27', NULL, NULL),
 (160, 37, 100.00, '#b995721', 'CREDITED', '100 rupees has been credited to wallet via RazorPay', '2020-11-08 10:24:57', NULL, NULL),
 (161, 37, 204.75, '#cfe45e1', 'DEBITED', '204.75 rupees has been debited from wallet for order', '2020-11-08 10:25:10', NULL, NULL),
-(162, 37, 100.00, '#6b942b0', 'CREDITED', '100 rupees has been credited to wallet via RazorPay', '2020-11-10 09:58:15', NULL, NULL),
-(163, 37, 10.00, '#2c01f86', 'CREDITED', '10 rupees has been credited to wallet via RazorPay', '2020-11-11 09:54:01', NULL, NULL),
-(164, 11, 10.00, '#5849aae', 'CREDITED', '10 rupees has been credited to wallet via RazorPay', '2020-11-11 10:39:36', NULL, NULL),
-(165, 11, 10.00, '#443025', 'CREDITED', '10 rupees has been credited to wallet via RazorPay', '2020-11-11 10:40:13', NULL, NULL),
-(166, 11, 100.00, '#0a146a3', 'CREDITED', '100 rupees has been credited to wallet via RazorPay', '2020-11-12 02:10:54', NULL, NULL),
-(167, 11, 119.70, '#eec3591', 'DEBITED', '119.7 rupees has been debited from wallet for order', '2020-11-12 02:12:06', NULL, NULL),
-(168, 37, 100.00, '#d48be00', 'CREDITED', '100 rupees has been credited to wallet via RazorPay', '2020-11-12 08:41:39', NULL, NULL),
-(169, 37, 204.75, '#970d620', 'DEBITED', '204.75 rupees has been debited from wallet for order', '2020-11-12 08:42:11', NULL, NULL),
-(170, 37, 999.99, '#c69519e', 'CREDITED', '1000 rupees has been credited to wallet via RazorPay', '2020-11-12 08:43:44', NULL, NULL),
-(171, 37, 204.75, '#b97f82f', 'DEBITED', '204.75 rupees has been debited from wallet for order', '2020-11-12 08:44:05', NULL, NULL),
-(172, 37, 169.75, '#77a7fcc', 'DEBITED', '169.75 rupees has been debited from wallet for order', '2020-11-12 08:47:55', NULL, NULL),
-(173, 37, 169.75, '#9f569bf', 'DEBITED', '169.75 rupees has been debited from wallet for order', '2020-11-12 08:52:23', NULL, NULL),
-(174, 37, 168.00, '#ced46b6', 'DEBITED', '168.0 rupees has been debited from wallet for order', '2020-11-12 12:40:34', NULL, NULL),
-(175, 11, 10.00, '#387e06d', 'CREDITED', '10 rupees has been credited to wallet via RazorPay', '2020-11-18 01:28:47', NULL, NULL),
-(176, 11, 200.00, '#fafc958', 'CREDITED', '200 rupees has been credited to wallet via RazorPay', '2020-11-18 01:29:19', NULL, NULL),
-(177, 11, 164.00, '#d2cabe5', 'DEBITED', '164.0 rupees has been debited from wallet for order', '2020-11-18 01:32:12', NULL, NULL),
-(178, 37, 100.00, '#cfc66cf', 'CREDITED', '100 rupees has been credited to wallet via RazorPay', '2020-11-24 05:43:01', NULL, NULL),
-(179, 55, 50.00, '#ef95ddf', 'CREDITED', '50 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-24 06:12:32', NULL, NULL),
-(180, 55, 50.00, '#41aed2d', 'CREDITED', '50 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-24 06:14:26', NULL, NULL),
-(181, 37, 50.00, '#f8979c2', 'CREDITED', '50 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-24 06:14:27', NULL, NULL),
-(182, 57, 50.00, '#cdbce13', 'CREDITED', '50 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-24 06:40:43', NULL, NULL),
-(183, 37, 50.00, '#b101fe9', 'CREDITED', '50 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-24 06:40:43', NULL, NULL),
-(184, 11, 10.00, '#a63124e', 'CREDITED', '10 rupees has been credited to wallet via RazorPay', '2020-11-24 09:22:52', NULL, NULL),
-(185, 17, 105.00, '#60e974a', 'CREDITED', '105 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-25 10:52:46', NULL, NULL),
-(186, 11, 105.00, '#a2caa44', 'CREDITED', '105 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-25 10:52:47', NULL, NULL),
-(187, 17, 999.99, '#59c2f91', 'CREDITED', '11000 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-25 10:55:38', NULL, NULL),
-(188, 11, 999.99, '#8c04234', 'CREDITED', '11000 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-25 10:55:39', NULL, NULL),
-(189, 57, 10.00, '#39a2406', 'CREDITED', '10 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-25 11:10:08', NULL, NULL),
-(190, 37, 10.00, '#ae5f750', 'CREDITED', '10 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-25 11:10:09', NULL, NULL),
-(191, 59, 10.00, '#00eb068', 'CREDITED', '10 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-25 11:25:08', NULL, NULL),
-(192, 58, 10.00, '#445a2d4', 'CREDITED', '10 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-25 11:25:13', NULL, NULL),
-(193, 59, 100.00, '#c54192d', 'CREDITED', '100 rupees has been credited to wallet via RazorPay', '2020-11-25 11:29:34', NULL, NULL),
-(194, 3, 10.00, '#73be978', 'CREDITED', '10 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-26 03:03:32', NULL, NULL),
-(195, 3, 50.00, '#0f0419f', 'CREDITED', '50 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-26 03:21:29', NULL, NULL),
-(196, 3, 50.00, '#8a37c03', 'CREDITED', '50 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-26 03:22:56', NULL, NULL),
-(197, 3, 50.00, '#8cc276e', 'CREDITED', '50 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-26 03:29:34', NULL, NULL),
-(198, 11, 50.00, '#8716e8a', 'CREDITED', '50 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-26 03:29:38', NULL, NULL),
-(199, 3, 50.00, '#1215597', 'CREDITED', '50 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-26 03:29:40', NULL, NULL),
-(200, 11, 50.00, '#9c9d20', 'CREDITED', '50 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-26 03:29:41', NULL, NULL),
-(201, 3, 50.00, '#6e0456f', 'CREDITED', '50 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-26 03:29:58', NULL, NULL),
-(202, 61, 50.00, '#5359067', 'CREDITED', '50 rupees has been credited to wallet via \'ReferelCode\'', '2020-11-26 08:43:37', NULL, NULL),
-(203, 62, 50.00, '#1a79fcc', 'CREDITED', '50 rupees has been credited to wallet via \'Referral code\'', '2020-11-26 09:44:30', NULL, NULL),
-(204, 61, 50.00, '#8f0b7a0', 'CREDITED', '50 rupees has been credited to wallet via \'Referral code\'', '2020-11-26 09:44:31', NULL, NULL),
-(205, 62, 50.00, '#cf82f1e', 'CREDITED', '50 rupees has been credited to wallet via \'Referral code\'', '2020-11-26 09:45:52', NULL, NULL),
-(206, 61, 50.00, '#9803c73', 'CREDITED', '50 rupees has been credited to wallet via \'Referral code\'', '2020-11-26 09:45:52', NULL, NULL),
-(207, 62, 500.00, '#f2aa60f', 'CREDITED', '500 rupees has been credited to wallet via \'Referral code\'', '2020-11-26 09:46:15', NULL, NULL),
-(208, 61, 500.00, '#ac98b3c', 'CREDITED', '500 rupees has been credited to wallet via \'Referral code\'', '2020-11-26 09:46:15', NULL, NULL),
-(209, 62, 500.00, '#f0daa99', 'CREDITED', '500 rupees has been credited to wallet via \'Referral code\'', '2020-11-26 09:52:33', NULL, NULL),
-(210, 61, 500.00, '#4759a96', 'CREDITED', '500 rupees has been credited to wallet via \'Referral code\'', '2020-11-26 09:52:34', NULL, NULL),
-(211, 64, 500.00, '#344ef60', 'CREDITED', '500 rupees has been credited to wallet via \'Referral code\'', '2020-11-26 09:56:15', NULL, NULL),
-(212, 63, 500.00, '#3ebb8b0', 'CREDITED', '500 rupees has been credited to wallet via \'Referral code\'', '2020-11-26 09:56:16', NULL, NULL),
-(213, 64, 500.00, '#cbc3f4d', 'CREDITED', '500 rupees has been credited to wallet via \'Referral code\'', '2020-11-26 10:00:28', NULL, NULL),
-(214, 63, 500.00, '#3525aee', 'CREDITED', '500 rupees has been credited to wallet via \'Referral code\'', '2020-11-26 10:00:28', NULL, NULL),
-(215, 64, 500.00, '#adb19ab', 'CREDITED', '500 rupees has been credited to wallet via \'Referral code\'', '2020-11-26 10:04:41', NULL, NULL),
-(216, 63, 500.00, '#a81862e', 'CREDITED', '500 rupees has been credited to wallet via \'Referral code\'', '2020-11-26 10:04:41', NULL, NULL),
-(217, 64, 500.00, '#f61ca59', 'CREDITED', '500 rupees has been credited to wallet via \'Referral code\'', '2020-11-26 10:07:16', NULL, NULL),
-(218, 63, 500.00, '#8c87760', 'CREDITED', '500 rupees has been credited to wallet via \'Referral code\'', '2020-11-26 10:07:17', NULL, NULL),
-(219, 64, 500.00, '#6b06416', 'CREDITED', '500 rupees has been credited to wallet via \'Referral code\'', '2020-11-26 10:07:27', NULL, NULL),
-(220, 63, 500.00, '#84d13fd', 'CREDITED', '500 rupees has been credited to wallet via \'Referral code\'', '2020-11-26 10:07:27', NULL, NULL),
-(221, 67, 500.00, '#91f71f1', 'CREDITED', '500 rupees has been credited to wallet via \'Referral code\'', '2020-11-27 05:35:16', NULL, NULL),
-(222, 66, 500.00, '#c8e8c5a', 'CREDITED', '500 rupees has been credited to wallet via \'Referral code\'', '2020-11-27 05:35:16', NULL, NULL),
-(223, 69, 500.00, '#744cfb3', 'CREDITED', '500 rupees has been credited to wallet via \'Referral code\'', '2020-11-27 05:41:02', NULL, NULL),
-(224, 68, 500.00, '#d466a7', 'CREDITED', '500 rupees has been credited to wallet via \'Referral code\'', '2020-11-27 05:41:07', NULL, NULL);
+(162, 37, 100.00, '#6b942b0', 'CREDITED', '100 rupees has been credited to wallet via RazorPay', '2020-11-10 09:58:15', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -987,8 +1038,8 @@ INSERT INTO `ewallet_passbook` (`ewallet_passbook_id`, `user_id`, `transaction_a
 
 CREATE TABLE `faqs` (
   `id` int(10) UNSIGNED NOT NULL,
-  `question` text COLLATE utf8mb4_unicode_ci,
-  `answer` text COLLATE utf8mb4_unicode_ci,
+  `question` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `answer` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `faq_category_id` int(10) UNSIGNED NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -1001,22 +1052,22 @@ CREATE TABLE `faqs` (
 INSERT INTO `faqs` (`id`, `question`, `answer`, `faq_category_id`, `created_at`, `updated_at`) VALUES
 (1, '<span style=\"color: rgb(33, 37, 41);\">Can I order from any location?</span>', '<span style=\"color: rgb(33, 37, 41);\">We will deliver from any market (open for delivery) listed on the search results for your location. We recommend enabling your GPS location finder and letting the app auto detect your location.</span>', 3, '2020-09-19 20:31:05', '2020-09-24 17:45:10'),
 (2, '<span style=\"color: rgb(33, 37, 41);\">Do you charge Delivery Fee?</span>', '<span style=\"color: rgb(33, 37, 41);\">Delivery Fee varies from city to city and is applicable if order value is below a certain amount. Additionally certain market might have fixed delivery fees.</span>', 3, '2020-09-19 20:31:05', '2020-09-24 17:42:55'),
-(3, '<span style=\"color: rgb(33, 37, 41);\">I want to provide feedback.</span>', '<span style=\"color: rgb(33, 37, 41);\">Please share your feedback in the app itself or write to us at contactchefrome@gmail.com</span>', 4, '2020-09-19 20:31:05', '2020-09-24 17:33:45'),
-(4, '<span style=\"color: rgb(33, 37, 41);\">I want to explore career opportunities with Chefrome.</span>', '<span style=\"color: rgb(33, 37, 41);\">Email us at contactchefrome@gmail.com&nbsp;</span>', 4, '2020-09-19 20:31:05', '2020-09-24 17:35:51'),
+(3, '<span style=\"color: rgb(33, 37, 41);\">I want to provide feedback.</span>', '<span style=\"color: rgb(33, 37, 41);\">Please share your feedback in the app itself or write to us at info@companyname.com</span>', 4, '2020-09-19 20:31:05', '2020-11-29 02:27:10'),
+(4, '<span style=\"color: rgb(33, 37, 41);\">I want to explore career opportunities with Company.</span>', '<span style=\"color: rgb(33, 37, 41);\">Email us at companyname@email.com&nbsp;</span>', 4, '2020-09-19 20:31:05', '2020-12-04 03:32:01'),
 (5, 'What are the delivery hours?', '<span style=\"color: rgb(33, 37, 41);\">Our delivery hours vary for different locations and depends upon availability of supplies from market partners.</span>', 3, '2020-09-19 20:31:05', '2020-09-24 17:31:51'),
 (6, '<span style=\"color: rgb(33, 37, 41);\">Is single order from many markets possible?</span>', '<span style=\"color: rgb(33, 37, 41);\">We currently do not support this functionality. However you can place orders for individual items from different markets.</span>', 2, '2020-09-19 20:31:05', '2020-09-24 17:32:53'),
-(8, '<span style=\"color: rgb(33, 37, 41);\">I want to partner with Chefrome.</span>', '<span style=\"color: rgb(33, 37, 41);\">Write to us at contactchefrome@gmail.com</span>', 4, '2020-09-19 20:31:05', '2020-09-24 17:34:39'),
+(8, '<span style=\"color: rgb(33, 37, 41);\">I want to partner with Company.</span>', '<span style=\"color: rgb(33, 37, 41);\">Write to us at info@companyname.com</span>', 4, '2020-09-19 20:31:05', '2020-11-29 02:30:11'),
 (9, '<span style=\"color: rgb(33, 37, 41);\">What does \'market\' means?</span>', '<span style=\"color: rgb(33, 37, 41);\">Market signifies the seller partners.</span>', 4, '2020-09-19 20:31:05', '2020-09-24 17:30:28'),
 (10, 'How do I get my ordered item if I choose Self Pickup?', 'Congrats! you just saved extra bugs by not paying Delivery Fee and choosing Self Pick up. You can navigate to the seller\'s location using google maps or call the seller for assistance and pick up your goods directly from the sellers place.', 3, '2020-09-19 20:31:05', '2020-09-24 17:41:05'),
 (12, '<span style=\"color: rgb(33, 37, 41);\">I am not able to delete item from the Cart.</span>', '<span style=\"color: rgb(33, 37, 41);\">Just slide on the item that you want to delete from the cart.</span>', 4, '2020-09-19 20:31:05', '2020-09-24 17:38:28'),
-(16, '<span style=\"color: rgb(33, 37, 41);\">I have received expired product.</span>', '<span style=\"color: rgb(33, 37, 41);\">Email at contactchefrome@gmail.com with product details and image. We will replace the product as soon as possible.</span>', 1, '2020-09-19 20:31:05', '2020-09-24 17:37:37'),
+(16, '<span style=\"color: rgb(33, 37, 41);\">I have received expired product.</span>', '<span style=\"color: rgb(33, 37, 41);\">Email at info@companyname.com with product details and image. We will replace the product as soon as possible.</span>', 1, '2020-09-19 20:31:05', '2020-12-04 03:32:35'),
 (18, '<span style=\"color: rgb(33, 37, 41);\">Can I change the address/number?</span>', '<span style=\"color: rgb(33, 37, 41);\">Any major change in delivery address is not possible with us after you have placed the order. However slight modifications like changing the flat number, landmark etc are allowed. You can call the delivery boy to do the necessary.&nbsp;</span>', 3, '2020-09-19 20:31:05', '2020-09-24 17:46:56'),
 (21, '<span style=\"color: rgb(33, 37, 41);\">Do you support Bulk Orders?</span>', '<span style=\"color: rgb(33, 37, 41);\">We reserve the right to limit the quantity depending on supplies. Or you can connect with our customer service 3 days in advance for any bulk order.</span>', 2, '2020-09-19 20:31:05', '2020-09-24 17:42:04'),
-(24, '<span style=\"color: rgb(33, 37, 41);\">Can I subscribe for weekly/monthly/quarterly for any product?</span>', '<span style=\"color: rgb(33, 37, 41);\">Subscription service is limited to certain location and market. To know more write to us at contactchefrome@gmail.com</span>', 1, '2020-09-19 20:31:05', '2020-09-24 17:43:41'),
+(24, '<span style=\"color: rgb(33, 37, 41);\">Can I subscribe for weekly/monthly/quarterly for any product?</span>', '<span style=\"color: rgb(33, 37, 41);\">Subscription service is limited to certain location and market. To know more write to us at info@companyname.com</span>', 1, '2020-09-19 20:31:05', '2020-11-29 02:24:35'),
 (25, '<span style=\"color: rgb(33, 37, 41);\">How long do you take to deliver?</span>', '<span style=\"color: rgb(33, 37, 41);\">Standard Delivery Time varies by the location and the prevailing conditions. We take a minimum of 24 hours to deliver.</span>', 3, '2020-09-19 20:31:05', '2020-09-24 17:40:12'),
 (27, '<span style=\"color: rgb(33, 37, 41);\">I want to cancel my order. Can I get a refund?</span>', '<span style=\"color: rgb(33, 37, 41);\">Sorry! Orders once placed cannot be cancelled. There shall be no refund on cancellation of the order.</span>', 1, '2020-09-19 20:31:05', '2020-09-24 17:36:39'),
 (29, '<span style=\"color: rgb(33, 37, 41);\">Can I get instant delivery on the same day?</span>', '<span style=\"color: rgb(33, 37, 41);\">At the moment we don\'t deliver on the same day. You have to Pre-Order any item that you want to purchase.</span>', 3, '2020-09-19 20:31:05', '2020-09-24 17:46:17'),
-(30, '<span style=\"color: rgb(33, 37, 41);\">Will Chefrome be responsible for quality/quantity?</span>', '<span style=\"color: rgb(33, 37, 41);\">Quality &amp; Quantity is the market partners responsibility. However in case of any issue with quality/quantity share your feedback with us and we shall forward it to our market partners.</span>', 1, '2020-09-19 20:31:05', '2020-09-24 17:29:04');
+(30, '<span style=\"color: rgb(33, 37, 41);\">Will Company be responsible for quality/quantity?</span>', '<span style=\"color: rgb(33, 37, 41);\">Quality & Quantity is the market partners responsibility. However in case of any issue with quality/quantity share your feedback with us and we shall forward it to our market partners.</span>', 1, '2020-09-19 20:31:05', '2020-11-29 02:26:16');
 
 -- --------------------------------------------------------
 
@@ -1075,7 +1126,7 @@ CREATE TABLE `favorite_options` (
 CREATE TABLE `fields` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(127) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` text COLLATE utf8mb4_unicode_ci,
+  `description` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -1101,22 +1152,11 @@ INSERT INTO `fields` (`id`, `name`, `description`, `created_at`, `updated_at`) V
 
 CREATE TABLE `galleries` (
   `id` int(10) UNSIGNED NOT NULL,
-  `description` text COLLATE utf8mb4_unicode_ci,
+  `description` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `market_id` int(10) UNSIGNED NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `galleries`
---
-
-INSERT INTO `galleries` (`id`, `description`, `market_id`, `created_at`, `updated_at`) VALUES
-(1, 'Molestiae quo et pariatur necessitatibus deserunt soluta.', 8, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(5, 'Dolor corporis quam unde deleniti aut explicabo voluptatem.', 10, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(9, 'Odit minima non qui et aliquam occaecati.', 10, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(14, 'Repudiandae non blanditiis praesentium et.', 9, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(18, 'Repudiandae laudantium ratione sint ducimus deleniti.', 10, '2020-09-19 20:31:05', '2020-09-19 20:31:05');
 
 -- --------------------------------------------------------
 
@@ -1127,24 +1167,24 @@ INSERT INTO `galleries` (`id`, `description`, `market_id`, `created_at`, `update
 CREATE TABLE `markets` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(127) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` text COLLATE utf8mb4_unicode_ci,
+  `description` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `latitude` varchar(24) COLLATE utf8mb4_unicode_ci NOT NULL,
   `longitude` varchar(24) COLLATE utf8mb4_unicode_ci NOT NULL,
   `phone` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `mobile` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `information` text COLLATE utf8mb4_unicode_ci,
-  `admin_commission` double(8,2) DEFAULT '0.00',
-  `delivery_fee` double(8,2) DEFAULT '0.00',
-  `delivery_range` double(8,2) DEFAULT '0.00',
-  `default_tax` double(8,2) DEFAULT '0.00',
+  `information` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `admin_commission` double(8,2) DEFAULT 0.00,
+  `delivery_fee` double(8,2) DEFAULT 0.00,
+  `delivery_range` double(8,2) DEFAULT 0.00,
+  `default_tax` double(8,2) DEFAULT 0.00,
   `open_time` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `close_time` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `open_days` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `delivery_time` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `closed` tinyint(1) DEFAULT '0',
-  `active` tinyint(1) DEFAULT '0',
-  `available_for_delivery` tinyint(1) DEFAULT '1',
+  `closed` tinyint(1) DEFAULT 0,
+  `active` tinyint(1) DEFAULT 0,
+  `available_for_delivery` tinyint(1) DEFAULT 1,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -1154,24 +1194,11 @@ CREATE TABLE `markets` (
 --
 
 INSERT INTO `markets` (`id`, `name`, `description`, `address`, `latitude`, `longitude`, `phone`, `mobile`, `information`, `admin_commission`, `delivery_fee`, `delivery_range`, `default_tax`, `open_time`, `close_time`, `open_days`, `delivery_time`, `closed`, `active`, `available_for_delivery`, `created_at`, `updated_at`) VALUES
-(8, 'Chefrome-Home Food', 'We serve Fresh & Authentic Home-Cooked Food. We care for you and your health.', '33 Mominpore Road', '28.4374', '77.0586', '+91 628 916 1047', '+91 628 916 1047', '<p>FSSAI Licence No: 22820041000105. </p><p>All images shown are for representation only. May not reflect the actual look of the dish</p>', 29.50, 35.00, 13.00, 10.00, '', '', '', '24 hours', 0, 1, 1, '2020-09-19 20:31:05', '2020-11-26 09:25:55'),
-(9, 'Chefrome Daily', 'We serve Fresh & Sanitized fruits, Vegetables and other Groceries. We care for you and your family.', '33 Mominpore Road Kolkata', '22.543190', '88.326599', '+91 628 916 1047', '+91 628 916 1047', '<p>FSSAI License No: 22820041000105</p><p>* All images shown are for representation only. May not reflect the actual look of the dish.</p>', 29.50, 39.00, 7.00, 0.00, '', '', '', '3 hour', 0, 1, 1, '2020-09-19 20:31:05', '2020-11-26 03:21:57'),
-(10, 'Chefrome Packaging', 'We give you lowest possible price in food packaging materials.', '33 Mominpore Road Kolkata', '22.543190', '88.326599', '+91 628 916 1047', '+91 628 916 1047', 'FSSAI No: 22820041000105. All images shown are for representation only and may not reflect the actual look of the dish.', 29.50, 39.00, 10.00, 10.00, '', '', '', '1 hour', 0, 1, 1, '2020-09-19 20:31:05', '2020-11-24 10:23:16'),
-(11, 'Nik-HUT\'s', '<p>Home Cooked Delicacies from Biryani to Fried Rice, Mutton to Ilish all served.</p>', '33 Dr Suresh Sarkar Road 1st Floor Kolkata 700014', '22.551180', '88.372500', '6289161047', '6289161047', NULL, 29.50, 59.00, 8.00, 5.00, '', '', '', '24 hours', 1, 1, 1, '2020-09-28 11:35:27', '2020-11-24 10:22:12'),
-(12, 'Foodzie Market', '<p>We provide best grocery products at very cheap prc</p>', 'IMT Manesar, gurugram', '28.3574272', '76.9490944', '9871279292', '9871279292', '<p>We provide best grocery products at very cheap price.<br></p>', 20.00, 20.00, 10000.00, 18.00, '', '', '', '', 1, 1, 0, '2020-09-29 00:21:10', '2020-09-29 00:51:32'),
-(13, 'Finger Licking', '<p>Healthy home-cooked food.</p>', '10, Narkel Bagan, jadavpur, kolkata 700032', '22.496930', '88.370240', '6289161047', '6289161047', '<p>FSSAI Licence No: 22819042000578. All images shown are for representation only. May not reflect the actual look of the dish.</p>', 29.50, 49.00, 7.00, 5.00, '', '', '', '24 hours', 0, 1, 1, '2020-09-29 00:50:16', '2020-11-24 10:23:35'),
-(14, 'MissTevia', '<p>Stevia based Sweets for Diabetes Patients. Stevia is a natural plant based sweetener. Other calorie conscious people can also have stevia sweets.</p>', '64/1b Raja Ram Mohan Roy Road, kolkata 700008', '22.487460', '88.331560', '6289161047', '6289161047', '<p>All images are just for representation and does not mean actual food.</p>', 29.50, 59.00, 7.00, 5.00, '', '', '', '24', 0, 1, 1, '2020-09-29 02:05:33', '2020-11-24 10:24:22'),
-(15, 'Sona Cakes & Bakes', '<p>I am Sushmita Karmakar, a Home Baker. Have competed and won many baking contest as well. I am sure you would like my cakes.</p>', 'E-6, Ramchandrapally, Barisha east, kolkata 700008', '22.486430', '88.316210', '6289161047', '6289161047', '<p>All images are only for representation and not the actual food. Fssai application no: 30201001124858360</p>', 29.50, 39.00, 15.00, 5.00, '12:00', '18:00', 'mon,tue,thu,fri', '24 hours', 0, 1, 1, '2020-10-01 09:34:46', '2020-11-24 10:24:53'),
-(16, 'Tahira Sarkar', '<p>I am a chocolatier. I serve all hand made chocolates</p>', 'RNB apartment,2 Rajdanga main road,kasba.Kolkata 700107', '22.511990', '88.393830', '6289161047', '6289161047', '<p>All images are just for representation and should not be considered as the actual food image. Fssai No:</p>', 29.50, 49.00, 15.00, 18.00, '', '', '', '4 hours', 0, 1, 1, '2020-10-01 10:13:03', '2020-11-24 10:25:29'),
-(17, 'Diwali Special', '<p>Special Diwali Chocolates. Gift it to your loved ones. You are not only buying chocolates but creating an Impact too.</p>', '24 NS Road Kolkata 700001', '22.465590', '88.414551', '6289161047', '6289161047', '<p>FSSAI Licence No: 22820041000105. </p><p>All images shown are for representation only. May not reflect the actual look of the item</p>', 29.50, 29.00, 8.00, 18.00, '07:00', '22:00', 'mon,tue,wed,thu,fri,sat,sun', '3 hours', 0, 1, 1, '2020-10-28 05:13:30', '2020-11-26 06:53:00'),
-(18, 'sdf', '<p>2454</p>', 'gfhdfbg dfgds', '26676', '26765426', '32432432432', '762456542687', '<p>4254</p>', 654265.00, 4545.00, 25.00, 19.00, '17:51', '17:51', 'tue,thu,sat', '', 0, 0, 1, '2020-11-06 07:00:07', '2020-11-06 07:00:07'),
-(19, 'Market1', '<p>description</p>', 'fd', '7878', '5687', '32432432432', '02578965478', '<p>Info</p>', 60.00, 50.00, 25.00, 20.00, '08:01', '13:01', 'mon,thu,sun', '', 0, 1, 1, '2020-11-13 02:02:14', '2020-11-13 02:02:14'),
-(20, 'NewSlotMarket', '<p>fdgrf</p>', '757575', '75757', '575757575757', '757575757', '575757575', NULL, 90.00, 578.00, 55757.00, 5757.00, '15:15', '15:15', 'mon,sat', '', 0, 1, 1, '2020-11-13 03:16:00', '2020-11-13 03:16:00'),
-(21, 'ABCD', '<p>fgfgfdgfgfdg</p>', '33 Mominpore Road', '22.543190', '88.323520', '8100211062', '8100211062', '<p>fgfggfdg</p>', 0.00, 0.00, 0.00, 0.00, '11:22', '18:15', 'sat,sun', '', 0, 0, 1, '2020-11-14 07:16:14', '2020-11-14 07:16:14'),
-(22, 'NEWWWWWWWWWWWWWWW', '<p>Desciption&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>', 'ewrewrw', '224454545', '544554', '7854785478', '1234567890', '<p>INfo</p>', 15.00, 20.00, 25.00, 19.00, '19:22', '19:23', 'tue,thu', '', 0, 1, 1, '2020-11-16 08:23:38', '2020-11-16 08:23:39'),
-(23, 'iohiohiohhiohio', '<p>nm kjbjk<br></p>', 'knonio', '28.4469', '77.0106', '7878787878', '7878787878', '<p>jbjhbbh<br></p>', 10.00, 100.00, 100.00, 37.00, '10:35', '19:36', 'mon,tue,wed,thu,fri,sat,sun', '', 0, 1, 1, '2020-11-16 08:36:41', '2020-11-16 08:36:41'),
-(24, 'my market', '<p>weafawf<br></p>', 'ewfwafa', '28.4469', '77.0106', '7878787878', '7878787878', '<p>wefwafw<br></p>', 10.00, 100.00, 100.00, 1.00, '10:39', '19:39', 'mon,tue,wed,thu,fri,sat,sun', '', 0, 1, 1, '2020-11-16 08:39:49', '2020-11-16 08:40:24'),
-(25, 'sdf', '<p>sdfdsfdsfdsaf</p>', 'fd', '755755', '75757575', '32432432432', '575757575', '<p>sdfdsafdsafdsaf</p>', 30.00, 0.00, 25.00, 19.00, '12:18', '12:22', 'tue,thu', '12hr', 0, 0, 1, '2020-11-24 01:19:15', '2020-11-24 01:19:15');
+(8, 'Chef -Home Food', 'We serve Fresh & Authentic Home-Cooked Food. We care for you and your health.', '33 Mominpore Road', '28.4374', '77.0586', '+91 9999999999', '+91 9999999999', '<p>FSSAI Licence No: 2352354325324.&nbsp;</p><p>All images shown are for representation only. May not reflect the actual look of the dish</p>', 20.00, 35.00, 13.00, 5.00, '', '', '', '', 0, 1, 1, '2020-09-19 20:31:05', '2020-12-04 03:39:48'),
+(9, 'Chef Daily', 'We serve Fresh & Sanitized fruits, Vegetables and other Groceries. We care for you and your family.', '33 Mominpore Road Kolkata', '22.543190', '88.326599', '+91 9999999999', '+91 9999999999', '<p>FSSAI License No</p><p>* All images shown are for representation only. May not reflect the actual look of the dish.</p>', 20.00, 39.00, 7.00, 0.00, '', '', '', '', 0, 1, 1, '2020-09-19 20:31:05', '2020-12-04 03:40:13'),
+(11, 'Nik-HUT\'s', '<p>Home Cooked Delicacies from Biryani to Fried Rice, Mutton to Ilish all served.</p>', '33 Dr Suresh Sarkar Road 1st Floor Kolkata 700014', '22.551180', '88.372500', '+91 9999999999', '6289161047', NULL, 20.00, 59.00, 8.00, 5.00, '', '', '', '', 0, 1, 1, '2020-09-28 11:35:27', '2020-12-04 03:40:52'),
+(12, 'Foodzie Market', '<p>We provide best grocery products at very cheap prc</p>', 'IMT Manesar, gurugram', '28.3574272', '76.9490944', '+91 9999999999', '9999999999', '<p>We provide best grocery products at very cheap price.<br></p>', 20.00, 20.00, 10000.00, 18.00, '', '', '', '', 0, 1, 1, '2020-09-29 00:21:10', '2020-12-04 03:41:24'),
+(13, 'Finger Licking', '<p>Healthy home-cooked food.</p>', '10, Narkel Bagan, jadavpur, kolkata 700032', '22.496930', '88.370240', '+91 9999999999', '9999999999', '<p>FSSAI Licence No: 4342341123412. All images shown are for representation only. May not reflect the actual look of the dish.</p>', 22.00, 49.00, 7.00, 5.00, '', '', '', '', 0, 1, 1, '2020-09-29 00:50:16', '2020-12-04 03:42:08');
 
 -- --------------------------------------------------------
 
@@ -1183,9 +1210,9 @@ CREATE TABLE `markets_payouts` (
   `id` int(10) UNSIGNED NOT NULL,
   `market_id` int(10) UNSIGNED NOT NULL,
   `method` varchar(127) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `amount` double(9,2) NOT NULL DEFAULT '0.00',
+  `amount` double(9,2) NOT NULL DEFAULT 0.00,
   `paid_date` datetime DEFAULT NULL,
-  `note` text COLLATE utf8mb4_unicode_ci,
+  `note` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -1206,26 +1233,13 @@ CREATE TABLE `market_fields` (
 --
 
 INSERT INTO `market_fields` (`field_id`, `market_id`) VALUES
-(7, 8),
 (1, 9),
-(9, 9),
-(10, 9),
-(8, 10),
-(7, 11),
 (1, 12),
+(7, 8),
+(7, 11),
 (7, 13),
-(7, 14),
-(7, 15),
-(7, 16),
-(4, 17),
-(8, 18),
-(4, 19),
-(4, 20),
-(1, 21),
-(4, 22),
-(4, 23),
-(1, 24),
-(4, 25);
+(9, 9),
+(10, 9);
 
 -- --------------------------------------------------------
 
@@ -1235,8 +1249,8 @@ INSERT INTO `market_fields` (`field_id`, `market_id`) VALUES
 
 CREATE TABLE `market_reviews` (
   `id` int(10) UNSIGNED NOT NULL,
-  `review` text COLLATE utf8mb4_unicode_ci,
-  `rate` tinyint(3) UNSIGNED NOT NULL DEFAULT '0',
+  `review` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `rate` tinyint(3) UNSIGNED NOT NULL DEFAULT 0,
   `user_id` int(10) UNSIGNED NOT NULL,
   `market_id` int(10) UNSIGNED NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
@@ -1248,15 +1262,7 @@ CREATE TABLE `market_reviews` (
 --
 
 INSERT INTO `market_reviews` (`id`, `review`, `rate`, `user_id`, `market_id`, `created_at`, `updated_at`) VALUES
-(4, 'Alice soon came upon a low voice, \'Why the fact is, you ARE a simpleton.\' Alice did not see anything that had slipped in like herself. \'Would it be of any that do,\' Alice said nothing; she had got.', 2, 2, 10, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(7, 'Duchess, it had made. \'He took me for his housemaid,\' she said to Alice. \'What IS a long argument with the glass table as before, \'It\'s all about it!\' and he checked himself suddenly: the others all.', 1, 6, 10, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(15, 'March Hare, who had spoken first. \'That\'s none of them even when they passed too close, and waving their forepaws to mark the time, while the rest of the leaves: \'I should like to go on with the end.', 3, 1, 9, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(17, 'I could shut up like a serpent. She had not gone far before they saw the Mock Turtle sighed deeply, and began, in rather a hard word, I will prosecute YOU.--Come, I\'ll take no denial; We must have.', 3, 2, 10, '2020-09-19 20:31:05', '2020-09-19 20:31:05'),
-(18, 'Execellent', 5, 11, 8, '2020-09-25 21:55:50', '2020-11-11 09:38:40'),
-(19, 'Very good food', 5, 32, 8, '2020-10-07 03:46:25', '2020-10-07 03:46:25'),
-(20, 'Excellent Hand Made Chocolates.', 5, 11, 17, '2020-10-28 05:28:13', '2020-10-28 05:28:13'),
-(21, NULL, 5, 37, 8, '2020-11-08 12:05:31', '2020-11-08 12:05:31'),
-(22, 'nice', 5, 11, 13, '2020-11-12 02:13:14', '2020-11-12 02:13:28');
+(15, 'March Hare, who had spoken first. \'That\'s none of them even when they passed too close, and waving their forepaws to mark the time, while the rest of the leaves: \'I should like to go on with the end.', 3, 1, 9, '2020-09-19 20:31:05', '2020-09-19 20:31:05');
 
 -- --------------------------------------------------------
 
@@ -1353,7 +1359,6 @@ INSERT INTO `media` (`id`, `model_type`, `model_id`, `collection_name`, `name`, 
 (77, 'App\\Models\\Upload', 43, 'image', 'Vegetables', 'Vegetables.png', 'image/png', 'public', 558308, '[]', '{\"uuid\":\"4e957046-4503-4958-8379-3d445ae85953\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 73, '2020-09-22 17:37:30', '2020-09-22 17:37:30'),
 (78, 'App\\Models\\Market', 9, 'image', 'Vegetables', 'Vegetables.png', 'image/png', 'public', 558308, '[]', '{\"uuid\":\"4e957046-4503-4958-8379-3d445ae85953\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 74, '2020-09-22 17:38:36', '2020-09-22 17:38:36'),
 (79, 'App\\Models\\Upload', 44, 'image', 'Foil Pack', 'Foil-Pack.png', 'image/png', 'public', 362399, '[]', '{\"uuid\":\"ca2fec1e-b65f-47fa-be71-3b02666e5e10\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 75, '2020-09-22 17:39:05', '2020-09-22 17:39:06'),
-(80, 'App\\Models\\Market', 10, 'image', 'Foil Pack', 'Foil-Pack.png', 'image/png', 'public', 362399, '[]', '{\"uuid\":\"ca2fec1e-b65f-47fa-be71-3b02666e5e10\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 76, '2020-09-22 17:41:17', '2020-09-22 17:41:17'),
 (81, 'App\\Models\\Upload', 45, 'image', 'Home Food', 'Home-Food.png', 'image/png', 'public', 799533, '[]', '{\"uuid\":\"2e83fe2b-4c94-43b4-a034-ac38256e3d52\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 77, '2020-09-22 17:48:54', '2020-09-22 17:48:54'),
 (82, 'App\\Models\\Market', 8, 'image', 'Home Food', 'Home-Food.png', 'image/png', 'public', 799533, '[]', '{\"uuid\":\"2e83fe2b-4c94-43b4-a034-ac38256e3d52\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 78, '2020-09-22 17:52:55', '2020-09-22 17:52:55'),
 (83, 'App\\Models\\Upload', 46, 'image', 'Fish Meal', 'Fish-Meal.png', 'image/png', 'public', 274093, '[]', '{\"uuid\":\"f76f6c5b-5694-483f-9d4f-fa2a2d87c786\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 79, '2020-09-22 17:58:00', '2020-09-22 17:58:00'),
@@ -1444,26 +1449,22 @@ INSERT INTO `media` (`id`, `model_type`, `model_id`, `collection_name`, `name`, 
 (170, 'App\\Models\\Option', 72, 'image', 'Cucumber', 'Cucumber.png', 'image/png', 'public', 328229, '[]', '{\"uuid\":\"00864aab-4831-422b-a12e-01e231f0fdf1\",\"user_id\":10,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 165, '2020-09-25 21:51:51', '2020-09-25 21:51:51'),
 (171, 'App\\Models\\User', 15, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$kfjCkPiksfkqHVb.bFOSje2FMgG9gjnTJb.mrxAJM2wPRE0CM9J2.\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 166, '2020-09-28 00:50:29', '2020-09-28 00:50:29'),
 (172, 'App\\Models\\Upload', 90, 'image', 'Snacks', 'Snacks.png', 'image/png', 'public', 399767, '[]', '{\"uuid\":\"8d3e59e9-2a8f-4b69-976b-e2367bc82a37\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 167, '2020-09-28 11:56:40', '2020-09-28 11:56:41'),
-(173, 'App\\Models\\Market', 11, 'image', 'Snacks', 'Snacks.png', 'image/png', 'public', 399767, '[]', '{\"uuid\":\"8d3e59e9-2a8f-4b69-976b-e2367bc82a37\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 168, '2020-09-28 11:57:08', '2020-09-28 11:57:08'),
 (174, 'App\\Models\\Upload', 91, 'image', '030620064704pm-Home_banner-two_1350x600', '030620064704pm-Home_banner-two_1350x600.jpg', 'image/jpeg', 'public', 218223, '[]', '{\"uuid\":\"9b94fef8-81dd-41e9-a6dc-864fc622ca01\",\"user_id\":18,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 169, '2020-09-29 00:20:45', '2020-09-29 00:20:45'),
-(175, 'App\\Models\\Market', 12, 'image', '030620064704pm-Home_banner-two_1350x600', '030620064704pm-Home_banner-two_1350x600.jpg', 'image/jpeg', 'public', 218223, '[]', '{\"uuid\":\"9b94fef8-81dd-41e9-a6dc-864fc622ca01\",\"user_id\":18,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 170, '2020-09-29 00:21:10', '2020-09-29 00:21:10'),
 (176, 'App\\Models\\Upload', 92, 'image', '71Dc-MLxWAL._SX425_', '71Dc-MLxWAL._SX425_.jpg', 'image/jpeg', 'public', 37499, '[]', '{\"uuid\":\"b13b8cd3-3548-4be4-ad07-5ed6876a0c20\",\"user_id\":18,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 171, '2020-09-29 00:26:30', '2020-09-29 00:26:30'),
 (177, 'App\\Models\\Product', 82, 'image', '71Dc-MLxWAL._SX425_', '71Dc-MLxWAL._SX425_.jpg', 'image/jpeg', 'public', 37499, '[]', '{\"uuid\":\"b13b8cd3-3548-4be4-ad07-5ed6876a0c20\",\"user_id\":18,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 172, '2020-09-29 00:28:09', '2020-09-29 00:28:09'),
 (178, 'App\\Models\\Upload', 93, 'image', 'Bhetki Paturi', 'Bhetki-Paturi.png', 'image/png', 'public', 309842, '[]', '{\"uuid\":\"0d6102b9-d2c8-419a-b147-2ac83d92196b\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 173, '2020-09-29 00:52:00', '2020-09-29 00:52:00'),
-(179, 'App\\Models\\Market', 13, 'image', 'Bhetki Paturi', 'Bhetki-Paturi.png', 'image/png', 'public', 309842, '[]', '{\"uuid\":\"0d6102b9-d2c8-419a-b147-2ac83d92196b\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 174, '2020-09-29 00:52:10', '2020-09-29 00:52:10'),
 (180, 'App\\Models\\Upload', 94, 'image', 'Jeera Rice + Katla kalia', 'Jeera-Rice-+-Katla-kalia.png', 'image/png', 'public', 252753, '[]', '{\"uuid\":\"94584d4b-694e-4db4-8611-27990190f7e3\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 175, '2020-09-29 01:04:48', '2020-09-29 01:04:49'),
 (181, 'App\\Models\\Product', 83, 'image', 'Jeera Rice + Katla kalia', 'Jeera-Rice-+-Katla-kalia.png', 'image/png', 'public', 252753, '[]', '{\"uuid\":\"94584d4b-694e-4db4-8611-27990190f7e3\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 176, '2020-09-29 01:05:03', '2020-09-29 01:05:03'),
 (182, 'App\\Models\\Upload', 95, 'image', 'Lemon Rice + Egg Dopiyaza', 'Lemon-Rice-+-Egg-Dopiyaza.png', 'image/png', 'public', 269266, '[]', '{\"uuid\":\"f356fe67-5d02-41e3-986f-1170a85830ee\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 177, '2020-09-29 01:05:45', '2020-09-29 01:05:46'),
 (183, 'App\\Models\\Product', 84, 'image', 'Lemon Rice + Egg Dopiyaza', 'Lemon-Rice-+-Egg-Dopiyaza.png', 'image/png', 'public', 269266, '[]', '{\"uuid\":\"f356fe67-5d02-41e3-986f-1170a85830ee\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 178, '2020-09-29 01:07:26', '2020-09-29 01:07:26'),
 (184, 'App\\Models\\Upload', 96, 'image', 'Basanti Pulao + Chicken Kosa', 'Basanti-Pulao-+-Chicken-Kosa.png', 'image/png', 'public', 282319, '[]', '{\"uuid\":\"2f4366f8-35eb-4e2a-8d09-38cebef1f2b6\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 179, '2020-09-29 01:09:35', '2020-09-29 01:09:36'),
-(185, 'App\\Models\\Product', 85, 'image', 'Basanti Pulao + Chicken Kosa', 'Basanti-Pulao-+-Chicken-Kosa.png', 'image/png', 'public', 282319, '[]', '{\"uuid\":\"2f4366f8-35eb-4e2a-8d09-38cebef1f2b6\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 180, '2020-09-29 01:12:00', '2020-09-29 01:12:00');
-INSERT INTO `media` (`id`, `model_type`, `model_id`, `collection_name`, `name`, `file_name`, `mime_type`, `disk`, `size`, `manipulations`, `custom_properties`, `responsive_images`, `order_column`, `created_at`, `updated_at`) VALUES
+(185, 'App\\Models\\Product', 85, 'image', 'Basanti Pulao + Chicken Kosa', 'Basanti-Pulao-+-Chicken-Kosa.png', 'image/png', 'public', 282319, '[]', '{\"uuid\":\"2f4366f8-35eb-4e2a-8d09-38cebef1f2b6\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 180, '2020-09-29 01:12:00', '2020-09-29 01:12:00'),
 (186, 'App\\Models\\Upload', 97, 'image', 'Roti + Masala Bhindi', 'Roti-+-Masala-Bhindi.png', 'image/png', 'public', 230056, '[]', '{\"uuid\":\"f564db7c-e463-491a-99d8-21a28605d8f8\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 181, '2020-09-29 01:13:05', '2020-09-29 01:13:05'),
 (187, 'App\\Models\\Product', 86, 'image', 'Roti + Masala Bhindi', 'Roti-+-Masala-Bhindi.png', 'image/png', 'public', 230056, '[]', '{\"uuid\":\"f564db7c-e463-491a-99d8-21a28605d8f8\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 182, '2020-09-29 01:14:50', '2020-09-29 01:14:50'),
 (188, 'App\\Models\\Upload', 98, 'image', 'Rice + Chanar Dalna', 'Rice-+-Chanar-Dalna.png', 'image/png', 'public', 342063, '[]', '{\"uuid\":\"c86f4074-20b5-4ccd-91b1-dc43fd063e01\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 183, '2020-09-29 01:16:58', '2020-09-29 01:16:58'),
-(189, 'App\\Models\\Product', 87, 'image', 'Rice + Chanar Dalna', 'Rice-+-Chanar-Dalna.png', 'image/png', 'public', 342063, '[]', '{\"uuid\":\"c86f4074-20b5-4ccd-91b1-dc43fd063e01\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 184, '2020-09-29 01:18:03', '2020-09-29 01:18:03'),
+(189, 'App\\Models\\Product', 87, 'image', 'Rice + Chanar Dalna', 'Rice-+-Chanar-Dalna.png', 'image/png', 'public', 342063, '[]', '{\"uuid\":\"c86f4074-20b5-4ccd-91b1-dc43fd063e01\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 184, '2020-09-29 01:18:03', '2020-09-29 01:18:03');
+INSERT INTO `media` (`id`, `model_type`, `model_id`, `collection_name`, `name`, `file_name`, `mime_type`, `disk`, `size`, `manipulations`, `custom_properties`, `responsive_images`, `order_column`, `created_at`, `updated_at`) VALUES
 (190, 'App\\Models\\Upload', 99, 'image', 'Badam Kheer Sandesh', 'Badam-Kheer-Sandesh.png', 'image/png', 'public', 234396, '[]', '{\"uuid\":\"ced6388d-7500-4061-b6fa-24db43ac01b7\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 185, '2020-09-29 02:00:00', '2020-09-29 02:00:01'),
-(191, 'App\\Models\\Market', 14, 'image', 'Badam Kheer Sandesh', 'Badam-Kheer-Sandesh.png', 'image/png', 'public', 234396, '[]', '{\"uuid\":\"ced6388d-7500-4061-b6fa-24db43ac01b7\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 186, '2020-09-29 02:05:33', '2020-09-29 02:05:33'),
 (192, 'App\\Models\\Upload', 100, 'image', 'Rosogolla', 'Rosogolla.png', 'image/png', 'public', 78590, '[]', '{\"uuid\":\"f2395c87-7abe-4d67-8876-c3189faf988c\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 187, '2020-09-29 02:09:11', '2020-09-29 02:09:11'),
 (193, 'App\\Models\\Upload', 101, 'image', 'CHandrapuli', 'CHandrapuli.png', 'image/png', 'public', 304306, '[]', '{\"uuid\":\"30eba3ab-57d2-47b8-93fc-89484d99810d\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 188, '2020-09-29 02:10:13', '2020-09-29 02:10:13'),
 (195, 'App\\Models\\Upload', 102, 'image', 'Badam Kheer Sandesh', 'Badam-Kheer-Sandesh.png', 'image/png', 'public', 234396, '[]', '{\"uuid\":\"8db81d82-5d11-47aa-9d6b-3e1b0ebb48ff\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 190, '2020-09-29 02:12:47', '2020-09-29 02:12:48'),
@@ -1478,9 +1479,7 @@ INSERT INTO `media` (`id`, `model_type`, `model_id`, `collection_name`, `name`, 
 (207, 'App\\Models\\Upload', 108, 'image', 'Sushmita_Karmakar_photo', 'Sushmita_Karmakar_photo.jpg', 'image/jpeg', 'public', 66981, '[]', '{\"uuid\":\"f4fde179-dd64-4b1c-9810-35d1305b751c\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 202, '2020-10-01 09:34:07', '2020-10-01 09:34:08'),
 (209, 'App\\Models\\Upload', 109, 'image', 'Sushmita_Karmakar_market_Profile_pic', 'Sushmita_Karmakar_market_Profile_pic.jpg', 'image/jpeg', 'public', 93993, '[]', '{\"uuid\":\"8afe53e9-420b-4957-923a-4ebf8494aab2\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 203, '2020-10-01 09:40:51', '2020-10-01 09:40:51'),
 (210, 'App\\Models\\Upload', 110, 'image', 'Sushmita_Karmakar_market_Profile_pic', 'Sushmita_Karmakar_market_Profile_pic.jpg', 'image/jpeg', 'public', 93993, '[]', '{\"uuid\":\"7f3e659b-c853-4228-8dcf-2d09fafb97af\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 204, '2020-10-01 09:43:19', '2020-10-01 09:43:19'),
-(211, 'App\\Models\\Market', 15, 'image', 'Sushmita_Karmakar_market_Profile_pic', 'Sushmita_Karmakar_market_Profile_pic.jpg', 'image/jpeg', 'public', 93993, '[]', '{\"uuid\":\"7f3e659b-c853-4228-8dcf-2d09fafb97af\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 205, '2020-10-01 09:43:27', '2020-10-01 09:43:27'),
 (212, 'App\\Models\\Upload', 111, 'image', 'Rakhi Special_1', 'Rakhi-Special_1.png', 'image/png', 'public', 160914, '[]', '{\"uuid\":\"4fd958f2-af15-401d-ba58-439bf08ff363\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 206, '2020-10-01 10:12:54', '2020-10-01 10:12:55'),
-(213, 'App\\Models\\Market', 16, 'image', 'Rakhi Special_1', 'Rakhi-Special_1.png', 'image/png', 'public', 160914, '[]', '{\"uuid\":\"4fd958f2-af15-401d-ba58-439bf08ff363\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 207, '2020-10-01 10:13:03', '2020-10-01 10:13:03'),
 (214, 'App\\Models\\User', 26, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$Kt6SVMXLewX3eXBk5dCc2u9zshAXMs6DPSrFqEJwrR9pmKgi3ljZG\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 208, '2020-10-01 22:46:00', '2020-10-01 22:46:00'),
 (215, 'App\\Models\\User', 28, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$bNvxTseGzjhY1zum9pa.cuTb.Mmkiw\\/o2wtJLVqyMbP7iIIyySKjS\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 209, '2020-10-02 10:06:51', '2020-10-02 10:06:51'),
 (216, 'App\\Models\\User', 29, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$LfBQJ9vM8KoFPyXopkQphOkbWSRy2QFPNUIlVbs3NPhGuWkTtG9sK\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 210, '2020-10-03 01:12:20', '2020-10-03 01:12:21'),
@@ -1509,11 +1508,14 @@ INSERT INTO `media` (`id`, `model_type`, `model_id`, `collection_name`, `name`, 
 (239, 'App\\Models\\User', 41, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$zlTxeqPgaOotrnzJKNLon.atRI831RwKYYs4p.yPa\\/qhkZKUbQf4K\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 233, '2020-10-27 10:49:32', '2020-10-27 10:49:32'),
 (240, 'App\\Models\\Upload', 119, 'image', 'Diwali_Campaign', 'Diwali_Campaign.png', 'image/png', 'public', 601830, '[]', '{\"uuid\":\"70a71410-b4aa-4f88-b3a8-0614fbff3052\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 234, '2020-10-28 05:06:46', '2020-10-28 05:06:47'),
 (241, 'App\\Models\\Upload', 120, 'image', 'Diwali_2', 'Diwali_2.jpg', 'image/jpeg', 'public', 94098, '[]', '{\"uuid\":\"9ba8572d-2ae5-4c7b-8308-6e3255861693\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 235, '2020-10-28 05:11:33', '2020-10-28 05:11:33'),
-(242, 'App\\Models\\Market', 17, 'image', 'Diwali_2', 'Diwali_2.jpg', 'image/jpeg', 'public', 94098, '[]', '{\"uuid\":\"9ba8572d-2ae5-4c7b-8308-6e3255861693\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 236, '2020-10-28 05:13:30', '2020-10-28 05:13:30'),
 (243, 'App\\Models\\Upload', 121, 'image', 'Gift a Box of Love (1)', 'Gift-a-Box-of-Love-(1).png', 'image/png', 'public', 603883, '[]', '{\"uuid\":\"e743d4d9-c328-4e28-b4e2-9d78c5dd2787\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 237, '2020-10-28 05:18:50', '2020-10-28 05:18:50'),
+(244, 'App\\Models\\Product', 100, 'image', 'Gift a Box of Love (1)', 'Gift-a-Box-of-Love-(1).png', 'image/png', 'public', 603883, '[]', '{\"uuid\":\"e743d4d9-c328-4e28-b4e2-9d78c5dd2787\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 238, '2020-10-28 05:22:16', '2020-10-28 05:22:16'),
 (245, 'App\\Models\\Upload', 122, 'image', 'Diwali_1', 'Diwali_1.jpg', 'image/jpeg', 'public', 84326, '[]', '{\"uuid\":\"56beaa99-fe52-45da-96ca-c1ff9b9d4a4a\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 239, '2020-10-28 05:29:15', '2020-10-28 05:29:16'),
+(246, 'App\\Models\\Product', 101, 'image', 'Diwali_1', 'Diwali_1.jpg', 'image/jpeg', 'public', 84326, '[]', '{\"uuid\":\"56beaa99-fe52-45da-96ca-c1ff9b9d4a4a\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 240, '2020-10-28 05:32:56', '2020-10-28 05:32:56'),
 (247, 'App\\Models\\Upload', 123, 'image', 'Diwali_2', 'Diwali_2.jpg', 'image/jpeg', 'public', 94098, '[]', '{\"uuid\":\"fc160c41-e1b0-4ee6-a081-74b97267d8b9\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 241, '2020-10-28 05:33:17', '2020-10-28 05:33:19'),
+(248, 'App\\Models\\Product', 102, 'image', 'Diwali_2', 'Diwali_2.jpg', 'image/jpeg', 'public', 94098, '[]', '{\"uuid\":\"fc160c41-e1b0-4ee6-a081-74b97267d8b9\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 242, '2020-10-28 05:35:39', '2020-10-28 05:35:39'),
 (249, 'App\\Models\\Upload', 124, 'image', 'Diwali_3', 'Diwali_3.jpg', 'image/jpeg', 'public', 70449, '[]', '{\"uuid\":\"4cd73449-c48f-4521-bed1-17f722c68d8b\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 243, '2020-10-28 05:36:00', '2020-10-28 05:36:00'),
+(250, 'App\\Models\\Product', 103, 'image', 'Diwali_3', 'Diwali_3.jpg', 'image/jpeg', 'public', 70449, '[]', '{\"uuid\":\"4cd73449-c48f-4521-bed1-17f722c68d8b\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 244, '2020-10-28 05:39:03', '2020-10-28 05:39:03'),
 (251, 'App\\Models\\Upload', 125, 'image', 'Diwali_4', 'Diwali_4.jpg', 'image/jpeg', 'public', 112729, '[]', '{\"uuid\":\"17f6f6db-c758-4fa3-a3f7-4b273ec17a0e\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 245, '2020-10-28 05:39:35', '2020-10-28 05:39:35'),
 (252, 'App\\Models\\Upload', 126, 'image', 'Diwali_1', 'Diwali_1.jpg', 'image/jpeg', 'public', 84326, '[]', '{\"uuid\":\"20786aa0-97ad-45e6-806c-697c7d5d636d\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 246, '2020-10-28 05:39:51', '2020-10-28 05:39:52'),
 (253, 'App\\Models\\User', 42, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$jVzkoYn4EfTwWplp6OrB7.d65TmiBbKw\\/NvrZ3Yb\\/9hntBixYl866\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 247, '2020-10-28 07:40:35', '2020-10-28 07:40:35'),
@@ -1524,48 +1526,14 @@ INSERT INTO `media` (`id`, `model_type`, `model_id`, `collection_name`, `name`, 
 (258, 'App\\Models\\User', 47, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$cMahzjWqO3Upqkbsi4hnUO7ca6kkxEVrfOhy7J\\/i3ggAM\\/74.BZJa\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 252, '2020-10-29 00:18:42', '2020-10-29 00:18:43'),
 (259, 'App\\Models\\User', 48, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$Mol3\\/7oGcOczWYl\\/twELm.YVrlIXIN7cJyC4XwDEzuinGQiwwcvPG\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 253, '2020-10-29 04:56:56', '2020-10-29 04:56:56'),
 (260, 'App\\Models\\User', 49, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$tmaY0VPR1\\/kSE4Y\\/bAWQJ.cH1HHsZCZuvpDQS2.a08JxDs1xdVWj6\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 254, '2020-11-03 01:53:31', '2020-11-03 01:53:31'),
-(261, 'App\\Models\\User', 50, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$duB77iL5N9tnpnVs7JWcou3\\/wHGLGXyYbh4Ymc8DM\\/lfNki9GqtnW\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 255, '2020-11-03 01:55:18', '2020-11-03 01:55:18'),
-(262, 'App\\Models\\Upload', 127, 'image', 'razorpay', 'razorpay.png', 'image/png', 'public', 13026, '[]', '{\"uuid\":\"f766d9f6-8b79-4df9-94a2-037290e42626\",\"user_id\":2,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 256, '2020-11-14 04:09:33', '2020-11-14 04:09:33'),
-(263, 'App\\Models\\Upload', 128, 'image', 'Apple', 'Apple.png', 'image/png', 'public', 241288, '[]', '{\"uuid\":\"2634dae8-5bdc-496e-b57d-23babe1b521a\",\"user_id\":11,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 257, '2020-11-14 07:15:13', '2020-11-14 07:15:13'),
-(264, 'App\\Models\\Market', 21, 'image', 'Apple', 'Apple.png', 'image/png', 'public', 241288, '[]', '{\"uuid\":\"2634dae8-5bdc-496e-b57d-23babe1b521a\",\"user_id\":11,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 258, '2020-11-14 07:16:14', '2020-11-14 07:16:14'),
-(265, 'App\\Models\\Upload', 129, 'image', 'Jeera Pulao + Mutton', 'Jeera-Pulao-+-Mutton.png', 'image/png', 'public', 294157, '[]', '{\"uuid\":\"d7777b41-0f9c-448c-a446-457d034f3e27\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 259, '2020-11-15 07:12:02', '2020-11-15 07:12:02'),
-(267, 'App\\Models\\Upload', 130, 'image', 'Jeera Pulao + Mutton', 'Jeera-Pulao-+-Mutton.png', 'image/png', 'public', 294157, '[]', '{\"uuid\":\"c80a8ef6-eee4-4cbf-b4cf-aca10a6469d5\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 260, '2020-11-15 07:18:03', '2020-11-15 07:18:03'),
-(268, 'App\\Models\\Slide', 7, 'image', 'Jeera Pulao + Mutton', 'Jeera-Pulao-+-Mutton.png', 'image/png', 'public', 294157, '[]', '{\"uuid\":\"c80a8ef6-eee4-4cbf-b4cf-aca10a6469d5\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 261, '2020-11-15 07:20:23', '2020-11-15 07:20:23'),
-(269, 'App\\Models\\User', 53, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$kI\\/Uya818pmH9.Ldz7hES.JN1dSI7bp4wBnIOGKzebzAMquUp8wqS\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 262, '2020-11-17 05:55:53', '2020-11-17 05:55:53'),
-(270, 'App\\Models\\User', 54, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$dsN1Xe7nsa4TLI9fye5UNewl9PyM4m.ik8TslM4KPzmpHcqxrGN0q\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 263, '2020-11-21 16:12:07', '2020-11-21 16:12:07'),
-(271, 'App\\Models\\Upload', 131, 'image', 'Rasmalai Pistachio Cookies', 'Rasmalai-Pistachio-Cookies.jpeg', 'image/jpeg', 'public', 148229, '[]', '{\"uuid\":\"d5315d55-7410-4e41-a039-2fdd876a9bca\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 264, '2020-11-23 02:45:50', '2020-11-23 02:45:51'),
-(273, 'App\\Models\\Upload', 132, 'image', 'Dry fruit cake', 'Dry-fruit-cake.jpeg', 'image/jpeg', 'public', 180941, '[]', '{\"uuid\":\"de2aed95-1b83-40b4-98d2-ca3c08ba6316\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 266, '2020-11-23 02:48:05', '2020-11-23 02:48:06'),
-(275, 'App\\Models\\Upload', 133, 'image', 'Dry fruit cake', 'Dry-fruit-cake.jpeg', 'image/jpeg', 'public', 180941, '[]', '{\"uuid\":\"23d718af-0d86-4f95-aefb-619d947a0986\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 268, '2020-11-23 02:50:29', '2020-11-23 02:50:29'),
-(276, 'App\\Models\\Product', 101, 'image', 'Dry fruit cake', 'Dry-fruit-cake.jpeg', 'image/jpeg', 'public', 180941, '[]', '{\"uuid\":\"23d718af-0d86-4f95-aefb-619d947a0986\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 269, '2020-11-23 02:50:37', '2020-11-23 02:50:37'),
-(277, 'App\\Models\\Upload', 134, 'image', 'Rasmalai Pistachio Cookies', 'Rasmalai-Pistachio-Cookies.jpeg', 'image/jpeg', 'public', 148229, '[]', '{\"uuid\":\"f1909a89-6464-45ea-8b9e-dd9e20543f9c\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 270, '2020-11-23 02:51:10', '2020-11-23 02:51:10'),
-(278, 'App\\Models\\Product', 100, 'image', 'Rasmalai Pistachio Cookies', 'Rasmalai-Pistachio-Cookies.jpeg', 'image/jpeg', 'public', 148229, '[]', '{\"uuid\":\"f1909a89-6464-45ea-8b9e-dd9e20543f9c\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 271, '2020-11-23 02:51:21', '2020-11-23 02:51:21'),
-(279, 'App\\Models\\Upload', 135, 'image', 'Chocolate Cake', 'Chocolate-Cake.jpeg', 'image/jpeg', 'public', 52955, '[]', '{\"uuid\":\"be975afc-c206-4e48-9032-8143e835bd19\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 272, '2020-11-23 02:51:44', '2020-11-23 02:51:44'),
-(281, 'App\\Models\\Upload', 136, 'image', 'Chocolate Cake', 'Chocolate-Cake.jpeg', 'image/jpeg', 'public', 52955, '[]', '{\"uuid\":\"ec22344e-e59e-4ae7-90a8-66e1a8ac4edd\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 274, '2020-11-23 02:53:55', '2020-11-23 02:53:56'),
-(282, 'App\\Models\\Product', 102, 'image', 'Chocolate Cake', 'Chocolate-Cake.jpeg', 'image/jpeg', 'public', 52955, '[]', '{\"uuid\":\"ec22344e-e59e-4ae7-90a8-66e1a8ac4edd\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 275, '2020-11-23 02:54:04', '2020-11-23 02:54:04'),
-(283, 'App\\Models\\Upload', 137, 'image', 'Black Forest', 'Black-Forest.jpeg', 'image/jpeg', 'public', 28962, '[]', '{\"uuid\":\"74442e40-1f27-4e8c-92d2-0bb72efe7c97\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 276, '2020-11-23 02:54:29', '2020-11-23 02:54:29'),
-(285, 'App\\Models\\Upload', 138, 'image', 'Black Forest', 'Black-Forest.jpeg', 'image/jpeg', 'public', 28962, '[]', '{\"uuid\":\"8044019f-3df6-437e-bf17-9052f218e0d5\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 278, '2020-11-23 02:56:17', '2020-11-23 02:56:17'),
-(286, 'App\\Models\\Product', 103, 'image', 'Black Forest', 'Black-Forest.jpeg', 'image/jpeg', 'public', 28962, '[]', '{\"uuid\":\"8044019f-3df6-437e-bf17-9052f218e0d5\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 279, '2020-11-23 02:56:23', '2020-11-23 02:56:23'),
-(287, 'App\\Models\\Upload', 139, 'image', 'Almond Walnut Brownies', 'Almond-Walnut-Brownies.jpeg', 'image/jpeg', 'public', 107342, '[]', '{\"uuid\":\"2011cd21-0c19-4ed6-bdb4-09ea7fca219d\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 280, '2020-11-23 02:57:29', '2020-11-23 02:57:30'),
-(288, 'App\\Models\\Product', 104, 'image', 'Almond Walnut Brownies', 'Almond-Walnut-Brownies.jpeg', 'image/jpeg', 'public', 107342, '[]', '{\"uuid\":\"2011cd21-0c19-4ed6-bdb4-09ea7fca219d\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 281, '2020-11-23 02:59:50', '2020-11-23 02:59:50'),
-(289, 'App\\Models\\User', 55, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$dhKz1Vl5M4N5aUP74Ke8DuUD85N3UjPlVTL4wpb3afu6q4FCsBNl2\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 282, '2020-11-23 11:17:03', '2020-11-23 11:17:03'),
-(290, 'App\\Models\\User', 56, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$IdU5y8wHEErJeaYBY1bBuusSl9BnidemFrhy4y88YLIWcRk1kRZM6\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 283, '2020-11-24 04:59:58', '2020-11-24 04:59:59'),
-(291, 'App\\Models\\User', 57, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$JK\\/005x9RvY98XPpHP9S7e8Mfy.LQb8hdxFP2NbPKe9ftUV9RiLJK\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 284, '2020-11-24 06:22:45', '2020-11-24 06:22:45'),
-(292, 'App\\Models\\User', 58, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$ZhELmAGx3DtLSFH6vNPxXe10jyjYekl5JU.IeL.NLrD4kd8vDgtVO\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 285, '2020-11-25 11:21:42', '2020-11-25 11:21:42'),
-(293, 'App\\Models\\User', 59, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$Uhp48B97KNc5qnVZhVp7V.qvXSIscpXkNIpitpZ.Y2kq.\\/D0WuXIy\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 286, '2020-11-25 11:23:33', '2020-11-25 11:23:33'),
-(294, 'App\\Models\\Upload', 140, 'image', 'Diwali_2', 'Diwali_2.jpg', 'image/jpeg', 'public', 94098, '[]', '{\"uuid\":\"829cb5ec-d5e7-45da-a680-315e3785d5b5\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 287, '2020-11-26 06:47:05', '2020-11-26 06:47:07'),
-(295, 'App\\Models\\Product', 105, 'image', 'Diwali_2', 'Diwali_2.jpg', 'image/jpeg', 'public', 94098, '[]', '{\"uuid\":\"829cb5ec-d5e7-45da-a680-315e3785d5b5\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 288, '2020-11-26 06:48:53', '2020-11-26 06:48:53'),
-(296, 'App\\Models\\Upload', 141, 'avatar', 'Fish icon', 'Fish-icon.png', 'image/png', 'public', 108855, '[]', '{\"uuid\":\"af942135-5fc6-432b-8f88-60a41b6383e5\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 289, '2020-11-26 07:14:06', '2020-11-26 07:14:06'),
-(297, 'App\\Models\\User', 60, 'avatar', 'Fish icon', 'Fish-icon.png', 'image/png', 'public', 108855, '[]', '{\"uuid\":\"af942135-5fc6-432b-8f88-60a41b6383e5\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 290, '2020-11-26 07:14:59', '2020-11-26 07:14:59'),
-(298, 'App\\Models\\Upload', 142, 'avatar', 'Firni', 'Firni.png', 'image/png', 'public', 237562, '[]', '{\"uuid\":\"690f9f68-6397-40c2-a6be-72cf70a8200d\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 291, '2020-11-26 07:20:08', '2020-11-26 07:20:08'),
-(299, 'App\\Models\\User', 21, 'avatar', 'Firni', 'Firni.png', 'image/png', 'public', 237562, '[]', '{\"uuid\":\"690f9f68-6397-40c2-a6be-72cf70a8200d\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 292, '2020-11-26 07:23:32', '2020-11-26 07:23:32'),
-(300, 'App\\Models\\User', 61, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$ccvHtAG7a3qq9JYcpZXptugfNfVvE4PnTpBh12PVL6KErMmSFI2w.\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 293, '2020-11-26 08:39:01', '2020-11-26 08:39:02'),
-(301, 'App\\Models\\User', 62, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$mJH.frRPbfzJrK7ra1EeG.zM4ZA2Ks.We3VyJTD8iABfJ.0dAOwMy\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 294, '2020-11-26 08:40:00', '2020-11-26 08:40:01'),
-(302, 'App\\Models\\User', 63, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$5ljsjjPUFXhLEOnCKbSDnOwnWpy9b6R8mlsev6TtK4Dk6lRl.tkpG\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 295, '2020-11-26 09:53:33', '2020-11-26 09:53:33'),
-(303, 'App\\Models\\User', 64, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$eso9W0Yb4u1O6OhJaqnkl.PY2GHYjaH8NPqs0PBc4toRux\\/VC8l3K\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 296, '2020-11-26 09:54:48', '2020-11-26 09:54:48'),
-(304, 'App\\Models\\User', 66, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$AxjNZQ75YkqJVt\\/NxUC7FekZppStqU.Qroje49qwFQrqPn15M3Rcu\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 297, '2020-11-27 05:31:26', '2020-11-27 05:31:28'),
-(305, 'App\\Models\\User', 67, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$Srim6mOlG\\/cS9Twth1fEFuakbm.FKSu\\/6ENUtdY0Bb2yR62F2mpE2\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 298, '2020-11-27 05:33:20', '2020-11-27 05:33:22'),
-(306, 'App\\Models\\User', 68, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$B5fizKkQxUuZhtjBncEO1ekbkbfFnfdE0nudQi24zyr55af\\/kxW7O\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 299, '2020-11-27 05:37:45', '2020-11-27 05:37:47'),
-(307, 'App\\Models\\User', 69, 'avatar', 'avatar_default_temp', 'avatar_default_temp.png', 'image/png', 'public', 2011, '[]', '{\"uuid\":\"$2y$10$TlyahhH6JXtz1P4tacCV2.\\/UJxlBGo0XsoV8CidScOvDgpuuyfOQq\",\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 300, '2020-11-27 05:38:45', '2020-11-27 05:38:46');
+(262, 'App\\Models\\Upload', 127, 'app_logo', 'favicon', 'favicon.png', 'image/png', 'public', 2551, '[]', '{\"uuid\":\"3b1277fb-72df-417c-bb84-9a83e4b0416e\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 256, '2020-11-11 03:26:12', '2020-11-11 03:26:12'),
+(263, 'App\\Models\\Upload', 128, 'image', 'banner4', 'banner4.jpg', 'image/jpeg', 'public', 58552, '[]', '{\"uuid\":\"e5f170dd-e8c0-43bb-b5ac-6cad3c4333b9\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 257, '2020-11-28 00:20:43', '2020-11-28 00:20:43'),
+(264, 'App\\Models\\Market', 11, 'image', 'banner4', 'banner4.jpg', 'image/jpeg', 'public', 58552, '[]', '{\"uuid\":\"e5f170dd-e8c0-43bb-b5ac-6cad3c4333b9\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 258, '2020-11-28 00:20:46', '2020-11-28 00:20:46'),
+(265, 'App\\Models\\Upload', 129, 'image', 'briyani', 'briyani.jpg', 'image/jpeg', 'public', 10231, '[]', '{\"uuid\":\"c2110cc9-ffb5-4dd8-938f-6995d1b5f255\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 259, '2020-12-04 03:38:01', '2020-12-04 03:38:01'),
+(266, 'App\\Models\\Market', 13, 'image', 'briyani', 'briyani.jpg', 'image/jpeg', 'public', 10231, '[]', '{\"uuid\":\"c2110cc9-ffb5-4dd8-938f-6995d1b5f255\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 260, '2020-12-04 03:38:03', '2020-12-04 03:38:03'),
+(267, 'App\\Models\\Upload', 130, 'image', 'dc627dbb435de8ef03783f891c951205', 'dc627dbb435de8ef03783f891c951205.jpg', 'image/jpeg', 'public', 82086, '[]', '{\"uuid\":\"e4c7b8d5-90b8-4296-830a-d013a2c47606\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 261, '2020-12-04 03:38:19', '2020-12-04 03:38:19'),
+(268, 'App\\Models\\Market', 12, 'image', 'dc627dbb435de8ef03783f891c951205', 'dc627dbb435de8ef03783f891c951205.jpg', 'image/jpeg', 'public', 82086, '[]', '{\"uuid\":\"e4c7b8d5-90b8-4296-830a-d013a2c47606\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 262, '2020-12-04 03:38:20', '2020-12-04 03:38:20'),
+(269, 'App\\Models\\Upload', 131, 'app_logo', 'sss1', 'sss1.png', 'image/png', 'public', 74513, '[]', '{\"uuid\":\"840d8603-b777-42b1-8736-645b48637724\",\"user_id\":1,\"generated_conversions\":{\"thumb\":true,\"icon\":true}}', '[]', 263, '2020-12-04 04:03:05', '2020-12-04 04:03:06');
 
 -- --------------------------------------------------------
 
@@ -1657,21 +1625,8 @@ CREATE TABLE `model_has_roles` (
 INSERT INTO `model_has_roles` (`role_id`, `model_type`, `model_id`) VALUES
 (2, 'App\\Models\\User', 1),
 (3, 'App\\Models\\User', 2),
-(4, 'App\\Models\\User', 3),
-(4, 'App\\Models\\User', 4),
-(5, 'App\\Models\\User', 5),
-(5, 'App\\Models\\User', 6),
-(4, 'App\\Models\\User', 7),
-(4, 'App\\Models\\User', 8),
-(4, 'App\\Models\\User', 9),
 (3, 'App\\Models\\User', 10),
-(4, 'App\\Models\\User', 11),
-(4, 'App\\Models\\User', 12),
-(4, 'App\\Models\\User', 13),
-(4, 'App\\Models\\User', 14),
-(4, 'App\\Models\\User', 15),
 (3, 'App\\Models\\User', 16),
-(4, 'App\\Models\\User', 17),
 (3, 'App\\Models\\User', 18),
 (3, 'App\\Models\\User', 19),
 (3, 'App\\Models\\User', 20),
@@ -1680,6 +1635,17 @@ INSERT INTO `model_has_roles` (`role_id`, `model_type`, `model_id`) VALUES
 (3, 'App\\Models\\User', 23),
 (3, 'App\\Models\\User', 24),
 (3, 'App\\Models\\User', 25),
+(4, 'App\\Models\\User', 3),
+(4, 'App\\Models\\User', 4),
+(4, 'App\\Models\\User', 7),
+(4, 'App\\Models\\User', 8),
+(4, 'App\\Models\\User', 9),
+(4, 'App\\Models\\User', 11),
+(4, 'App\\Models\\User', 12),
+(4, 'App\\Models\\User', 13),
+(4, 'App\\Models\\User', 14),
+(4, 'App\\Models\\User', 15),
+(4, 'App\\Models\\User', 17),
 (4, 'App\\Models\\User', 26),
 (4, 'App\\Models\\User', 27),
 (4, 'App\\Models\\User', 28),
@@ -1704,28 +1670,8 @@ INSERT INTO `model_has_roles` (`role_id`, `model_type`, `model_id`) VALUES
 (4, 'App\\Models\\User', 47),
 (4, 'App\\Models\\User', 48),
 (4, 'App\\Models\\User', 49),
-(4, 'App\\Models\\User', 50),
-(5, 'App\\Models\\User', 51),
-(5, 'App\\Models\\User', 52),
-(4, 'App\\Models\\User', 53),
-(4, 'App\\Models\\User', 54),
-(4, 'App\\Models\\User', 55),
-(4, 'App\\Models\\User', 56),
-(4, 'App\\Models\\User', 57),
-(4, 'App\\Models\\User', 58),
-(4, 'App\\Models\\User', 59),
-(3, 'App\\Models\\User', 60),
-(4, 'App\\Models\\User', 61),
-(4, 'App\\Models\\User', 62),
-(4, 'App\\Models\\User', 63),
-(4, 'App\\Models\\User', 64),
-(3, 'App\\Models\\User', 65),
-(4, 'App\\Models\\User', 65),
-(5, 'App\\Models\\User', 65),
-(4, 'App\\Models\\User', 66),
-(4, 'App\\Models\\User', 67),
-(4, 'App\\Models\\User', 68),
-(4, 'App\\Models\\User', 69);
+(5, 'App\\Models\\User', 5),
+(5, 'App\\Models\\User', 6);
 
 -- --------------------------------------------------------
 
@@ -1744,226 +1690,6 @@ CREATE TABLE `notifications` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `notifications`
---
-
-INSERT INTO `notifications` (`id`, `type`, `notifiable_type`, `notifiable_id`, `data`, `read_at`, `created_at`, `updated_at`) VALUES
-('0069cace-b593-4e19-8af3-441b673c1b2c', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 2, '{\"order_id\":96}', NULL, '2020-11-16 08:47:09', '2020-11-16 08:47:09'),
-('01251843-267a-4d88-9b55-da4a83511946', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 6, '{\"order_id\":105}', NULL, '2020-11-24 02:35:48', '2020-11-24 02:35:48'),
-('01d035a5-05e4-46b0-801f-910c52bc9cfd', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 55, '{\"order_id\":115}', NULL, '2020-11-24 06:16:48', '2020-11-24 06:16:48'),
-('0470bccc-cd3d-41b6-8cbb-dd6085710974', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 6, '{\"order_id\":107}', NULL, '2020-11-24 02:43:35', '2020-11-24 02:43:35'),
-('054f40cf-c82a-4a0f-a969-e052e609a2e2', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 57, '{\"order_id\":116}', NULL, '2020-11-24 06:25:06', '2020-11-24 06:25:06'),
-('086d43d8-b42c-4ca7-957f-59e585cd2efe', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":55}', NULL, '2020-11-04 05:05:03', '2020-11-04 05:05:03'),
-('09babde1-8ff9-4bb9-b107-74d89b83da3a', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 69, '{\"order_id\":128}', NULL, '2020-11-27 05:41:08', '2020-11-27 05:41:08'),
-('09c7a500-97c0-4573-aebd-d2164880cd2d', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 7, '{\"order_id\":1}', NULL, '2020-09-22 15:12:46', '2020-09-22 15:12:46'),
-('0b4e59fe-1dc1-4323-87dd-4758f9d19a6a', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 55, '{\"order_id\":112}', NULL, '2020-11-24 05:20:54', '2020-11-24 05:20:54'),
-('0c8ebe72-b4bd-49d9-a103-e2d19627b53b', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 57, '{\"order_id\":119}', NULL, '2020-11-25 10:55:18', '2020-11-25 10:55:18'),
-('0d81131f-a89c-4889-8726-effb6ae1d34f', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 57, '{\"order_id\":118}', NULL, '2020-11-24 06:37:40', '2020-11-24 06:37:40'),
-('0db15236-a6e5-4b78-922e-8a40f75ca9fe', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":6}', NULL, '2020-09-25 21:45:45', '2020-09-25 21:45:45'),
-('0dfdd651-ca16-4f39-9bf6-0b94e38b5b25', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 19, '{\"order_id\":17}', NULL, '2020-10-18 07:02:32', '2020-10-18 07:02:32'),
-('0ebe43ee-0b2b-4b73-b750-c0afa69e6d9e', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 37, '{\"order_id\":94}', NULL, '2020-11-14 05:27:21', '2020-11-14 05:27:21'),
-('0f59e809-826d-416f-b4b9-66e2d3964d44', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":85}', NULL, '2020-11-12 08:42:13', '2020-11-12 08:42:13'),
-('11ec2d86-af23-45cc-84d6-2b44c4d1cb48', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 37, '{\"order_id\":72}', NULL, '2020-11-07 12:38:28', '2020-11-07 12:38:28'),
-('1356b25a-e3a6-42e8-b837-87ece03ffec8', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":106}', NULL, '2020-11-24 02:40:55', '2020-11-24 02:40:55'),
-('147a6c17-7faf-41d0-a620-f832127e396f', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 3, '{\"order_id\":124}', NULL, '2020-11-26 03:21:34', '2020-11-26 03:21:34'),
-('17a7f409-cb66-4ea6-952f-cd517090f2c0', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 57, '{\"order_id\":119}', NULL, '2020-11-25 10:56:37', '2020-11-25 10:56:37'),
-('18211d94-c71e-4a7a-8837-94de21353fd9', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":58}', NULL, '2020-11-04 07:25:33', '2020-11-04 07:25:33'),
-('1bb7515a-a726-477d-86eb-478e3f995561', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":88}', NULL, '2020-11-12 08:52:25', '2020-11-12 08:52:25'),
-('1bf1a6f8-2e06-4e1c-a6fd-2fe617145e70', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":104}', NULL, '2020-11-24 00:33:06', '2020-11-24 00:33:06'),
-('1c56f314-9d0c-4721-89ad-6c06c32dc966', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 5, '{\"order_id\":90}', NULL, '2020-11-14 07:01:25', '2020-11-14 07:01:25'),
-('1ce0d855-4afa-4496-94f7-c9dbbfb46ff0', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 57, '{\"order_id\":119}', NULL, '2020-11-25 11:10:09', '2020-11-25 11:10:09'),
-('1ea65edb-03f8-4332-be2b-09f8d6ac4d4b', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":78}', NULL, '2020-11-11 09:53:42', '2020-11-11 09:53:42'),
-('1fadca11-e758-4dc5-8d4c-46b9004eba3e', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 57, '{\"order_id\":120}', NULL, '2020-11-25 10:54:33', '2020-11-25 10:54:33'),
-('227f8026-c9a9-42dc-bfd1-7e81e7a3b768', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":110}', NULL, '2020-11-24 04:46:24', '2020-11-24 04:46:24'),
-('22836149-92f9-4c4a-9b60-598de24a1b68', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":25}', NULL, '2020-10-28 03:55:39', '2020-10-28 03:55:39'),
-('23f5d511-a461-4196-a4c2-4ff278343b5d', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":12}', NULL, '2020-10-12 04:29:40', '2020-10-12 04:29:40'),
-('23ffb904-29b2-4145-807e-ce03fa6add4f', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":124}', NULL, '2020-11-26 03:02:25', '2020-11-26 03:02:25'),
-('2406adfa-3908-4720-b3cf-e829e73b534f', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 6, '{\"order_id\":116}', NULL, '2020-11-24 06:24:47', '2020-11-24 06:24:47'),
-('24566c66-76e9-4122-89f4-a639bbf564ba', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 19, '{\"order_id\":82}', NULL, '2020-11-12 02:12:11', '2020-11-12 02:12:11'),
-('246438ed-014f-4e7f-92bb-d90bc727db8e', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 64, '{\"order_id\":126}', NULL, '2020-11-26 10:00:28', '2020-11-26 10:00:28'),
-('24cddff3-e723-4051-8ff8-139dde5259cc', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 5, '{\"order_id\":128}', NULL, '2020-11-27 05:41:08', '2020-11-27 05:41:08'),
-('24db058c-7a47-405f-94ba-055db38d7c8e', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":122}', NULL, '2020-11-25 11:24:22', '2020-11-25 11:24:22'),
-('28ab3b67-ca33-4fac-8431-aafde1b24de1', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 6, '{\"order_id\":110}', NULL, '2020-11-24 04:46:38', '2020-11-24 04:46:38'),
-('2c480f45-3df7-4597-8595-88000594f802', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 59, '{\"order_id\":122}', NULL, '2020-11-25 11:25:13', '2020-11-25 11:25:13'),
-('2d4c315b-ae1b-4e79-98e6-d174efabf902', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":95}', NULL, '2020-11-14 07:12:44', '2020-11-14 07:12:44'),
-('2ff7f9bc-11a1-4d19-88d7-c38c68f1d8c5', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 5, '{\"order_id\":127}', NULL, '2020-11-27 05:35:16', '2020-11-27 05:35:16'),
-('311f4ce4-a9be-4967-892c-38870709de60', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 5, '{\"order_id\":69}', NULL, '2020-11-07 00:44:48', '2020-11-07 00:44:48'),
-('31abc982-c78d-4594-a629-967fbecf0f8c', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":22}', NULL, '2020-10-22 09:42:49', '2020-10-22 09:42:49'),
-('31f12642-e1af-4d34-ac04-9bb3b4e0e478', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 55, '{\"order_id\":114}', NULL, '2020-11-24 06:14:27', '2020-11-24 06:14:27'),
-('33293b4f-961a-403e-87fb-b03e914c6c07', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":9}', NULL, '2020-10-03 05:24:33', '2020-10-03 05:24:33'),
-('334f3759-d1ef-41f1-ad1a-2b33ed71d17b', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":118}', NULL, '2020-11-24 06:37:02', '2020-11-24 06:37:02'),
-('370eb6b2-c5f4-44bb-9f72-bb82fe2733ad', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":63}', NULL, '2020-11-06 04:25:27', '2020-11-06 04:25:27'),
-('37bbe8c2-195b-48eb-a0b9-d70969642701', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 55, '{\"order_id\":106}', NULL, '2020-11-24 02:41:47', '2020-11-24 02:41:47'),
-('3dc10d53-ea6a-4e34-9193-398f8b0deda0', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 32, '{\"order_id\":10}', NULL, '2020-10-07 03:58:41', '2020-10-07 03:58:41'),
-('3eb3096f-b4b5-4c39-8561-fe19270bd6f6', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 3, '{\"order_id\":124}', NULL, '2020-11-26 03:29:59', '2020-11-26 03:29:59'),
-('3fdbef23-057b-4f41-a2c5-f976deea5e64', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":45}', NULL, '2020-11-02 03:53:38', '2020-11-02 03:53:38'),
-('4328464f-25bf-4a48-8bc2-27160ebe7150', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 55, '{\"order_id\":113}', NULL, '2020-11-24 06:12:33', '2020-11-24 06:12:33'),
-('43b749b7-1f9e-445b-b1df-5a1f059de9b1', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 5, '{\"order_id\":125}', NULL, '2020-11-26 08:43:37', '2020-11-26 08:43:37'),
-('43c07c35-2bc8-4c18-82f3-cd91c9105c88', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":126}', NULL, '2020-11-26 09:55:51', '2020-11-26 09:55:51'),
-('43e3e71a-13a1-4ab7-a600-a86f59c37e84', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":107}', NULL, '2020-11-24 02:43:16', '2020-11-24 02:43:16'),
-('445d78ea-de57-4b84-b513-c29f60050075', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":59}', NULL, '2020-11-04 07:28:16', '2020-11-04 07:28:16'),
-('45952764-3efa-47eb-9832-49064c9a693b', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":117}', NULL, '2020-11-24 06:31:57', '2020-11-24 06:31:57'),
-('45a92589-5f2f-4544-9cd0-37c08b07fa17', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 6, '{\"order_id\":118}', NULL, '2020-11-24 06:37:19', '2020-11-24 06:37:19'),
-('48b78c90-c159-4a1f-9f77-4dcae511dd1f', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":35}', NULL, '2020-11-01 23:37:27', '2020-11-01 23:37:27'),
-('4c23ec9c-1d99-4fd0-b733-73f8c1e75c7c', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":43}', NULL, '2020-11-02 03:40:25', '2020-11-02 03:40:25'),
-('4c86098c-76bc-403a-bd09-12f644a3a23e', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":30}', NULL, '2020-10-31 07:37:47', '2020-10-31 07:37:47'),
-('4ed82076-4547-435a-82ef-00fbe9bee6e7', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 5, '{\"order_id\":126}', NULL, '2020-11-26 09:56:16', '2020-11-26 09:56:16'),
-('4ef434fd-e876-435e-b0fd-ed38035d68ec', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 6, '{\"order_id\":114}', NULL, '2020-11-24 06:14:08', '2020-11-24 06:14:08'),
-('529f4bfb-f5ed-4753-bafd-4cb1d286ae7b', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 5, '{\"order_id\":121}', NULL, '2020-11-25 00:30:12', '2020-11-25 00:30:12'),
-('52c88d3b-253b-4733-be5a-02b30d95a7de', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 62, '{\"order_id\":125}', NULL, '2020-11-26 09:46:15', '2020-11-26 09:46:15'),
-('5482b202-58ef-4f0f-8ed1-d3243ad954bc', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":119}', NULL, '2020-11-24 06:39:55', '2020-11-24 06:39:55'),
-('558eb197-7d3d-401f-81ca-c8abfe19973e', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":76}', NULL, '2020-11-11 09:36:56', '2020-11-11 09:36:56'),
-('55e9b61f-3696-4f29-985c-2581c3b53068', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":87}', NULL, '2020-11-12 08:47:57', '2020-11-12 08:47:57'),
-('56b01b8b-8e92-48fc-a1a8-f44794cf034f', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 62, '{\"order_id\":125}', NULL, '2020-11-26 09:36:44', '2020-11-26 09:36:44'),
-('59512aa3-6e53-488e-b981-922482b3f89e', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":39}', NULL, '2020-11-02 03:25:00', '2020-11-02 03:25:00'),
-('5a0c3d72-c43f-4dcf-be7f-69c2ed06c857', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 37, '{\"order_id\":94}', NULL, '2020-11-24 02:31:53', '2020-11-24 02:31:53'),
-('5b0cb0a3-2295-4792-81f7-3c934745dbb5', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 57, '{\"order_id\":120}', NULL, '2020-11-24 06:43:08', '2020-11-24 06:43:08'),
-('5f3ddec1-19ae-480e-8984-88ed91ab8e07', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 57, '{\"order_id\":120}', NULL, '2020-11-25 10:54:11', '2020-11-25 10:54:11'),
-('5f41c1ab-0792-4867-aa67-3842165ba636', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 5, '{\"order_id\":72}', NULL, '2020-11-07 12:38:07', '2020-11-07 12:38:07'),
-('5f49e607-09d8-408f-a5d4-e1ba5062c967', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":61}', NULL, '2020-11-05 08:57:21', '2020-11-05 08:57:21'),
-('60dc9d8a-e614-4e85-8f90-037fdf877cd5', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 5, '{\"order_id\":66}', NULL, '2020-11-06 05:34:24', '2020-11-06 05:34:24'),
-('613efb44-a183-4956-859a-e279ba9ef881', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":77}', NULL, '2020-11-11 09:41:15', '2020-11-11 09:41:15'),
-('61e4be94-8b14-4a8d-992e-1307b8756308', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":109}', NULL, '2020-11-24 04:23:57', '2020-11-24 04:23:57'),
-('62cec6da-a0be-4c7a-b531-e89b9f7ad3f3', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":65}', NULL, '2020-11-06 04:37:03', '2020-11-06 04:37:03'),
-('63ef06fc-9068-4a2c-bdfa-00370de92b24', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 64, '{\"order_id\":126}', NULL, '2020-11-26 10:07:27', '2020-11-26 10:07:27'),
-('643600f5-27b2-4f10-9ea8-d15491dc5ffe', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 37, '{\"order_id\":69}', NULL, '2020-11-07 00:44:48', '2020-11-07 00:44:48'),
-('64668877-b6e4-4514-9f79-fd2d3411c6d6', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":34}', NULL, '2020-11-01 11:17:19', '2020-11-01 11:17:19'),
-('64a7553a-5e52-4e69-b23b-10e673891e80', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":80}', NULL, '2020-11-11 10:59:20', '2020-11-11 10:59:20'),
-('69318e62-c99c-4aad-9176-711723fd3980', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 5, '{\"order_id\":124}', NULL, '2020-11-26 03:03:37', '2020-11-26 03:03:37'),
-('6b954513-6fde-4664-ae23-de2442d3fada', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 6, '{\"order_id\":106}', NULL, '2020-11-24 02:41:28', '2020-11-24 02:41:28'),
-('6ca5826c-ffa1-463a-b49a-c525c4487e15', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":26}', NULL, '2020-10-28 05:25:57', '2020-10-28 05:25:57'),
-('6d6b2525-1de1-4d86-ab30-cf9cf98ae646', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":53}', NULL, '2020-11-03 10:21:40', '2020-11-03 10:21:40'),
-('6e30c911-e26b-4901-860e-b43915b580d2', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 5, '{\"order_id\":1}', NULL, '2020-09-22 14:25:31', '2020-09-22 14:25:31'),
-('6fc31390-3c8a-442e-bea4-0f96e7e6cf8d', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 6, '{\"order_id\":94}', NULL, '2020-11-14 05:35:23', '2020-11-14 05:35:23'),
-('705d58b9-a9a3-4a83-b892-ff4d25229aad', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":114}', NULL, '2020-11-24 06:13:49', '2020-11-24 06:13:49'),
-('70a0937f-2c63-4a21-ad97-0a9671f9e25c', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 3, '{\"order_id\":124}', NULL, '2020-11-26 03:22:56', '2020-11-26 03:22:56'),
-('712d6c4d-fcf3-402a-9ede-9b6b14fb9502', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 55, '{\"order_id\":113}', NULL, '2020-11-24 05:40:32', '2020-11-24 05:40:32'),
-('722434f1-4ea0-43b0-99aa-6796310e4edb', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":46}', NULL, '2020-11-02 03:57:33', '2020-11-02 03:57:33'),
-('72b42c36-a082-4d5d-bf27-128bcf662333', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 57, '{\"order_id\":119}', NULL, '2020-11-24 06:40:44', '2020-11-24 06:40:44'),
-('72d51efe-72e7-47e8-a859-9a2edbafbc97', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 55, '{\"order_id\":113}', NULL, '2020-11-24 05:27:03', '2020-11-24 05:27:03'),
-('72e10c65-92f5-44ea-88eb-ad0214fdd043', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 17, '{\"order_id\":121}', NULL, '2020-11-25 10:55:39', '2020-11-25 10:55:39'),
-('73d96759-d035-4686-b0fc-b0cc3badd922', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":66}', NULL, '2020-11-06 05:32:35', '2020-11-06 05:32:35'),
-('78f19da6-3b0e-46b2-b15f-e54a5aeef4ea', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 55, '{\"order_id\":112}', NULL, '2020-11-24 05:23:08', '2020-11-24 05:23:08'),
-('79f0b401-86e3-401f-8d0e-b03260ff1f96', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":115}', NULL, '2020-11-24 06:16:10', '2020-11-24 06:16:10'),
-('7b018e26-93f6-4477-862a-1db854b988ae', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":27}', NULL, '2020-10-29 02:05:23', '2020-10-29 02:05:23'),
-('7b8692c9-f0e1-4489-8c43-836e835e1742', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 17, '{\"order_id\":121}', NULL, '2020-11-25 00:30:12', '2020-11-25 00:30:12'),
-('7dff7878-7c4f-4f41-b9b4-b6081388e7c5', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":103}', NULL, '2020-11-24 00:32:39', '2020-11-24 00:32:39'),
-('7e641433-c88d-424b-b2f5-43e4917af122', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":8}', NULL, '2020-10-03 05:01:59', '2020-10-03 05:01:59'),
-('7edf54bf-f367-49f3-a82e-9aedd4b99c97', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":4}', NULL, '2020-09-23 20:51:38', '2020-09-23 20:51:38'),
-('806a6891-ea16-4a40-a565-d535747658ac', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":112}', NULL, '2020-11-24 05:17:07', '2020-11-24 05:17:07'),
-('81871566-0219-4d00-83e0-c7cd744322c8', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":116}', NULL, '2020-11-24 06:24:26', '2020-11-24 06:24:26'),
-('81dff5ef-b246-498d-8b95-05fe47caa35c', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":83}', NULL, '2020-11-12 02:34:37', '2020-11-12 02:34:37'),
-('849dc2d7-c772-4d46-a0aa-cdc018137a07', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 11, '{\"order_id\":82}', NULL, '2020-11-14 06:49:03', '2020-11-14 06:49:03'),
-('84ec9b42-e125-4ae4-b36b-f32fdc0962a5', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 20, '{\"order_id\":121}', NULL, '2020-11-24 13:43:35', '2020-11-24 13:43:35'),
-('851b0f26-eace-4e96-93b0-30dc268d2e1f', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 5, '{\"order_id\":94}', NULL, '2020-11-14 05:27:21', '2020-11-14 05:27:21'),
-('856d5a4c-223d-4b31-8b84-71b4a4cd4b2a', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":50}', NULL, '2020-11-03 04:16:18', '2020-11-03 04:16:18'),
-('86022a0b-af34-4d2e-ad64-d55f50467d5a', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":125}', NULL, '2020-11-26 08:40:51', '2020-11-26 08:40:51'),
-('86a404e8-083c-450b-b87e-229a08bff836', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 3, '{\"order_id\":124}', NULL, '2020-11-26 03:03:36', '2020-11-26 03:03:36'),
-('893a9710-cf77-4755-8f20-8a87d34930ff', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":52}', NULL, '2020-11-03 04:39:03', '2020-11-03 04:39:03'),
-('895968dd-3ab2-4eb0-9c59-13c11159beb4', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 59, '{\"order_id\":123}', NULL, '2020-11-25 11:28:48', '2020-11-25 11:28:48'),
-('8993fb4c-d620-4f0d-9762-44a662723543', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":32}', NULL, '2020-11-01 10:12:16', '2020-11-01 10:12:16'),
-('8b4da8b4-9a93-4753-8ef2-5378dce266b4', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":73}', NULL, '2020-11-07 13:42:34', '2020-11-07 13:42:34'),
-('8c4336c1-d801-4d6e-8279-26240a88b85d', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 57, '{\"order_id\":119}', NULL, '2020-11-25 11:07:40', '2020-11-25 11:07:40'),
-('8d580343-cdba-409e-a04f-5b72d34e9827', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 37, '{\"order_id\":72}', NULL, '2020-11-07 12:38:07', '2020-11-07 12:38:07'),
-('8dc95f8d-b5b2-4989-bb54-0604ec33659a', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":68}', NULL, '2020-11-06 07:06:01', '2020-11-06 07:06:01'),
-('8ee92f0b-ba37-484a-b278-5457718e3036', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":21}', NULL, '2020-10-20 12:49:22', '2020-10-20 12:49:22'),
-('8fba5472-09c9-4694-ada0-0822136c4e3b', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 62, '{\"order_id\":125}', NULL, '2020-11-26 09:45:44', '2020-11-26 09:45:44'),
-('900ec390-b592-478e-8754-00da0d98284d', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":105}', NULL, '2020-11-24 02:35:25', '2020-11-24 02:35:25'),
-('92040a47-03ad-4a6a-97ab-a47cfbcb05b9', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":93}', NULL, '2020-11-13 00:43:44', '2020-11-13 00:43:44'),
-('939a92a2-a142-4abd-94b2-7e6510d6e754', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":36}', NULL, '2020-11-02 02:07:30', '2020-11-02 02:07:30'),
-('9604bd91-f363-4ff7-abd8-1604e343cd2d', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 37, '{\"order_id\":69}', NULL, '2020-11-07 00:45:21', '2020-11-07 00:45:21'),
-('970332f3-911d-44ed-a8b7-a082f6d3bcd0', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":10}', NULL, '2020-10-07 03:44:28', '2020-10-07 03:44:28'),
-('97143468-8004-4605-8f8e-928f9ec6961c', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 19, '{\"order_id\":79}', NULL, '2020-11-11 10:55:08', '2020-11-11 10:55:08'),
-('97798d92-0718-4f60-b88e-5152e0943f85', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":23}', NULL, '2020-10-23 13:27:02', '2020-10-23 13:27:02'),
-('98ce5f66-9397-476e-bb23-6e907fc41b6f', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":81}', NULL, '2020-11-12 00:36:17', '2020-11-12 00:36:17'),
-('9a85a23c-32e2-4e7d-b847-9301f616513a', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":98}', NULL, '2020-11-17 06:09:31', '2020-11-17 06:09:31'),
-('9b3f4ca0-2199-45f1-8dec-4dd8f25507f5', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":84}', NULL, '2020-11-12 04:58:44', '2020-11-12 04:58:44'),
-('9ee36ae9-980b-44a3-95e1-3ee41b8c7cfb', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 32, '{\"order_id\":10}', NULL, '2020-10-07 03:59:30', '2020-10-07 03:59:30'),
-('9f445bee-6bef-4a34-bdb0-b10e7a0921c7', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":33}', NULL, '2020-11-01 11:16:41', '2020-11-01 11:16:41'),
-('a0013da6-2fc2-4ec4-8641-54f49f95204a', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 6, '{\"order_id\":120}', NULL, '2020-11-24 06:42:56', '2020-11-24 06:42:56'),
-('a24aa98d-d745-416b-849b-d15d290bd287', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":28}', NULL, '2020-10-30 00:08:24', '2020-10-30 00:08:24'),
-('a2b4e613-6cc6-49c5-add7-b2e2c00ba7df', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 6, '{\"order_id\":104}', NULL, '2020-11-24 01:13:05', '2020-11-24 01:13:05'),
-('a3173928-952f-46c0-a994-4d82c3c6c128', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 6, '{\"order_id\":113}', NULL, '2020-11-24 05:25:47', '2020-11-24 05:25:47'),
-('a444c580-ce28-4ce5-b300-89018f8f737f', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 11, '{\"order_id\":6}', NULL, '2020-11-14 06:39:21', '2020-11-14 06:39:21'),
-('a4b475a5-e0ef-4bf7-ac28-541ab55777a8', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":86}', NULL, '2020-11-12 08:44:06', '2020-11-12 08:44:06'),
-('a5c7c062-dab5-4139-88c8-437413048940', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":3}', NULL, '2020-09-23 20:41:13', '2020-09-23 20:41:13'),
-('a62f8b04-2fdd-48c5-a757-c659797ab710', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 62, '{\"order_id\":125}', NULL, '2020-11-26 09:59:41', '2020-11-26 09:59:41'),
-('a79ee46a-e3fe-4e95-aa83-3f8c3e41ae7e', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 11, '{\"order_id\":6}', NULL, '2020-11-14 06:46:39', '2020-11-14 06:46:39'),
-('a868f360-10a4-4b05-9c06-959789aea097', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":41}', NULL, '2020-11-02 03:30:30', '2020-11-02 03:30:30'),
-('a8b398f0-2bbf-46ee-a13b-887a87673d14', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":101}', NULL, '2020-11-18 03:00:11', '2020-11-18 03:00:11'),
-('aab1fbf9-1d7a-48cd-8a4c-5b41e2016eb0', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 20, '{\"order_id\":100}', NULL, '2020-11-18 01:41:01', '2020-11-18 01:41:01'),
-('aadb6ca3-4b58-4ab7-8cf0-c93a72e3c08c', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":38}', NULL, '2020-11-02 02:10:52', '2020-11-02 02:10:52'),
-('abc8b5cb-a552-4980-8f01-cae913e913f1', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":113}', NULL, '2020-11-24 05:25:25', '2020-11-24 05:25:25'),
-('ac5cb3f7-03b9-4a15-8882-c5659f934512', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":5}', NULL, '2020-09-25 11:01:38', '2020-09-25 11:01:38'),
-('acddf85e-3ec5-4a77-8a81-87ea2e1220cf', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 64, '{\"order_id\":126}', NULL, '2020-11-26 10:00:07', '2020-11-26 10:00:07'),
-('ad636397-c4aa-4f0b-b2e6-6bfd30f25b41', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 62, '{\"order_id\":125}', NULL, '2020-11-26 09:52:34', '2020-11-26 09:52:34'),
-('b0ea9fc1-092b-4a97-8f86-97bba7a5abb3', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":16}', NULL, '2020-10-17 14:39:12', '2020-10-17 14:39:12'),
-('b2c1c00e-5871-4fad-ac55-63b855d581f2', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 5, '{\"order_id\":123}', NULL, '2020-11-25 11:28:48', '2020-11-25 11:28:48'),
-('b37d0cc1-ec20-46ce-9ade-12ee9ccca8ba', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 62, '{\"order_id\":125}', NULL, '2020-11-26 08:43:37', '2020-11-26 08:43:37'),
-('b46726a7-2472-4ed9-8505-8cafd235c095', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":120}', NULL, '2020-11-24 06:42:41', '2020-11-24 06:42:41'),
-('b7f34591-b1a3-4e6e-a9f4-002b077dd984', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":37}', NULL, '2020-11-02 02:08:59', '2020-11-02 02:08:59'),
-('b88bff5b-1d63-4b40-8a98-2ee5edf4afca', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":127}', NULL, '2020-11-27 05:34:58', '2020-11-27 05:34:58'),
-('b96ade66-cadd-4b8c-afb6-902bb3d3a4ec', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":71}', NULL, '2020-11-07 11:53:03', '2020-11-07 11:53:03'),
-('bb668440-e9b7-429a-b2b0-f9a4370e82d3', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 62, '{\"order_id\":125}', NULL, '2020-11-26 09:44:31', '2020-11-26 09:44:31'),
-('bb7d4f7f-817e-4651-9d68-a0c7fa94413f', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 17, '{\"order_id\":121}', NULL, '2020-11-25 10:52:47', '2020-11-25 10:52:47'),
-('bc157177-2bec-48be-bdd1-9deb11417129', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":123}', NULL, '2020-11-25 11:28:14', '2020-11-25 11:28:14'),
-('bd5360cc-0368-40bd-aa92-fd124b9180b3', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":74}', NULL, '2020-11-08 10:23:51', '2020-11-08 10:23:51'),
-('bef644a7-dbd3-413e-9184-7b53d1620d87', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 57, '{\"order_id\":119}', NULL, '2020-11-25 11:07:49', '2020-11-25 11:07:49'),
-('bfaf2225-2c51-4c99-902d-8bd8e598b105', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":89}', NULL, '2020-11-12 08:53:37', '2020-11-12 08:53:37'),
-('c06b0c0f-a650-483e-aabb-bd8dc34e5d4f', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":69}', NULL, '2020-11-06 10:35:33', '2020-11-06 10:35:33'),
-('c10feda4-2a08-4f3d-bc10-779709654f59', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":57}', NULL, '2020-11-04 05:17:50', '2020-11-04 05:17:50'),
-('c19cfb2b-5107-418c-b4d2-198c6a0c7a3e', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":72}', NULL, '2020-11-07 12:35:08', '2020-11-07 12:35:08'),
-('c5ed52be-37ca-4ae4-a097-894d4d980062', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":99}', NULL, '2020-11-18 01:32:17', '2020-11-18 01:32:17'),
-('c641a6cc-3530-4cd6-9bb9-bae0ad79e3ce', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":24}', NULL, '2020-10-27 10:36:37', '2020-10-27 10:36:37'),
-('c67f7283-6bac-4a04-8a7e-aeabbfa6e31f', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":102}', NULL, '2020-11-18 08:31:34', '2020-11-18 08:31:34'),
-('c83244ea-4780-473d-8b95-ac6f955db84c', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":20}', NULL, '2020-10-20 12:26:28', '2020-10-20 12:26:28'),
-('ca7eec4f-cecf-4a48-bcf1-e06522208f49', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":91}', NULL, '2020-11-12 12:40:36', '2020-11-12 12:40:36'),
-('cb30fc47-1b30-4a91-a99f-63eed0ce33e9', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":48}', NULL, '2020-11-03 03:37:42', '2020-11-03 03:37:42'),
-('cb5aab63-37c4-4a10-9a21-d4b604c22064', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":40}', NULL, '2020-11-02 03:28:19', '2020-11-02 03:28:19'),
-('cc6da49a-1a42-4891-bce9-80dcfc9d0d36', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 20, '{\"order_id\":11}', NULL, '2020-10-11 10:39:26', '2020-10-11 10:39:26'),
-('cde1d743-bea1-423d-9a2a-10b5cb340807', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":56}', NULL, '2020-11-04 05:15:41', '2020-11-04 05:15:41'),
-('d0d41e37-1cc7-4290-a95d-49a9071fda50', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 62, '{\"order_id\":125}', NULL, '2020-11-26 09:52:12', '2020-11-26 09:52:12'),
-('d0dd84a8-6795-4aea-a598-76d07ac0a4f0', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 64, '{\"order_id\":126}', NULL, '2020-11-26 09:56:16', '2020-11-26 09:56:16'),
-('d158092f-fb4d-4f01-bde6-380aa5e73382', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":108}', NULL, '2020-11-24 03:17:34', '2020-11-24 03:17:34'),
-('d1cea0af-8c86-42ba-9fd2-e291c8a5b53b', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":75}', NULL, '2020-11-08 10:25:12', '2020-11-08 10:25:12'),
-('d4b0980a-d886-4fdb-9ba9-f80ecfb8b969', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":97}', NULL, '2020-11-17 06:05:51', '2020-11-17 06:05:51'),
-('d51b2d02-ca20-450a-b479-17b3e0e9a172', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 67, '{\"order_id\":127}', NULL, '2020-11-27 05:35:16', '2020-11-27 05:35:16'),
-('d64634eb-6310-4f73-a0b8-92b942b367ff', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 6, '{\"order_id\":108}', NULL, '2020-11-24 03:17:50', '2020-11-24 03:17:50'),
-('d90878a2-f548-47a0-aaad-f1fd8cac2728', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 5, '{\"order_id\":122}', NULL, '2020-11-25 11:25:13', '2020-11-25 11:25:13'),
-('db0d5a4c-8df5-4921-8c26-7d17d24d085d', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":49}', NULL, '2020-11-03 04:13:04', '2020-11-03 04:13:04'),
-('db64e639-6ef9-4236-ab70-8a4c0b0bcab1', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":18}', NULL, '2020-10-18 19:34:58', '2020-10-18 19:34:58'),
-('dc425a02-02e0-416e-8f89-1758fc5d0ccc', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":14}', NULL, '2020-10-14 22:33:11', '2020-10-14 22:33:11'),
-('ddf8a019-f662-4237-a387-0a89ee0b7a3b', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":70}', NULL, '2020-11-07 11:51:23', '2020-11-07 11:51:23'),
-('e050252c-1ff1-4dda-9f31-1b1c607dbcd2', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 6, '{\"order_id\":117}', NULL, '2020-11-24 06:32:22', '2020-11-24 06:32:22'),
-('e283c152-0ff6-404b-b985-ae3e12daeed2', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 6, '{\"order_id\":119}', NULL, '2020-11-24 06:40:23', '2020-11-24 06:40:23'),
-('e29eab76-c60b-488e-a200-d5e58fbe75d7', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":94}', NULL, '2020-11-14 04:12:48', '2020-11-14 04:12:48'),
-('e2cd4a72-5571-48dd-8769-6d66a89b4bec', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":31}', NULL, '2020-10-31 07:50:18', '2020-10-31 07:50:18'),
-('e2d18a1b-bddb-4b27-aefe-160a593dcdfd', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 6, '{\"order_id\":109}', NULL, '2020-11-24 04:24:20', '2020-11-24 04:24:20'),
-('e3bdc88d-1826-4339-a98e-769f8c124ffb', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":44}', NULL, '2020-11-02 03:51:37', '2020-11-02 03:51:37'),
-('e47b3510-5911-486d-9707-601a9f23b313', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":13}', NULL, '2020-10-14 05:31:03', '2020-10-14 05:31:03'),
-('e6ecc061-2b71-4e16-a8b7-ddce0d8d2378', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":42}', NULL, '2020-11-02 03:31:43', '2020-11-02 03:31:43'),
-('e8c2869d-58d2-4c91-bfc9-2f2e44e60a11', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 6, '{\"order_id\":115}', NULL, '2020-11-24 06:16:34', '2020-11-24 06:16:34'),
-('e96db00d-654f-4499-9140-b4bc3fb815b7', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":15}', NULL, '2020-10-14 22:53:58', '2020-10-14 22:53:58'),
-('e9716888-c0ec-4fd2-bee7-78e0155361ef', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":111}', NULL, '2020-11-24 05:10:51', '2020-11-24 05:10:51'),
-('eafc1283-669f-48aa-821e-b837a9feb531', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 17, '{\"order_id\":121}', NULL, '2020-11-25 10:26:59', '2020-11-25 10:26:59'),
-('ec947a85-e9e1-493d-bc1f-1da4dc276b8b', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":67}', NULL, '2020-11-06 06:18:24', '2020-11-06 06:18:24'),
-('ed84467d-5ffa-4664-9972-8616bc85603b', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":51}', NULL, '2020-11-03 04:34:31', '2020-11-03 04:34:31'),
-('efde1b1a-8225-4777-b30c-f0002219e84c', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":19}', NULL, '2020-10-18 19:45:28', '2020-10-18 19:45:28'),
-('f2459ab4-2a98-4147-8038-f677ae67c769', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":47}', NULL, '2020-11-03 02:56:22', '2020-11-03 02:56:22'),
-('f3f2645f-0ca6-4c1a-908c-79d426671cc6', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 6, '{\"order_id\":112}', NULL, '2020-11-24 05:17:27', '2020-11-24 05:17:27'),
-('f493583f-2c8c-49df-b5da-bdfdb0ad120f', 'App\\Notifications\\StatusChangedOrder', 'App\\Models\\User', 7, '{\"order_id\":1}', NULL, '2020-09-22 14:25:30', '2020-09-22 14:25:30'),
-('f4ee34ae-681f-4163-a431-1121d3fc37f3', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":62}', NULL, '2020-11-06 00:52:58', '2020-11-06 00:52:58'),
-('f5105078-3543-4dca-85fc-85527cd956e0', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":90}', NULL, '2020-11-12 09:41:18', '2020-11-12 09:41:18'),
-('f5ea1980-0dad-417e-b266-5f416d2677a0', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":64}', NULL, '2020-11-06 04:31:29', '2020-11-06 04:31:29'),
-('f5eb949d-0c4a-4531-939f-8e63e74bb974', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":7}', NULL, '2020-09-25 21:54:09', '2020-09-25 21:54:09'),
-('f74420c1-c147-4c31-92ce-39fe2f0b6329', 'App\\Notifications\\AssignedOrder', 'App\\Models\\User', 6, '{\"order_id\":111}', NULL, '2020-11-24 05:13:02', '2020-11-24 05:13:02'),
-('f9303024-30b0-46b6-a528-48cf2d076095', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":92}', NULL, '2020-11-12 12:44:00', '2020-11-12 12:44:00'),
-('fcfb431f-4dd3-4653-9496-cfdb6bd57d89', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":60}', NULL, '2020-11-05 08:57:20', '2020-11-05 08:57:20'),
-('fd4ca7d7-9184-4e8b-b7fc-f86cbd1a2828', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":29}', NULL, '2020-10-30 01:03:26', '2020-10-30 01:03:26'),
-('fdda3218-a116-4499-80ec-c3c482f20700', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":128}', NULL, '2020-11-27 05:40:10', '2020-11-27 05:40:10'),
-('ff700fea-9b52-451c-a7ca-ebb856855cb3', 'App\\Notifications\\NewOrder', 'App\\Models\\User', 10, '{\"order_id\":54}', NULL, '2020-11-04 03:56:22', '2020-11-04 03:56:22');
-
 -- --------------------------------------------------------
 
 --
@@ -1973,8 +1699,8 @@ INSERT INTO `notifications` (`id`, `type`, `notifiable_type`, `notifiable_id`, `
 CREATE TABLE `options` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(127) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` text COLLATE utf8mb4_unicode_ci,
-  `price` double(8,2) NOT NULL DEFAULT '0.00',
+  `description` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `price` double(8,2) NOT NULL DEFAULT 0.00,
   `product_id` int(10) UNSIGNED NOT NULL,
   `option_group_id` int(10) UNSIGNED NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
@@ -2023,27 +1749,19 @@ CREATE TABLE `orders` (
   `id` int(10) UNSIGNED NOT NULL,
   `user_id` int(10) UNSIGNED NOT NULL,
   `order_status_id` int(10) UNSIGNED NOT NULL,
-  `tax` double(5,2) DEFAULT '0.00',
-  `delivery_fee` double(5,2) DEFAULT '0.00',
-  `hint` text COLLATE utf8mb4_unicode_ci,
-  `active` tinyint(1) NOT NULL DEFAULT '1',
+  `tax` double(5,2) DEFAULT 0.00,
+  `delivery_fee` double(5,2) DEFAULT 0.00,
+  `hint` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `active` tinyint(1) NOT NULL DEFAULT 1,
   `driver_id` int(10) UNSIGNED DEFAULT NULL,
   `delivery_address_id` int(10) UNSIGNED DEFAULT NULL,
+  `total` double NOT NULL,
+  `finalTax` double NOT NULL,
+  `order_method` enum('1','0') COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `payment_id` int(10) UNSIGNED DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `orders`
---
-
-INSERT INTO `orders` (`id`, `user_id`, `order_status_id`, `tax`, `delivery_fee`, `hint`, `active`, `driver_id`, `delivery_address_id`, `payment_id`, `created_at`, `updated_at`) VALUES
-(124, 3, 5, 10.00, 39.00, NULL, 1, 5, 20, 124, '2020-11-26 03:02:25', '2020-11-26 03:29:59'),
-(125, 62, 1, 0.00, 35.00, NULL, 1, 5, 21, 125, '2020-11-26 08:40:51', '2020-11-26 09:59:40'),
-(126, 64, 5, 10.00, 35.00, NULL, 1, 5, 21, 126, '2020-11-26 09:55:51', '2020-11-26 10:07:27'),
-(127, 67, 5, 10.00, 35.00, NULL, 1, 5, 21, 127, '2020-11-27 05:34:58', '2020-11-27 05:35:16'),
-(128, 69, 5, 10.00, 35.00, NULL, 1, 5, 21, 128, '2020-11-27 05:40:10', '2020-11-27 05:41:08');
 
 -- --------------------------------------------------------
 
@@ -2081,15 +1799,6 @@ CREATE TABLE `password_resets` (
   `created_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `password_resets`
---
-
-INSERT INTO `password_resets` (`email`, `token`, `created_at`) VALUES
-('shaan.prashant632@gmail.com', '$2y$10$PYuS74xnNDdQqD2Xkdet1eVxY9mhtSMDyKZlGyxbjEkfHOx4Mzsn.', '2020-09-23 21:56:57'),
-('hi@hi.com', '$2y$10$JOEf0NhOmud2WTeVpgn5X.ZeTD5o7T6OCJN70urMmEDa6hiiI3haG', '2020-10-04 10:30:11'),
-('akkiller167@gmail.com', '$2y$10$.gBx6Bke1AL5zlPf8cei7.n9XAA9Ai5AFuOZ/Ok.kPewWAz1xzPnK', '2020-10-04 10:36:44');
-
 -- --------------------------------------------------------
 
 --
@@ -2098,7 +1807,7 @@ INSERT INTO `password_resets` (`email`, `token`, `created_at`) VALUES
 
 CREATE TABLE `payments` (
   `id` int(10) UNSIGNED NOT NULL,
-  `price` double(8,2) NOT NULL DEFAULT '0.00',
+  `price` double(8,2) NOT NULL DEFAULT 0.00,
   `description` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `user_id` int(10) UNSIGNED NOT NULL,
   `status` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -2106,140 +1815,6 @@ CREATE TABLE `payments` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `payments`
---
-
-INSERT INTO `payments` (`id`, `price`, `description`, `user_id`, `status`, `method`, `created_at`, `updated_at`) VALUES
-(1, 126.00, 'Order not paid yet', 7, 'Paid', 'Pay on Pickup', '2020-09-21 23:07:58', '2020-09-22 15:12:46'),
-(2, 63.00, 'Order not paid yet', 5, 'Waiting for Client', 'Pay on Pickup', '2020-09-21 23:27:08', '2020-09-21 23:27:08'),
-(3, 178.50, 'Order not paid yet', 12, 'Waiting for Client', 'Pay on Pickup', '2020-09-23 20:41:13', '2020-09-23 20:41:13'),
-(4, 168.00, 'Order not paid yet', 12, 'Waiting for Client', 'Pay on Pickup', '2020-09-23 20:51:38', '2020-09-23 20:51:38'),
-(5, 1134.00, 'Order not paid yet', 13, 'Waiting for Client', 'Pay on Pickup', '2020-09-25 11:01:37', '2020-09-25 11:01:37'),
-(6, 168.00, 'Order not paid yet', 11, 'Paid', 'Pay on Pickup', '2020-09-25 21:45:45', '2020-11-14 06:46:39'),
-(7, 168.00, 'Order not paid yet', 11, 'Waiting for Client', 'Pay on Pickup', '2020-09-25 21:54:08', '2020-09-25 21:54:08'),
-(8, 357.00, 'Order not paid yet', 30, 'Waiting for Client', 'Pay on Pickup', '2020-10-03 05:01:59', '2020-10-03 05:01:59'),
-(9, 178.50, 'Order not paid yet', 11, 'Waiting for Client', 'Pay on Pickup', '2020-10-03 05:24:33', '2020-10-03 05:24:33'),
-(10, 314.48, 'Order not paid yet', 32, 'Paid', 'Pay on Pickup', '2020-10-07 03:44:28', '2020-10-07 03:59:30'),
-(11, 294.00, 'Order not paid yet', 11, 'Waiting for Client', 'Pay on Pickup', '2020-10-11 10:39:26', '2020-10-11 10:39:26'),
-(12, 178.50, 'Order not paid yet', 30, 'Waiting for Client', 'Pay on Pickup', '2020-10-12 04:29:40', '2020-10-12 04:29:40'),
-(13, 168.00, 'Order not paid yet', 1, 'Waiting for Client', 'Pay on Pickup', '2020-10-14 05:31:02', '2020-10-14 05:31:02'),
-(14, 3.15, 'Order not paid yet', 1, 'Waiting for Client', 'Cash on Delivery', '2020-10-14 22:33:11', '2020-10-14 22:33:11'),
-(15, 1.05, 'Order not paid yet', 1, 'Waiting for Client', 'Payed through Wallet', '2020-10-14 22:53:58', '2020-10-14 22:53:58'),
-(16, 1.05, 'Order not paid yet', 1, 'Waiting for Client', 'Payed through Wallet', '2020-10-17 14:39:12', '2020-10-17 14:39:12'),
-(17, 68.25, 'Order not paid yet', 11, 'Waiting for Client', 'Pay on Pickup', '2020-10-18 07:02:32', '2020-10-18 07:02:32'),
-(18, 314.48, 'Order not paid yet', 33, 'Waiting for Client', 'Pay on Pickup', '2020-10-18 19:34:58', '2020-10-18 19:34:58'),
-(19, 178.50, 'Order not paid yet', 33, 'Waiting for Client', 'Pay on Pickup', '2020-10-18 19:45:28', '2020-10-18 19:45:28'),
-(20, 168.00, 'Order not paid yet', 35, 'Waiting for Client', 'Pay on Pickup', '2020-10-20 12:26:28', '2020-10-20 12:26:28'),
-(21, 90.00, 'Order not paid yet', 35, 'Waiting for Client', 'Pay on Pickup', '2020-10-20 12:49:22', '2020-10-20 12:49:22'),
-(22, 168.00, 'Order not paid yet', 37, 'Waiting for Client', 'Pay on Pickup', '2020-10-22 09:42:49', '2020-10-22 09:42:49'),
-(23, 180.00, 'Order not paid yet', 33, 'Waiting for Client', 'Pay on Pickup', '2020-10-23 13:27:02', '2020-10-23 13:27:02'),
-(24, 1039.50, 'Order not paid yet', 11, 'Waiting for Client', 'Pay on Pickup', '2020-10-27 10:36:37', '2020-10-27 10:36:37'),
-(25, 168.00, 'Order not paid yet', 37, 'Waiting for Client', 'Pay on Pickup', '2020-10-28 03:55:39', '2020-10-28 03:55:39'),
-(26, 826.00, 'Order not paid yet', 11, 'Waiting for Client', 'Pay on Pickup', '2020-10-28 05:25:57', '2020-10-28 05:25:57'),
-(27, 372.75, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-10-29 02:05:23', '2020-10-29 02:05:23'),
-(28, 168.00, 'Order not paid yet', 37, 'Waiting for Client', 'Pay on Pickup', '2020-10-30 00:08:24', '2020-10-30 00:08:24'),
-(29, 168.00, 'Order not paid yet', 37, 'Waiting for Client', 'Pay on Pickup', '2020-10-30 01:03:26', '2020-10-30 01:03:26'),
-(30, 336.00, 'Order not paid yet', 37, 'Waiting for Client', 'Pay on Pickup', '2020-10-31 07:37:47', '2020-10-31 07:37:47'),
-(31, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-10-31 07:50:18', '2020-10-31 07:50:18'),
-(32, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-11-01 10:12:16', '2020-11-01 10:12:16'),
-(33, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-11-01 11:16:41', '2020-11-01 11:16:41'),
-(34, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-11-01 11:17:19', '2020-11-01 11:17:19'),
-(35, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-11-01 23:37:27', '2020-11-01 23:37:27'),
-(36, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'cash', '2020-11-02 02:07:30', '2020-11-02 02:07:30'),
-(37, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'cash', '2020-11-02 02:08:59', '2020-11-02 02:08:59'),
-(38, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'cash', '2020-11-02 02:10:52', '2020-11-02 02:10:52'),
-(39, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-02 03:25:00', '2020-11-02 03:25:00'),
-(40, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-02 03:28:19', '2020-11-02 03:28:19'),
-(41, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-02 03:30:30', '2020-11-02 03:30:30'),
-(42, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-02 03:31:43', '2020-11-02 03:31:43'),
-(43, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-11-02 03:40:25', '2020-11-02 03:40:25'),
-(44, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-02 03:51:37', '2020-11-02 03:51:37'),
-(45, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-11-02 03:53:38', '2020-11-02 03:53:38'),
-(46, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-02 03:57:33', '2020-11-02 03:57:33'),
-(47, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-03 02:56:22', '2020-11-03 02:56:22'),
-(48, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-03 03:37:42', '2020-11-03 03:37:42'),
-(49, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-03 04:13:04', '2020-11-03 04:13:04'),
-(50, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-03 04:16:18', '2020-11-03 04:16:18'),
-(51, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-03 04:34:31', '2020-11-03 04:34:31'),
-(52, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-03 04:39:02', '2020-11-03 04:39:02'),
-(53, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-11-03 10:21:40', '2020-11-03 10:21:40'),
-(54, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-04 03:56:22', '2020-11-04 03:56:22'),
-(55, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-11-04 05:05:03', '2020-11-04 05:05:03'),
-(56, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-11-04 05:15:41', '2020-11-04 05:15:41'),
-(57, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-11-04 05:17:50', '2020-11-04 05:17:50'),
-(58, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-04 07:25:33', '2020-11-04 07:25:33'),
-(59, 215.25, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-04 07:28:16', '2020-11-04 07:28:16'),
-(60, 372.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-05 08:57:20', '2020-11-05 08:57:20'),
-(61, 372.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-05 08:57:21', '2020-11-05 08:57:21'),
-(62, 336.00, 'Order not paid yet', 37, 'Waiting for Client', 'Pay on Pickup', '2020-11-06 00:52:58', '2020-11-06 00:52:58'),
-(63, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-06 04:25:27', '2020-11-06 04:25:27'),
-(64, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-06 04:31:29', '2020-11-06 04:31:29'),
-(65, 168.00, 'Order not paid yet', 37, 'Waiting for Client', 'Pay on Pickup', '2020-11-06 04:37:03', '2020-11-06 04:37:03'),
-(66, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-11-06 05:32:35', '2020-11-06 05:32:35'),
-(67, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-06 06:18:24', '2020-11-06 06:18:24'),
-(68, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-06 07:06:01', '2020-11-06 07:06:01'),
-(69, 372.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-06 10:35:33', '2020-11-06 10:35:33'),
-(70, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-07 11:51:23', '2020-11-07 11:51:23'),
-(71, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-07 11:53:03', '2020-11-07 11:53:03'),
-(72, 876.75, 'Order not paid yet', 37, 'Paid', 'wallet', '2020-11-07 12:35:08', '2020-11-07 12:38:07'),
-(73, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-11-07 13:42:34', '2020-11-07 13:42:34'),
-(74, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-11-08 10:23:51', '2020-11-08 10:23:51'),
-(75, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'wallet', '2020-11-08 10:25:12', '2020-11-08 10:25:12'),
-(76, 168.00, 'Order paid successfully', 11, 'succeeded', 'Credit Card (Stripe Gateway)', '2020-11-11 09:36:56', '2020-11-11 09:36:56'),
-(77, 168.00, 'Order paid successfully', 11, 'succeeded', 'Credit Card (Stripe Gateway)', '2020-11-11 09:41:15', '2020-11-11 09:41:15'),
-(78, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-11-11 09:53:42', '2020-11-11 09:53:42'),
-(79, 429.45, 'Order not paid yet', 11, 'Waiting for Client', 'Cash on Delivery', '2020-11-11 10:55:08', '2020-11-11 10:55:08'),
-(80, 109.00, 'Order not paid yet', 11, 'Waiting for Client', 'Cash on Delivery', '2020-11-11 10:59:20', '2020-11-11 10:59:20'),
-(81, 129.00, 'Order not paid yet', 11, 'Waiting for Client', 'Cash on Delivery', '2020-11-12 00:36:17', '2020-11-12 00:36:17'),
-(82, 119.70, 'Order not paid yet', 11, 'Waiting for Client', 'wallet', '2020-11-12 02:12:11', '2020-11-12 02:12:11'),
-(83, 399.00, 'Order not paid yet', 11, 'Waiting for Client', 'Cash on Delivery', '2020-11-12 02:34:37', '2020-11-12 02:34:37'),
-(84, 876.75, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-11-12 04:58:44', '2020-11-12 04:58:44'),
-(85, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'PayOnPickup', '2020-11-12 08:42:13', '2020-11-12 08:42:13'),
-(86, 168.00, 'Order not paid yet', 37, 'Waiting for Client', 'Pay on Pickup', '2020-11-12 08:44:06', '2020-11-12 08:44:06'),
-(87, 168.00, 'Order not paid yet', 37, 'Waiting for Client', 'Pay on Pickup', '2020-11-12 08:47:57', '2020-11-12 08:47:57'),
-(88, 168.00, 'Order not paid yet', 37, 'Waiting for Client', 'Pay on Pickup', '2020-11-12 08:52:25', '2020-11-12 08:52:25'),
-(89, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-11-12 08:53:37', '2020-11-12 08:53:37'),
-(90, 219.00, 'Order not paid yet', 11, 'Waiting for Client', 'Cash on Delivery', '2020-11-12 09:41:18', '2020-11-12 09:41:18'),
-(91, 168.00, 'Order not paid yet', 37, 'Waiting for Client', 'Pay on Pickup', '2020-11-12 12:40:36', '2020-11-12 12:40:36'),
-(92, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-11-12 12:44:00', '2020-11-12 12:44:00'),
-(93, 204.75, 'Order paid successfully', 37, 'Paid', 'RazorPay', '2020-11-13 00:43:44', '2020-11-13 00:43:44'),
-(94, 204.75, 'Order not paid yet', 37, 'Paid', 'Cash on Delivery', '2020-11-14 04:12:48', '2020-11-24 02:31:53'),
-(95, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-11-14 07:12:44', '2020-11-14 07:12:44'),
-(96, 180.79, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-11-16 08:47:09', '2020-11-16 08:47:09'),
-(97, 129.00, 'Order not paid yet', 11, 'Waiting for Client', 'Cash on Delivery', '2020-11-17 06:05:51', '2020-11-17 06:05:51'),
-(98, 129.00, 'Order not paid yet', 11, 'Waiting for Client', 'Cash on Delivery', '2020-11-17 06:09:31', '2020-11-17 06:09:31'),
-(99, 199.00, 'Order not paid yet', 11, 'Waiting for Client', 'wallet', '2020-11-18 01:32:17', '2020-11-18 01:32:17'),
-(100, 649.95, 'Order not paid yet', 11, 'Waiting for Client', 'Cash on Delivery', '2020-11-18 01:41:01', '2020-11-18 01:41:01'),
-(101, 204.75, 'Order not paid yet', 37, 'Waiting for Client', 'Cash on Delivery', '2020-11-18 03:00:11', '2020-11-18 03:00:11'),
-(102, 129.00, 'Order not paid yet', 11, 'Waiting for Client', 'Cash on Delivery', '2020-11-18 08:31:34', '2020-11-18 08:31:34'),
-(103, 204.75, 'Order not paid yet', 55, 'Waiting for Client', 'Cash on Delivery', '2020-11-24 00:32:39', '2020-11-24 00:32:39'),
-(104, 204.75, 'Order not paid yet', 55, 'Paid', 'Cash on Delivery', '2020-11-24 00:33:06', '2020-11-24 02:12:56'),
-(105, 204.75, 'Order not paid yet', 55, 'Paid', 'Cash on Delivery', '2020-11-24 02:35:25', '2020-11-24 02:36:16'),
-(106, 204.75, 'Order not paid yet', 55, 'Paid', 'Cash on Delivery', '2020-11-24 02:40:55', '2020-11-24 02:41:47'),
-(107, 204.75, 'Order not paid yet', 55, 'Paid', 'Cash on Delivery', '2020-11-24 02:43:16', '2020-11-24 02:44:01'),
-(108, 372.75, 'Order not paid yet', 37, 'Paid', 'Cash on Delivery', '2020-11-24 03:17:34', '2020-11-24 03:19:27'),
-(109, 204.75, 'Order not paid yet', 37, 'Paid', 'Cash on Delivery', '2020-11-24 04:23:57', '2020-11-24 04:24:53'),
-(110, 204.75, 'Order not paid yet', 37, 'Paid', 'Cash on Delivery', '2020-11-24 04:46:24', '2020-11-24 04:47:00'),
-(111, 204.75, 'Order not paid yet', 55, 'Paid', 'Cash on Delivery', '2020-11-24 05:10:51', '2020-11-24 05:13:15'),
-(112, 204.75, 'Order not paid yet', 55, 'Paid', 'Cash on Delivery', '2020-11-24 05:17:07', '2020-11-24 05:32:21'),
-(113, 372.75, 'Order not paid yet', 55, 'Paid', 'Cash on Delivery', '2020-11-24 05:25:25', '2020-11-24 05:27:03'),
-(114, 204.75, 'Order not paid yet', 55, 'Paid', 'Cash on Delivery', '2020-11-24 06:13:49', '2020-11-24 06:14:25'),
-(115, 204.75, 'Order not paid yet', 55, 'Paid', 'Cash on Delivery', '2020-11-24 06:16:10', '2020-11-24 06:16:48'),
-(116, 204.75, 'Order not paid yet', 57, 'Paid', 'Cash on Delivery', '2020-11-24 06:24:26', '2020-11-24 06:25:06'),
-(117, 204.75, 'Order not paid yet', 57, 'Paid', 'Cash on Delivery', '2020-11-24 06:31:57', '2020-11-24 06:32:52'),
-(118, 204.75, 'Order not paid yet', 57, 'Paid', 'Cash on Delivery', '2020-11-24 06:37:02', '2020-11-24 06:37:40'),
-(119, 204.75, 'Order not paid yet', 57, 'Paid', 'Cash on Delivery', '2020-11-24 06:39:55', '2020-11-24 06:40:44'),
-(120, 204.75, 'Order not paid yet', 57, 'Paid', 'Cash on Delivery', '2020-11-24 06:42:41', '2020-11-24 06:43:08'),
-(121, 208.95, 'Order not paid yet', 17, 'Paid', 'Cash on Delivery', '2020-11-24 13:43:35', '2020-11-25 00:30:42'),
-(122, 195.00, 'Order not paid yet', 59, 'Waiting for Client', 'Cash on Delivery', '2020-11-25 11:24:22', '2020-11-25 11:24:22'),
-(123, 195.00, 'Order not paid yet', 59, 'Waiting for Client', 'Cash on Delivery', '2020-11-25 11:28:14', '2020-11-25 11:28:14'),
-(124, 141.90, 'Order not paid yet', 5, 'Paid', 'Cash on Delivery', '2020-11-26 03:02:25', '2020-11-26 03:30:00'),
-(125, 195.00, 'Order not paid yet', 62, 'Waiting for Client', 'Cash on Delivery', '2020-11-26 08:40:51', '2020-11-26 08:40:51'),
-(126, 214.50, 'Order not paid yet', 64, 'Waiting for Client', 'Cash on Delivery', '2020-11-26 09:55:51', '2020-11-26 09:55:51'),
-(127, 214.50, 'Order not paid yet', 67, 'Waiting for Client', 'Cash on Delivery', '2020-11-27 05:34:58', '2020-11-27 05:34:58'),
-(128, 214.50, 'Order not paid yet', 69, 'Waiting for Client', 'Cash on Delivery', '2020-11-27 05:40:10', '2020-11-27 05:40:10');
 
 -- --------------------------------------------------------
 
@@ -2453,14 +2028,14 @@ INSERT INTO `permissions` (`id`, `name`, `guard_name`, `created_at`, `updated_at
 CREATE TABLE `products` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(127) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `price` double(8,2) NOT NULL DEFAULT '0.00',
-  `discount_price` double(8,2) DEFAULT '0.00',
-  `description` text COLLATE utf8mb4_unicode_ci,
-  `capacity` double(9,2) DEFAULT '0.00',
-  `package_items_count` double(9,2) DEFAULT '0.00',
+  `price` double(8,2) NOT NULL DEFAULT 0.00,
+  `discount_price` double(8,2) DEFAULT 0.00,
+  `description` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `capacity` double(9,2) DEFAULT 0.00,
+  `package_items_count` double(9,2) DEFAULT 0.00,
   `unit` varchar(127) COLLATE utf8mb4_unicode_ci DEFAULT '',
-  `featured` tinyint(1) DEFAULT '0',
-  `deliverable` tinyint(1) DEFAULT '1',
+  `featured` tinyint(1) DEFAULT 0,
+  `deliverable` tinyint(1) DEFAULT 1,
   `market_id` int(10) UNSIGNED NOT NULL,
   `category_id` int(10) UNSIGNED NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
@@ -2494,20 +2069,9 @@ INSERT INTO `products` (`id`, `name`, `price`, `discount_price`, `description`, 
 (85, 'Basanti Pulao Combo', 220.00, 175.00, '<p>Authentic Basanti Pulao (500ml approx) with 2pcs of Chicken Kasa (70-80gms each approx)</p>', 1.00, 1.00, 'servings', 1, 1, 13, 13, '2020-09-29 01:12:00', '2020-09-29 01:12:18'),
 (86, 'Roti Sabzi', 85.00, 65.00, '<p>4pcs Roti with Masala Bhindi (200ml) or any other Sabzi as per availability.</p>', 1.00, 1.00, 'serving', 0, 1, 13, 13, '2020-09-29 01:14:50', '2020-09-29 01:14:50'),
 (87, 'Chaanar Dalna with Rice', 90.00, 65.00, '<p>Chanaar Dalna (4pcs) with Rice (500ml)</p>', 1.00, 1.00, 'serving', 1, 1, 13, 13, '2020-09-29 01:18:03', '2020-09-29 01:18:03'),
-(88, 'Dry Fruit Coconut Laddoo', 210.00, 140.00, '<p>200 gms / 10pcs of Dry fruit Coconut Laddoo.</p>', 10.00, 1.00, 'Pieces', 1, 1, 14, 13, '2020-09-29 02:11:56', '2020-10-11 10:05:18'),
-(89, 'Kesar Kheer Sandesh', 215.00, 140.00, '<p>200gms/ 10pcs of Tasty Kesar Kheer Sandesh</p>', 10.00, 1.00, 'Pieces', 1, 1, 14, 13, '2020-09-29 02:14:02', '2020-10-11 09:55:25'),
-(90, 'Kaju Katli', 230.00, 140.00, '<p>200gms/10pieces of delicious Kaju Katli</p>', 10.00, 1.00, 'Pieces', 1, 1, 14, 13, '2020-09-29 02:16:20', '2020-10-11 09:56:34'),
 (93, 'Tomato', 100.00, 90.00, '<p>Fresh and Juicy Tomato</p>', 1.00, 1.00, 'kg', 1, 1, 9, 8, '2020-09-29 02:57:29', '2020-09-29 02:57:29'),
 (96, 'Special Mutton Biryani Combo', 702.00, 351.00, '<p>Delicious Mutton Biryani with Egg, topped with juicy Chicken Kabab (4pcs) with chutney and Firni. Please order a minimum of 5 units to avail the discounted rate.</p>', 1.00, 1.00, 'serving', 1, 1, 11, 13, '2020-10-05 04:12:21', '2020-10-05 04:20:10'),
-(97, 'Chinese Combo...Made in India', 520.00, 260.00, '<p>Tasty Chinese. A combo of Fried Rice with Chilly Chicken, Fish Finger with Salad/Chutney and Gulab Jamun (4pcs). Please order a minimum of 5 units to avail the discounted rate.</p>', 1.00, 1.00, 'servings', 1, 1, 11, 13, '2020-10-05 04:19:17', '2020-10-05 04:19:17'),
-(98, 'klniohpi', 1244.00, 89.00, '<p>lkklnnlkk<br></p>', 10.00, 10.00, '10', 1, 1, 8, 7, '2020-11-16 08:37:50', '2020-11-16 08:37:50'),
-(99, 'demo product', 79.00, NULL, '<p>This Item is delivered between 11.00am - 5pm of next day</p>', 11.00, 100.00, 'pm', 1, 1, 24, 7, '2020-11-16 08:45:46', '2020-11-18 01:39:52'),
-(100, 'Rasmalai - Pistachio Cookies', 350.00, 300.00, '<p>250 gms of Rasmalai - Pistachio Cookies.</p>', 250.00, 1.00, 'gms', 1, 1, 15, 17, '2020-11-23 02:47:46', '2020-11-23 02:47:46'),
-(101, 'Dry Fruit Christmas Cakes', 460.00, 399.00, '<p>1 pound of Dry Fruit Cakes. Freshly made specially for you.</p>', 1.00, 1.00, 'Pound', 1, 1, 15, 16, '2020-11-23 02:49:54', '2020-11-23 02:49:54'),
-(102, 'Chocolate Cake', 600.00, 450.00, '<p>1 pound of Chocolate Cake. Freshly baked</p>', 1.00, 1.00, 'Pound', 1, 1, 15, 16, '2020-11-23 02:53:11', '2020-11-23 02:53:11'),
-(103, 'Black Forest Cake', 550.00, 475.00, '<p>1 Pound of freshly baked Black Forest Cake.</p>', 1.00, 1.00, 'Pound', 1, 1, 15, 16, '2020-11-23 02:55:46', '2020-11-23 02:55:46'),
-(104, 'Walnut - Almonds Brownie', 400.00, 330.00, '<p>6 pieces of Walnut-Almond Brownies</p>', 6.00, 1.00, 'Pieces', 1, 1, 15, 16, '2020-11-23 02:59:50', '2020-11-23 02:59:50'),
-(105, 'Red Drawer Chocolate Box', 750.00, 699.00, '<p>Approx 280 gms of assorted handmade chocolates.</p>', 280.00, 1.00, 'gms', 1, 1, 17, 23, '2020-11-26 06:48:53', '2020-11-26 06:49:48');
+(97, 'Chinese Combo...Made in India', 520.00, 260.00, '<p>Tasty Chinese. A combo of Fried Rice with Chilly Chicken, Fish Finger with Salad/Chutney and Gulab Jamun (4pcs). Please order a minimum of 5 units to avail the discounted rate.</p>', 1.00, 1.00, 'servings', 1, 1, 11, 13, '2020-10-05 04:19:17', '2020-10-05 04:19:17');
 
 -- --------------------------------------------------------
 
@@ -2517,24 +2081,13 @@ INSERT INTO `products` (`id`, `name`, `price`, `discount_price`, `description`, 
 
 CREATE TABLE `product_orders` (
   `id` int(10) UNSIGNED NOT NULL,
-  `price` double(8,2) NOT NULL DEFAULT '0.00',
-  `quantity` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `price` double(8,2) NOT NULL DEFAULT 0.00,
+  `quantity` int(10) UNSIGNED NOT NULL DEFAULT 0,
   `product_id` int(10) UNSIGNED NOT NULL,
   `order_id` int(10) UNSIGNED NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `product_orders`
---
-
-INSERT INTO `product_orders` (`id`, `price`, `quantity`, `product_id`, `order_id`, `created_at`, `updated_at`) VALUES
-(131, 90.00, 1, 72, 124, '2020-11-26 03:02:25', '2020-11-26 03:02:25'),
-(132, 160.00, 1, 40, 125, '2020-11-26 08:40:51', '2020-11-26 08:40:51'),
-(133, 160.00, 1, 40, 126, '2020-11-26 09:55:51', '2020-11-26 09:55:51'),
-(134, 160.00, 1, 40, 127, '2020-11-27 05:34:58', '2020-11-27 05:34:58'),
-(135, 160.00, 1, 40, 128, '2020-11-27 05:40:10', '2020-11-27 05:40:10');
 
 -- --------------------------------------------------------
 
@@ -2545,7 +2098,7 @@ INSERT INTO `product_orders` (`id`, `price`, `quantity`, `product_id`, `order_id
 CREATE TABLE `product_order_options` (
   `product_order_id` int(10) UNSIGNED NOT NULL,
   `option_id` int(10) UNSIGNED NOT NULL,
-  `price` double(8,2) NOT NULL DEFAULT '0.00'
+  `price` double(8,2) NOT NULL DEFAULT 0.00
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -2556,23 +2109,13 @@ CREATE TABLE `product_order_options` (
 
 CREATE TABLE `product_reviews` (
   `id` int(10) UNSIGNED NOT NULL,
-  `review` text COLLATE utf8mb4_unicode_ci,
-  `rate` tinyint(3) UNSIGNED NOT NULL DEFAULT '0',
+  `review` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `rate` tinyint(3) UNSIGNED NOT NULL DEFAULT 0,
   `user_id` int(10) UNSIGNED NOT NULL,
   `product_id` int(10) UNSIGNED NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `product_reviews`
---
-
-INSERT INTO `product_reviews` (`id`, `review`, `rate`, `user_id`, `product_id`, `created_at`, `updated_at`) VALUES
-(1, 'lovely', 5, 11, 40, '2020-09-25 21:56:18', '2020-11-11 09:38:50'),
-(2, 'very tasty.  home made', 5, 32, 42, '2020-10-07 03:46:58', '2020-10-07 03:46:58'),
-(4, NULL, 5, 37, 40, '2020-11-08 12:05:25', '2020-11-08 12:05:36'),
-(5, 'healthy and tasty', 0, 11, 87, '2020-11-12 02:13:45', '2020-11-12 02:13:45');
 
 -- --------------------------------------------------------
 
@@ -2617,13 +2160,26 @@ CREATE TABLE `role_has_permissions` (
 
 INSERT INTO `role_has_permissions` (`permission_id`, `role_id`) VALUES
 (1, 2),
+(1, 3),
+(1, 4),
+(1, 5),
 (2, 2),
 (3, 2),
+(3, 3),
+(3, 4),
+(3, 5),
 (4, 2),
+(4, 3),
+(4, 4),
+(4, 5),
 (5, 2),
+(5, 3),
 (6, 2),
 (9, 2),
 (10, 2),
+(11, 2),
+(12, 2),
+(13, 2),
 (14, 2),
 (15, 2),
 (16, 2),
@@ -2635,15 +2191,28 @@ INSERT INTO `role_has_permissions` (`permission_id`, `role_id`) VALUES
 (22, 2),
 (23, 2),
 (24, 2),
+(25, 2),
 (26, 2),
 (27, 2),
+(27, 3),
+(27, 4),
+(27, 5),
 (28, 2),
 (29, 2),
 (30, 2),
+(30, 3),
+(30, 4),
+(30, 5),
 (31, 2),
+(31, 3),
+(31, 4),
 (32, 2),
+(32, 3),
+(32, 4),
 (33, 2),
+(33, 3),
 (34, 2),
+(34, 3),
 (35, 2),
 (36, 2),
 (37, 2),
@@ -2652,60 +2221,134 @@ INSERT INTO `role_has_permissions` (`permission_id`, `role_id`) VALUES
 (40, 2),
 (41, 2),
 (42, 2),
+(42, 3),
 (43, 2),
 (44, 2),
 (45, 2),
 (46, 2),
 (47, 2),
 (48, 2),
+(48, 3),
+(48, 5),
 (50, 2),
 (51, 2),
 (52, 2),
+(52, 3),
+(52, 4),
+(52, 5),
 (53, 2),
+(53, 3),
 (54, 2),
+(54, 3),
 (55, 2),
+(55, 3),
 (56, 2),
+(56, 3),
 (57, 2),
+(57, 3),
 (58, 2),
+(58, 3),
 (59, 2),
+(59, 3),
 (60, 2),
+(60, 3),
 (61, 2),
+(61, 3),
 (62, 2),
+(62, 3),
 (63, 2),
+(63, 3),
 (64, 2),
+(64, 3),
+(64, 4),
+(64, 5),
 (67, 2),
+(67, 3),
+(67, 4),
+(67, 5),
 (68, 2),
+(68, 3),
+(68, 4),
+(68, 5),
 (69, 2),
 (76, 2),
+(76, 3),
 (77, 2),
+(77, 3),
 (78, 2),
+(78, 3),
 (80, 2),
+(80, 3),
 (81, 2),
+(81, 3),
 (82, 2),
+(82, 3),
 (83, 2),
+(83, 3),
+(83, 4),
+(83, 5),
 (85, 2),
 (86, 2),
+(86, 3),
+(86, 4),
+(86, 5),
 (87, 2),
 (88, 2),
 (89, 2),
 (90, 2),
 (91, 2),
 (92, 2),
+(92, 3),
+(92, 4),
+(92, 5),
 (95, 2),
+(95, 3),
+(95, 4),
+(95, 5),
 (96, 2),
+(96, 3),
+(96, 4),
+(96, 5),
 (97, 2),
 (98, 2),
+(98, 3),
+(98, 4),
+(98, 5),
 (103, 2),
+(103, 3),
+(103, 4),
+(103, 5),
 (104, 2),
+(104, 3),
+(104, 4),
+(104, 5),
 (107, 2),
+(107, 3),
+(107, 4),
+(107, 5),
 (108, 2),
+(108, 3),
 (109, 2),
+(109, 3),
 (110, 2),
+(110, 3),
 (111, 2),
+(111, 3),
+(111, 4),
+(111, 5),
 (112, 2),
 (113, 2),
+(113, 3),
+(113, 4),
+(113, 5),
 (114, 2),
+(114, 3),
+(114, 4),
+(114, 5),
 (117, 2),
+(117, 3),
+(117, 4),
+(117, 5),
 (118, 2),
 (119, 2),
 (120, 2),
@@ -2717,170 +2360,78 @@ INSERT INTO `role_has_permissions` (`permission_id`, `role_id`) VALUES
 (128, 2),
 (129, 2),
 (130, 2),
+(130, 3),
+(130, 5),
 (131, 2),
 (134, 2),
+(134, 3),
 (135, 2),
+(135, 3),
 (137, 2),
+(137, 3),
 (138, 2),
 (144, 2),
+(144, 5),
 (145, 2),
+(145, 3),
+(145, 5),
 (146, 2),
+(146, 3),
+(146, 5),
 (148, 2),
 (149, 2),
 (151, 2),
+(151, 3),
 (152, 2),
+(152, 3),
 (153, 2),
+(153, 3),
 (155, 2),
 (156, 2),
+(158, 2),
 (160, 2),
+(161, 2),
+(162, 2),
+(163, 2),
 (164, 2),
+(164, 3),
+(164, 4),
+(164, 5),
 (165, 2),
 (166, 2),
 (167, 2),
 (168, 2),
 (169, 2),
 (170, 2),
+(170, 3),
 (171, 2),
+(171, 3),
 (172, 2),
+(172, 3),
 (173, 2),
 (174, 2),
 (175, 2),
 (176, 2),
+(176, 3),
+(176, 4),
+(176, 5),
 (183, 2),
+(183, 3),
+(183, 4),
+(183, 5),
 (184, 2),
 (185, 2),
 (186, 2),
+(186, 3),
 (187, 2),
+(187, 3),
 (188, 2),
 (189, 2),
 (190, 2),
 (191, 2),
 (192, 2),
 (193, 2),
-(194, 2),
-(1, 3),
-(3, 3),
-(4, 3),
-(5, 3),
-(27, 3),
-(30, 3),
-(31, 3),
-(32, 3),
-(33, 3),
-(34, 3),
-(42, 3),
-(48, 3),
-(52, 3),
-(53, 3),
-(54, 3),
-(55, 3),
-(56, 3),
-(57, 3),
-(58, 3),
-(59, 3),
-(60, 3),
-(61, 3),
-(62, 3),
-(63, 3),
-(64, 3),
-(67, 3),
-(68, 3),
-(76, 3),
-(77, 3),
-(78, 3),
-(80, 3),
-(81, 3),
-(82, 3),
-(83, 3),
-(86, 3),
-(92, 3),
-(95, 3),
-(96, 3),
-(98, 3),
-(103, 3),
-(104, 3),
-(107, 3),
-(108, 3),
-(109, 3),
-(110, 3),
-(111, 3),
-(113, 3),
-(114, 3),
-(117, 3),
-(130, 3),
-(134, 3),
-(135, 3),
-(137, 3),
-(145, 3),
-(146, 3),
-(151, 3),
-(152, 3),
-(153, 3),
-(164, 3),
-(170, 3),
-(171, 3),
-(172, 3),
-(176, 3),
-(183, 3),
-(186, 3),
-(187, 3),
-(1, 4),
-(3, 4),
-(4, 4),
-(27, 4),
-(30, 4),
-(31, 4),
-(32, 4),
-(52, 4),
-(64, 4),
-(67, 4),
-(68, 4),
-(83, 4),
-(86, 4),
-(92, 4),
-(95, 4),
-(96, 4),
-(98, 4),
-(103, 4),
-(104, 4),
-(107, 4),
-(111, 4),
-(113, 4),
-(114, 4),
-(117, 4),
-(164, 4),
-(176, 4),
-(183, 4),
-(1, 5),
-(3, 5),
-(4, 5),
-(27, 5),
-(30, 5),
-(48, 5),
-(52, 5),
-(64, 5),
-(67, 5),
-(68, 5),
-(83, 5),
-(86, 5),
-(92, 5),
-(95, 5),
-(96, 5),
-(98, 5),
-(103, 5),
-(104, 5),
-(107, 5),
-(111, 5),
-(113, 5),
-(114, 5),
-(117, 5),
-(130, 5),
-(144, 5),
-(145, 5),
-(146, 5),
-(164, 5),
-(176, 5),
-(183, 5);
+(194, 2);
 
 -- --------------------------------------------------------
 
@@ -2890,7 +2441,7 @@ INSERT INTO `role_has_permissions` (`permission_id`, `role_id`) VALUES
 
 CREATE TABLE `slides` (
   `id` int(10) UNSIGNED NOT NULL,
-  `order` int(10) UNSIGNED DEFAULT '0',
+  `order` int(10) UNSIGNED DEFAULT 0,
   `text` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `button` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `text_position` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT 'start',
@@ -2901,7 +2452,7 @@ CREATE TABLE `slides` (
   `image_fit` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT 'cover',
   `product_id` int(10) UNSIGNED DEFAULT NULL,
   `market_id` int(10) UNSIGNED DEFAULT NULL,
-  `enabled` tinyint(1) DEFAULT '1',
+  `enabled` tinyint(1) DEFAULT 1,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -2911,8 +2462,7 @@ CREATE TABLE `slides` (
 --
 
 INSERT INTO `slides` (`id`, `order`, `text`, `button`, `text_position`, `text_color`, `button_color`, `background_color`, `indicator_color`, `image_fit`, `product_id`, `market_id`, `enabled`, `created_at`, `updated_at`) VALUES
-(6, 0, '10% off - All Users', 'Durga Puja Offer', 'bottom_start', '#25d366', '#25d366', '#ccccdd', '#25d366', 'cover', 43, 8, 1, '2020-09-21 21:52:49', '2020-10-21 02:35:51'),
-(7, 1, 'Super Chinese Food', 'Order Chinese', 'center_start', '#000000', '#b968c2', '#f6c4c4', '#000000', 'cover', NULL, NULL, 1, '2020-11-15 07:13:49', '2020-11-15 07:22:34');
+(6, 0, '10% off - All Users', 'Durga Puja Offer', 'bottom_start', '#25d366', '#25d366', '#ccccdd', '#25d366', 'cover', 43, 8, 1, '2020-09-21 21:52:49', '2020-10-21 02:35:51');
 
 -- --------------------------------------------------------
 
@@ -3058,22 +2608,11 @@ INSERT INTO `uploads` (`id`, `uuid`, `created_at`, `updated_at`) VALUES
 (124, '4cd73449-c48f-4521-bed1-17f722c68d8b', '2020-10-28 05:36:00', '2020-10-28 05:36:00'),
 (125, '17f6f6db-c758-4fa3-a3f7-4b273ec17a0e', '2020-10-28 05:39:35', '2020-10-28 05:39:35'),
 (126, '20786aa0-97ad-45e6-806c-697c7d5d636d', '2020-10-28 05:39:51', '2020-10-28 05:39:51'),
-(127, 'f766d9f6-8b79-4df9-94a2-037290e42626', '2020-11-14 04:09:33', '2020-11-14 04:09:33'),
-(128, '2634dae8-5bdc-496e-b57d-23babe1b521a', '2020-11-14 07:15:13', '2020-11-14 07:15:13'),
-(129, 'd7777b41-0f9c-448c-a446-457d034f3e27', '2020-11-15 07:12:02', '2020-11-15 07:12:02'),
-(130, 'c80a8ef6-eee4-4cbf-b4cf-aca10a6469d5', '2020-11-15 07:18:03', '2020-11-15 07:18:03'),
-(131, 'd5315d55-7410-4e41-a039-2fdd876a9bca', '2020-11-23 02:45:50', '2020-11-23 02:45:50'),
-(132, 'de2aed95-1b83-40b4-98d2-ca3c08ba6316', '2020-11-23 02:48:05', '2020-11-23 02:48:05'),
-(133, '23d718af-0d86-4f95-aefb-619d947a0986', '2020-11-23 02:50:29', '2020-11-23 02:50:29'),
-(134, 'f1909a89-6464-45ea-8b9e-dd9e20543f9c', '2020-11-23 02:51:10', '2020-11-23 02:51:10'),
-(135, 'be975afc-c206-4e48-9032-8143e835bd19', '2020-11-23 02:51:44', '2020-11-23 02:51:44'),
-(136, 'ec22344e-e59e-4ae7-90a8-66e1a8ac4edd', '2020-11-23 02:53:55', '2020-11-23 02:53:55'),
-(137, '74442e40-1f27-4e8c-92d2-0bb72efe7c97', '2020-11-23 02:54:29', '2020-11-23 02:54:29'),
-(138, '8044019f-3df6-437e-bf17-9052f218e0d5', '2020-11-23 02:56:17', '2020-11-23 02:56:17'),
-(139, '2011cd21-0c19-4ed6-bdb4-09ea7fca219d', '2020-11-23 02:57:29', '2020-11-23 02:57:29'),
-(140, '829cb5ec-d5e7-45da-a680-315e3785d5b5', '2020-11-26 06:47:04', '2020-11-26 06:47:04'),
-(141, 'af942135-5fc6-432b-8f88-60a41b6383e5', '2020-11-26 07:14:06', '2020-11-26 07:14:06'),
-(142, '690f9f68-6397-40c2-a6be-72cf70a8200d', '2020-11-26 07:20:08', '2020-11-26 07:20:08');
+(127, '3b1277fb-72df-417c-bb84-9a83e4b0416e', '2020-11-11 03:26:12', '2020-11-11 03:26:12'),
+(128, 'e5f170dd-e8c0-43bb-b5ac-6cad3c4333b9', '2020-11-28 00:20:43', '2020-11-28 00:20:43'),
+(129, 'c2110cc9-ffb5-4dd8-938f-6995d1b5f255', '2020-12-04 03:38:01', '2020-12-04 03:38:01'),
+(130, 'e4c7b8d5-90b8-4296-830a-d013a2c47606', '2020-12-04 03:38:19', '2020-12-04 03:38:19'),
+(131, '840d8603-b777-42b1-8736-645b48637724', '2020-12-04 04:03:05', '2020-12-04 04:03:05');
 
 -- --------------------------------------------------------
 
@@ -3085,7 +2624,7 @@ CREATE TABLE `users` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `ewallet_amount` double(10,2) NOT NULL DEFAULT '0.00',
+  `ewallet_amount` double(10,2) NOT NULL DEFAULT 0.00,
   `password` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `api_token` char(60) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `device_token` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -3108,75 +2647,13 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `ewallet_amount`, `password`, `api_token`, `device_token`, `stripe_id`, `card_brand`, `card_last_four`, `trial_ends_at`, `braintree_id`, `paypal_email`, `user_type`, `remember_token`, `user_refer_code`, `applied_used_id`, `created_at`, `updated_at`) VALUES
-(1, 'Admin', 'admin@demo.com', 1000.00, '$2y$10$YdcOyedvOBAk/.L8j8qbp.P3ob6aQNKbRaQ1eYVORfJ6F7ygx0V7q', 'PivvPlsQWxPl1bB5KrbKNBuraJit0PrUZekQUgtLyTRuyBq921atFtoR1HuA', 'cwOfqvWTa03FnidYvFVanR:APA91bGf20pr0JoU2MV0dF-DRcKwYgaRXAJpOZyNj0NNDglHevtDfBBdNN4G7aHF_rUH3IEKya3x9erxQv6V18U1xCpErjSbwCzqbSZ6m6MYJsEXRPbS5mI1bPuE119Y1QX0P01VaR0Y', NULL, NULL, NULL, NULL, NULL, NULL, 'ADMIN', 'XDac1iAnXimqT5SUaYV6kJ9PmcTQKnUleBnRYMigP9JzIMqHnZ4uQv5WB1GA', '#cxvdsfsd', 0, '2018-08-07 05:58:41', '2020-11-28 01:40:54'),
-(2, 'Barbara J. Glanz', 'manager@demo.com', 0.00, '$2y$10$YccB/ovuHrfbsS1LR9xH0.p6Be5Kef3in/rqFJ3ZtXdp7sujcqoaa', 'tVSfIKRSX2Yn8iAMoUS3HPls84ycS8NAxO2dj2HvePbbr4WHorp4gIFRmFwB', 'cPFk8ZY4QU-kdZTCgyGNd_:APA91bEsk8UHBIDqaEHNfH_IaAmgU2Z8jul8cBfcW4xqFntpPixSo4AyLPXfI8p5EgW1oXu7quk6QC4LYnNEGqj2j9uPlBxKttZbBVxd304hWQdr4d7sJHT6toqNWmdA2l6dGzAV6KEO', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', 'F265QX2T7iHbPIL1VK9ml6PvZvak4Vof9NkWfVgz5osGFs6Ljdt043HCAHPK', '#ebe3fcac5a4', 11, '2018-08-15 00:06:28', '2020-11-14 07:00:50'),
-(3, 'Charles W. Abeyta', 'client@demo.com', 260.00, '$2y$10$EBubVy3wDbqNbHvMQwkj3OTYVitL8QnHvh/zV0ICVOaSbALy5dD0K', 'fXLu7VeYgXDu82SkMxlLPG1mCAXc4EBIx6O5isgYVIKFQiHah0xiOHmzNsBv', 'e3IEgtzCQTeGxSuWugO53T:APA91bGUGjBZ_6ToNEqtvPjweCVJMRQ9qjvLattXkpzJ2lBb1iMtWMKzAPqgvZKkUn6C-Yi5WRZhQloO7FvPwZAQdpihlB2pKednGIeEgMeydv4nldR93FXi1_HCuJi1BOynJEHo8o-5', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', 'V6PIUfd8JdHT2zkraTlnBcRSINZNjz5Ou7N0WtUGRyaTweoaXKpSfij6UhqC', '#8605caee798098f', 11, '2019-10-13 05:31:26', '2020-11-26 03:29:58'),
+(1, 'Admin', 'admin@demo.com', 1000.00, '$2y$10$CxQPXMoNxrc8y3estODmxOoirBVNtnYERi9LPY1LKYf8oytLG7MK.', 'PivvPlsQWxPl1bB5KrbKNBuraJit0PrUZekQUgtLyTRuyBq921atFtoR1HuA', 'fsZjdyUmTw2g5UPbuMLcsh:APA91bFjoE8mRr9HdUjkOQSWUgKSsyqM_sHJ6xnzXN9bA-k_JJ0DvExYXODo45WIDX2f6OSHBCiKZGDl1nJMnNsLe9ysZXnWOVdqP9sweoZbAa0ApvGqrqA3WcvccEWYP2MJHS1AvTpK', NULL, NULL, NULL, NULL, NULL, NULL, 'ADMIN', 'ygbIvLValdnI5FAw4dwC9HyTtsxdOcj0p6fmTmx6qfrxzwETg0TG16VfsVBL', '#cd98d6e', 0, '2018-08-07 05:58:41', '2020-11-29 02:21:08'),
+(2, 'Barbara J. Glanz', 'manager@demo.com', 0.00, '$2y$10$oCfnM4c6pXbuqvm4CJfCQuhQ9CUJgX1Z1AVCUUV5VVsgNeVOxWCyS', 'tVSfIKRSX2Yn8iAMoUS3HPls84ycS8NAxO2dj2HvePbbr4WHorp4gIFRmFwB', 'dRPPw1zOSuuU8A6VFdWXfP:APA91bEYlGarHcad0wn_yO0z3F-7u29nu7VPfQQFDvY9aN7uLmN9PgW7vdbgWZ09LnMbI9NfP6AfUJV5KK0-H8Kz6xKB_oayo7WxuRtOlmyadOgZWz4eqrTveERH23cN5ZAdLL8QgpJU', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', 'PpoIslgah98TPcuoOf1fMBbcxBIV8Ngnmk24Om5V8uqniN5KWYg2Nh2tfF8r', NULL, 0, '2018-08-15 00:06:28', '2020-11-09 02:32:32'),
+(3, 'Charles W. Abeyta', 'client@demo.com', 0.00, '$2y$10$EBubVy3wDbqNbHvMQwkj3OTYVitL8QnHvh/zV0ICVOaSbALy5dD0K', 'fXLu7VeYgXDu82SkMxlLPG1mCAXc4EBIx6O5isgYVIKFQiHah0xiOHmzNsBv', 'e3IEgtzCQTeGxSuWugO53T:APA91bGUGjBZ_6ToNEqtvPjweCVJMRQ9qjvLattXkpzJ2lBb1iMtWMKzAPqgvZKkUn6C-Yi5WRZhQloO7FvPwZAQdpihlB2pKednGIeEgMeydv4nldR93FXi1_HCuJi1BOynJEHo8o-5', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', 'V6PIUfd8JdHT2zkraTlnBcRSINZNjz5Ou7N0WtUGRyaTweoaXKpSfij6UhqC', '#8605caee798098f', 0, '2019-10-13 05:31:26', '2020-10-22 05:57:11'),
 (4, 'Robert E. Brock', 'client1@demo.com', 0.00, '$2y$10$pmdnepS1FhZUMqOaFIFnNO0spltJpziz3j13UqyEwShmLhokmuoei', 'Czrsk9rwD0c75NUPkzNXM2WvbxYHKj8p0nG29pjKT0PZaTgMVzuVyv4hOlte', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2019-10-16 00:55:39', '2020-03-30 00:59:39'),
-(5, 'Jafar Ali', 'jafarali199822@gmail.com', 0.00, '$2y$10$IzClO.0z5PJNjDNK4lb3Bu/3y12yGuhTkvLIEtjBoe6CDarRAtNJy', 'OuMsmU903WMcMhzAbuSFtxBekZVdXz66afifRo3YRCINi38jkXJ8rpN0FcfS', 'ffuAY2uZSr2DDHpmvNk_fO:APA91bEw-LdmRb3zQdf-1kERqrpBsbcsQs5qUbL1uXQ197RIkeCDV_6R6WTtFMibyZlmOpdJ-fNQh5A1LjWEtU1EYiF4H3fplqDGgouXpt1HRqP3XSV-gTGYK89d-IjBpQgeh1vdqYSz', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#8ac6e07983a1', 11, '2019-12-16 01:49:44', '2020-11-26 02:56:47'),
-(6, 'John Doe', 'driver1@demo.com', 0.00, '$2y$10$YF0jCx2WCQtfZOq99hR8kuXsAE0KSnu5OYSomRtI9iCVguXDoDqVm', 'zh9mzfNO2iPtIxj6k4Jpj8flaDyOsxmlGRVUZRnJqOGBr8IuDyhb3cGoncvS', 'dP5qGI6_TESxJUI2hqVCFL:APA91bFAuDphYned2xyybr0RjiX-DOL2ppXU3yNrRAGXsZQqE21poXaIqe9__i5t41dWjrwI2xd2idttO55z0aGbOyue4_qj00DDJG-7yieR4OCoB7L2-ngkoAghhPfPth_Y1HJpPCbF', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#a65b214f3b', 0, '2020-03-30 00:28:04', '2020-11-24 01:13:21'),
-(7, 'surya pratap', 'sppro.20@gmail.com', 550.00, '$2y$10$kA9QBXbbqUW4hiYwT66gwe96vFX2nhL5kh/uycJUEdvILi/ypI1Fe', 'xCThbV9puWgrHqwB0HyjwY3t35YofSfJQRk2DVPZ7Yhgdi0YmTbjmcgEnwVm', 'eLDcdWSqQN-2GomN7Ke3SR:APA91bHN4-3zs_aU6j6Iczo6YtpX8QZsaNs1DBMsV8SgSAsLL4o26fZcl-NbIitTtM9T9TEn3cBiKT2W5fmAPMgo8QQalnO9d0hDQBGBARJ83U9ZWCqW5hOiz5opKYqGzWffaV64l7eQ', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#b2e3d3275e4b431', 0, '2020-09-19 21:58:14', '2020-10-28 07:46:54'),
-(8, 'Abc', 'abc@gmail.com', 0.00, '$2y$10$0.CbTdAuPE42nJjBre4nY.moZZUgXr11O7ZqW0kQ7P.7CXp0anIqi', 't1d08CuT3YhLN8UFpryISnHaHDmyieeghjMJdOgFZNRl1Gjn8nxInHQTiAxu', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-09-20 17:22:35', '2020-09-20 17:22:35'),
-(9, 'Tarun', 'tarunplay3551@gmail.com', 0.00, '$2y$10$FxoMNuwR88J38u79cM5W0.cj04lD9ijyR4lDwH3xViJHU.E0aVh2m', '5ykp0hDknIqsnStNEG7gk7452cIqvKT4jnneEZzQgG5QwUA8lEaGvhdeAMTC', 'd07AocF9RVWAh5M5tXzRc4:APA91bH2uaY-F0PEjilrT7r4J3bFX-x20LtQiuDVYbicP6CupLEu2FBCO3uIf0LuaT7_5dEUXipAhYsqqHsgMlRiH5G1vwWRvfxSqmrwvKoKk1Krc_Pd7gsrzz1xcSPRI3ptwzyFtpeK', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#bea00cb4c5', 1, '2020-09-21 21:34:18', '2020-10-07 06:03:49'),
-(10, 'Chefrome', 'contactchefrome@gmail.com', 0.00, '$2y$10$C12d0roaY71ld77kx4YB/O7LRoX6N8Oo14uWSiJH/ER6O.yJ4Px7u', 'l3PdvSbJ7HphpsimQ8VqIVGIMpNAi3n0VaOLTixqD4Gm8ziNVIWgyEkadHg2', 'fG_ZzXQWQ5yhynO4um3Msx:APA91bFY85IrP9PIghb7dUIZrllFiCAGsRjcTCHoLsPsHTX3sDMKyCb9irr0i4EAGbRCZVh5ddZfHK8A_SPMm3jcaYmSVhDm4O_xOUbQe3iRyrSn_k6iwm5Ghtb8_31aNj1ioVcKqKMM', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#7207b6b9f7c94fd', 0, '2020-09-22 14:00:16', '2020-11-14 04:12:03'),
-(11, 'Rizwan Zaman', 'fromechef@gmail.com', 11261.30, '$2y$10$0j0mhDEDV7zoykEplOi5M.c.W5Sv8mGa2fAoPEa9NXAW6F2GTyj/S', 'U0yLJ0DCAmwJg44PZpwJEeCxSfx33RpWhrbUkf0M622kerp9brEGdltZiuLF', 'ePZ3tfZjT5mR6uijNoxjTX:APA91bElBvSnf7vHE9tmjKMxj3PV-wlYH_t0IQDKlFkK8x-nwkyMygeRM1zSMLSj1Db0xnNzWEAXEycLEqDQDrLZP0fuQKn5QO4cXWxAjCa-kGO5vw-RpX8oYoCscHQ1OK1xwZPIzC_B', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', '7truYxTZZChqPMwkYaGoAmtRRbSfSj7r7fkQoITjNmNUqjSjTJQtgafAVaGe', '#f111378264200b2', 0, '2020-09-22 14:20:52', '2020-11-26 03:29:41'),
-(12, 'prashant', 'shaan.prashant632@gmail.com', 0.00, '$2y$10$u7Bq95G7A./n.22.zw8Fz.AYc21X0g5ENW3aIJzt/ZvR1itO9VCKe', 'fISdUdDtzpOLmAoKEIAlEXDkpQRmQQSxddX5aIsmwCbPfAQbOP23INdq3Evq', 'driHCKy9TL-34J1UOmXyW4:APA91bG9t4z-bxpiOLhbg0LZs9F9WrwliCENIkycOET1iJ69h35HHpLIk6dN6Gsl46ris52K2JQHIDbEoH2CpQE_R_zHQJx3Gx7P6oPVxLz9W6xlI7O8Iqq6NtvehRzyHzQMOHLI0C1c', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-09-23 19:16:17', '2020-09-23 19:16:17'),
-(13, 'Krishna', 'Info@ssoftwares.in', 0.00, '$2y$10$bbupgZToa5lnpXBHqZwdieLoY0gzajLHUjDPl9bOf/Z0CNHsDV8Om', '4GwJ2iM0T9ULiF6RAZaY7mLoi3bo17UgKDfRSjwJaze3ZySEsijltvWVAiJi', 'eB3N4HpMRGqoTpJmLS1-2m:APA91bEi-G_NR_6KE7ze4BNjGiV8uq77OT-pldaBqf8FLkB8YM5lg0B8yJsMCKtDa5btyq6_vsDwppu3cA6HKFkeZyeHlDhuszu_kEGNP06769HyN4qXhnHINGeO84wH8_IEUcUM2XW_', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-09-25 10:59:56', '2020-09-25 10:59:56'),
-(14, 'arnav', 'akkiller167@gmail.com', 0.00, '$2y$10$FHb73logZrvhyCqX.HXAYO7fbkMkUsD8NyMe/TGBkuR/tPM/seOki', 'xQCmYMDPTUsNpeyiOHpkA9mvFyPYEPqfqspRocsJ7ScCnj9B22SL8wbi1c4v', 'fVy4F7zkQM6TCEOD7Ll9S2:APA91bFgJVFN1MZxf51r3mvUe1SDUdrTpsTR_cc44D4_LrxXWB6GQ2ypIpS0x_RJzRELANkY0J_cSFgxFBDBHUaVB3w_S28tYSRQZb5ATReAWElNwx9AjzhMa7CaMASIQVU2WXIIMg4Y', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-09-25 12:14:17', '2020-10-01 02:33:37'),
-(15, 'heuka', 'hemuka@gmail.com', 0.00, '$2y$10$l.oKxDb/p9X3OgqOj588MOWZsLmGdX5/PddwxgHrs6NonRDe1Mlna', 'LRyF0PD5cYjpABGvXdz97F1r4myGDMRrkQML1LNvYZR53InClDJFus81RyO3', 'kumuka', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-09-28 00:50:29', '2020-09-28 00:50:29'),
-(16, 'Tasneem Nikhat', 'tasneemnikhat305@gmail.com', 0.00, '$2y$10$kxLGOLpCyrMxGFS1s/Z9OeUVyqnintYhfExIulf4sJEcdcFRKthJa', 'H9bOQljU474PDKIFgoOzjMkXQXPN58Oe3D35M9KehObagXIcVDrlpJ8estvy', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-09-28 11:29:12', '2020-09-28 11:29:12'),
-(17, 'Saba Zaman', 'sabarizwanzaman@gmail.com', 11105.00, '$2y$10$bG31WIUPRbalf.JhmPifj.PprWpKNHm5xsUS6ZxpsgNaVV/uITkw2', 'kef9Rdk7OlaktXCyM88QuWXPL4g8So8yyUVh0mXpCEbye5gR00ZLKTQ3FKky', 'ffuAY2uZSr2DDHpmvNk_fO:APA91bEw-LdmRb3zQdf-1kERqrpBsbcsQs5qUbL1uXQ197RIkeCDV_6R6WTtFMibyZlmOpdJ-fNQh5A1LjWEtU1EYiF4H3fplqDGgouXpt1HRqP3XSV-gTGYK89d-IjBpQgeh1vdqYSz', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, 'f1507c93', 11, '2020-09-28 11:38:09', '2020-11-25 13:34:36'),
-(18, 'Surya Pratap', 'hellospss@gmail.com', 0.00, '$2y$10$aCtcAJwNrndHuQABAikNX.0tSQk6U77t8H8F1hIGn3GPX3mC6wFti', 'JEAelwxMuexD8oNceUiu1qKUKYlanEnpiBsRSf73VVrOQwVgeD7VQYn3uQIO', 'fVQNOWgRSyyls_elQ4LaPd:APA91bFV_wK9LTTNN8wYl9Q4m-PxKh3TpLY_mfVdP89l8lrVbck3PrcE6_ksTnv5-BmK42Wxwn8LqeFkULCqkqbhTd616inBkn1PUHJ8ms1Q7X-Qt6Ha5XXkRdEQrfZypWp0tUHpVP-o', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-09-29 00:19:01', '2020-09-29 05:51:38'),
-(19, 'Shatabdi Dutta', 'shatabdidutta03@gmail.com', 0.00, '$2y$10$CBVbCxgxMvTEajdKpREAqOEzagb705IOJ5S8A8FX.PRfQr5nrQjmW', 'ubOmSsTichp4k4yhLQFqYXoAqStF14YoySV6eTnEqtVxQwrgMS9PWQ1Vz4s6', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-09-29 00:43:25', '2020-09-29 00:43:25'),
-(20, 'Anwesha Sinha', 'stevia.teatech@gmail.com', 0.00, '$2y$10$gGiv7UVZbBrI5W.SfQuhfuiEBKywxSsxTHHOr991yggClIFE5jtYa', 'yIPqCXVBpUT16LmCzODIRagfLGG7Sc2qQwegq1KRpj3MkpdY4Qp18pyfBmA7', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-09-29 01:57:18', '2020-09-29 01:57:18'),
-(21, 'Sushmita Karmakar', 'sushmitatulu@gmail.com', 0.00, '$2y$10$dvFMFU1nrnQiaKgvzTM.JupkQ1K2sKXwExQpSySBae9ApQjeUUbza', 'L5ajeQAmuOnyvhfS3U3TLkbh1yA0pZ0EmvLA6SQm610D1mgi0ulHwuIABFYR', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-01 03:48:10', '2020-11-26 07:23:32'),
-(22, 'Tanuja Pal', 'tanujapal1@gmail.com', 0.00, '$2y$10$d1/Rc036AepZUtjFIOp2Eejhceii.YJSJwGG1d9YZjUu7XpSXa/6W', 'xEdfebDAADLytRioQdE24MsJVlXgVtHXEmWzJFTz387IqMoMbM62UsdSyHiX', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-01 03:53:00', '2020-10-01 03:53:00'),
-(23, 'Tahira Sarkar', 'contact@chocofantasygroup.com', 0.00, '$2y$10$oMBx2nADJZTlyjID32ybhufgjmGY8U5sF7hDSdTBXQaPFUSr/huNK', '4lfGnY5W6cAVIc1pMMJJnpkGccOxwEzYWR0PxlH8tMJoLnLemooJe6vEDYpH', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-01 03:57:31', '2020-10-01 03:57:31'),
-(24, 'Sarmistha Saha', 'sarmistha.saha79@gmail.com', 0.00, '$2y$10$GA61T2Kby66OTDQjzMp5CO3j5/v3b/FS0cp8jmpzLeiYw/9Mluijq', 'kEsnLiQIVY2ayJR2IevOxEObJxMw9HW0XKLFVUeQIWFOyfKYTH6OJ5HfnSHn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-01 04:01:00', '2020-10-01 04:01:00'),
-(25, 'Swatilekha Dash', 'dashswatilekha6@gmail.com', 0.00, '$2y$10$w0/PxUsQqkas5yOQkvS1AOKe3xbof4Vj47yT3ZqBv1Ww.322.uGaO', 'XvjVleAYuiFh1xhyipKrkZEspnTYpn29VG9ywmqUK4T38mRYcoVPQWyPKVg0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-01 04:17:47', '2020-10-01 04:17:47'),
-(26, 'Tahira Sarkar', 'tahira.chocofantasy@gmail.com', 0.00, '$2y$10$C8n4BvfDQNGFMOPesw/Ss.aCfJNGi0ZE0KrEtHGDoo/AegtmRhk4G', 'R7IcZ8UhAnPSDCprbW2XT5W6WLYQWv8cmkvtS5fqjRy9BRyNdRCICXB3peNc', 'c6VmanorQm2LB02F6SoYDZ:APA91bEpW-I6RL8u1QOKHSANlY2I9zHRZ802kPvPgQ4WXxw7GQezG0G5MHP6x9xUArPWUtlWsY5UGBk3X-PQeJWUxnxA6hUL1KAH0I6vQIv1ING0F1wvdPC_YMfMlOg771fv8-ZKzzBd', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-01 22:46:00', '2020-10-01 22:46:00'),
-(27, 'Ayesha', 'ashemistry32@gmail.com', 0.00, '$2y$10$9iuQ0WO3Uc2gZ.WjlCJFU.W4zcL.z.GD2foHv02qLyParNJpW.l/u', 'QmVkvLDTlHuW6tfIrK43Vh6xpbnoJSnKRRl6hR5x69ECOZzONG03IqCkEuDH', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-02 01:23:48', '2020-10-02 01:23:48'),
-(28, 'hi', 'hi@hi.com', 0.00, '$2y$10$PomGX/eKf0KPxeQEFFm7eO5tWrTZn4Tj3BpXILX.e.2SCAWU3YzIO', 'Ycdea34MdXkvXorrWNpE6wGT2gwxE5QnsMTtL63Q06xXqTi9En3bT6yuzA09', 'fVy4F7zkQM6TCEOD7Ll9S2:APA91bFgJVFN1MZxf51r3mvUe1SDUdrTpsTR_cc44D4_LrxXWB6GQ2ypIpS0x_RJzRELANkY0J_cSFgxFBDBHUaVB3w_S28tYSRQZb5ATReAWElNwx9AjzhMa7CaMASIQVU2WXIIMg4Y', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-02 10:06:51', '2020-10-02 10:06:51'),
-(29, 'Aradhya', 'aaruaradhya218@gmail.com', 0.00, '$2y$10$40Mn7vuavYpZNsrslLxQ...XJCufYxnYEAPV7a1CW/T68JCzkQ6X6', '8zT7n9oC722uA5yXbND8vb1uAYSHdzIXJsOF50DHfwHe8CvWVTkb0eoiRCuO', 'db61xKu5Sd63AF8qsN3sb3:APA91bFSZ_qYX8ATy3QU50aJstzd-9etwEMq95yzM0D5Y2sz8wJWgnamHStbel-UBr9H8tEzRzgSRYwQfNNORrECTcPJqryhyscZWIvzQiSlyMFtBe2KIo7mwfD0hSxS_kOJ6JLA0T4F', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#29ec65fba08f8e2', 0, '2020-10-03 01:12:20', '2020-10-23 11:34:55'),
-(30, 'Gopal Kumar', 'gopalkumarcrown@gmail.com', 0.00, '$2y$10$xHgpexBRUi4w1WdghNSaOuO3uAFmID1uHMAL8Gvllsznvsise4.5e', 'TbHOJsR1sURWnzgXGpwKCUv2NviDvtVlUOrLMPJHfTuNuYUbZaiaAGR9lGYS', 'dKWpw6rhQ_-uHdwRVP8eNI:APA91bGjNu02CNQtZT30gi8RCQk-9mAJw2wpGd_mI_opeIa_P52G-GlDh-ZKej7r_SBtK1iNgb7fMHkbv8LjKXKj6145_QHzlbtfYarIAgGrHsYXULLTnFD9w3fFO-ElHAl6ionv38R8', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-03 04:59:27', '2020-10-03 04:59:27'),
-(31, 'Amanda', 'amanda@gmail.com', 0.00, '$2y$10$2HigMDN0IV6GCZ3GlMHreu4sf2ehBjxBrWZLlo6t36uMl8cVjOtqq', 'znZRFEWe5Fbpm5QQaARgvD6LGBvj7HmMIRl7ADjOm1xSiuJMFgtYecjLkPmO', 'fGtV4f9PT8ef8nbtLwpPTi:APA91bF9NyQc1vzg9B2_-KF_LcmM_4Cw5qSDX6HkNXcyhrg02xSeSezMeLvHM1NP7VtcdG7480ecur8uHJ6ch10NErWFdP2o9AwoQU1USrrVcFyLMi1uCOmt5POqC3tH-9vPlKbbMpBU', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-05 04:52:00', '2020-10-05 04:52:00'),
-(32, 'Jafar Ali', 'jafarali221998@gmail.con', 0.00, '$2y$10$h7j71KvexgVilZEX0CeoZuD4MIPQDl9O8C.M9gZlPfW7J08N00mQu', 'LlTKZAmBLaeVnmdSJSCo7uoHhfIcfikC8o9kcBi9deKjclvTHKwobXicGszI', 'fsJdxTruRSKjPNHrJUOdvF:APA91bGn6WglOjaRexWH6GKeU1Tg12WrLIqHLi75uHBunn4tNH5-GtCjffso_x9KSfMtXKEpjGlvnDhj22mm_mng9uzWvu2nl1LoHiNSJ-VDUKCxUskzDfDYEa6X6xXsfJ6Uv3_Y-I8U', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#4b5e0894a1b1f', 0, '2020-10-07 03:37:41', '2020-10-07 03:38:06'),
-(33, 'Ashish', 'ashishktanna@gmail.com', 0.00, '$2y$10$2gPpKRalWn8rWR7rxb0X..kXsOf1f0aGIYVXGyJZVPfCMBcrBgL7q', 'mPIg5eQM1RcKbA3QEMrpZkcwH4yhzpueIwiytmrngfKwuFTqYk1gaxUtYCmK', 'fYbYczT6Q7C5ErQrUQxUFe:APA91bFGVj6wI2IAtXMo5RZEBWViYF4KxD9UCzpdMKFSj0yQMTJ90NH76qsIVfhXWREm_H4q0WLr61NK-w0ZR1LaXXjaAbit3SsfU9Y9SLkTCWCEIbkRpMiwQt1sdujEd6P62P_j4A6z', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-18 19:29:52', '2020-10-18 19:29:52'),
-(34, 'gaurav rajput', 'gs801620@gmail.com', 3000.00, '$2y$10$BNvcSbiEMjLDTKfW09XMSe5Iu9.9AuEAK4uXUSCcSiD1651bW7Ra6', 'P6e7eVHEOyuTzkDs0iaFwwWjJIuFOGz1Ks0GCtWOkCuw4HQlvD9c5t1FQYHm', 'fsZjdyUmTw2g5UPbuMLcsh:APA91bFjoE8mRr9HdUjkOQSWUgKSsyqM_sHJ6xnzXN9bA-k_JJ0DvExYXODo45WIDX2f6OSHBCiKZGDl1nJMnNsLe9ysZXnWOVdqP9sweoZbAa0ApvGqrqA3WcvccEWYP2MJHS1AvTpK', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#f236289fa4d42ad', 0, '2020-10-19 01:59:47', '2020-10-23 20:56:02'),
-(35, 'abc', 'abc123@gmail.com', 0.00, '$2y$10$jYdmkwhBqrhiO/vBrZuLJO8n.IcYfmGH6McpZVvTXpSFRl16NPDLm', 'jra8zuv90Y9Z8xc7PthhEs952WdBgG3XhfcNTM1KP2XXQ7LNCgj9YXhCE1tw', 'cygkGxkITGmG05cuwt-Uis:APA91bHKAMzRND7I_aaIAAqtn6LFqu-RN2CYwBrRozIMgo0zCLr7kctCsJPVK9C0YTRdFZZO_IYgnTSay1Rp7my4Ny1SQ6xy1hqVkVHzZm45Xe-wUzpnd66zJk8hRVk0Yzdy83G07kTS', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-20 12:24:25', '2020-10-20 12:24:25'),
-(36, 'Raja Bose', 'kingsuk123@rediffmail.com', 0.00, '$2y$10$.MzenDFvVG1WwlIkLIC5X.Vu6rT9Qg4J.AHu0AeKcWxn6M5p5ma6W', 'zG3utczldurCt8CDKA9Z3hqAKy9HRn8oi3y275gWEgnhjsMnIs2CVMtInJOP', 'fdE2KSUyRJu4CkK4fZfKh7:APA91bEF7RlDiUHhm4VkOWnnuoZAQZmZsYqZKzNpuCJ7dk59xpfGqJNWEskXROy3-AbOd8Z3BWGcaHuw7mDlz_GbGFoe_7vi6ryZKpGmSSgYp6pHpnWyLaR9cjWrpAnLMlIC6WWh9faP', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-21 05:48:04', '2020-10-21 05:48:04'),
-(37, 'kon', 'konark@fake.com', 575.49, '$2y$10$3JA1kdvEmyMiLMsa939f3.S/UXYA0UtBDHcGVAm34c1viy6j4CPHW', 'Rpm0vzD1pvW4vBtQnhErvb9mEskpc4Z8ymDWLfHNVNdEwbNYZRlZIBhqm4c4', 'c_mAGbPwRRekui7EUTvnQA:APA91bHdEhVXQUERZsHrlfCjBiPtupkWsMnebRt5IZjzf_pkRf6Vdu1m1OxbbLYsfpSIEQWZRgYW12Neu0vTwkHvRwuI_aCsiWw6Ct10RiE-uJ0HD9hFaynQx2VzFSBof-jiRRfJQRVE', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#460dfba1689d', 37, '2020-10-22 09:41:12', '2020-11-27 00:01:32'),
-(38, 'bbjjfd', 'bbh@ggh.jiii', 0.00, '$2y$10$hHXFmX4FKar877xMHr5WqOSiEDT1SBf7eV2jNEvK9SQL/2EhqyGd6', 'uU4LFw8SBfEaMrLgnT0z1fPSQzOudrhg8PlrFd8qJdLrxzsHjRuGDNvrh495', 'dy81mlD8SUCNc8AoSBvXyM:APA91bGk3DVjFAvn-YiEkRJ8lgjW8far-7aO4B-fBDENBdwUsEcaOC9viQ-zymkF_zXfUwIibM533OfIAwIv6Sfv62nwTlZm_qcp9KOL6kKD4LWD6OaMbTIUXKuZO2D-mqaxjyzoZqzb', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-23 10:18:01', '2020-10-23 10:18:01'),
-(39, 'Konark', 'konark@gmail.com', 0.00, '$2y$10$DR5z4c8JBI0YSYOngYBJlO/e1E3gOiQaDyBBrMgeFJBBPYmjl1n1C', 'cxBZeRL1pKWMaW86HnMzqxJTHje6boPmhWG0KjTYeTIhslkU3jQSMwgckiLl', 'd-ZLup8gQK-mq2NZtS2Jxi:APA91bGnCRMN6Jv4JTeKqSzrPv7We0pj4gizOIUxS7wqSHGckzwLL6O84q6ezbt2QkYj_wxkCzRCHyllZcifqTCgQjNqnUHsqDuOnWWIsfMYvQ3_-d2i5zwNHhRzLpIHB-9f-LgRov57', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#823a3d06212d74b', 0, '2020-10-23 10:45:02', '2020-10-23 10:45:19'),
-(40, 'jameel', 'jameelsir786@gmail.com', 0.00, '$2y$10$svo5ScN3cqUnBLHR4g93BeP7fpwuoDzzBHPDlGgK.DYL6dcdOhhea', 'TSNFbptjzthp4qPA846RYWJRm27qsmlDAgqGmat6kVXzpcL4N33kyv4mGJsE', 'ea1_baZvQTWhhjoCEgqe8O:APA91bH9lDxQZcJq7w3oWVyEntxN_LsnUvnMc7wPqwm9iygjl0wXUo7bCrmneKeQkZXRWYsb8z0tKr70Kk_kfuGpL6i_0E-FNYhJbMz6dH2maWXwe5ywV1mY-UX-j8ziNwTZ-am4jMxy', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-23 22:56:58', '2020-10-23 22:56:58'),
-(41, 'Abv', 'abc@abc.com', 0.00, '$2y$10$bVggDWhul2A4j6knd5RJ2uIBAewVNY.2aTEK41Ss5ZR0fiL6LzuVO', '8kWYuuhWEzGeMcSTqT7qluy4hF0J6VodruyL1CsVOcrIzCGEo4fCtYk3ziPw', 'dTqEGdECSfmjdpigC_JKL5:APA91bEG65Io1ESG1-45D6hg2RMwqMBssnLGwExQYJoiLTbCe7gd7VTHzHUOmx4z0HbbEXivLNox-ftRNYuD8uvOmA452tk2jIFSJudeJFMSdhuZR93ITOC4JKVrVEA7NCDHY3za-X4r', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-27 10:49:32', '2020-10-27 10:49:32'),
-(42, 'hdjdjddjjd', 'kk@gmail.com', 0.00, '$2y$10$rp76Pt93uUbT7KuMvsPO/u795i.wdjzjgWMeP4Qeh4kR5xd7mvWPO', 'fadCdKqCPJLh5sCnJUhfWIIeiIdcoLZSq3MKeOjDDiBKI1dVFOUhwJ3g1tgE', 'eLDcdWSqQN-2GomN7Ke3SR:APA91bHN4-3zs_aU6j6Iczo6YtpX8QZsaNs1DBMsV8SgSAsLL4o26fZcl-NbIitTtM9T9TEn3cBiKT2W5fmAPMgo8QQalnO9d0hDQBGBARJ83U9ZWCqW5hOiz5opKYqGzWffaV64l7eQ', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-28 07:40:35', '2020-10-28 07:40:35'),
-(43, 'znjssjs', 'gzhssy@jsjs.djsjsu', 0.00, '$2y$10$BkkYEehi9AuH4oo5fRgA8OA4nYladeLmxOh5vt3pG5WXpne0aOsDG', '0ITB3TRuoQYQEN4uG33NeziVt9kzK5o2zks1DKtkw1nLxCMxERM05k5HB3uK', 'eLDcdWSqQN-2GomN7Ke3SR:APA91bHN4-3zs_aU6j6Iczo6YtpX8QZsaNs1DBMsV8SgSAsLL4o26fZcl-NbIitTtM9T9TEn3cBiKT2W5fmAPMgo8QQalnO9d0hDQBGBARJ83U9ZWCqW5hOiz5opKYqGzWffaV64l7eQ', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-29 00:01:27', '2020-10-29 00:01:27'),
-(44, 'bzbsjsj', 'bshssj@hsjsus.sjsksk', 0.00, '$2y$10$ADgZu7oDE2RsJBDchhS4iu3NKnzuic1BRnLqUqIXq13fxopqS8PSG', 'SmKVXx3VW8EcYYdS3G2BlgzxgtA1p4Eo07jThn2w3sXEcFxwDn2pt5GOcFCj', 'eLDcdWSqQN-2GomN7Ke3SR:APA91bHN4-3zs_aU6j6Iczo6YtpX8QZsaNs1DBMsV8SgSAsLL4o26fZcl-NbIitTtM9T9TEn3cBiKT2W5fmAPMgo8QQalnO9d0hDQBGBARJ83U9ZWCqW5hOiz5opKYqGzWffaV64l7eQ', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-29 00:03:43', '2020-10-29 00:03:43'),
-(45, 'jsjsj@djdjjd.djdjd', 'sjjsj@sjjsjs.djsjjs', 0.00, '$2y$10$cq4s3igGPQ7CbRtMUAu.SuJjZZ6F6a2g0c4FNKZdtyrHRnm504wJ6', '1ovstyW3aVzfT65GTUSpI19Zd28J9ViqeugfxX7v6LNhIcSNzTftLast4x6w', 'eLDcdWSqQN-2GomN7Ke3SR:APA91bHN4-3zs_aU6j6Iczo6YtpX8QZsaNs1DBMsV8SgSAsLL4o26fZcl-NbIitTtM9T9TEn3cBiKT2W5fmAPMgo8QQalnO9d0hDQBGBARJ83U9ZWCqW5hOiz5opKYqGzWffaV64l7eQ', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-29 00:08:42', '2020-10-29 00:08:42'),
-(46, 'zjjjsjssj', 'hahs@jsjsjjs.jsjsjs', 0.00, '$2y$10$/FlMEKsYEJ6god3Z..wxcueRz.DskYZBOaAeAq9mfdukvyr85qHuS', 'g7HvZkD3Y0BO8hA0au1pxnQbs1hhnpeq1TOaYwbZneXIiLR4vXGgt7Yd6A2r', 'eLDcdWSqQN-2GomN7Ke3SR:APA91bHN4-3zs_aU6j6Iczo6YtpX8QZsaNs1DBMsV8SgSAsLL4o26fZcl-NbIitTtM9T9TEn3cBiKT2W5fmAPMgo8QQalnO9d0hDQBGBARJ83U9ZWCqW5hOiz5opKYqGzWffaV64l7eQ', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-29 00:10:06', '2020-10-29 00:10:06'),
-(47, 'jzjzsjjssk', 'shah@hsjs.jsjs', 754.00, '$2y$10$5yaMeGYEfp6BN4C6PeN7z.E43wb338DCRQCTJEi.ZESOzQnfBeuZC', '4Hfl1vULH4ckElDHtR3zDd9zJNfryzrvMpT0r0gEEbxDOhE9J7q4qpfC4FbB', 'eLDcdWSqQN-2GomN7Ke3SR:APA91bHN4-3zs_aU6j6Iczo6YtpX8QZsaNs1DBMsV8SgSAsLL4o26fZcl-NbIitTtM9T9TEn3cBiKT2W5fmAPMgo8QQalnO9d0hDQBGBARJ83U9ZWCqW5hOiz5opKYqGzWffaV64l7eQ', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-29 00:18:42', '2020-10-29 01:29:51'),
-(48, 'yy@gmail.com', 'kon@gmail.com', 0.00, '$2y$10$lbTHK/F46NWvJeWceWuVm.ieJ1o9qZQgf7kq4rc9Z7l/Onq3vlgVe', 'HK24W9n8EsLC1BUUCf5cIdfgXbAckHWcB6HDWu9gXarM0z2CFN89WxoDtkks', 'fKnkfnV2RuOlK25OaV14fN:APA91bFhi4MnHhq4BY-eNaKsbc6fTekI766pu8rsLTkKK4uMpzqRY72s8esdARybep6fr3QHDykXdxW1e6Ut5UDKYvbiXJ0erbafw0BdeJEeBzZN2N_t38d8L4ybIKq3CllAxL8_kIsU', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-10-29 04:56:56', '2020-10-29 04:56:56'),
-(49, 'jvcuucc', 'ufufuf@gufuuf.guuf', 0.00, '$2y$10$xQ5liPcRJdMbWM7NFdDs9ulvYHRUH5FRUQSN/lDjLF0cxmv0Uv/VG', 'xFJjWkuyaYxuCYPdj8bGIfEleUDdJL7bqBLKWCrAAAqzRL3JBucgToAQO69C', 'dRPPw1zOSuuU8A6VFdWXfP:APA91bEYlGarHcad0wn_yO0z3F-7u29nu7VPfQQFDvY9aN7uLmN9PgW7vdbgWZ09LnMbI9NfP6AfUJV5KK0-H8Kz6xKB_oayo7WxuRtOlmyadOgZWz4eqrTveERH23cN5ZAdLL8QgpJU', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-11-03 01:53:31', '2020-11-03 01:53:31'),
-(50, 'jvjcucu', 'hfufy@fug.ugu', 0.00, '$2y$10$K9WDcVerOZnIZsG856Q1nOCoIZIV9J1YomOQ3iMa5kiIgDRt5Fp4W', 'ZPziByncjt3mWKE2ImA7XNsReRYflIXs2d5Rr2PQB6BPjElCjuSrk0HXsSVM', 'dRPPw1zOSuuU8A6VFdWXfP:APA91bEYlGarHcad0wn_yO0z3F-7u29nu7VPfQQFDvY9aN7uLmN9PgW7vdbgWZ09LnMbI9NfP6AfUJV5KK0-H8Kz6xKB_oayo7WxuRtOlmyadOgZWz4eqrTveERH23cN5ZAdLL8QgpJU', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-11-03 01:55:18', '2020-11-03 01:55:18'),
-(51, 'd1', 'd1@demo.com', 0.00, '$2y$10$PCS7ib65rszFsQQqnOEvgu7i2BT27pvULSX1x9zOTF5JS3e/.0gUK', 'V2wGu0RuSOuPt4SLHT4uPM6oHmP01HxKDZYJaBnxKVtoBdd1VhiDSftsxRff', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-11-07 06:36:02', '2020-11-07 06:36:02'),
-(52, 'new Driver', 'driver@driver.com', 0.00, '$2y$10$z6R0B7Dwhm6dmd.8xKuhyOlFWfK/8ZLXv.iTZEtLLhV8I.GIWWcj2', 'zcy2nIZToa57BkmIs9OqAz5T4gCynYZAAc0qrZ4J4VHC4Y2znez6TgbP79uZ', 'dRPPw1zOSuuU8A6VFdWXfP:APA91bEYlGarHcad0wn_yO0z3F-7u29nu7VPfQQFDvY9aN7uLmN9PgW7vdbgWZ09LnMbI9NfP6AfUJV5KK0-H8Kz6xKB_oayo7WxuRtOlmyadOgZWz4eqrTveERH23cN5ZAdLL8QgpJU', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#3a956f0fe71ef20', 0, '2020-11-09 01:13:10', '2020-11-09 01:14:58'),
-(53, 'konark', 'kk@kk.kk', 0.00, '$2y$10$cqdqg2AQPdsUIvJGzn2nqObt89NvV6gZLvNKcgKY1UqZcqA1pl1Hm', 'YrHb3YiKS9JpHkl2xIWhEqCMHnsQelD6SG4Ipaiqnv3CtUYvXQfj9qB4Kdy1', 'd82WzAaeRImK7LAZlrmtWe:APA91bFtjyhNfnEonYfjKpUPWoTVZ4uXqWRwvCSOWHtZAU4mACY8D0oiPa_P6-5pZCkQkvxfhZU5veAt3HIrKbV8SVsQszZUX3Itm6yVuPRyIFqmXmCU0vH6bckRFR6KNN3T3lyi7j9r', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#f550aea6c84849e', 0, '2020-11-17 05:55:53', '2020-11-17 06:00:24'),
-(54, 'nitin', 'nittenbais@gmail.com', 0.00, '$2y$10$pSrom87bD4J7t0.oQNWY3eSJPqkCn2mHOb.s8xqYaf45McvG79gMy', 'rpd6miQD6qPsBuLNBGXwV3jAyQENbzTJsdSpbeYPAlOkUHcIBwcdSiSmmMMF', 'enulQDfSQg-QeAwvyKGAm3:APA91bHpCpVlf-N1A0DuWdRkJfD7tBpTMthCRF37rfpS_cG69D-iWjxzfuvqflSuvDKkXvcQBNiRhb0FLaUoMZPgzHI86uZae9_qgsN7k8hwdmctWUTOlughW1xhOQ5ptcT-KNJc-T1i', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-11-21 16:12:07', '2020-11-21 16:12:07'),
-(55, 'yolo', 'yo@gmail.com', 250.00, '$2y$10$Joe1ahcbWGvcr.AyWcR4M.FJSXHpw932RHY/dAWDsKp1R8gsSiGYu', 'oQgsuGEnPMgdAGn2g4vx2YTtBdfMSe0KSa3pE7xKPTfbkKAlullOSRjTaVX3', 'eQp6QakuSDO8bAwCMY_Ntp:APA91bETuBbV3F3ocNIavAf-Y6Dr36rWIxkpKtKYL1rK07bFzxl__cUAb_dBqj2lfG7NYLihO3AEKOGF4cLuRVUUIagPNozYwavMYTEzXiu7LxGMLqK-aHLOueXiaX3voTTck8FAOSE2', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#a447133cf82ed7b', 37, '2020-11-23 11:17:02', '2020-11-24 06:14:26'),
-(56, 'yy', 'y@y.y', 0.00, '$2y$10$ICBPXTbO4ll43Ft1Z0.jgu00iH4RvOPUFHi6b5XhWZVqMHUIMTC3u', 'cxmPggk29hFi8vYp9cBgFfWKV6wbgH2C32VOnIeR9RLURkrlNGNf7i6s3c51', 'eQp6QakuSDO8bAwCMY_Ntp:APA91bETuBbV3F3ocNIavAf-Y6Dr36rWIxkpKtKYL1rK07bFzxl__cUAb_dBqj2lfG7NYLihO3AEKOGF4cLuRVUUIagPNozYwavMYTEzXiu7LxGMLqK-aHLOueXiaX3voTTck8FAOSE2', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#6649ddb94355cd4', 37, '2020-11-24 04:59:58', '2020-11-24 05:00:09'),
-(57, 'djdj', 'r@r.r', 60.00, '$2y$10$xkmNk1C74udZGgnGZUtPhe8AUm6GFPb6Fl59k99wZXoXE91YLWYqK', 'BNYS7rGh9R3lJxvVuokKmoti26h5A8JK01Pyv5HtlVH4ER7ZIIRofKn4QB2a', 'eQp6QakuSDO8bAwCMY_Ntp:APA91bETuBbV3F3ocNIavAf-Y6Dr36rWIxkpKtKYL1rK07bFzxl__cUAb_dBqj2lfG7NYLihO3AEKOGF4cLuRVUUIagPNozYwavMYTEzXiu7LxGMLqK-aHLOueXiaX3voTTck8FAOSE2', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#725d70aaa780', 37, '2020-11-24 06:22:45', '2020-11-25 11:10:08'),
-(58, 'yolo', 'yolo@demo.com', 10.00, '$2y$10$UsthJ1ukljmcUhBlUeqeL.DajoojsYX1WAJHh3kZsm3BqoYbFaLly', 'HhNOdkUlOXISc4qWB1Ic3Kc15USPNA7NgDPRvHBDY6CXntxW5eaCCQiNZHfF', 'eQp6QakuSDO8bAwCMY_Ntp:APA91bETuBbV3F3ocNIavAf-Y6Dr36rWIxkpKtKYL1rK07bFzxl__cUAb_dBqj2lfG7NYLihO3AEKOGF4cLuRVUUIagPNozYwavMYTEzXiu7LxGMLqK-aHLOueXiaX3voTTck8FAOSE2', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#e64a71ebbd81edd', 0, '2020-11-25 11:21:41', '2020-11-25 11:25:13'),
-(59, 'bola', 'yolo@yolo.com', 110.00, '$2y$10$HyiS0GICYzCozVXR1T8ozekpOuRnHoPOljCmbzlNfLxyCjLl5qAA.', 'JyIanYRcZUZy846uOycbHX9D4LHU6nfNiLRxCNyKxRVRyEuzCBSYzXx2WMCZ', 'eQp6QakuSDO8bAwCMY_Ntp:APA91bETuBbV3F3ocNIavAf-Y6Dr36rWIxkpKtKYL1rK07bFzxl__cUAb_dBqj2lfG7NYLihO3AEKOGF4cLuRVUUIagPNozYwavMYTEzXiu7LxGMLqK-aHLOueXiaX3voTTck8FAOSE2', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#046855ad9e3f417', 58, '2020-11-25 11:23:32', '2020-11-25 11:29:34'),
-(60, 'Sanhati Sengupta', 'sanghatisngpt1@gmail.com', 0.00, '$2y$10$qsaTL33NeYytdeBDYRM3y.TirdFZua6V0b6n/gQGCuSjGenDvD2yS', 'DJB5NFMUxlWseBkP8jyncQtaRe8BvzKcAnHKXcMsiUabokqeYuRTcyJ2cwM0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-11-26 07:14:59', '2020-11-26 07:14:59'),
-(61, 'john', 'john@gmail.com', 1100.00, '$2y$10$9zI9M3PLfR/09F4QML/9tupntRWmMBzPAgbFReWSrqlFAgp04kewW', 'ICiHt3m3oTVVn9Vy9HWWB8HhogeLSQ2yCX4uo3oPYZwJg8GN2QSJCSn6C1X0', 'eQp6QakuSDO8bAwCMY_Ntp:APA91bETuBbV3F3ocNIavAf-Y6Dr36rWIxkpKtKYL1rK07bFzxl__cUAb_dBqj2lfG7NYLihO3AEKOGF4cLuRVUUIagPNozYwavMYTEzXiu7LxGMLqK-aHLOueXiaX3voTTck8FAOSE2', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#38ef51f0eb8e29a', 0, '2020-11-26 08:39:01', '2020-11-26 09:52:34'),
-(62, 'hohn1', 'john1@gmail.com', 1100.00, '$2y$10$0oqOIRR47D.XsnkyUA16SOsXVnoT/50g.xfJbREV0h42fvc.QEPna', 'KAszk7jO8aX5kS8iIBDdglbhQXrbAuAxb9s3dn9lgHrcc8efjXEO7s48RVgx', 'eQp6QakuSDO8bAwCMY_Ntp:APA91bETuBbV3F3ocNIavAf-Y6Dr36rWIxkpKtKYL1rK07bFzxl__cUAb_dBqj2lfG7NYLihO3AEKOGF4cLuRVUUIagPNozYwavMYTEzXiu7LxGMLqK-aHLOueXiaX3voTTck8FAOSE2', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#d94c3a8ebd551ee', 61, '2020-11-26 08:40:00', '2020-11-26 09:52:33'),
-(63, 'manish', 'manish@gmail.com', 2500.00, '$2y$10$G/Kk2zOsXzs2d0JVExFvGOqsrI.09JiD/HjTgM5nnK4IMtM.0VOMe', '6utYBGmW5q8k8QjU1SSphvEfkLCRjVQVLN95yBcevrNpgUCM4RUpyGCRZk5V', 'eQp6QakuSDO8bAwCMY_Ntp:APA91bETuBbV3F3ocNIavAf-Y6Dr36rWIxkpKtKYL1rK07bFzxl__cUAb_dBqj2lfG7NYLihO3AEKOGF4cLuRVUUIagPNozYwavMYTEzXiu7LxGMLqK-aHLOueXiaX3voTTck8FAOSE2', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#56505bc6571a4e1', 0, '2020-11-26 09:53:32', '2020-11-26 10:07:27'),
-(64, 'manish1', 'manish1@gmail.com', 2500.00, '$2y$10$4N/CcSnBe0Cge5Kw0UU/juxtmwfvzCaL95/L.GNQIyyG5O0ifbixC', 'SBqXH168m4hIWE6D4sUZchT3EhGxK0xlbcAnmsCXZ95KWI5uihmmyj7LMGTx', 'eQp6QakuSDO8bAwCMY_Ntp:APA91bETuBbV3F3ocNIavAf-Y6Dr36rWIxkpKtKYL1rK07bFzxl__cUAb_dBqj2lfG7NYLihO3AEKOGF4cLuRVUUIagPNozYwavMYTEzXiu7LxGMLqK-aHLOueXiaX3voTTck8FAOSE2', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#a9cc6466f61379b', 63, '2020-11-26 09:54:48', '2020-11-26 10:07:27'),
-(65, 'Aradhya', 'aradhya@gmail.com', 0.00, '$2y$10$zth5Xw9xHY8QAqxtI8PL8uaxmJFdpT7XsSPfg3ofJ1/CgJCZRWhC6', 'XTYs9KtdvbCmyBKDfEZrbfBwViFzy3U2xpNnMBOqEWlhR8i2Z11zl0RNIXQ5', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-11-27 00:13:02', '2020-11-27 00:13:02'),
-(66, 'anubhav', 'anubhav@gmail.com', 500.00, '$2y$10$gFBDLykYtIS.UehSN8Ql0uGsdtegHhmqqyqbYmc2Ba2uecKGYr7fi', 'uItJUb2KgAyGUJo09qnRXip5nkrzc4vzYTdsByPeEaJX5DZsd0W5VNy9B2o9', 'dZKhdAukRX-koBkdEGhIg4:APA91bEIidl8RIJweDtBadY5WjKw3iVOD5JjFM3Hg6X0cm2frPi0YJ6kpYwyAvEUHOVEggBGxYf-GO-rYMtF9rmGSwX-TjTRijuLVtTxc5WN2_HQ5h_B_4dag__nAQLE8gPeYz9bO75D', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#049bf89e950e6e9', 0, '2020-11-27 05:31:24', '2020-11-27 05:35:16'),
-(67, 'aunbv', 'anubhav1@gmail.com', 500.00, '$2y$10$Dxi01Eexf0kPR7CoO5oNWuKzSPackXAir8iGxs4nTZg4u9HpdJcmy', 'lUwgwR35WqvA0g8kkyhHS6Dvu7Za1aZxLP7drPSC1xm9XInlOtfIkir3rlMw', 'dZKhdAukRX-koBkdEGhIg4:APA91bEIidl8RIJweDtBadY5WjKw3iVOD5JjFM3Hg6X0cm2frPi0YJ6kpYwyAvEUHOVEggBGxYf-GO-rYMtF9rmGSwX-TjTRijuLVtTxc5WN2_HQ5h_B_4dag__nAQLE8gPeYz9bO75D', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#0743a77779f', 66, '2020-11-27 05:33:18', '2020-11-27 05:35:16'),
-(68, 'yolo', 'yolo112@gmail.com', 500.00, '$2y$10$n.B4HEsoMAOKzi8zOvJezupmJjXf.RoQ3jihQt2w6WeIqdvGWiPnq', '74DxrQ7MFDg0mOenfbb4ZPqFcCe4S81qM54ffcmxmAtrDaPRBP91SebEUO7s', 'dZKhdAukRX-koBkdEGhIg4:APA91bEIidl8RIJweDtBadY5WjKw3iVOD5JjFM3Hg6X0cm2frPi0YJ6kpYwyAvEUHOVEggBGxYf-GO-rYMtF9rmGSwX-TjTRijuLVtTxc5WN2_HQ5h_B_4dag__nAQLE8gPeYz9bO75D', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#ffb4d481643e583', 0, '2020-11-27 05:37:43', '2020-11-27 05:41:07'),
-(69, 'yoloo', 'yolo113@gmail.com', 500.00, '$2y$10$GL1lxPGQfHO1iDt5Ezn.1OiP37is56Shhh/Oj8SHE3HoxFwe5UB6.', 'XwngysRbE9lJdfHNTnzDlFL32DB90Mq6XN6zyQ0Y8qCfNVzHmNvbkgjY72gu', 'dZKhdAukRX-koBkdEGhIg4:APA91bEIidl8RIJweDtBadY5WjKw3iVOD5JjFM3Hg6X0cm2frPi0YJ6kpYwyAvEUHOVEggBGxYf-GO-rYMtF9rmGSwX-TjTRijuLVtTxc5WN2_HQ5h_B_4dag__nAQLE8gPeYz9bO75D', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#474c8e2fc4', 68, '2020-11-27 05:38:45', '2020-11-27 05:41:02');
+(6, 'Test Driver', 'driver1@demo.com', 0.00, '$2y$10$YF0jCx2WCQtfZOq99hR8kuXsAE0KSnu5OYSomRtI9iCVguXDoDqVm', 'zh9mzfNO2iPtIxj6k4Jpj8flaDyOsxmlGRVUZRnJqOGBr8IuDyhb3cGoncvS', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-03-30 00:28:04', '2020-03-30 00:28:04'),
+(7, 'surya pratap', 'sppro.20@gmail.com', 550.00, '$2y$10$kA9QBXbbqUW4hiYwT66gwe96vFX2nhL5kh/uycJUEdvILi/ypI1Fe', 'xCThbV9puWgrHqwB0HyjwY3t35YofSfJQRk2DVPZ7Yhgdi0YmTbjmcgEnwVm', 'dTocOt1VSWOwLL_2uc2SpL:APA91bFJE3DFMIKNCJ0G6zmx7whE8_zIvNSckZhLqqSTtNDa5Ico-r9me9RNR4iTZgKxUPl4fJ2FXJqphe8mEYfsdNnsL-0HjnQhvhlHrvZQLCulbiGtOuAsiodMhJj_zUyYnIrHxvwa', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, '#b2e3d3275e4b431', 0, '2020-09-19 21:58:14', '2020-11-28 00:23:44'),
+(18, 'Surya Pratap', 'hellospss@gmail.com', 0.00, '$2y$10$aCtcAJwNrndHuQABAikNX.0tSQk6U77t8H8F1hIGn3GPX3mC6wFti', 'JEAelwxMuexD8oNceUiu1qKUKYlanEnpiBsRSf73VVrOQwVgeD7VQYn3uQIO', 'fVQNOWgRSyyls_elQ4LaPd:APA91bFV_wK9LTTNN8wYl9Q4m-PxKh3TpLY_mfVdP89l8lrVbck3PrcE6_ksTnv5-BmK42Wxwn8LqeFkULCqkqbhTd616inBkn1PUHJ8ms1Q7X-Qt6Ha5XXkRdEQrfZypWp0tUHpVP-o', NULL, NULL, NULL, NULL, NULL, NULL, 'USER', NULL, NULL, 0, '2020-09-29 00:19:01', '2020-09-29 05:51:38');
 
 -- --------------------------------------------------------
 
@@ -3194,28 +2671,21 @@ CREATE TABLE `user_markets` (
 --
 
 INSERT INTO `user_markets` (`user_id`, `market_id`) VALUES
-(10, 8),
-(10, 9),
-(10, 10),
-(16, 11),
+(18, 8),
+(18, 9),
+(18, 11),
 (18, 12),
-(19, 13),
-(20, 14),
-(21, 15),
-(23, 16),
-(10, 17),
-(18, 18),
-(18, 19),
-(19, 20),
-(11, 21),
-(16, 22),
-(2, 23),
-(2, 24),
-(18, 25);
+(18, 13);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `afterpaysuccess`
+--
+ALTER TABLE `afterpaysuccess`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `app_settings`
@@ -3256,6 +2726,12 @@ ALTER TABLE `coupons`
 -- Indexes for table `currencies`
 --
 ALTER TABLE `currencies`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `current_driver_loc`
+--
+ALTER TABLE `current_driver_loc`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -3551,34 +3027,46 @@ ALTER TABLE `user_markets`
 --
 
 --
+-- AUTO_INCREMENT for table `afterpaysuccess`
+--
+ALTER TABLE `afterpaysuccess`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=267;
+
+--
 -- AUTO_INCREMENT for table `app_settings`
 --
 ALTER TABLE `app_settings`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=185;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=184;
 
 --
 -- AUTO_INCREMENT for table `carts`
 --
 ALTER TABLE `carts`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=212;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=105;
 
 --
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `coupons`
 --
 ALTER TABLE `coupons`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `currencies`
 --
 ALTER TABLE `currencies`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `current_driver_loc`
+--
+ALTER TABLE `current_driver_loc`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `custom_fields`
@@ -3590,25 +3078,25 @@ ALTER TABLE `custom_fields`
 -- AUTO_INCREMENT for table `custom_field_values`
 --
 ALTER TABLE `custom_field_values`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=175;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=138;
 
 --
 -- AUTO_INCREMENT for table `delivery_addresses`
 --
 ALTER TABLE `delivery_addresses`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `discountables`
 --
 ALTER TABLE `discountables`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT for table `drivers`
 --
 ALTER TABLE `drivers`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `drivers_payouts`
@@ -3620,13 +3108,13 @@ ALTER TABLE `drivers_payouts`
 -- AUTO_INCREMENT for table `earnings`
 --
 ALTER TABLE `earnings`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `ewallet_passbook`
 --
 ALTER TABLE `ewallet_passbook`
-  MODIFY `ewallet_passbook_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=225;
+  MODIFY `ewallet_passbook_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=163;
 
 --
 -- AUTO_INCREMENT for table `faqs`
@@ -3656,13 +3144,13 @@ ALTER TABLE `fields`
 -- AUTO_INCREMENT for table `galleries`
 --
 ALTER TABLE `galleries`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `markets`
 --
 ALTER TABLE `markets`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `markets_payouts`
@@ -3674,13 +3162,13 @@ ALTER TABLE `markets_payouts`
 -- AUTO_INCREMENT for table `market_reviews`
 --
 ALTER TABLE `market_reviews`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `media`
 --
 ALTER TABLE `media`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=308;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=270;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -3704,7 +3192,7 @@ ALTER TABLE `option_groups`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=129;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 
 --
 -- AUTO_INCREMENT for table `order_statuses`
@@ -3716,7 +3204,7 @@ ALTER TABLE `order_statuses`
 -- AUTO_INCREMENT for table `payments`
 --
 ALTER TABLE `payments`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=129;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 
 --
 -- AUTO_INCREMENT for table `permissions`
@@ -3728,19 +3216,19 @@ ALTER TABLE `permissions`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=98;
 
 --
 -- AUTO_INCREMENT for table `product_orders`
 --
 ALTER TABLE `product_orders`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=136;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 
 --
 -- AUTO_INCREMENT for table `product_reviews`
 --
 ALTER TABLE `product_reviews`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `roles`
@@ -3752,19 +3240,19 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT for table `slides`
 --
 ALTER TABLE `slides`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `uploads`
 --
 ALTER TABLE `uploads`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=143;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=132;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- Constraints for dumped tables

@@ -42,7 +42,7 @@ class UpdateOrderEarningTable
         if ($event->oldStatus != $event->updatedOrder->payment->status) {
             $this->earningRepository->pushCriteria(new EarningOfMarketCriteria($event->updatedOrder->productOrders[0]->product->market->id));
             $market = $this->earningRepository->first();
-//            dd($market);
+            //dd($market);
             $amount = 0;
 
             // test if order delivered to client
@@ -54,10 +54,12 @@ class UpdateOrderEarningTable
                     $market->total_orders++;
                     $market->total_earning += $amount;
                     $market->admin_earning += ($market->market->admin_commission / 100) * $amount;
-                    $market->market_earning += ($amount - $market->admin_earning);
+                    $tempAdminEarning = ($market->market->admin_commission / 100) * $amount;
+                    $market->market_earning += ($amount - $tempAdminEarning);
                     $market->delivery_fee += $event->updatedOrder->delivery_fee;
                     $market->tax += $amount * $event->updatedOrder->tax / 100;
                     $market->save();
+                    //dd($market);
                 } elseif ($event->oldStatus == 'Paid') {
                     $market->total_orders--;
                     $market->total_earning -= $amount;

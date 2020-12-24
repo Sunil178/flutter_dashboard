@@ -10,3 +10,7 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/chefrome/public_html/grocery/vendor/mockery/mockery/tests/Bootstrap.php on line 45
+[29-Nov-2020 07:05:59 UTC] PHP Fatal error:  Uncaught Exception: Please run "php composer.phar install" in root directory to setup unit test dependencies before running the tests in /home/chefrome/public_html/grocery/vendor/mockery/mockery/tests/Bootstrap.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/mockery/mockery/tests/Bootstrap.php on line 45

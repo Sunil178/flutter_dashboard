@@ -2,3 +2,11 @@
 Stack trace:
 #0 {main}
   thrown in /home/chefrome/public_html/grocery/vendor/anlutro/l4-settings/src/config/config.php on line 26
+[02-Dec-2020 15:45:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function storage_path() in /home/chefrome/public_html/grocery/vendor/anlutro/l4-settings/src/config/config.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/anlutro/l4-settings/src/config/config.php on line 26
+[05-Dec-2020 20:12:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function storage_path() in /home/chefrome/public_html/grocery/vendor/anlutro/l4-settings/src/config/config.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/chefrome/public_html/grocery/vendor/anlutro/l4-settings/src/config/config.php on line 26

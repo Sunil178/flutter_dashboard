@@ -21,6 +21,7 @@ use App\Repositories\PaymentRepository;
 use App\Repositories\ProductOrderRepository;
 use App\Repositories\UserRepository;
 use Carbon\Carbon;
+use DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Notification;
 use Prettus\Validator\Exceptions\ValidatorException;
@@ -88,17 +89,69 @@ abstract class ParentOrderController extends Controller
 
     abstract public function __init();
 
-    protected function createOrder()
+    protected function createOrder($userId)
     {
+        
         if (isset($this->order->payment->status)) {
-            $this->calculateTotal();
+            
+            $users = DB::table('afterpaysuccess')
+                     ->select('*')
+                     ->where('user_id',$userId)
+                     ->orderBy('id', 'DESC')
+                    ->first(); 
+                    $totall=$users->total;
+                    $payment_method=$users->method;
+                    $finaltax=$users->tax;
+                    $delivery_fee=$users->delivery_fee;
+                    $deliveryId=$users->deliveryId;
+                    
+            $this->calculateTotal($payment_method);
             $this->order->order_status_id = 1;
             try {
-                $orders = (collect($this->order))->only('user_id', 'order_status_id', 'tax', 'delivery_address_id', 'delivery_fee', 'hint')->toArray();
-                $order = $this->orderRepository->create($orders);
-                $this->order->id = $order->id;
+                
+                
+                $orders = (collect($this->order))->only('user_id', 'order_status_id', 'tax', 'delivery_fee', 'hint')->toArray();
+                
+                  $newOrder=array();
+                  $newOrder["user_id"]=$orders['user_id'];
+                  $newOrder["order_status_id"]=$orders['order_status_id'];
+                    $newOrder["tax"]=$orders['tax'];
+                    // $newOrder["swge_tax"]=$surge_tax;
+                      $newOrder["delivery_fee"]=$delivery_fee;
+                      //$newOrder["tip_amount"]=$tip_amount;
+                      if($deliveryId==0)
+                      {
+                          $newOrder["delivery_address_id"]=null;
+                      }
+                      else
+                      {
+                        $newOrder["delivery_address_id"]=$deliveryId;
+                      }
+                         $newOrder["total"]=$totall;
+                         $newOrder["finalTax"]=$finaltax;
+                        // print_r($newOrder);
+                        // exit;
+                // $order = $this->orderRepository->create($newOrder);
+                //  $insertAddData=DB::insert('insert into orders (user_id,order_status_id,tax,delivery_fee,delivery_address_id,total) values (?,?,?,?,?,?)', [$newOrder['user_id'],$newOrder['order_status_id'],$newOrder['tax'],$newOrder['delivery_fee'],$newOrder['delivery_address_id'],$newOrder['total']]);
+                 $insertAddData=DB::insert("INSERT INTO `orders` (`user_id`, `order_status_id`, `tax`, `delivery_fee`,`delivery_address_id`, `total`, `finalTax`) VALUES ($newOrder[user_id], $orders[order_status_id], $newOrder[tax], $delivery_fee, $newOrder[delivery_address_id],$totall,$finaltax)");
+                
+                
+                $lastId = DB::getPdo()->lastInsertId();
+                // print_r($lastId);
+                // exit;
+               // $order = $this->orderRepository->create($orders);
+                $this->order->id = $lastId;
                 $this->syncProducts();
                 $payment = $this->createPayment();
+                if($payment_method=='0')
+                {
+                $this->paymentRepository->update(['method' => 'Pay on Pickup'], $payment->id);
+                }
+                else
+                {
+                 $this->paymentRepository->update(['method' => 'Cash on Delivery'], $payment->id);
+                }
+              
                 $this->cartRepository->deleteWhere(['user_id' => $this->order->user_id]);
                 $this->orderRepository->update(['payment_id' => $payment->id], $this->order->id);
             } catch (ValidatorException $e) {

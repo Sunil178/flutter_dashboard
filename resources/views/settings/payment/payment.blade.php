@@ -57,30 +57,30 @@
     ?> 
           
                        
-                <div class="form-group row col-6">
-                  <form method="GET" >
+                <!--<div class="form-group row col-6">-->
+                <!--  <form method="GET" >-->
                      
-                     @csrf
-                    <div class="col-8">
-                        <table width="80%";>
-                            <tr>
-                                <td>
+                <!--     @csrf-->
+                <!--    <div class="col-8">-->
+                <!--        <table width="80%";>-->
+                <!--            <tr>-->
+                <!--                <td>-->
                       
                            
-                       </td>
-                       <td align="right">
+                <!--       </td>-->
+                <!--       <td align="right">-->
                        
-                        <div class="form-text text-muted">
+                <!--        <div class="form-text text-muted">-->
                             
-                             </form>
-                            </td>
-                            </tr>
-                            </table>
+                <!--             </form>-->
+                <!--            </td>-->
+                <!--            </tr>-->
+                <!--            </table>-->
                     
-                        </div>
+                <!--        </div>-->
                         
-                    </div>
-                </div>   
+                <!--    </div>-->
+                <!--</div>   -->
                 
                 
                 
@@ -119,8 +119,43 @@
         </form>
             </div>
             
+                     <?php
+        if(isset($_GET['maxcouponbutton'])) { 
+             $service_details3 = App\Helper\newhelper3::test($_GET['max_coupon_tax']);
+        } 
+        
+    ?>
             
+            <div class="row">
+                <h5 class="col-12 pb-4"><i class="mr-3 fa fa-money"></i>Max Coupon amount</h5>
+                <!-- surge Field -->
+                 <form method="GET" >
+                     @csrf
+                <div class="form-group row col-12">
+                    <p class="col-3 control-label text-right">
+                        <b>Max Coupon Amount</b>
+                        </p>
+                    <div class="col-5">
+                       <input type="text" class="form-control" name="max_coupon_tax"
+                       id="max_coupon_tax"placeholder="Enter Tax" value="<?php   $service_detailss4 = App\Helper\newhelper4::testtex(); ?>"
+                       >
+                        <div class="form-text text-muted">
+                            Insert Max Coupon amount Ex: 20 for (20₹)
+                        </div>
+                    </div>
+                    <div class="col-4 text-right">
+                       <input   class="btn btn-{{setting('theme_color')}}" type="submit"name="maxcouponbutton" value="Max Coupon Amount" >
+                       
+                        
+                    </div>
+                </div> 
+                
+                
+                
+        </form>
+            </div>
             
+        
             
             
             

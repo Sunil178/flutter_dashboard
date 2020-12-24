@@ -33,6 +33,7 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\Response;
 use Prettus\Validator\Exceptions\ValidatorException;
+use Carbon\Carbon;
 
 class OrderController extends Controller
 {
@@ -194,8 +195,21 @@ class OrderController extends Controller
         $taxAmount = $total * $order['tax'] / 100;
         $total += $taxAmount;
         $productOrderDataTable->id = $id;
-
-        return $productOrderDataTable->render('orders.show', ["order" => $order, "total" => $total, "subtotal" => $subtotal,"taxAmount" => $taxAmount]);
+        $userId = DB::table('orders')->where('id', $id)->first();
+        $USERIDB=$userId->user_id;
+        // echo $USERIDB;
+        // exit;
+       
+        //   print_r($users);
+        //   exit;
+                    $totall=$userId->total;
+                    //$totall=$users->total;
+                    //$payment_method=$users->method;
+                    $finaltax=$userId->finalTax;
+                    $delivery_fee=$userId->delivery_fee;
+                 //   $deliveryId=$users->deliveryId;
+    
+        return $productOrderDataTable->render('orders.show', ["order" => $order, "total" => $totall, "subtotal" => $subtotal,"taxAmount" => $finaltax,"deliveryfee" => $delivery_fee]);
     }
 
     /**
@@ -256,11 +270,7 @@ class OrderController extends Controller
         }
         $oldStatus = $oldOrder->payment->status;
         $input = $request->all();
-      //  print_r($input);
-        
-       
-       // exit;
-        
+  
         
         
         
@@ -281,9 +291,7 @@ class OrderController extends Controller
 
    $allowrefer = DB::table('orders')->where('user_id', $user_ID )->where('order_status_id',5)->first();
                  
-             //  print_r($allowrefer);
-            //   exit;
-
+             
     $sendersUSerID=$usersD[0]->applied_used_id;
 
                    if(empty($allowrefer))
@@ -291,44 +299,26 @@ class OrderController extends Controller
                          $allowreferD = DB::table('app_settings')->where('id', 184 )->get();
                          
 $ammounttoadd=$allowreferD[0]->value;
-                         $ch = curl_init();
-
-curl_setopt($ch, CURLOPT_URL,"https://chefrome.com/grocery/public/api/wallet/add");
-curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_POSTFIELDS,
-            "user_id=$user_ID&amount=$ammounttoadd&added_via='Referral code'");
-
-// In real life you should use something like:
-// curl_setopt($ch, CURLOPT_POSTFIELDS, 
-//          http_build_query(array('postvar1' => 'value1')));
-
-// Receive server response ...
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-$server_output = curl_exec($ch);
 
 
-curl_close ($ch);
 
-    $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL,"https://chefrome.com/grocery/public/api/wallet/add");
-curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_POSTFIELDS,
-            "user_id=$sendersUSerID&amount=$ammounttoadd&added_via='Referral code'");
 
-// In real life you should use something like:
-// curl_setopt($ch, CURLOPT_POSTFIELDS, 
-//          http_build_query(array('postvar1' => 'value1')));
 
-// Receive server response ...
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$ref="Referral code";
+ $this->wallet_add($user_ID,$ammounttoadd,$ref);
+                       
+                       
+    $this->wallet_add($sendersUSerID,$ammounttoadd,$ref);                    
+                       
+                       
+                       
+                       
+                        
 
-$server_output = curl_exec($ch);
-
-curl_close ($ch);
+   
                          
-                         // Route::post('wallet/add','WalletController@wallet_add');
+                     
                          
                         
                        }
@@ -478,4 +468,56 @@ curl_close ($ch);
             Log::error($e->getMessage());
         }
     }
+    
+    
+    
+    
+    
+    
+      public function wallet_add($user_ID,$ammounttoadd,$ref){
+        
+        
+        $user_id = $user_ID;
+        $amount = $ammounttoadd;
+        $added_via = $ref;
+        $trans_id = '#' . substr(md5(microtime()), rand(0, 26), 7);
+        $getUserOldAmt = DB::table('users')
+            ->where('id',$user_id)
+            ->first();
+        $net_amount = floatval($getUserOldAmt->ewallet_amount) + floatval($amount);
+        $save_net_price = DB::table('users')
+            ->where('id',$user_id)
+            ->update(['ewallet_amount' => $net_amount,'updated_at' => Carbon::now()]);
+        if ($save_net_price) {
+            $update_statement = DB::table('ewallet_passbook')
+                ->insertGetId([
+                    'user_id' => $user_id,
+                    'transaction_amount' => $amount,
+                    'transaction_id' => $trans_id,
+                    'transaction_type' => 'CREDITED',
+                    'message' => $amount. ' rupees has been credited to wallet via '.$added_via,
+                    'created_at' => Carbon::now(),
+                ]);
+            $getData = DB::table('ewallet_passbook')
+                ->join('users','users.id','=','ewallet_passbook.user_id')
+                ->where('ewallet_passbook.ewallet_passbook_id',$update_statement)
+                ->select('ewallet_passbook_id','transaction_id','message','transaction_type','name','email','ewallet_amount')
+                ->first();
+        return [
+            'status' => true,
+            'msg' => $amount. ' rupees has been credited to your wallet via '.$added_via,
+            'data' => $getData,
+        ];
+        } else {
+            return [
+                'status' => false,
+                'msg' => 'Whoops! internal error wallet amount is not saved',
+                'data' => [],
+            ];
+        }
+    }
+    
+    
+    
+    
 }

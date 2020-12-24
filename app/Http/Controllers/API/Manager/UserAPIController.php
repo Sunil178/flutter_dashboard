@@ -61,11 +61,15 @@ class UserAPIController extends Controller
                 // Authentication passed...
                 $user = auth()->user();
                 if (!$user->hasRole('manager')) {
-                    $this->sendError('User not driver', 401);
+                    $this->sendError('User not manger', 401);
+                   // return $this->sendResponse($user, 'User retrieved successfully');
                 }
+                else
+                {
                 $user->device_token = $request->input('device_token', '');
                 $user->save();
                 return $this->sendResponse($user, 'User retrieved successfully');
+                }
             }
         } catch (\Exception $e) {
             return $this->sendError($e->getMessage(), 401);
@@ -87,6 +91,13 @@ class UserAPIController extends Controller
                 'email' => 'required|unique:users|email',
                 'password' => 'required',
             ]);
+            
+             $userId = DB::table('users')->where('email', $useremail)->first();
+            if(!empty($userId))
+            {
+                 return $this->sendResponse($useremail, 'email already exist');
+            }
+            
             $user = new User;
             $user->name = $request->input('name');
             $user->email = $request->input('email');

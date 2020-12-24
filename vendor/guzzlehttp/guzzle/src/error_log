@@ -6,3 +6,4 @@
 [12-Nov-2020 06:57:31 UTC] PHP Fatal error:  Interface 'GuzzleHttp\Promise\PromisorInterface' not found in /home/chefrome/public_html/grocery/vendor/guzzlehttp/guzzle/src/Pool.php on line 20
 [26-Nov-2020 17:37:39 UTC] PHP Fatal error:  Interface 'GuzzleHttp\Promise\PromisorInterface' not found in /home/chefrome/public_html/grocery/vendor/guzzlehttp/guzzle/src/Pool.php on line 20
 [27-Nov-2020 08:00:53 UTC] PHP Fatal error:  Interface 'GuzzleHttp\ClientInterface' not found in /home/chefrome/public_html/grocery/vendor/guzzlehttp/guzzle/src/Client.php on line 26
+[29-Nov-2020 21:04:44 UTC] PHP Fatal error:  Interface 'GuzzleHttp\Promise\PromisorInterface' not found in /home/chefrome/public_html/grocery/vendor/guzzlehttp/guzzle/src/Pool.php on line 20

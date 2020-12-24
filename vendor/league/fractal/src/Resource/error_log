@@ -1,0 +1,5 @@
+[30-Nov-2020 16:09:11 UTC] PHP Fatal error:  Interface 'League\Fractal\Resource\ResourceInterface' not found in /home/chefrome/public_html/grocery/vendor/league/fractal/src/Resource/ResourceAbstract.php on line 16
+[01-Dec-2020 05:42:52 UTC] PHP Fatal error:  Class 'League\Fractal\Resource\ResourceAbstract' not found in /home/chefrome/public_html/grocery/vendor/league/fractal/src/Resource/Primitive.php on line 20
+[01-Dec-2020 17:25:37 UTC] PHP Fatal error:  Class 'League\Fractal\Resource\ResourceAbstract' not found in /home/chefrome/public_html/grocery/vendor/league/fractal/src/Resource/Item.php on line 21
+[02-Dec-2020 04:00:38 UTC] PHP Fatal error:  Class 'League\Fractal\Resource\ResourceAbstract' not found in /home/chefrome/public_html/grocery/vendor/league/fractal/src/Resource/Collection.php on line 24
+[03-Dec-2020 03:16:51 UTC] PHP Fatal error:  Class 'League\Fractal\Resource\ResourceAbstract' not found in /home/chefrome/public_html/grocery/vendor/league/fractal/src/Resource/NullResource.php on line 22

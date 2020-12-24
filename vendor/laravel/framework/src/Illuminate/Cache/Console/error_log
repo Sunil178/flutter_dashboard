@@ -5,3 +5,4 @@
 [26-Nov-2020 12:04:48 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Cache/Console/CacheTableCommand.php on line 9
 [27-Nov-2020 09:02:40 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Cache/Console/ClearCommand.php on line 11
 [27-Nov-2020 15:53:57 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Cache/Console/ForgetCommand.php on line 8
+[30-Nov-2020 11:41:34 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Cache/Console/ClearCommand.php on line 11

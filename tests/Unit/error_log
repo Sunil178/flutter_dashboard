@@ -8,3 +8,5 @@
 [31-Oct-2020 15:00:32 UTC] PHP Fatal error:  Class 'Tests\TestCase' not found in /home/chefrome/public_html/grocery/tests/Unit/ExampleTest.php on line 8
 [08-Nov-2020 18:47:52 UTC] PHP Fatal error:  Class 'Tests\TestCase' not found in /home/chefrome/public_html/grocery/tests/Unit/ExampleTest.php on line 8
 [09-Nov-2020 18:13:53 UTC] PHP Fatal error:  Class 'Tests\TestCase' not found in /home/chefrome/public_html/grocery/tests/Unit/ExampleTest.php on line 8
+[30-Nov-2020 09:38:08 UTC] PHP Fatal error:  Class 'Tests\TestCase' not found in /home/chefrome/public_html/grocery/tests/Unit/ExampleTest.php on line 8
+[03-Dec-2020 12:15:56 UTC] PHP Fatal error:  Class 'Tests\TestCase' not found in /home/chefrome/public_html/grocery/tests/Unit/ExampleTest.php on line 8

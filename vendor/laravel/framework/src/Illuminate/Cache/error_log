@@ -44,3 +44,8 @@
 [24-Nov-2020 01:40:00 UTC] PHP Fatal error:  Trait 'Illuminate\Support\InteractsWithTime' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Cache/RateLimiter.php on line 10
 [24-Nov-2020 07:13:48 UTC] PHP Fatal error:  Class 'Illuminate\Cache\TaggableStore' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Cache/MemcachedStore.php on line 10
 [24-Nov-2020 22:02:31 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Cache/CacheServiceProvider.php on line 8
+[05-Dec-2020 11:41:18 UTC] PHP Fatal error:  Trait 'Illuminate\Support\InteractsWithTime' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Cache/FileStore.php on line 12
+[05-Dec-2020 15:54:38 UTC] PHP Fatal error:  Trait 'Illuminate\Support\InteractsWithTime' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Cache/DynamoDbStore.php on line 16
+[06-Dec-2020 19:33:27 UTC] PHP Fatal error:  Class 'Illuminate\Cache\Repository' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Cache/TaggedCache.php on line 7
+[08-Dec-2020 16:12:13 UTC] PHP Fatal error:  Trait 'Illuminate\Support\InteractsWithTime' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Cache/DynamoDbStore.php on line 16
+[09-Dec-2020 12:40:22 UTC] PHP Fatal error:  Class 'Illuminate\Cache\TaggedCache' not found in /home/chefrome/public_html/grocery/vendor/laravel/framework/src/Illuminate/Cache/RedisTaggedCache.php on line 5
