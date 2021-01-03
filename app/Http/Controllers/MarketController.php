@@ -124,6 +124,9 @@ class MarketController extends Controller
         $customFields = $this->customFieldRepository->findByField('custom_field_model', $this->marketRepository->model());
         try {
             $market = $this->marketRepository->create($input);
+            // $lastId=DB::getPdo()->lastInsertId();
+            // print_r($lastId);
+            // exit;
             $market->customFieldsValues()->createMany(getCustomFieldsValues($customFields, $request));
             if (isset($input['image']) && $input['image']) {
                 $cacheUpload = $this->uploadRepository->getByUuid($input['image']);

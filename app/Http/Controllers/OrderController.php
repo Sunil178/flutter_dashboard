@@ -274,56 +274,47 @@ class OrderController extends Controller
         
         
         
-        
-        
-        
-        
+      if($input['order_status_id']=='5')
+      {
         
         
         
     $user_ID=$input['user_id'];
-           
+        
         $usersD = DB::table('users')
                      ->select('applied_used_id')
                      ->where('id', $user_ID)
                      ->get();
-       
+       if(!empty($usersD))
+       {
 
    $allowrefer = DB::table('orders')->where('user_id', $user_ID )->where('order_status_id',5)->first();
-                 
+           
+           
              
     $sendersUSerID=$usersD[0]->applied_used_id;
-
+if($sendersUSerID!=0)
+{
                    if(empty($allowrefer))
                        {
                          $allowreferD = DB::table('app_settings')->where('id', 184 )->get();
                          
 $ammounttoadd=$allowreferD[0]->value;
 
-
-
-
-
-
-$ref="Referral code";
- $this->wallet_add($user_ID,$ammounttoadd,$ref);
-                       
+    $ref="Referral code";
+    $this->wallet_add($user_ID,$ammounttoadd,$ref);
+    
                        
     $this->wallet_add($sendersUSerID,$ammounttoadd,$ref);                    
-                       
-                       
-                       
-                       
-                        
 
-   
-                         
-                     
-                         
                         
                        }
+           
+       }
+                       
+       }
 
-
+}
         
         
         
@@ -404,7 +395,9 @@ $ref="Referral code";
             $this->paymentRepository->update([
                 "status" => $input['status'],
             ], $order['payment_id']);
-            //dd($input['status']);
+          
+        //   print_r($order);
+        //   exit;
 
             event(new OrderChangedEvent($oldStatus, $order));
 
@@ -480,11 +473,23 @@ $ref="Referral code";
         $user_id = $user_ID;
         $amount = $ammounttoadd;
         $added_via = $ref;
+        
         $trans_id = '#' . substr(md5(microtime()), rand(0, 26), 7);
         $getUserOldAmt = DB::table('users')
             ->where('id',$user_id)
             ->first();
-        $net_amount = floatval($getUserOldAmt->ewallet_amount) + floatval($amount);
+            // print_r($getUserOldAmt);
+            if(empty($getUserOldAmt))
+            {
+                 $lol = '0'; 
+            }
+            else
+            {
+        $lol = $getUserOldAmt->ewallet_amount; 
+            }
+        
+        
+        $net_amount = floatval($lol) + floatval($amount);
         $save_net_price = DB::table('users')
             ->where('id',$user_id)
             ->update(['ewallet_amount' => $net_amount,'updated_at' => Carbon::now()]);

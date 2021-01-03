@@ -40,3 +40,4 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/traces_text.html.php on line 10
+[28-Dec-2020 00:08:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/chefrome/public_html/grocery/vendor/symfony/error-handler/Resources/views/logs.html.php on line 13

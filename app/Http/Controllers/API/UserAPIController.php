@@ -21,6 +21,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
 use Prettus\Validator\Exceptions\ValidatorException;
 use DB;
+use Mail;
 use Carbon\Carbon;
 
 class UserAPIController extends Controller
@@ -276,21 +277,106 @@ class UserAPIController extends Controller
         return $this->sendResponse($user, __('lang.updated_successfully', ['operator' => __('lang.user')]));
     }
 
-    function sendResetLinkEmail(Request $request)
+   
+
+function sendResetLinkEmail(Request $request)
     {
-        $this->validate($request, ['email' => 'required|email']);
-
-        $response = Password::broker()->sendResetLink(
-            $request->only('email')
-        );
-
-        if ($response == Password::RESET_LINK_SENT) {
-            return $this->sendResponse(true, 'Reset link was sent successfully');
-        } else {
-            return $this->sendError('Reset link not sent', 401);
+        
+            
+            // print_r($request->email);
+            // exit;
+            $this->validate($request, ['email' => 'required|email']);
+    $userCheck = DB::table('users')->where('email',$request->email)->first();
+    if(empty($userCheck))
+    {
+        return [
+               'status' => false,
+               'msg' => 'email doesnot exist',
+               'data' => []
+               ];
+    }
+    else
+    {
+        $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+        $pass = array(); //remember to declare $pass as an array
+        $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
+        for ($i = 0; $i < 6; $i++)
+        {
+            $n = rand(0, $alphaLength);
+            $pass[] = $alphabet[$n];
+             
+            
         }
+                $newpass= implode($pass); //turn the array into a string
+   
+    
+            $to_email = $request->email;
+            $subject = "Password Reset From Chefrome";
+            $body = "Your OTP for password reset is ".$newpass;
+            $headers = "From: ".env('MAIL_USERNAME');
+            // echo "sdaf";
+            
+            $dddddddddddddddd=mail($to_email, $subject, $body, $headers);
+            echo "$dddddddddddddddd";
+            if (mail($to_email, $subject, $body, $headers)) {
+                $updatedOtp=DB::statement("UPDATE `users` SET `resetPassOtp`='$newpass' WHERE `email`='$to_email'");
+                
+               if($updatedOtp=='1')
+               {
+           return [
+               'status' => true,
+               'msg' => 'reset otp sent',
+               'data' => $newpass
+               ];
+      
+               }
+               else
+               {
+                   return [
+               'status' => false,
+               'msg' => 'try again',
+               'data' => []
+               ];
+               }
+                
+                
+            } else {
+                 return [
+               'status' => false,
+               'msg' => 'try again',
+               'data' => []
+               ];
+      
+            }
+    }
+
 
     }
+    function resetpassotp(Request $request)
+    {
+        $input=$request->all();
+        // print_r($input['email']);
+        // exit;
+        $otpcheck = DB::table('users')->where('email',$input['email'])->where('resetPassOtp',$input['otp'])->first();
+        if(!empty($otpcheck))
+               {
+           return [
+               'status' => true,
+               'msg' => 'matched',
+               'data' => []
+               ];
+      
+               }
+               else
+               {
+                   return [
+               'status' => false,
+               'msg' => 'not matched try again',
+               'data' => []
+               ];
+               }
+    }
+
      function referCode($code,$id)
      {
          

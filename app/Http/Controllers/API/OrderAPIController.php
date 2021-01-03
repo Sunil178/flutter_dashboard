@@ -35,6 +35,7 @@ use Prettus\Repository\Criteria\RequestCriteria;
 use Prettus\Repository\Exceptions\RepositoryException;
 use Prettus\Validator\Exceptions\ValidatorException;
 use Stripe\Token;
+use Illuminate\Support\Facades\Mail;
 
 /**
  * Class OrderController
@@ -156,61 +157,61 @@ class OrderAPIController extends Controller
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse|mixed
      */
-    private function stripPayment(Request $request)
-    {
-        $input = $request->all();
-        $amount = 0;
-        try {
-            $user = $this->userRepository->findWithoutFail($input['user_id']);
-            if (empty($user)) {
-                return $this->sendError('User not found');
-            }
-            $stripeToken = Token::create(array(
-                "card" => array(
-                    "number" => $input['stripe_number'],
-                    "exp_month" => $input['stripe_exp_month'],
-                    "exp_year" => $input['stripe_exp_year'],
-                    "cvc" => $input['stripe_cvc'],
-                    "name" => $user->name,
-                )
-            ));
-            if ($stripeToken->created > 0) {
-                if (empty($input['delivery_address_id'])) {
-                    $order = $this->orderRepository->create(
-                        $request->only('user_id', 'order_status_id', 'tax', 'hint')
-                    );
-                } else {
-                    $order = $this->orderRepository->create(
-                        $request->only('user_id', 'order_status_id', 'tax', 'delivery_address_id', 'delivery_fee', 'hint')
-                    );
-                }
-                foreach ($input['products'] as $productOrder) {
-                    $productOrder['order_id'] = $order->id;
-                    $amount += $productOrder['price'] * $productOrder['quantity'];
-                    $this->productOrderRepository->create($productOrder);
-                }
-                $amount += $order->delivery_fee;
-                $amountWithTax = $amount + ($amount * $order->tax / 100);
-                $charge = $user->charge((int)($amountWithTax * 100), ['source' => $stripeToken]);
-                $payment = $this->paymentRepository->create([
-                    "user_id" => $input['user_id'],
-                    "description" => trans("lang.payment_order_done"),
-                    "price" => $amountWithTax,
-                    "status" => $charge->status, // $charge->status
-                    "method" => $input['payment']['method'],
-                ]);
-                $this->orderRepository->update(['payment_id' => $payment->id], $order->id);
+    // private function stripPayment(Request $request)
+    // {
+    //     $input = $request->all();
+    //     $amount = 0;
+    //     try {
+    //         $user = $this->userRepository->findWithoutFail($input['user_id']);
+    //         if (empty($user)) {
+    //             return $this->sendError('User not found');
+    //         }
+    //         $stripeToken = Token::create(array(
+    //             "card" => array(
+    //                 "number" => $input['stripe_number'],
+    //                 "exp_month" => $input['stripe_exp_month'],
+    //                 "exp_year" => $input['stripe_exp_year'],
+    //                 "cvc" => $input['stripe_cvc'],
+    //                 "name" => $user->name,
+    //             )
+    //         ));
+    //         if ($stripeToken->created > 0) {
+    //             if (empty($input['delivery_address_id'])) {
+    //                 $order = $this->orderRepository->create(
+    //                     $request->only('user_id', 'order_status_id', 'tax', 'hint')
+    //                 );
+    //             } else {
+    //                 $order = $this->orderRepository->create(
+    //                     $request->only('user_id', 'order_status_id', 'tax', 'delivery_address_id', 'delivery_fee', 'hint')
+    //                 );
+    //             }
+    //             foreach ($input['products'] as $productOrder) {
+    //                 $productOrder['order_id'] = $order->id;
+    //                 $amount += $productOrder['price'] * $productOrder['quantity'];
+    //                 $this->productOrderRepository->create($productOrder);
+    //             }
+    //             $amount += $order->delivery_fee;
+    //             $amountWithTax = $amount + ($amount * $order->tax / 100);
+    //             $charge = $user->charge((int)($amountWithTax * 100), ['source' => $stripeToken]);
+    //             $payment = $this->paymentRepository->create([
+    //                 "user_id" => $input['user_id'],
+    //                 "description" => trans("lang.payment_order_done"),
+    //                 "price" => $amountWithTax,
+    //                 "status" => $charge->status, // $charge->status
+    //                 "method" => $input['payment']['method'],
+    //             ]);
+    //             $this->orderRepository->update(['payment_id' => $payment->id], $order->id);
 
-                $this->cartRepository->deleteWhere(['user_id' => $order->user_id]);
+    //             $this->cartRepository->deleteWhere(['user_id' => $order->user_id]);
 
-                Notification::send($order->productOrders[0]->product->market->users, new NewOrder($order));
-            }
-        } catch (ValidatorException $e) {
-            return $this->sendError($e->getMessage());
-        }
+    //             Notification::send($order->productOrders[0]->product->market->users, new NewOrder($order));
+    //         }
+    //     } catch (ValidatorException $e) {
+    //         return $this->sendError($e->getMessage());
+    //     }
         
-        return $this->sendResponse($order->toArray(), __('lang.saved_successfully', ['operator' => __('lang.order')]));
-    }
+    //     return $this->sendResponse($order->toArray(), __('lang.saved_successfully', ['operator' => __('lang.order')]));
+    // }
 
     /**
      * @param Request $request
@@ -218,6 +219,7 @@ class OrderAPIController extends Controller
      */
     private function cashPayment(Request $request)
     {
+        
          
         $input = $request->all();
         // print_r($input);
@@ -248,14 +250,16 @@ class OrderAPIController extends Controller
             $order = $this->orderRepository->create(
                 $request->only('user_id', 'order_status_id', 'tax', 'delivery_address_id', 'delivery_fee', 'hint','total','finalTax')
             );
-            
-            
             Log::info($input['products']);
             foreach ($input['products'] as $productOrder) {
                 $productOrder['order_id'] = $order->id;
                 $amount += $productOrder['price'] * $productOrder['quantity'];
                 $this->productOrderRepository->create($productOrder);
             }
+            // echo $i;
+            // print_r($ddd);
+            //     exit;
+            
             $amount += $order->delivery_fee;
             $amountWithTax = $amount + ($amount * $order->tax / 100);
             $payment = $this->paymentRepository->create([
@@ -275,7 +279,342 @@ class OrderAPIController extends Controller
         } catch (ValidatorException $e) {
             return $this->sendError($e->getMessage());
         }
+        
+        $d=$order->user_id;
+          
+$orderID=$order->id;
 
+$addressid=$request->delivery_address_id;
+$address = DB::table('delivery_addresses')
+             ->select(DB::raw('*'))
+             ->where('id', '=', $addressid)
+             ->first();
+             
+//  print_r($address->address);
+//  exit;
+
+
+
+$users = DB::table('users')
+             ->select(DB::raw('*'))
+             ->where('id', '=', $d)
+             ->first();
+
+// print_r($users);
+// exit;
+$users->name;
+
+
+$iteminorder=DB::table('product_orders')
+             ->select(DB::raw('*'))
+             ->where('order_id', '=', $orderID)
+             ->get();
+
+$to = $users->email;
+$subject = "Order Confirmed";
+$itemHTMl=array();
+// print_r($iteminorder);
+// exit;
+$totalAMount=0;
+foreach($iteminorder as $item)
+{
+    $item->product_id;
+    $itemName=DB::table('products')
+             ->select(DB::raw('*'))
+             ->where('id', '=', $item->product_id)
+             ->first();
+            //  print_r($itemName);
+            //  exit;
+$itemHTMl[]="<tr class='item'>
+                <td>".
+                    $itemName->name
+                ."</td>
+                <td>". $item->quantity."
+                
+                </td>
+                <td>
+                   ₹". $item->quantity*$item->price."
+                </td>
+            </tr>";
+            
+            $totalAMount+=$item->quantity*$item->price;
+            
+}
+$deliveryFee=$request->delivery_fee;
+$finalTax=$request->finalTax;
+$surgecharge=$request->swge_tax;
+$tipamount=$request->tip_amount;
+$totalAMount=$deliveryFee+$finalTax+$surgecharge+$tipamount;
+
+        $newwwwwwwwww=    implode($itemHTMl );
+        // echo $newwwwwwwwww;
+        // // exit;
+$message = "
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    
+    <style>
+    .invoice-box {
+        max-width: 800px;
+        margin: auto;
+        padding: 30px;
+        border: 1px solid #eee;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+        color: #555;
+    }
+    
+    .invoice-box table {
+        width: 100%;
+        line-height: inherit;
+        text-align: left;
+    }
+    
+    .invoice-box table td {
+        padding: 5px;
+        vertical-align: top;
+    }
+    
+    .invoice-box table tr td:nth-child(2) {
+        text-align: right;
+    }
+    
+    .invoice-box table tr.top table td {
+        padding-bottom: 20px;
+    }
+    
+    .invoice-box table tr.top table td.title {
+        font-size: 45px;
+        line-height: 45px;
+        color: #333;
+    }
+    
+    .invoice-box table tr.information table td {
+        padding-bottom: 40px;
+    }
+    
+    .invoice-box table tr.heading td {
+        background: #eee;
+        border-bottom: 1px solid #ddd;
+        font-weight: bold;
+    }
+    
+    .invoice-box table tr.details td {
+        padding-bottom: 20px;
+    }
+    
+    .invoice-box table tr.item td{
+        border-bottom: 1px solid #eee;
+    }
+    
+    .invoice-box table tr.item.last td {
+        border-bottom: none;
+    }
+    
+    .invoice-box table tr.total td:nth-child(2) {
+        border-top: 2px solid #eee;
+        font-weight: bold;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .invoice-box table tr.top table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+        
+        .invoice-box table tr.information table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+    }
+    
+    /** RTL **/
+    .rtl {
+        direction: rtl;
+        font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    }
+    
+    .rtl table {
+        text-align: right;
+    }
+    
+    .rtl table tr td:nth-child(2) {
+        text-align: left;
+    }
+    </style>
+</head>
+
+<body>
+    <div class='invoice-box'>
+        <table cellpadding='0' cellspacing='0'>
+            <tr class='top'>
+                <td colspan='2'>
+                    <table>
+                        <tr>
+                            <td class='title'>
+                                &nbsp;
+                            </td>
+                            <td>&nbsp;</td>
+                            <td align ='right'>
+                                Invoice #: ". $orderID ."<br>
+                                Created: ". date("l jS \of F Y") ."<br>
+                                Time:".date("h:i:s A")."<br>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <tr class='information'>
+                <td colspan='2'>
+                    <table>
+                        <tr>
+                            <td>
+                            <div style='width:230px;word-wrap: break-word;'>
+                                ". $address->address ."
+                            </td>
+                            <td>&nbsp;</td>
+                            <td align ='right'>
+                               " .$users->name."<br>
+                                ".$users->email."
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            
+            
+            <tr class='heading'>
+                <td>
+                    Item
+                </td>
+                <td>
+                Quantity
+                </td>
+                <td>
+                    Price
+                </td>
+            </tr>
+            ". $newwwwwwwwww  ."
+            
+            <tr class='total'>
+            <td></td><td>Delivery Fee:</td>
+            <td>
+             ₹".$deliveryFee."
+            
+                      
+            </td>
+            </tr>
+            <tr class='total'>
+            <td></td><td>Tax: </td>
+            <td>
+            ₹".$finalTax."
+            
+                       
+            </td>
+            </tr>
+            <tr class='total'>
+            <td></td><td>Surge Charge:</td>
+            <td>
+             ₹".$surgecharge."
+                       
+            </td>
+            </tr>
+            <tr class='total'>
+            <td></td><td>Tip Amount:</td>
+            <td>
+             ₹".$tipamount."
+            
+                   
+            </td>
+            </tr>
+            <tr class='total'>
+                <td></td><td>Total:</td>
+                
+                <td>
+                    ₹". $totalAMount ."
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+";
+
+// Always set content-type when sending HTML email
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+// More headers
+$headers = "From: ".env('MAIL_USERNAME');
+$headers .= 'Cc: info@chefrome.com' . "\r\n";
+
+mail($to,$subject,$message,$headers);
+
+if (mail($to,$subject,$message,$headers)) {
+    // echo "Email successfully sent to ...";
+} else {
+    // echo "Email sending failed...";
+}
+         $appid = "93c4eeaa-a438-4422-934a-065079c79344";
+	    $apikey = "ZTYwNGQzYWQtOWM1NC00NTI2LWJhOTAtNDA3ZjFkODY2OWIw";
+
+$segment = 'Subscribed Users';
+ 
+
+$content = array(
+	        "en" => "An Order Received"
+	        );
+	    $headings = array(
+	        "en" => "New Order"	 
+	        );
+		$fields = array(
+	        'app_id' => $appid,
+	        'included_segments' => array($segment),
+	       // 'data' => array(),
+	       // 'big_picture' => $img,
+	        'web_url'=>"https://grocery.chefrome.com/orders",
+	        'headings' => $headings,
+	        'contents' => $content
+		);
+
+
+
+
+		
+	    $fields = json_encode($fields);
+
+		
+		$header = array('Content-Type: application/json; charset=utf-8',
+	                                               'Authorization: Basic ZTYwNGQzYWQtOWM1NC00NTI2LWJhOTAtNDA3ZjFkODY2OWIw');
+	    $ch = curl_init();
+	    curl_setopt($ch, CURLOPT_URL, "https://onesignal.com/api/v1/notifications");
+	    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+	    curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+	    curl_setopt($ch, CURLOPT_HEADER, FALSE);
+	    curl_setopt($ch, CURLOPT_POST, TRUE);
+	    curl_setopt($ch, CURLOPT_POSTFIELDS, $fields);
+	    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);    
+
+	    $response = curl_exec($ch);
+	    curl_close($ch);
+
+// 	    $result_data = json_decode($response, true);
+		
+// 		return $result_data;
+
+        
+        
+        
+        
+        
         return $this->sendResponse($order->toArray(), __('lang.saved_successfully', ['operator' => __('lang.order')]));
     }
 
@@ -359,43 +698,7 @@ class OrderAPIController extends Controller
                                         'created_at' => Carbon::now(),
                                     ]);    
                         }
-                //         $ch = curl_init();
-
-                //         curl_setopt($ch, CURLOPT_URL,"https://chefrome.com/grocery/public/api/wallet/add");
-                //         curl_setopt($ch, CURLOPT_POST, 1);
-                //         curl_setopt($ch, CURLOPT_POSTFIELDS,
-                //                     "user_id=$user_ID&amount=$ammounttoadd&added_via='ReferelCode'");
-                        
-                //         // In real life you should use something like:
-                //         // curl_setopt($ch, CURLOPT_POSTFIELDS, 
-                //         //          http_build_query(array('postvar1' => 'value1')));
-                        
-                //         // Receive server response ...
-                //         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                        
-                //         $server_output = curl_exec($ch);
-                        
-                //         curl_close ($ch);
-
-                //         $ch = curl_init();
-
-                // curl_setopt($ch, CURLOPT_URL,"https://chefrome.com/grocery/public/api/wallet/add");
-                // curl_setopt($ch, CURLOPT_POST, 1);
-                // curl_setopt($ch, CURLOPT_POSTFIELDS,
-                //             "user_id=$sendersUSerID&amount=$ammounttoadd&added_via='ReferelCode'");
-                
-                // // In real life you should use something like:
-                // // curl_setopt($ch, CURLOPT_POSTFIELDS, 
-                // //          http_build_query(array('postvar1' => 'value1')));
-                
-                // // Receive server response ...
-                // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                
-                // $server_output = curl_exec($ch);
-                
-                // curl_close ($ch);
-                                         
-                         // Route::post('wallet/add','WalletController@wallet_add');
+               
                          
                         
                        }

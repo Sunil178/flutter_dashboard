@@ -54,6 +54,7 @@ Route::post('emailExist', 'API\UserAPIController@existEmail');
    Route::get('ordersdriver/{id}', 'OrderController@driverData')->name('ordersdriver.driverData');
 
 Route::post('register', 'API\UserAPIController@register');
+Route::post('register', 'API\UserAPIController@register');
 Route::post('send_reset_link_email', 'API\UserAPIController@sendResetLinkEmail');
 Route::get('user', 'API\UserAPIController@user');
 Route::get('logout', 'API\UserAPIController@logout');

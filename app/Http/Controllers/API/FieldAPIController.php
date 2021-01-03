@@ -45,6 +45,16 @@ class FieldAPIController extends Controller
         }
         $fields = $this->fieldRepository->all();
 
+
+
+
+
+// exit;
+
+
+
+
+
         return $this->sendResponse($fields->toArray(), 'Fields retrieved successfully');
     }
 

@@ -179,7 +179,15 @@
     <script src="{{asset('https://www.gstatic.com/firebasejs/7.2.0/firebase-messaging.js')}}"></script>
 
     <script type="text/javascript">@include('vendor.notifications.init_firebase')</script>
-
+<!--<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>-->
+<!--<script>-->
+<!--  window.OneSignal = window.OneSignal || [];-->
+<!--  OneSignal.push(function() {-->
+<!--    OneSignal.init({-->
+<!--      appId: "93c4eeaa-a438-4422-934a-065079c79344",-->
+<!--    });-->
+<!--  });-->
+<!--</script>-->
     <script type="text/javascript">
         const messaging = firebase.messaging();
         navigator.serviceWorker.register("{{url('firebase/sw-js')}}")
