@@ -1,5 +1,0 @@
-[01-Oct-2020 10:04:48 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/chefrome/public_html/grocery/app/Entities/UploadRepository.php on line 14
-[24-Oct-2020 09:29:17 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/chefrome/public_html/grocery/app/Entities/UploadRepository.php on line 14
-[08-Nov-2020 18:38:53 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/chefrome/public_html/grocery/app/Entities/UploadRepository.php on line 14
-[19-Nov-2020 13:17:54 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/chefrome/public_html/grocery/app/Entities/UploadRepository.php on line 14
-[08-Dec-2020 01:05:41 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/chefrome/public_html/grocery/app/Entities/UploadRepository.php on line 14

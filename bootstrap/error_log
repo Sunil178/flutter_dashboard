@@ -1,4 +1,0 @@
-[30-Nov-2020 21:19:13 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/chefrome/public_html/grocery/bootstrap/app.php:14
-Stack trace:
-#0 {main}
-  thrown in /home/chefrome/public_html/grocery/bootstrap/app.php on line 14

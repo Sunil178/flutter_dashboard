@@ -1,5 +1,5 @@
 /laravel_application.zip
-/storage
+/storage/*key
 /.idea
 /.vscode
 /.vagrant

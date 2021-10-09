@@ -88,7 +88,7 @@ class OrderAPIController extends Controller
             $this->orderRepository->pushCriteria(new RequestCriteria($request));
             $this->orderRepository->pushCriteria(new LimitOffsetCriteria($request));
             $this->orderRepository->pushCriteria(new OrdersOfStatusesCriteria($request));
-            $this->orderRepository->pushCriteria(new OrdersOfUserCriteria(auth()->id()));
+            // $this->orderRepository->pushCriteria(new OrdersOfUserCriteria(auth()->id()));
         } catch (RepositoryException $e) {
             return $this->sendError($e->getMessage());
         }
@@ -222,8 +222,7 @@ class OrderAPIController extends Controller
         
          
         $input = $request->all();
-        // print_r($input);
-        // exit;
+        
             $wallet=$input['isWallet'];
           if($wallet=='1')
           {
@@ -236,7 +235,8 @@ class OrderAPIController extends Controller
              $description=trans("lang.payment_order_waiting");
           }
         $amount = 0;
-      if($request->delivery_address_id=null || $request->delivery_address_id="null")
+       
+      if($request->delivery_address_id==null || $request->delivery_address_id=="null")
       {
         //   echo "sdafdsf";
         //   exit;
@@ -247,19 +247,27 @@ class OrderAPIController extends Controller
       
     //   exit;
         try {
-            $order = $this->orderRepository->create(
+             $order = $this->orderRepository->create(
                 $request->only('user_id', 'order_status_id', 'tax', 'delivery_address_id', 'delivery_fee', 'hint','total','finalTax')
             );
+            
+            $checkOrder=DB::table('product_orders')->where('order_id', $order->id)->delete();
+           
             Log::info($input['products']);
+            $checkNeworder=array();
             foreach ($input['products'] as $productOrder) {
                 $productOrder['order_id'] = $order->id;
                 $amount += $productOrder['price'] * $productOrder['quantity'];
                 $this->productOrderRepository->create($productOrder);
+                $checkNeworder[]=$productOrder;
             }
             // echo $i;
             // print_r($ddd);
             //     exit;
-            
+            // print_r($input['products']);
+            // echo "\n";
+            // print_r($checkNeworder);
+            // exit;
             $amount += $order->delivery_fee;
             $amountWithTax = $amount + ($amount * $order->tax / 100);
             $payment = $this->paymentRepository->create([
@@ -289,10 +297,8 @@ $address = DB::table('delivery_addresses')
              ->select(DB::raw('*'))
              ->where('id', '=', $addressid)
              ->first();
-             
-//  print_r($address->address);
-//  exit;
-
+        // print_r($addressid);
+   
 
 
 $users = DB::table('users')
@@ -554,7 +560,7 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
 // More headers
 $headers = "From: ".env('MAIL_USERNAME');
-$headers .= 'Cc: info@chefrome.com' . "\r\n";
+$headers .= 'Cc: info@bpay.onlinehappylife.com' . "\r\n";
 
 mail($to,$subject,$message,$headers);
 
@@ -652,6 +658,11 @@ $content = array(
              //   exit;
 
             $sendersUSerID=$usersD[0]->applied_used_id;
+            if($sendersUSerID!='0')
+            
+                
+                {
+            
                    if(empty($allowrefer))
                     {
                         if($input['order_status_id']==5){
@@ -703,6 +714,7 @@ $content = array(
                         
                        }
   }
+  }
 
 
 
@@ -711,28 +723,57 @@ $content = array(
             $order = $this->orderRepository->update($input, $id);
             
           if (array_key_exists("active",$input))
-  {
-      if($input['active']==0)
-      {
-          $affected = DB::table('orders')
-              ->where('id', $id)
-              ->update(['active' => 0]);
-      }
-  }
+          {
+              if($input['active']==0)
+              {
+                  $affected = DB::table('orders')
+                      ->where('id', $id)
+                      ->update(['active' => 0]);
+              }
+          }
             if (isset($input['order_status_id']) && $input['order_status_id'] == 5 && !empty($order)) {
                 $this->paymentRepository->update(['status' => 'Paid'], $order['payment_id']);
                 
                 
-            
-         
-            
-                
-                
-              
-               
-         
             }
-            event(new OrderChangedEvent($oldStatus, $order));
+            $this->earning($oldStatus,$id,$input['order_status_id']);
+            // print_r($oldStatus);
+            // echo "<br>";
+            // print_r($order);
+            // exit;
+            // event(new OrderChangedEvent($oldStatus, $order));
+            
+            
+            
+            //earning 
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            //complete
 
             if (setting('enable_notifications', false)) {
                 if (isset($input['order_status_id']) && $input['order_status_id'] != $oldOrder->order_status_id) {
@@ -753,5 +794,122 @@ $content = array(
 
         return $this->sendResponse($order->toArray(), __('lang.saved_successfully', ['operator' => __('lang.order')]));
     }
+        
+        
+    public function earning($old,$orderID,$statusId)
+    {
+       
+        if ($old != 'Paid') {
+            
+            $ProductID = DB::table('product_orders')
+            ->where('order_id',$orderID)
+            ->get();
+            
+             $marketId = DB::table('products')
+            ->select('market_id')
+            ->where('id',$ProductID[0]->product_id)
+            ->first();
+            
+              $earning= DB::table('earnings')
+            ->where('market_id',$marketId->market_id)
+            ->first();
+            
+            $marketData= DB::table('markets')
+            ->where('id',$marketId->market_id)
+            ->first();
+            $OrderData= DB::table('orders')
+            ->where('id',$orderID)
+            ->first();
+            // print_r($earning);
+            // exit;
+            // dd($event->updatedOrder->productOrders[0]->product->market->id);
+            // $this->earningRepository->pushCriteria(new EarningOfMarketCriteria($event->updatedOrder->productOrders[0]->product->market->id));
+            // //dd($this->earningRepository->pushCriteria(new EarningOfMarketCriteria($event->updatedOrder->productOrders[0]->product->market->id)));
+            // $market = $this->earningRepository->first();
+            // // dd($market);
+           
+            
+            $amount = 0;
+            
+            // test if order delivered to client
+            if (!empty($earning)) {
+                foreach ($ProductID as $productOrder) {
+                    $amount += $productOrder->price * $productOrder->quantity;
+                }
+                // $event->updatedOrder->payment->status='Paid';
+                // echo "$event->updatedOrder->payment->status";
+                // exit;
+               if ($statusId == 5) {
+                   
+                   $tax=$OrderData->finalTax;
+                   $amount=$OrderData->total-$tax - ($OrderData->delivery_fee);
+                   $tempAdminEarning = ($marketData->admin_commission / 100) * $amount;
+                   $adminEarning=(($marketData->admin_commission / 100) * $amount) + $tax + ($OrderData->delivery_fee);
+                   
+                   $affected = DB::table('earnings')
+              ->where('market_id', $marketId->market_id)
+              ->update(['total_orders' => $earning->total_orders+1,'total_earning'=>$earning->total_earning+$amount + $tax,'delivery_fee'=>$earning->delivery_fee+$OrderData->delivery_fee,'admin_earning'=>$earning->admin_earning+$adminEarning,'market_earning'=>$earning->market_earning+$amount - $tempAdminEarning,'tax'=>$earning->tax+$tax]);
+                    // $market->total_orders++;
+                    // //$tax = $amount * $event->updatedOrder->tax / 100;
+                    // $tax = $event->updatedOrder->finalTax;
+                    // $market->total_earning += $amount + $tax;
+                    // $market->delivery_fee += $event->updatedOrder->delivery_fee;
+                    // $market->admin_earning += (($market->market->admin_commission / 100) * $amount) + $tax + ($event->updatedOrder->delivery_fee);
+                    // $tempAdminEarning = ($market->market->admin_commission / 100) * $amount;
+                    // $market->market_earning += ($amount - $tempAdminEarning);
+                    // $market->tax += $tax;
+                    // $market->save();
+                    
+                    
+                    // print_r($market->total_orders++);
+                    // echo "<br>";
+                    // print_r($event->updatedOrder->finalTax);
+                    // echo "<br>";
+                    // print_r($amount + $tax);
+                    // echo "<br>";
+                    // print_r($event->updatedOrder->delivery_fee);
+                    // echo "<br>";
+                    // print_r(($market->market->admin_commission / 100) * $amount) + $tax + ($event->updatedOrder->delivery_fee);
+                    // echo "<br>";
+                    // print_r(($market->market->admin_commission / 100) * $amount);
+                    // print_r("<br>");
+                    // print_r(($amount - $tempAdminEarning));
+                    // echo "<br>";
+                    // print_r($tax);
+                    // // exit;
+                    
+                    
+                    // dd($market);
+                    
+                    
+                } elseif ($old == 'Paid') {
+                    
+                     $tax=$OrderData->finalTax;
+                     $amount=$OrderData->total-$tax - ($OrderData->delivery_fee);
+                   $tempAdminEarning = ($marketData->admin_commission / 100) * $amount;
+                   $adminEarning=(($marketData->admin_commission / 100) * $amount) + $tax + ($OrderData->delivery_fee);
+                   
+                   $affected = DB::table('earnings')
+              ->where('market_id', $marketId->market_id)
+              ->update(['total_orders' => $earning->total_orders-1,'total_earning'=>$earning->total_earning-$amount + $tax,'delivery_fee'=>$earning->delivery_fee-$OrderData->delivery_fee,'admin_earning'=>$earning->admin_earning-$adminEarning,'market_earning'=>$earning->market_earning-$amount - $tempAdminEarning,'tax'=>$earning->tax-$tax]);
+                  
+                    
+                    // $market->total_orders--;
+                    // $tax = $event->updatedOrder->finalTax;
+                    // $market->total_earning -= $amount - $tax;
+                    // $market->admin_earning -= (($market->market->admin_commission / 100) * $amount) + $tax + ($event->updatedOrder->delivery_fee);
+                    // $market->market_earning -= $amount - (($market->market->admin_commission / 100) * $amount);
+                    // $market->delivery_fee -= $event->updatedOrder->delivery_fee;
+                    // $market->tax -= $amount * $event->updatedOrder->finalTax / 100;
+                    // $market->save();
+                    
+                }
+            }
 
+        }
+        
+        
+        
+        
+    }
 }

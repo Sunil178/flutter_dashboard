@@ -145,11 +145,11 @@ abstract class ParentOrderController extends Controller
                 $payment = $this->createPayment();
                 if($payment_method=='0')
                 {
-                $this->paymentRepository->update(['method' => 'Pay on Pickup'], $payment->id);
+                $this->paymentRepository->update(['method' => 'Pickup'], $payment->id);
                 }
                 else
                 {
-                 $this->paymentRepository->update(['method' => 'Cash on Delivery'], $payment->id);
+                 $this->paymentRepository->update(['method' => 'Delivery'], $payment->id);
                 }
               
                 $this->cartRepository->deleteWhere(['user_id' => $this->order->user_id]);

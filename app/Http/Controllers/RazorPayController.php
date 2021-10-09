@@ -159,7 +159,8 @@ class RazorPayController extends ParentOrderController
             $this->order->payment->description = $description;
 
             $this->createOrder($userId);
-
+        $orderIdget=DB::table('orders')->select('id')->where('user_id',$userId)->orderBy('id', 'DESC')->first();
+            $this->earning($orderIdget->id);
             return redirect(url('payments/razorpay'));
         }else{
             Flash::error("Error processing RazorPay payment for your order");
@@ -176,8 +177,8 @@ class RazorPayController extends ParentOrderController
     {
          
        
-        $data = $request->all();
-
+                $data = $request->all();
+        
         $description = $this->getPaymentDescription($data);
 
         $this->order->user_id = $userId;
@@ -197,7 +198,9 @@ class RazorPayController extends ParentOrderController
             $this->order->payment->description = $description;
 
             $this->createOrder($userId);
-
+            $orderIdget=DB::table('orders')->select('id')->where('user_id',$userId)->orderBy('id', 'DESC')->first();
+            
+            $this->earning($orderIdget->id);
             return redirect(url('payments/razorpay'));
         }else{
             Flash::error("Error processing RazorPay payment for your order");
@@ -323,6 +326,63 @@ class RazorPayController extends ParentOrderController
         $description = "Id: " . $data['razorpay_payment_id'] . "</br>";
         $description .= trans('lang.order').": " . $data['razorpay_order_id'];
         return $description;
+    }
+    public function earning($orderID)
+    {
+       
+     
+            
+            $ProductID = DB::table('product_orders')
+            ->where('order_id',$orderID)
+            ->get();
+            
+             $marketId = DB::table('products')
+            ->select('market_id')
+            ->where('id',$ProductID[0]->product_id)
+            ->first();
+            
+              $earning= DB::table('earnings')
+            ->where('market_id',$marketId->market_id)
+            ->first();
+            
+            $marketData= DB::table('markets')
+            ->where('id',$marketId->market_id)
+            ->first();
+            $OrderData= DB::table('orders')
+            ->where('id',$orderID)
+            ->first();
+            
+           
+            
+            $amount = 0;
+            
+            // test if order delivered to client
+            if (!empty($earning)) {
+                
+            
+                   
+                   $tax=$OrderData->finalTax;
+                   $amount=$OrderData->total-$tax - ($OrderData->delivery_fee);
+                   $tempAdminEarning = ($marketData->admin_commission / 100) * $amount;
+                   $adminEarning=(($marketData->admin_commission / 100) * $amount) + $tax + ($OrderData->delivery_fee);
+                   $nowdate=date('Y-m-d H:i:s');
+                   
+                   $affected = DB::table('earnings')
+              ->where('market_id', $marketId->market_id)
+              ->update(['total_orders' => $earning->total_orders+1,'total_earning'=>$earning->total_earning+$amount + $tax,'delivery_fee'=>$earning->delivery_fee+$OrderData->delivery_fee,'admin_earning'=>$earning->admin_earning+$adminEarning,'market_earning'=>$earning->market_earning+$amount - $tempAdminEarning,'tax'=>$earning->tax+$tax,'updated_at'=>$nowdate]);
+                   
+                    
+                                        
+                    
+
+                
+            }
+
+        
+        
+        
+        
+        
     }
 
 }

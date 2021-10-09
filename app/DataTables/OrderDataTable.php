@@ -31,6 +31,7 @@ class OrderDataTable extends DataTable
      */
     public function dataTable($query)
     {
+        
         $dataTable = new EloquentDataTable($query);
         $columns = array_column($this->getColumns(), 'data');
         $dataTable = $dataTable

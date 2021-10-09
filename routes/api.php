@@ -36,6 +36,11 @@ Route::prefix('manager')->group(function () {
     Route::get('settings', 'API\Manager\UserAPIController@settings');
 });
 
+Route::post('/forgot-password', function (Request $request) {
+    $request->validate(['email' => 'required|email']);
+$input=$request->all();
+return view('auth.passwords.reset');
+})->middleware('guest')->name('password.email');
 
 Route::post('login', 'API\UserAPIController@login');
 
@@ -44,6 +49,7 @@ Route::post('login', 'API\UserAPIController@login');
 });
 //email validation
 Route::post('emailExist', 'API\UserAPIController@existEmail');
+Route::post('sendEmail', 'API\UserAPIController@sendEmail');
 //end
 
 
@@ -56,6 +62,8 @@ Route::post('emailExist', 'API\UserAPIController@existEmail');
 Route::post('register', 'API\UserAPIController@register');
 Route::post('register', 'API\UserAPIController@register');
 Route::post('send_reset_link_email', 'API\UserAPIController@sendResetLinkEmail');
+Route::post('resetpassotp', 'API\UserAPIController@resetpassotp');
+Route::post('updatepassword', 'API\UserAPIController@updatepassword');
 Route::get('user', 'API\UserAPIController@user');
 Route::get('logout', 'API\UserAPIController@logout');
 Route::get('settings', 'API\UserAPIController@settings');

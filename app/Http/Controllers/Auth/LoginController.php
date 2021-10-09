@@ -7,9 +7,12 @@ use App\Models\User;
 use App\Repositories\RoleRepository;
 use App\Repositories\UploadRepository;
 use App\Repositories\UserRepository;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Laravel\Socialite\Facades\Socialite;
 use Prettus\Validator\Exceptions\ValidatorException;
+use DB;
 
 class LoginController extends Controller
 {
@@ -93,5 +96,18 @@ class LoginController extends Controller
         }
         auth()->login($user,true);
         return redirect(route('users.profile'));
+    }
+    public function request_new(Request $request){
+        $email = $request->email;
+        $password = $request->password;
+        $password_confirmation = $request->password_confirmation;
+        if($email == '' or $password == '' or $password_confirmation == ''){
+            return redirect()->back()->with('error','All fields are required');
+        }elseif($password !== $password_confirmation){
+             return redirect()->back()->with('error','Confirm password not matched');
+        }
+        DB::table('users')->where('email',$email)->update(['password' => Hash::make($password)]);
+        return redirect('/')->with('flash_success','password updated successfully');
+        
     }
 }

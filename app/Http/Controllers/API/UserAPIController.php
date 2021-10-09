@@ -21,8 +21,11 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
 use Prettus\Validator\Exceptions\ValidatorException;
 use DB;
-use Mail;
+// use Mail;
+use Illuminate\Support\Facades\Mail;
 use Carbon\Carbon;
+use Illuminate\Mail\Message;
+// use Illuminate\Support\Facades\Password;
 
 class UserAPIController extends Controller
 {
@@ -43,7 +46,21 @@ class UserAPIController extends Controller
         $this->roleRepository = $roleRepository;
         $this->customFieldRepository = $customFieldRepo;
     }
+public function sendEmail(Request $req)
+    {
+        $email=$req->email;
+        $credentials = ['email' => $email];
+        $response = Password::sendResetLink($credentials, function (Message $message) {
+            $message->subject($this->getEmailSubject());
+        });
 
+        switch ($response) {
+            case Password::RESET_LINK_SENT:
+                return response()->json(['status', trans($response)]);
+            case Password::INVALID_USER:
+                return response()->json(['message' => trans($response),'email' => $req->email_address]);
+        }
+    }
     function login(Request $request)
     {
         try {
@@ -279,76 +296,22 @@ class UserAPIController extends Controller
 
    
 
-function sendResetLinkEmail(Request $request)
+
+    function sendResetLinkEmail(Request $req)
     {
-        
-            
-            // print_r($request->email);
-            // exit;
-            $this->validate($request, ['email' => 'required|email']);
-    $userCheck = DB::table('users')->where('email',$request->email)->first();
-    if(empty($userCheck))
-    {
-        return [
-               'status' => false,
-               'msg' => 'email doesnot exist',
-               'data' => []
-               ];
-    }
-    else
-    {
-        $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
-        $pass = array(); //remember to declare $pass as an array
-        $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
-        for ($i = 0; $i < 6; $i++)
-        {
-            $n = rand(0, $alphaLength);
-            $pass[] = $alphabet[$n];
-             
-            
+     $email=$req->email;
+        $credentials = ['email' => $email];
+        $response = Password::sendResetLink($credentials, function (Message $message) {
+            $message->subject($this->getEmailSubject());
+        });
+       
+
+        switch ($response) {
+            case Password::RESET_LINK_SENT:
+                return response()->json(['status', trans($response)]);
+            case Password::INVALID_USER:
+                return response()->json(['message' => trans($response),'email' => $req->email_address]);
         }
-                $newpass= implode($pass); //turn the array into a string
-   
-    
-            $to_email = $request->email;
-            $subject = "Password Reset From Chefrome";
-            $body = "Your OTP for password reset is ".$newpass;
-            $headers = "From: ".env('MAIL_USERNAME');
-            // echo "sdaf";
-            
-            $dddddddddddddddd=mail($to_email, $subject, $body, $headers);
-            echo "$dddddddddddddddd";
-            if (mail($to_email, $subject, $body, $headers)) {
-                $updatedOtp=DB::statement("UPDATE `users` SET `resetPassOtp`='$newpass' WHERE `email`='$to_email'");
-                
-               if($updatedOtp=='1')
-               {
-           return [
-               'status' => true,
-               'msg' => 'reset otp sent',
-               'data' => $newpass
-               ];
-      
-               }
-               else
-               {
-                   return [
-               'status' => false,
-               'msg' => 'try again',
-               'data' => []
-               ];
-               }
-                
-                
-            } else {
-                 return [
-               'status' => false,
-               'msg' => 'try again',
-               'data' => []
-               ];
-      
-            }
-    }
 
 
     }
@@ -372,6 +335,55 @@ function sendResetLinkEmail(Request $request)
                    return [
                'status' => false,
                'msg' => 'not matched try again',
+               'data' => []
+               ];
+               }
+    }
+    function updatepassword(Request $request)
+    {
+         $input=$request->all();
+        // print_r($input['email']);
+        // exit;
+        $otpcheck = DB::table('users')->where('email',$input['email'])->first();
+        
+        if(!empty($otpcheck))
+               {
+                if($otpcheck->resetPassOtp=="0" ||$otpcheck->resetPassOtp=="null" ||$otpcheck->resetPassOtp=="" ||$otpcheck->resetPassOtp==null)
+                {
+                      return [
+               'status' => false,
+               'msg' => 'Request For The Otp First ',
+               'data' => []
+               ];
+                }
+                else
+                {
+                    $newPass=Hash::make($request->password);
+                   $updatedPassword=DB::statement("UPDATE `users` SET `password`='$newPass' WHERE `email`='$request->email'");
+                   if($updatedPassword=='1')
+                   {
+                       $resetOtp=DB::statement("UPDATE `users` SET `resetPassOtp`='0' WHERE `email`='$request->email'");
+           return [
+               'status' => true,
+               'msg' => 'Password Changed',
+               'data' => []
+               ];
+                   }
+                   else
+                   {
+                       return [
+               'status' => false,
+               'msg' => 'try again',
+               'data' => []
+               ];
+                   }
+                }
+               }
+               else
+               {
+                   return [
+               'status' => false,
+               'msg' => 'Email Does Not Exist',
                'data' => []
                ];
                }

@@ -19,6 +19,7 @@
 */
 
 Route::get('login/{service}', 'Auth\LoginController@redirectToProvider');
+Route::post('request_new', 'Auth\LoginController@request_new')->name('password.request_new');
 Route::get('login/{service}/callback', 'Auth\LoginController@handleProviderCallback');
 Auth::routes();
 

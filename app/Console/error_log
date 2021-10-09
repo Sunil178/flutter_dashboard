@@ -1,6 +1,0 @@
-[01-Oct-2020 09:50:24 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Console\Kernel' not found in /home/chefrome/public_html/grocery/app/Console/Kernel.php on line 8
-[22-Oct-2020 09:20:57 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Console\Kernel' not found in /home/chefrome/public_html/grocery/app/Console/Kernel.php on line 8
-[24-Oct-2020 09:27:38 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Console\Kernel' not found in /home/chefrome/public_html/grocery/app/Console/Kernel.php on line 8
-[08-Nov-2020 18:38:13 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Console\Kernel' not found in /home/chefrome/public_html/grocery/app/Console/Kernel.php on line 8
-[08-Nov-2020 23:11:40 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Console\Kernel' not found in /home/chefrome/public_html/grocery/app/Console/Kernel.php on line 8
-[11-Nov-2020 23:24:16 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Console\Kernel' not found in /home/chefrome/public_html/grocery/app/Console/Kernel.php on line 8
